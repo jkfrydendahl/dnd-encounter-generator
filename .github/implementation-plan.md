@@ -197,6 +197,34 @@ Monsters closer to the preferred difficulty should receive higher weight.
 
 ---
 
+# Encounter Quality Strategy
+
+The generator should use two complementary techniques:
+
+1. Role-Balance Biasing
+
+While resolving encounter slots, candidates should receive score bonuses or penalties based on current encounter composition.
+
+Preferred behavior:
+
+favor monsters that add missing threat categories
+
+penalize monsters that over-stack an existing category
+
+penalize duplicate monsters
+
+penalize excess Brutes
+
+This improves encounter quality during construction.
+
+2. Two-Pass Encounter Scoring
+
+The generator should create multiple candidate encounters, score them, and return the best result.
+
+This improves final encounter quality without requiring complex hardcoded logic.
+
+---
+
 # Duplicate Handling
 
 Duplicate policies:
