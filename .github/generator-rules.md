@@ -102,7 +102,7 @@ Rejected encounters should trigger regeneration until a valid encounter is produ
 
 ---
 
-## Minion Usage
+# Minion Usage
 
 Minions represent supporting enemies rather than primary threats.
 
