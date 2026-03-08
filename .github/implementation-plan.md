@@ -1,33 +1,39 @@
-
 # Implementation Plan – D&D 4e Encounter Generator
 
 This document describes the implementation plan for the **D&D 4e Encounter Generator** PWA.
 
-The repository currently contains:
+The repository currently starts with:
 
+```text
 .github/
-  implementation-plan.md
   generator-rules.md
-  
-`generator-rules.md` defines the **encounter design heuristics** used by the generator.
-This document describes **how the system should be implemented.**
+  implementation-plan.md
+```
+
+- `generator-rules.md` defines the **encounter design heuristics** used by the generator.
+- `implementation-plan.md` defines the **system structure, build order, and implementation approach**.
+
+This setup is intentionally minimal and high-signal for Copilot.
 
 ---
 
 # Project Goal
 
-Create a **Progressive Web App (PWA)** that generates tactically interesting
-D&D 4e encounters for optimized parties.
+Create a **Progressive Web App (PWA)** that generates **tactically interesting D&D 4e encounters** for optimized parties.
 
 The generator intentionally **does not use XP budgets**.
 
-Instead it relies on:
+Instead, it should rely on:
 
-• encounter templates  
-• monster role composition  
-• weighted random selection  
-• encounter diagnostics  
-• rejection of weak encounters  
+- encounter templates
+- monster role composition
+- weighted random selection
+- encounter diagnostics
+- rejection of weak encounters
+- local scoring bias while building encounters
+- final scoring across multiple generated candidates
+
+The result should feel like a **GM assistant**, not a random monster picker.
 
 ---
 
@@ -35,36 +41,46 @@ Instead it relies on:
 
 The application should use:
 
-• React  
-• TypeScript  
-• Vite  
-• vite-plugin-pwa  
+- React
+- TypeScript
+- Vite
+- vite-plugin-pwa
 
 State handling:
 
-• React state  
-• settings stored in localStorage  
+- React state
+- settings stored in `localStorage`
 
-The app should run **entirely client-side** and deploy as a **static Vercel app**.
+Deployment target:
+
+- static Vercel app
+- entirely client-side for MVP
+
+No backend is required for the first version.
 
 ---
 
-# Development Order (Important)
+# Development Order
 
-Copilot performs much better if development happens in this order:
+Copilot performs better if development happens in this order:
 
-1. Define data types
-2. Implement generator logic
-3. Implement diagnostics
-4. Build UI
-5. Add PWA support
+1. define data types
+2. define constants
+3. implement generator pipeline
+4. implement diagnostics and scoring
+5. build UI
+6. add PWA support
+7. polish UX and persistence
 
 Do **not** start by building UI components.
+
+The generator logic should exist and be testable before the UI is layered on top.
 
 ---
 
 # Recommended Project Structure
 
+```text
 src/
   components/
     controls/
@@ -78,13 +94,16 @@ src/
 
   lib/
     generator/
+      constants.ts
       generateEncounter.ts
+      generateCandidateEncounter.ts
       chooseTemplate.ts
       resolveSlot.ts
       scoreMonsterCandidate.ts
+      evaluateEncounter.ts
       diagnostics.ts
       weightedRandom.ts
-      constants.ts
+      threatCategories.ts
 
     filters/
       filterByLevel.ts
@@ -100,6 +119,7 @@ src/
     encounter.ts
     template.ts
     terrain.ts
+    settings.ts
 
   hooks/
     useGeneratorSettings.ts
@@ -109,38 +129,58 @@ src/
 
   App.tsx
   main.tsx
+```
 
-Generator logic must remain inside **src/lib** and not inside UI components.
+## Structure Notes
+
+- Generator logic belongs in `src/lib`, not inside React components.
+- `generateEncounter.ts` should be the single public entry point to the generator.
+- `generateCandidateEncounter.ts` should build one candidate encounter.
+- `scoreMonsterCandidate.ts` should handle **slot-level role-balance biasing**.
+- `evaluateEncounter.ts` should handle **final encounter scoring**.
+- `diagnostics.ts` should produce warnings and threat summaries for the UI.
+- `threatCategories.ts` should keep role-to-threat mapping centralized.
+
+This is worth being explicit about, because Copilot will otherwise tend to collapse too much logic into one file.
 
 ---
 
 # Initial File Scaffolding
 
-Create these files first before asking Copilot to implement logic:
+Create these files before asking Copilot to implement logic:
 
-src/types/monster.ts  
-src/types/template.ts  
-src/types/encounter.ts  
-src/types/terrain.ts  
+```text
+src/types/monster.ts
+src/types/template.ts
+src/types/encounter.ts
+src/types/terrain.ts
+src/types/settings.ts
 
-src/lib/generator/generateEncounter.ts  
-src/lib/generator/chooseTemplate.ts  
-src/lib/generator/resolveSlot.ts  
-src/lib/generator/scoreMonsterCandidate.ts  
-src/lib/generator/diagnostics.ts  
+src/lib/generator/constants.ts
+src/lib/generator/generateEncounter.ts
+src/lib/generator/generateCandidateEncounter.ts
+src/lib/generator/chooseTemplate.ts
+src/lib/generator/resolveSlot.ts
+src/lib/generator/scoreMonsterCandidate.ts
+src/lib/generator/evaluateEncounter.ts
+src/lib/generator/diagnostics.ts
+src/lib/generator/weightedRandom.ts
+src/lib/generator/threatCategories.ts
 
-src/lib/utils/random.ts  
-src/lib/utils/arrays.ts  
+src/lib/utils/random.ts
+src/lib/utils/arrays.ts
+```
 
-Even empty files improve Copilot suggestions.
+Even empty files improve Copilot suggestions because they make the intended architecture visible.
 
 ---
 
-# Domain Types
+# Core Domain Types
 
-Monster structure:
+## Monster
 
-type MonsterRole =
+```ts
+export type MonsterRole =
   | "Brute"
   | "Soldier"
   | "Skirmisher"
@@ -149,79 +189,161 @@ type MonsterRole =
   | "Lurker"
   | "Minion";
 
-type MonsterRank = "Standard" | "Elite" | "Solo";
+export type MonsterRank = "Standard" | "Elite" | "Solo";
 
-interface Monster {
-  id: string
-  name: string
-  level: number
-  role: MonsterRole
-  rank: MonsterRank
-  tags: string[]
+export interface Monster {
+  id: string;
+  name: string;
+  level: number;
+  role: MonsterRole;
+  rank: MonsterRank;
+  tags: string[];
 }
+```
+
+## Encounter Template
+
+```ts
+export type TemplateMode = "standard" | "boss" | "any";
+
+export type SlotRequirement =
+  | "Brute"
+  | "Soldier"
+  | "Skirmisher"
+  | "Artillery"
+  | "Controller"
+  | "Lurker"
+  | "Minion"
+  | "Elite"
+  | "Solo"
+  | "Brute|Soldier"
+  | "Artillery|Lurker"
+  | "Skirmisher|Lurker"
+  | "Skirmisher|Controller";
+
+export interface EncounterSlot {
+  id: string;
+  count: number;
+  requirement: SlotRequirement;
+  label?: string;
+}
+
+export interface EncounterTemplate {
+  id: string;
+  name: string;
+  mode: TemplateMode;
+  weight: number;
+  slots: EncounterSlot[];
+}
+```
+
+## Generator Settings
+
+```ts
+export type DuplicatePolicy = "allow" | "soft-avoid" | "avoid";
+
+export interface GeneratorSettings {
+  partyLevel: number;
+  minLevelOffset: number;
+  maxLevelOffset: number;
+  targetDifficultyOffset: number;
+  themeTag?: string;
+  templateMode: "standard" | "boss" | "any";
+  duplicatePolicy: DuplicatePolicy;
+  includeTerrain: boolean;
+}
+```
+
+## Generated Encounter
+
+```ts
+export interface GeneratedEncounterEntry {
+  slotId: string;
+  monsterId: string;
+  monsterName: string;
+  role: MonsterRole;
+  rank: MonsterRank;
+  level: number;
+  count: number;
+  tags: string[];
+}
+
+export interface ThreatSummary {
+  pressure: number;
+  damage: number;
+  control: number;
+}
+
+export interface EncounterDiagnostics {
+  hasPressure: boolean;
+  hasDamage: boolean;
+  hasControl: boolean;
+  categoryCount: number;
+  warnings: string[];
+  score: number;
+}
+
+export interface GeneratedEncounter {
+  id: string;
+  name: string;
+  templateId: string;
+  templateName: string;
+  entries: GeneratedEncounterEntry[];
+  threatSummary: ThreatSummary;
+  diagnostics: EncounterDiagnostics;
+  terrainSuggestion?: string;
+}
+```
 
 ---
 
-# Encounter Templates
+# Seed Data
 
-Templates define encounter structure.
+The MVP should start with local JSON files:
 
-Example template:
+- `src/data/monsters.json`
+- `src/data/templates.json`
+- `src/data/terrain.json`
 
-Standard Fight
+Start with a small monster set for development, then expand later.
 
-1 Brute|Soldier  
-1 Artillery  
-1 Skirmisher  
-1 Controller  
+Example monster:
 
-Templates should be stored in:
+```json
+{
+  "id": "hell-hound",
+  "name": "Hell Hound",
+  "level": 7,
+  "role": "Brute",
+  "rank": "Standard",
+  "tags": ["Fire"]
+}
+```
 
-src/data/templates.json
+Templates and terrain should also be defined as JSON, not hardcoded inside components.
 
 ---
 
 # Level Rules
 
-User supplies **Party Level**.
+The user supplies **Party Level**.
 
-Allowed monster range:
+Default monster level range:
 
-partyLevel -1 → partyLevel +2
+```text
+minimum = partyLevel - 1
+maximum = partyLevel + 2
+```
 
-Preferred difficulty:
+Preferred difficulty target:
 
-partyLevel +2
+```text
+targetLevel = partyLevel + 2
+```
 
-Monsters closer to the preferred difficulty should receive higher weight.
+Candidates closer to the target level should receive a higher score.
 
----
-
-# Encounter Quality Strategy
-
-The generator should use two complementary techniques:
-
-1. Role-Balance Biasing
-
-While resolving encounter slots, candidates should receive score bonuses or penalties based on current encounter composition.
-
-Preferred behavior:
-
-favor monsters that add missing threat categories
-
-penalize monsters that over-stack an existing category
-
-penalize duplicate monsters
-
-penalize excess Brutes
-
-This improves encounter quality during construction.
-
-2. Two-Pass Encounter Scoring
-
-The generator should create multiple candidate encounters, score them, and return the best result.
-
-This improves final encounter quality without requiring complex hardcoded logic.
+The level filters should be configurable through generator settings, but the defaults should match the rules above.
 
 ---
 
@@ -229,61 +351,265 @@ This improves final encounter quality without requiring complex hardcoded logic.
 
 Duplicate policies:
 
-allow  
-soft-avoid  
-avoid  
+- `allow`
+- `soft-avoid`
+- `avoid`
 
-Duplicates may occur when a template requires multiple identical monsters.
+Guidance:
 
-Otherwise duplicates should be penalized.
+- duplicates are valid when a slot intentionally has `count > 1`
+- duplicates across separate slots should usually be penalized
+- `soft-avoid` should penalize duplicates but still allow them
+- `avoid` should try to avoid duplicates unless the pool is too small
+
+This should be handled in candidate scoring rather than hardcoded everywhere.
+
+---
+
+# Generator Architecture
+
+The generator should use a **two-layer quality approach**:
+
+## 1. Role-Balance Bias During Slot Resolution
+
+While building a candidate encounter, the generator should prefer monsters that improve threat diversity.
+
+Examples:
+
+- if the current encounter lacks **Control**, controllers should gain score
+- if the current encounter already has strong **Pressure**, additional brutes should lose score
+- if the encounter already contains a duplicate monster, selecting it again should be penalized unless intentional
+
+This improves candidate quality during construction.
+
+## 2. Final Scoring Across Multiple Candidate Encounters
+
+The generator should create multiple complete candidate encounters, score each one, and return the best result.
+
+This improves final encounter quality without requiring rigid hardcoded logic.
+
+These two strategies should work together.
 
 ---
 
 # Generator Pipeline
 
-The generator should follow this pipeline:
+The generator should follow this pipeline.
 
-1. Choose template (weighted random)
-2. Resolve template slots
-3. Score monster candidates
-4. Build encounter
-5. Run diagnostics
-6. Reject weak encounters and retry
+## Step 1 — generateEncounter
 
-Maximum retry attempts should be capped (example: 20).
+This is the public entry point.
+
+Responsibilities:
+
+- loop over a fixed number of candidate attempts
+- call `generateCandidateEncounter()` for each attempt
+- call `evaluateEncounter()` on each finished candidate
+- return the best valid encounter
+
+Conceptually:
+
+```text
+bestEncounter = null
+bestScore = -Infinity
+
+repeat N times:
+  candidate = generateCandidateEncounter(...)
+  score = evaluateEncounter(candidate, ...)
+  keep best result
+
+return bestEncounter
+```
+
+## Step 2 — generateCandidateEncounter
+
+This function builds one encounter.
+
+Responsibilities:
+
+- choose template
+- resolve slots in order
+- build encounter entries
+- attach terrain suggestion if enabled
+- generate initial diagnostics
+
+## Step 3 — chooseTemplate
+
+Responsibilities:
+
+- filter templates by selected mode
+- choose using weighted random selection
+
+## Step 4 — resolveSlot
+
+Responsibilities:
+
+- determine valid monster pool for current slot
+- apply role, rank, and level filtering
+- score valid monsters using `scoreMonsterCandidate()`
+- choose a monster using weighted random logic
+
+## Step 5 — scoreMonsterCandidate
+
+Responsibilities:
+
+- score one monster candidate for one slot
+- combine randomness with heuristics
+- apply role-balance bias
+
+Suggested score factors:
+
+- level proximity bonus
+- theme match bonus
+- fills missing threat category bonus
+- supports underrepresented threat category bonus
+- duplicate penalty
+- brute-over-cap penalty
+- overrepresented-category penalty
+
+## Step 6 — evaluateEncounter
+
+Responsibilities:
+
+- score the completed encounter
+- determine whether it is weak
+- reward threat diversity and tactical coherence
+- penalize duplicates, role repetition, and brute-heavy compositions
+
+## Step 7 — diagnostics
+
+Responsibilities:
+
+- calculate threat summary
+- produce warnings for the UI
+- expose human-readable reasoning for why the encounter is strong or weak
 
 ---
 
-# Diagnostics
+# Threat Categories
 
-Diagnostics should evaluate:
+Threat categories should be centralized in `threatCategories.ts`.
 
-• threat category coverage  
-• duplicate monsters  
-• brute overuse  
-• encounter variety  
+Suggested mapping:
 
-Weak encounters should trigger regeneration.
+## Pressure
+- Brute
+- Soldier
 
-Threat categories are defined in **generator-rules.md**.
+## Damage
+- Artillery
+- Lurker
+- Skirmisher
+
+## Control
+- Controller
+
+## Neutral
+- Minion
+
+This same mapping should be used by both:
+
+- slot-level biasing
+- final encounter evaluation
+- UI diagnostics
+
+That keeps the system consistent.
 
 ---
 
-# Terrain Suggestions (Optional)
+# Encounter Quality Strategy
 
-Terrain data should be stored in:
+This is the part that should strongly influence Copilot.
 
-src/data/terrain.json
+## Slot-Level Biasing
 
-Examples:
+When resolving slots, prefer monsters that improve the encounter as it forms.
 
-• lava bridge  
-• ruined pillars  
-• necrotic altar  
-• unstable ledges  
-• dense graveyard fog  
+Preferred behavior:
 
-Terrain may optionally match encounter theme.
+- favor candidates that add a missing threat category
+- favor candidates that support an underrepresented category
+- penalize candidates that over-stack an already dominant category
+- penalize duplicates
+- penalize excessive Brutes
+
+This should guide the generator rather than rigidly forcing outcomes.
+
+## Two-Pass Candidate Selection
+
+Do not simply return the first valid encounter.
+
+Instead:
+
+- generate multiple candidate encounters
+- evaluate each one
+- return the highest-scoring encounter
+
+This produces much better results while keeping the code simple.
+
+---
+
+# Suggested Candidate Scoring Heuristics
+
+The exact numbers can be tuned later, but the plan should make the scoring model explicit.
+
+## scoreMonsterCandidate heuristics
+
+Possible starting values:
+
+- `+20` fills missing threat category
+- `+10` supports underrepresented category
+- `+20` strong level proximity
+- `+10` theme match
+- `-15` duplicate monster
+- `-20` exceeds brute limit
+- `-10` adds to overrepresented category
+
+These values do not need to be perfect. They need to be directionally useful.
+
+## evaluateEncounter heuristics
+
+Reward:
+
+- includes Pressure
+- includes Damage
+- includes Control
+- multiple roles represented
+- strong level coherence
+- theme consistency
+
+Penalize:
+
+- no damage threat
+- fewer than two threat categories
+- too many duplicates
+- too many Brutes
+- one-role or one-monster-type encounters
+
+---
+
+# Encounter Validation
+
+## Hard rejection conditions
+
+A candidate encounter should usually be rejected if it has:
+
+- fewer than two threat categories
+- no damage threat
+- only one monster type across the whole encounter, unless explicitly intended by template
+- unfilled slot resolution
+
+## Soft penalties
+
+Apply penalties rather than outright rejection for:
+
+- more than one Brute
+- no Controller in a hard standard encounter
+- excessive duplicates
+- low role diversity
+- low theme coherence when a theme is selected
+
+This should live inside `evaluateEncounter.ts`, not be scattered throughout the system.
 
 ---
 
@@ -291,80 +617,205 @@ Terrain may optionally match encounter theme.
 
 Create:
 
+```text
 src/lib/generator/constants.ts
+```
 
-Example constants:
+Suggested contents:
 
-DEFAULT_LEVEL_MIN_OFFSET = -1  
-DEFAULT_LEVEL_MAX_OFFSET = 2  
-DEFAULT_TARGET_OFFSET = 2  
+```ts
+export const DEFAULT_LEVEL_MIN_OFFSET = -1;
+export const DEFAULT_LEVEL_MAX_OFFSET = 2;
+export const DEFAULT_TARGET_OFFSET = 2;
 
-MAX_GENERATION_ATTEMPTS = 20  
-BRUTE_LIMIT = 1  
+export const MAX_GENERATION_ATTEMPTS = 12;
+export const BRUTE_LIMIT = 1;
 
-Avoid magic numbers in generator logic.
+export const MISSING_THREAT_BONUS = 20;
+export const UNDERREPRESENTED_THREAT_BONUS = 10;
+export const THEME_MATCH_BONUS = 10;
+export const DUPLICATE_PENALTY = 15;
+export const EXCESS_BRUTE_PENALTY = 20;
+export const OVERREPRESENTED_CATEGORY_PENALTY = 10;
+```
+
+Centralizing these values makes the generator easier to tune.
 
 ---
 
 # UI Layout
 
-The UI should use a simple three-panel layout.
+The UI should be simple and tool-oriented.
 
-Left panel – Controls
+## Left panel — Controls
 
-• party level  
-• level offsets  
-• theme  
-• template mode  
-• duplicate policy  
-• generate button  
+- party level
+- min level offset
+- max level offset
+- target difficulty offset
+- theme tag
+- template mode
+- duplicate policy
+- include terrain toggle
+- generate button
 
-Center panel – Encounter
+## Center panel — Encounter
 
-• template name  
-• monster list  
-• reroll encounter  
+- encounter name
+- template name
+- monster list
+- reroll encounter button
 
-Right panel – Diagnostics
+Future enhancements:
 
-• threat summary  
-• warnings  
-• terrain suggestion  
+- reroll individual slot
+- lock slot
+
+## Right panel — Diagnostics
+
+- threat summary
+- warnings
+- quality score
+- terrain suggestion
+
+The UI should consume generator output rather than embedding generator logic.
 
 ---
 
-# MVP Implementation
+# PWA Requirements
 
-Phase 1 – Core Logic
+Use `vite-plugin-pwa`.
 
-1. create Vite React TS app
-2. define domain types
-3. add seed monster data
-4. implement generator pipeline
+Requirements:
 
-Phase 2 – UI
+- web manifest
+- service worker
+- installable behavior
+- offline capability for static assets and local JSON
 
-5. build controls panel
-6. build encounter display
-7. connect generator to UI
+The app should be usable offline after initial load.
 
-Phase 3 – Quality
+---
 
-8. add diagnostics
-9. add rejection loop
-10. add terrain suggestions
+# MVP Implementation Plan
 
-Phase 4 – Enhancements
+## Phase 1 — Foundation
 
-11. reroll individual slot
-12. template editor
-13. monster CSV import
-14. encounter export
+1. create Vite React TypeScript project
+2. add PWA plugin
+3. define all domain types
+4. add constants file
+5. add seed JSON data
+6. scaffold generator files
+
+## Phase 2 — Generator Core
+
+7. implement threat category helpers
+8. implement template selection
+9. implement slot resolution
+10. implement candidate scoring
+11. implement candidate generation
+12. implement final encounter evaluation
+13. implement top-level `generateEncounter()`
+
+## Phase 3 — UI
+
+14. build controls panel
+15. build encounter display
+16. build diagnostics panel
+17. connect UI to generator
+18. persist settings in localStorage
+
+## Phase 4 — Quality
+
+19. add terrain suggestions
+20. add encounter naming
+21. add copy/export text
+22. improve mobile responsiveness
+
+## Phase 5 — Enhancements
+
+23. reroll individual slot
+24. lock slot
+25. editable templates
+26. CSV or JSON monster import
+27. save favorite encounters
+
+---
+
+# Suggested Copilot Prompt Headers
+
+Adding short intent comments at the top of generator files will improve Copilot output.
+
+## generateEncounter.ts
+
+```ts
+/*
+Top-level encounter generator.
+
+This module uses a two-pass quality model:
+1. build multiple candidate encounters
+2. evaluate each candidate
+3. return the best result
+*/
+```
+
+## generateCandidateEncounter.ts
+
+```ts
+/*
+Builds one candidate encounter.
+
+This module:
+- chooses a template
+- resolves slots in order
+- applies local role-balance bias through candidate scoring
+- returns a complete candidate encounter
+*/
+```
+
+## scoreMonsterCandidate.ts
+
+```ts
+/*
+Scores a monster candidate for a specific slot.
+
+The score should combine:
+- level proximity
+- theme match
+- missing threat category bonus
+- underrepresented category support
+- duplicate penalty
+- brute-over-cap penalty
+- overrepresented category penalty
+*/
+```
+
+## evaluateEncounter.ts
+
+```ts
+/*
+Evaluates a completed encounter.
+
+This module scores full encounter quality and penalizes:
+- missing threat categories
+- low variety
+- brute-heavy compositions
+- excessive duplicates
+*/
+```
 
 ---
 
 # Final Principle
 
-This tool should behave like a **GM assistant**, not a random monster picker.
+This tool should behave like a **curated procedural generator**.
 
-Prefer **curated randomness and tactical variety** over pure randomness.
+That means:
+
+- randomness is important
+- tactical quality matters more
+- the generator should guide itself toward stronger encounters
+- the final result should feel intentionally assembled, not arbitrary
+
+That should be reflected in both the implementation plan and the code structure.
