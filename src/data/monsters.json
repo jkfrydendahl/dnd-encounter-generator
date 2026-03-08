@@ -22,5 +22,45 @@
     "role": "Controller",
     "rank": "Standard",
     "tags": ["Fire", "Elemental"]
+  },
+  {
+    "id": "hobgoblin-soldier",
+    "name": "Hobgoblin Soldier",
+    "level": 6,
+    "role": "Soldier",
+    "rank": "Standard",
+    "tags": ["Humanoid"]
+  },
+  {
+    "id": "shadow-lurker",
+    "name": "Shadow Lurker",
+    "level": 7,
+    "role": "Lurker",
+    "rank": "Standard",
+    "tags": ["Shadow"]
+  },
+    {
+    "id": "goblin-minion",
+    "name": "Goblin Minion",
+    "level": 6,
+    "role": "Minion",
+    "rank": "Standard",
+    "tags": ["Humanoid"]
+  },
+  {
+    "id": "ogre-warmaster",
+    "name": "Ogre Warmaster",
+    "level": 9,
+    "role": "Brute",
+    "rank": "Elite",
+    "tags": ["Giant"]
+  },
+    {
+    "id": "young-red-dragon",
+    "name": "Young Red Dragon",
+    "level": 10,
+    "role": "Soldier",
+    "rank": "Solo",
+    "tags": ["Dragon", "Fire"]
   }
 ]
