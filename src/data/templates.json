@@ -1,1 +1,38 @@
-
+[
+  {
+    "id": "standard-fight",
+    "name": "Standard Fight",
+    "mode": "standard",
+    "weight": 3,
+    "slots": [
+      { "id": "frontline", "count": 1, "requirement": "Brute|Soldier" },
+      { "id": "artillery", "count": 1, "requirement": "Artillery" },
+      { "id": "mobile", "count": 1, "requirement": "Skirmisher" },
+      { "id": "control", "count": 1, "requirement": "Controller" }
+    ]
+  },
+  {
+    "id": "chaotic-fight",
+    "name": "Chaotic Fight",
+    "mode": "standard",
+    "weight": 2,
+    "slots": [
+      { "id": "mobile-1", "count": 1, "requirement": "Skirmisher" },
+      { "id": "mobile-2", "count": 1, "requirement": "Skirmisher" },
+      { "id": "artillery", "count": 1, "requirement": "Artillery" },
+      { "id": "control", "count": 1, "requirement": "Controller" }
+    ]
+  },
+  {
+    "id": "boss-fight",
+    "name": "Boss Fight",
+    "mode": "boss",
+    "weight": 2,
+    "slots": [
+      { "id": "elite", "count": 1, "requirement": "Elite" },
+      { "id": "control", "count": 1, "requirement": "Controller" },
+      { "id": "mobile-1", "count": 1, "requirement": "Skirmisher" },
+      { "id": "mobile-2", "count": 1, "requirement": "Skirmisher" }
+    ]
+  }
+]
