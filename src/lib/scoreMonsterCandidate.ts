@@ -49,6 +49,9 @@ This scoring should bias the generator toward:
 - pressure + damage + control coverage
 - role diversity
 - tactically varied encounters
+- bonus if candidate matches selected encounter theme
+- bonus if candidate shares a theme with already chosen monsters
+- small penalty if candidate breaks theme coherence too hard
 
 This module should not:
 - choose the final monster directly
