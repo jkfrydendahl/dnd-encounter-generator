@@ -34,5 +34,15 @@
       { "id": "mobile-1", "count": 1, "requirement": "Skirmisher" },
       { "id": "mobile-2", "count": 1, "requirement": "Skirmisher" }
     ]
+  },
+  {
+    "id": "solo-boss",
+    "name": "Solo Boss",
+    "mode": "boss",
+    "weight": 2,
+    "slots": [
+      { "id": "boss", "count": 1, "requirement": "Solo" },
+      { "id": "minions", "count": 4, "requirement": "Minion" }
+    ]
   }
 ]
