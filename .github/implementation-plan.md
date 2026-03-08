@@ -308,6 +308,17 @@ Example monster:
 
 Templates and terrain should also be defined as JSON, not hardcoded inside components.
 
+
+## Future Data Import
+
+The development JSON files will later be replaced with larger generated
+datasets derived from external sources (for example Excel workbooks).
+
+The generator should not depend on Excel directly.
+
+Instead, external datasets should be converted into the same JSON
+structure used by the development seed files.
+
 ---
 
 # Level Rules
