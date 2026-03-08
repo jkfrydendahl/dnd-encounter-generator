@@ -6,9 +6,9 @@ This document describes the implementation plan for the **D&D 4e Encounter Gener
 The repository currently contains:
 
 .github/
-  generator-rules.md
   implementation-plan.md
-
+  generator-rules.md
+  
 `generator-rules.md` defines the **encounter design heuristics** used by the generator.
 This document describes **how the system should be implemented.**
 
