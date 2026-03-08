@@ -1,1 +1,20 @@
-
+[
+  {
+    "id": "lava-bridge",
+    "name": "Lava Bridge",
+    "tags": ["Fire", "Elemental"],
+    "description": "A narrow stone crossing over lava channels, with dangerous edges and heat shimmer."
+  },
+  {
+    "id": "ruined-pillars",
+    "name": "Ruined Pillars",
+    "tags": ["Ruin"],
+    "description": "Broken columns and scattered masonry create cover and difficult terrain."
+  },
+  {
+    "id": "graveyard-fog",
+    "name": "Graveyard Fog",
+    "tags": ["Undead"],
+    "description": "Heavy fog obscures lines of sight and makes movement harder to predict."
+  }
+]
