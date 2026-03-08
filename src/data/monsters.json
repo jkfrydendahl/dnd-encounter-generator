@@ -1,0 +1,26 @@
+[
+  {
+    "id": "hell-hound",
+    "name": "Hell Hound",
+    "level": 7,
+    "role": "Brute",
+    "rank": "Standard",
+    "tags": ["Fire"]
+  },
+  {
+    "id": "fire-mephit",
+    "name": "Fire Mephit",
+    "level": 6,
+    "role": "Artillery",
+    "rank": "Standard",
+    "tags": ["Fire", "Elemental"]
+  },
+  {
+    "id": "salamander-firecaller",
+    "name": "Salamander Firecaller",
+    "level": 8,
+    "role": "Controller",
+    "rank": "Standard",
+    "tags": ["Fire", "Elemental"]
+  }
+]
