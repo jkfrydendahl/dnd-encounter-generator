@@ -99,3 +99,19 @@ Encounters should be rejected if they contain:
 - excessive duplicates
 
 Rejected encounters should trigger regeneration until a valid encounter is produced.
+
+---
+
+# Role-Balance Bias
+
+When filling encounter slots, prefer monsters that improve threat diversity.
+
+## Examples:
+
+if the encounter lacks Control, increase the weight of Controllers
+
+if the encounter already has enough Pressure, reduce the weight of additional Brutes
+
+if the encounter already contains a duplicate monster, penalize choosing it again unless duplicates are intentional
+
+The goal is to guide the generator toward balanced encounters before final scoring occurs.
