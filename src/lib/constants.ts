@@ -1,4 +1,11 @@
 // constants.ts
+/*
+Central generator tuning values.
+
+Keep scoring weights and generation limits here
+so encounter behavior can be tuned without
+rewriting the generator logic.
+*/
 
 export const MAX_GENERATION_ATTEMPTS = 12
 
