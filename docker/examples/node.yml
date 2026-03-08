@@ -1,0 +1,28 @@
+# Node.js Test Runner
+#
+# Copy to docker/docker-compose.test.yml and customize.
+#
+# Usage:
+#   docker compose -f docker/docker-compose.test.yml run --rm test
+
+services:
+  test:
+    image: node:20-alpine
+    volumes:
+      - type: bind
+        source: ..
+        target: /app
+      - node_modules:/app/node_modules
+    working_dir: /app
+    entrypoint: ["sh", "-c"]
+    command: ["npm ci && npm test"]
+    environment:
+      - CI=true
+      - NODE_ENV=test
+
+  test-coverage:
+    extends: test
+    command: ["npm ci && npm run coverage"]
+
+volumes:
+  node_modules:

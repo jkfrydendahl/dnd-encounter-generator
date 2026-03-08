@@ -1,0 +1,28 @@
+# .NET Test Runner
+#
+# Copy to docker/docker-compose.test.yml and customize.
+#
+# Usage:
+#   docker compose -f docker/docker-compose.test.yml run --rm test
+
+services:
+  test:
+    image: mcr.microsoft.com/dotnet/sdk:9.0
+    volumes:
+      - type: bind
+        source: ..
+        target: /app
+      - nuget-cache:/root/.nuget
+    working_dir: /app
+    command: ["dotnet", "test"]
+    environment:
+      - CI=true
+      - DOTNET_CLI_TELEMETRY_OPTOUT=1
+      - DOTNET_NOLOGO=1
+
+  test-coverage:
+    extends: test
+    command: ["dotnet", "test", "--collect:XPlat Code Coverage"]
+
+volumes:
+  nuget-cache:

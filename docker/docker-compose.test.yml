@@ -1,0 +1,25 @@
+# Docker Test Runner
+#
+# Customize this file for your project's test execution needs.
+# See docker/examples/ for language-specific configurations.
+#
+# Usage:
+#   docker compose -f docker/docker-compose.test.yml run --rm test
+#   docker compose -f docker/docker-compose.test.yml run --rm test-coverage
+#   docker compose -f docker/docker-compose.test.yml down
+
+services:
+  test:
+    image: node:20-alpine  # Replace with your stack's image
+    volumes:
+      - type: bind
+        source: ..
+        target: /app
+    working_dir: /app
+    command: ["npm", "test"]  # Replace with your test command
+    environment:
+      - CI=true
+
+  test-coverage:
+    extends: test
+    command: ["npm", "run", "coverage"]  # Replace with your coverage command

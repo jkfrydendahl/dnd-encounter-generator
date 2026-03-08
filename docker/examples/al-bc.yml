@@ -1,0 +1,50 @@
+# AL / Business Central Test Runner
+#
+# BC containers are significantly more complex than standard Docker containers.
+# This file provides a starting point, but you will likely need additional setup.
+#
+# Prerequisites:
+#   - Docker Desktop with Windows container mode enabled
+#   - A valid BC developer license (.bclicense or .flf)
+#   - Sufficient resources (BC containers need 8GB+ RAM)
+#
+# For full setup guidance, see:
+#   - https://github.com/microsoft/navcontainerhelper
+#   - https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-running-container-development
+#
+# Alternative: BcContainerHelper (PowerShell)
+#   Many AL developers use BcContainerHelper instead of raw docker-compose.
+#   It handles license injection, app compilation, and test execution:
+#
+#     Install-Module BcContainerHelper -Force
+#     New-BcContainer -containerName test -imageName mcr.microsoft.com/businesscentral:onprem
+#     Compile-AppInBcContainer -containerName test -appProjectFolder .
+#     Run-TestsInBcContainer -containerName test -testSuite DEFAULT
+#     Remove-BcContainer -containerName test
+#
+# If using BcContainerHelper, update .github/config/test-runner.md with:
+#   | Run all tests | `Run-TestsInBcContainer -containerName test -testSuite DEFAULT` |
+
+services:
+  bc:
+    image: mcr.microsoft.com/businesscentral:onprem-ltsc2022
+    platform: windows
+    environment:
+      - accept_eula=Y
+      - auth=NavUserPassword
+      - username=admin
+      - password=${BC_PASSWORD:-P@ssw0rd}
+      - licensefile=c:\run\my\license.bclicense
+    volumes:
+      - type: bind
+        source: ..
+        target: c:\app
+      - type: bind
+        source: ${BC_LICENSE_PATH:-./.license}
+        target: c:\run\my
+    ports:
+      - "7049:7049"   # Dev services (SOAP/OData)
+      - "7048:7048"   # Dev services (API)
+      - "443:443"     # Web client (HTTPS)
+      - "8080:8080"   # Web client (HTTP)
+    mem_limit: 8g

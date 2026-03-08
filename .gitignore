@@ -1,0 +1,48 @@
+# General .gitignore defaults
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor/IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Environment and secrets
+.env
+.env.local
+.env.*.local
+
+# Dependency directories
+node_modules/
+vendor/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Build outputs
+dist/
+build/
+out/
+bin/
+obj/
+target/
+
+# Logs
+*.log
+logs/
+
+# Package manager lock files (uncomment the ones you DON'T use)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Coverage and test artifacts
+coverage/
+.nyc_output/
+*.lcov

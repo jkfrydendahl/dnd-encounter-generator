@@ -1,0 +1,27 @@
+# Go Test Runner
+#
+# Copy to docker/docker-compose.test.yml and customize.
+#
+# Usage:
+#   docker compose -f docker/docker-compose.test.yml run --rm test
+
+services:
+  test:
+    image: golang:1.23-alpine
+    volumes:
+      - type: bind
+        source: ..
+        target: /app
+      - go-cache:/go
+    working_dir: /app
+    command: ["go", "test", "./..."]
+    environment:
+      - CI=true
+      - CGO_ENABLED=0
+
+  test-coverage:
+    extends: test
+    command: ["go", "test", "-cover", "-coverprofile=coverage.out", "./..."]
+
+volumes:
+  go-cache:

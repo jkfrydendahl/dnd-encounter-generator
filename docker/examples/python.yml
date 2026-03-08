@@ -1,0 +1,28 @@
+# Python Test Runner
+#
+# Copy to docker/docker-compose.test.yml and customize.
+#
+# Usage:
+#   docker compose -f docker/docker-compose.test.yml run --rm test
+
+services:
+  test:
+    image: python:3.12-slim
+    volumes:
+      - type: bind
+        source: ..
+        target: /app
+      - pip-cache:/root/.cache/pip
+    working_dir: /app
+    entrypoint: ["sh", "-c"]
+    command: ["pip install -e '.[test]' && pytest"]
+    environment:
+      - CI=true
+      - PYTHONDONTWRITEBYTECODE=1
+
+  test-coverage:
+    extends: test
+    command: ["pip install -e '.[test]' && pytest --cov=src --cov-report=term"]
+
+volumes:
+  pip-cache:
