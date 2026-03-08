@@ -36,13 +36,14 @@
     ]
   },
   {
-    "id": "solo-boss",
-    "name": "Solo Boss",
+    "id": "elite-boss",
+    "name": "Elite Boss",
     "mode": "boss",
     "weight": 2,
     "slots": [
-      { "id": "boss", "count": 1, "requirement": "Solo" },
-      { "id": "minions", "count": 4, "requirement": "Minion" }
+      { "id": "elite", "count": 1, "requirement": "Elite" },
+      { "id": "minions", "count": 3, "requirement": "Minion" },
+      { "id": "support", "count": 1, "requirement": "Controller|Artillery" }
     ]
   }
 ]
