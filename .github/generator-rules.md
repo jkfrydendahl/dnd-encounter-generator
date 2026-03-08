@@ -102,6 +102,19 @@ Rejected encounters should trigger regeneration until a valid encounter is produ
 
 ---
 
+## Minion Usage
+
+Minions represent supporting enemies rather than primary threats.
+
+Rules:
+
+- Minions should only appear when a template explicitly includes a Minion slot.
+- Minions do not count toward threat category evaluation.
+- Duplicate minions are expected and should not incur duplicate penalties.
+- Minions are commonly used in boss encounters.
+
+---
+
 # Role-Balance Bias
 
 When filling encounter slots, prefer monsters that improve threat diversity.
