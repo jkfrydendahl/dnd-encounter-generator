@@ -1,35 +1,125 @@
-/*
-Core domain types used across the encounter generator.
+export type MonsterRole =
+  | "Brute"
+  | "Soldier"
+  | "Skirmisher"
+  | "Artillery"
+  | "Controller"
+  | "Lurker"
+  | "Minion";
 
-This file defines the shared data structures used by:
+export type MonsterRank = "Standard" | "Elite" | "Solo";
 
-- generator logic
-- UI components
-- seed JSON data
-- diagnostics and evaluation
+export interface Monster {
+  id: string;
+  name: string;
+  level: number;
+  role: MonsterRole;
+  rank: MonsterRank;
+  source: string;
+  page: number;
+  tags: string[];
+  themes?: string[];
+}
 
-These types represent the domain model described in:
+export type TemplateMode = "standard" | "boss" | "any";
 
-.github/implementation-plan.md
-.github/generator-rules.md
+export type SlotRequirement =
+  | "Brute"
+  | "Soldier"
+  | "Skirmisher"
+  | "Artillery"
+  | "Controller"
+  | "Lurker"
+  | "Minion"
+  | "Elite"
+  | "Solo"
+  | "Brute|Soldier"
+  | "Artillery|Lurker"
+  | "Skirmisher|Lurker"
+  | "Skirmisher|Controller"
+  | "Controller|Artillery";
 
-Do not place generator logic in this file.
-This file should only contain type definitions.
+export interface EncounterSlot {
+  id: string;
+  count: number;
+  requirement: SlotRequirement;
+  label?: string;
+}
 
-Key concepts:
+export interface EncounterTemplate {
+  id: string;
+  name: string;
+  mode: TemplateMode;
+  weight: number;
+  slots: EncounterSlot[];
+}
 
-Monster
-Represents a single monster entry in the monster dataset.
+export type DuplicatePolicy = "allow" | "soft-avoid" | "avoid";
 
-EncounterTemplate
-Defines a reusable structure for encounters, consisting of multiple slots.
+export interface GeneratorSettings {
+  partyLevel: number;
+  monsterCount: number;
+  minLevelOffset: number;
+  maxLevelOffset: number;
+  targetDifficultyOffset: number;
+  themeTag?: string;
+  templateMode: string;
+  duplicatePolicy: DuplicatePolicy;
+  includeTerrain: boolean;
+}
 
-EncounterSlot
-A requirement inside a template describing what type of monster should fill the slot.
+export interface GeneratedEncounterEntry {
+  slotId: string;
+  monsterId: string;
+  monsterName: string;
+  role: MonsterRole;
+  rank: MonsterRank;
+  level: number;
+  count: number;
+  source: string;
+  page: number;
+  tags: string[];
+  themes?: string[];
+}
 
-GeneratorSettings
-User-configurable options that affect encounter generation.
+export interface ThreatSummary {
+  pressure: number;
+  damage: number;
+  control: number;
+}
 
-GeneratedEncounter
-The final encounter produced by the generator.
-*/
+export interface EncounterDiagnostics {
+  hasPressure: boolean;
+  hasDamage: boolean;
+  hasControl: boolean;
+  categoryCount: number;
+  warnings: string[];
+  score: number;
+  isValid: boolean;
+}
+
+export interface TerrainAction {
+  name: string;
+  trigger: string;
+  effect: string;
+  recharge?: string;
+}
+
+export interface TerrainSuggestion {
+  id: string;
+  name: string;
+  tags: string[];
+  description: string;
+  actions?: TerrainAction[];
+}
+
+export interface GeneratedEncounter {
+  id: string;
+  name: string;
+  templateId: string;
+  templateName: string;
+  entries: GeneratedEncounterEntry[];
+  threatSummary: ThreatSummary;
+  diagnostics: EncounterDiagnostics;
+  terrainSuggestion?: TerrainSuggestion;
+}

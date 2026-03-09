@@ -1,0 +1,984 @@
+Monster	Level	Role	Source	Page	Rank	Base Role
+White Dragon Wyrmling	1	Elite Brute	Draconomicon 1	187	Elite	Brute
+Dire Rat	1	Brute	Monster Manual 1	219	Standard	Brute
+Fire Beetle	1	Brute	Monster Manual 1	30	Standard	Brute
+Goblin Blackblade	1	Lurker	Monster Manual 1	136	Standard	Lurker
+Goblin Warrior	1	Skirmisher	Monster Manual 1	137	Standard	Skirmisher
+Halfling Slinger	1	Artillery	Monster Manual 1	152	Standard	Artillery
+Kobold Slinger	1	Artillery	Monster Manual 1	168	Standard	Artillery
+Riding Horse	1	Brute	Monster Manual 1	159	Standard	Brute
+Spiretop Drake	1	Skirmisher	Monster Manual 1	90	Standard	Skirmisher
+Stirge	1	Lurker	Monster Manual 1	248	Standard	Lurker
+Stormclaw Scorpion	1	Soldier	Monster Manual 1	229	Standard	Soldier
+Ankheg Broodling	1	Minion Brute	Monster Manual 2	11	Minion	Brute
+Blood Hawk	1	Skirmisher	Monster Manual 2	142	Standard	Skirmisher
+Bullywug Mucker	1	Brute	Monster Manual 2	28	Standard	Brute
+Goblin Acolyte of Maglubiyet	1	Controller	Monster Manual 2	131	Standard	Controller
+Thornskin Frog	1	Brute	Monster Manual 3	90	Standard	Brute
+Xivort Darter	1	Artillery	Monster Manual 3	208	Standard	Artillery
+Xivort Net Caster	1	Controller	Monster Manual 3	209	Standard	Controller
+Xivort Slasher	1	Skirmisher	Monster Manual 3	208	Standard	Skirmisher
+Black Dragon Wyrmling	2	Elite Lurker	Draconomicon 1	179	Elite	Lurker
+Brown Dragon Wyrmling	2	Elite Lurker	Draconomicon 1	181	Elite	Lurker
+Dragonborn Sellsword	2	Skirmisher	Draconomicon 1	214	Standard	Skirmisher
+Greenspawn Sneak	2	Lurker	Draconomicon 1	218	Standard	Lurker
+Hoard Scarab	2	Skirmisher	Draconomicon 1	212	Standard	Skirmisher
+Hobbler Trapmaster	2	Skirmisher	Draconomicon 1	224	Standard	Skirmisher
+Baaz Draconian	2	Soldier	Draconomicon 2	190	Standard	Soldier
+Brass Dragon Wyrmling	2	Elite Artillery	Draconomicon 2	175	Elite	Artillery
+Goblin Cursespewer	2	Artillery	Draconomicon 2	88	Standard	Artillery
+Goblin Sentry	2	Soldier	Draconomicon 2	89	Standard	Soldier
+Clay Scout (Homunculus)	2	Lurker	Monster Manual 1	156	Standard	Lurker
+Elf Archer	2	Artillery	Monster Manual 1	106	Standard	Artillery
+Elf Scout	2	Skirmisher	Monster Manual 1	106	Standard	Skirmisher
+Gnome Skulk	2	Lurker	Monster Manual 1	134	Standard	Lurker
+Goblin Sharpshooter	2	Artillery	Monster Manual 1	137	Standard	Artillery
+Gray Wolf	2	Skirmisher	Monster Manual 1	264	Standard	Skirmisher
+Guard Drake	2	Brute	Monster Manual 1	90	Standard	Brute
+Halfling Thief	2	Skirmisher	Monster Manual 1	152	Standard	Skirmisher
+Human Bandit	2	Skirmisher	Monster Manual 1	162	Standard	Skirmisher
+Hyena	2	Skirmisher	Monster Manual 1	166	Standard	Skirmisher
+Kobold Dragonshield	2	Soldier	Monster Manual 1	168	Standard	Soldier
+Kruthik Young	2	Brute	Monster Manual 1	170	Standard	Brute
+Needlefang Drake Swarm	2	Soldier	Monster Manual 1	90	Standard	Soldier
+Rat Swarm	2	Skirmisher	Monster Manual 1	219	Standard	Skirmisher
+Zombie	2	Brute	Monster Manual 1	274	Standard	Brute
+Bloodthorn Vine	2	Soldier	Monster Manual 2	205	Standard	Soldier
+Bullywug Twitcher	2	Skirmisher	Monster Manual 2	28	Standard	Skirmisher
+Centipede Swarm	2	Brute	Monster Manual 2	33	Standard	Brute
+Dretch (Demon)	2	Brute	Monster Manual 2	54	Standard	Brute
+Hive Warrior (Ant)	2	Skirmisher	Monster Manual 2	12	Standard	Skirmisher
+Poisonscale Magus (Lizardfolk)	2	Artillery	Monster Manual 2	156	Standard	Artillery
+Poisonscale Savage (Lizardfolk)	2	Brute	Monster Manual 2	156	Standard	Brute
+Poisonscale Slitherer (Lizardfolk)	2	Soldier	Monster Manual 2	156	Standard	Soldier
+Stonefist Defender (Homunculus)	2	Skirmisher	Monster Manual 2	143	Standard	Skirmisher
+Ambush Spider	2	Lurker	Monster Manual 3	182	Standard	Lurker
+Blizzard Dragon Wyrmling	2	Controller	Monster Manual 3	65	Standard	Controller
+Cave Fisher Spawn	2	Minion Brute	Monster Manual 3	28	Minion	Brute
+Maw Demon	2	Brute	Monster Manual 3	42	Standard	Brute
+Murklord Frog	2	Skirmisher	Monster Manual 3	91	Standard	Skirmisher
+Sporeback Frog	2	Controller	Monster Manual 3	91	Standard	Controller
+Vilden Destroyer	2	Soldier	Monster Manual 3	206	Standard	Soldier
+Wilden Hunter	2	Lurker	Monster Manual 3	207	Standard	Lurker
+Xivort Shadow Caller	2	Artillery	Monster Manual 3	209	Standard	Artillery
+Abyssal Scavenger	2	Skirmisher	Demonomicon	102	Standard	Skirmisher
+Brown Dragon, Young	3	Solo Lurker	Draconomicon 1	168	Solo	Lurker
+Gray Dragon Wyrmling	3	Elite Soldier	Draconomicon 1	182	Elite	Soldier
+Cobalt Dragon Wyrmling	3	Elite Controller	Draconomicon 2	177	Elite	Controller
+Ferak Draconian	3	Brute	Draconomicon 2	191	Standard	Brute
+Iron Dragon Wyrmling	3	Elite Skirmisher	Draconomicon 2	179	Elite	Skirmisher
+Doppelganger Sneak	3	Skirmisher	Monster Manual 1	71	Standard	Skirmisher
+Gnome Arcanist	3	Controller	Monster Manual 1	134	Standard	Controller
+Goblin Hexer	3	Controller	Monster Manual 1	137	Standard	Controller
+Goblin Skullcleaver	3	Brute	Monster Manual 1	137	Standard	Brute
+Gravehound (Zombie)	3	Brute	Monster Manual 1	274	Standard	Brute
+Hobgoblin Archer (Goblin)	3	Artillery	Monster Manual 1	139	Standard	Artillery
+Hobgoblin Warcaster (Goblin)	3	Controller	Monster Manual 1	140	Standard	Controller
+Human Guard	3	Soldier	Monster Manual 1	162	Standard	Soldier
+Iron Defender (Homunculus)	3	Soldier	Monster Manual 1	156	Standard	Soldier
+Kobold Wyrmpriest	3	Artillery	Monster Manual 1	168	Standard	Artillery
+Ochre Jelly (Ooze)	3	Elite Brute	Monster Manual 1	202	Elite	Brute
+Orc Raider	3	Skirmisher	Monster Manual 1	203	Standard	Skirmisher
+Pseudodragon (Drake)	3	Lurker	Monster Manual 1	91	Standard	Lurker
+Shadowhunter Bat	3	Lurker	Monster Manual 1	27	Standard	Lurker
+Skeleton	3	Soldier	Monster Manual 1	234	Standard	Soldier
+Spitting Drake	3	Artillery	Monster Manual 1	91	Standard	Artillery
+Warhorse	3	Brute	Monster Manual 1	159	Standard	Brute
+Wererat (Lycanthrope)	3	Skirmisher	Monster Manual 1	180	Standard	Skirmisher
+Young White Dragon	3	Solo Brute	Monster Manual 1	84	Solo	Brute
+Ankheg	3	Elite Lurker	Monster Manual 2	11	Elite	Lurker
+Bullywug Croaker	3	Minion Brute	Monster Manual 2	28	Minion	Brute
+Bullywug Mud Lord	3	Artillery	Monster Manual 2	29	Standard	Artillery
+Kenku Ruffian	3	Minion Skirmisher	Monster Manual 2	152	Minion	Skirmisher
+Kenku Warrior	3	Skirmisher	Monster Manual 2	152	Standard	Skirmisher
+Lolthbound Goblin	3	Soldier	Monster Manual 2	131	Standard	Soldier
+Myconid Rotpriest	3	Brute	Monster Manual 2	164	Standard	Brute
+Poisonscale Collector (Lizardfolk)	3	Lurker	Monster Manual 2	156	Standard	Lurker
+Poisonscale Myrmidon (Lizardfolk)	3	Soldier	Monster Manual 2	157	Standard	Soldier
+Cave Fisher Angler	3	Lurker	Monster Manual 3	28	Standard	Lurker
+Cave Fisher Spiker	3	Artillery	Monster Manual 3	29	Standard	Artillery
+Craud Impaler	3	Skirmisher	Monster Manual 3	36	Standard	Skirmisher
+Dread Protector	3	Soldier	Monster Manual 3	74	Standard	Soldier
+Jackalwerc Harrier	3	Minion Soldier	Monster Manual 3	121	Minion	Soldier
+Jackalwere Bravo	3	Brute	Monster Manual 3	120	Standard	Brute
+Skulk Mesmerist	3	Controller	Monster Manual 3	176	Standard	Controller
+Skulk Murderer	3	Lurker	Monster Manual 3	177	Standard	Lurker
+Yeti Hunter	3	Soldier	Monster Manual 3	210	Standard	Soldier
+Mane	3	Minion Brute	Demonomicon	124	Minion	Brute
+Ixitxachitl Demon Ray	3	Skirmisher	Demonomicon	119	Standard	Skirmisher
+Arbalester	4	Artillery	Draconomicon 1	98	Standard	Artillery
+Blazewyrm, Young	4	Elite Brute	Draconomicon 1	191	Elite	Brute
+Blue Dragon Wyrmling	4	Elite Artillery	Draconomicon 1	180	Elite	Artillery
+Brownspawn Marauder	4	Skirmisher	Draconomicon 1	218	Standard	Skirmisher
+Faerie Dragon Flitterwing, Adult	4	Skirmisher	Draconomicon 1	195	Standard	Skirmisher
+Faerie Dragon Windgleam, Adult	4	Lurker	Draconomicon 1	196	Standard	Lurker
+Green Dragon Wyrmling	4	Elite Skirmisher	Draconomicon 1	183	Elite	Skirmisher
+Hobbler Decoy	4	Skirmisher	Draconomicon 1	224	Standard	Skirmisher
+Purple Dragon Wyrmling	4	Elite Controller	Draconomicon 1	184	Elite	Controller
+Stone Harrier	4	Controller	Draconomicon 1	98	Standard	Controller
+Wyrm-Wisp	4	Skirmisher	Draconomicon 1	204	Standard	Skirmisher
+Wyrmwarped Atrocity	4	Brute	Draconomicon 1	225	Standard	Brute
+Brass Dragon, Young	4	Solo Artillery	Draconomicon 2	156	Solo	Artillery
+Chevkos 's Guard	4	Soldier	Draconomicon 2	94	Standard	Soldier
+Chevkos's Cmssbownian	4	Artillery	Draconomicon 2	94	Standard	Artillery
+Cheykos's Lackey	4	Minion Skirmisher	Draconomicon 2	94	Minion	Skirmisher
+Copper Dragon Wyrmling	4	Elite Skirmisher	Draconomicon 2	177	Elite	Skirmisher
+Eh raeslik	4	Solo Lurker	Draconomicon 2	90	Solo	Lurker
+Karmic Draconian	4	Lurker	Draconomicon 2	192	Standard	Lurker
+Mercury Dragon Wyrmling	4	Elite Lurker	Draconomicon 2	180	Elite	Lurker
+Cavern Choker	4	Lurker	Monster Manual 1	42	Standard	Lurker
+Corruption Corpse (Zombie)	4	Artillery	Monster Manual 1	274	Standard	Artillery
+Dark Creeper (Dark One)	4	Skirmisher	Monster Manual 1	49	Standard	Skirmisher
+Deathjump Spider	4	Skirmisher	Monster Manual 1	246	Standard	Skirmisher
+Deathlock Wight	4	Controller	Monster Manual 1	262	Standard	Controller
+Dwarf Bolter	4	Artillery	Monster Manual 1	97	Standard	Artillery
+Ettercap Fang Guard	4	Soldier	Monster Manual 1	107	Standard	Soldier
+Fey Panther	4	Skirmisher	Monster Manual 1	213	Standard	Skirmisher
+Goblin Underboss	4	Elite Controller	Monster Manual 1	138	Elite	Controller
+Greenscale Hunter (Lizardfolk)	4	Skirmisher	Monster Manual 1	178	Standard	Skirmisher
+Human Berserker	4	Brute	Monster Manual 1	163	Standard	Brute
+Human Mage	4	Artillery	Monster Manual 1	163	Standard	Artillery
+Kobold Slyblade	4	Lurker	Monster Manual 1	169	Standard	Lurker
+Kruthik Adult	4	Brute	Monster Manual 1	170	Standard	Brute
+Magma Claw (Magma Beast)	4	Brute	Monster Manual 1	182	Standard	Brute
+Magma Hurler (Magma Beast)	4	Artillery	Monster Manual 1	182	Standard	Artillery
+Orc Berserker	4	Brute	Monster Manual 1	203	Standard	Brute
+Phantom Warrior (Ghost)	4	Soldier	Monster Manual 1	116	Standard	Soldier
+Rotwing Zombie	4	Skirmisher	Monster Manual 1	274	Standard	Skirmisher
+Specter	4	Lurker	Monster Manual 1	244	Standard	Lurker
+Visejaw Crocodile	4	Soldier	Monster Manual 1	45	Standard	Soldier
+Young Black Dragon	4	Solo Lurker	Monster Manual 1	75	Solo	Lurker
+Arbalester (Homunculus)	4	Artillery	Monster Manual 2	143	Standard	Artillery
+Barghest Savager	4	Brute	Monster Manual 2	20	Standard	Brute
+Bloodseeker Drake	4	Soldier	Monster Manual 2	88	Standard	Soldier
+Centipede Scuttler	4	Skirmisher	Monster Manual 2	33	Standard	Skirmisher
+Duergar Guard	4	Soldier	Monster Manual 2	92	Standard	Soldier
+Duergar Scout	4	Lurker	Monster Manual 2	92	Standard	Lurker
+Green Slime (Ooze)	4	Lurker	Monster Manual 2	171	Standard	Lurker
+Kenku Ringleader	4	Soldier	Monster Manual 2	152	Standard	Soldier
+Kenku Sneak	4	Lurker	Monster Manual 2	153	Standard	Lurker
+Krenshar	4	Controller	Monster Manual 2	155	Standard	Controller
+Myconid Guard	4	Soldier	Monster Manual 2	164	Standard	Soldier
+Myconid Sovereign	4	Controller	Monster Manual 2	164	Standard	Controller
+Storm Shard	4	Artillery	Monster Manual 2	34	Standard	Artillery
+Winged Drone (Ant)	4	Skirmisher	Monster Manual 2	12	Standard	Skirmisher
+Witherling	4	Skirmisher	Monster Manual 2	212	Standard	Skirmisher
+Cave Fisher Line Spiker	4	Minion Artillery	Monster Manual 3	29	Minion	Artillery
+Craud Crusher	4	Brute	Monster Manual 3	37	Standard	Brute
+Earthquake Dragon Wyrmling	4	Soldier	Monster Manual 3	69	Standard	Soldier
+Great Ape	4	Skirmisher	Monster Manual 3	10	Standard	Skirmisher
+Hex Knight	4	Soldier	Monster Manual 3	38	Standard	Soldier
+Jackalwere Deceiver	4	Controller	Monster Manual 3	121	Standard	Controller
+Rot Grub Swarm	4	Brute	Monster Manual 3	166	Standard	Brute
+Spiderling	4	Minion Skirmisher	Monster Manual 3	182	Minion	Skirmisher
+Wilden Ancient	4	Artillery	Monster Manual 3	207	Standard	Artillery
+Yeti Howler	4	Controller	Monster Manual 3	211	Standard	Controller
+Myconid Gas Spore	4	Minion Skirmisher	Underdark	151	Minion	Skirmisher
+Dragonkin Sentry	5	Skirmisher	Draconomicon 1	226	Standard	Skirmisher
+Gray Dragon, Young	5	Solo Soldier	Draconomicon 1	172	Solo	Soldier
+Red Dragon Wyrmling	5	Elite Soldier	Draconomicon 1	185	Elite	Soldier
+Wrack Abishai	5	Lurker	Draconomicon 1	210	Standard	Lurker
+Adamantine Dragon Wyrmling	5	Elite Soldier	Draconomicon 2	174	Elite	Soldier
+Cobalt Dragon, Young	5	Solo Controller	Draconomicon 2	161	Solo	Controller
+Dragonkin Channeler (Kobold)	5	Controller	Draconomicon 2	198	Standard	Controller
+Houk Draconian	5	Artillery	Draconomicon 2	191	Standard	Artillery
+Silver Dragon Wyrmling	5	Elite Brute	Draconomicon 2	183	Elite	Brute
+Zealot (Kobold)	5	Lurker	Draconomicon 2	198	Standard	Lurker
+Blazing Skeleton	5	Artillery	Monster Manual 1	234	Standard	Artillery
+Boneshard Skeleton	5	Brute	Monster Manual 1	235	Standard	Brute
+Bugbear Warrior (Goblin)	5	Brute	Monster Manual 1	135	Standard	Brute
+Deathrattle Viper (Snake)	5	Brute	Monster Manual 1	240	Standard	Brute
+Dire Wolf	5	Skirmisher	Monster Manual 1	264	Standard	Skirmisher
+Dwarf Hammerer	5	Soldier	Monster Manual 1	97	Standard	Soldier
+Ettercap Webspinner	5	Controller	Monster Manual 1	107	Standard	Controller
+Fire Bat	5	Skirmisher	Monster Manual 1	27	Standard	Skirmisher
+Gelatinous Cube (Ooze)	5	Elite Brute	Monster Manual 1	202	Elite	Brute
+Greenscale Darter (Lizardfolk)	5	Lurker	Monster Manual 1	178	Standard	Lurker
+Hippogriff (Griffon)	5	Skirmisher	Monster Manual 1	146	Standard	Skirmisher
+Hippogriff Dreadmount	5	Soldier	Monster Manual 1	146	Standard	Soldier
+Hobgoblin Commander	5	Soldier	Monster Manual 1	140	Standard	Soldier
+Orc Eye of Gruumsh	5	Controller	Monster Manual 1	204	Standard	Controller
+Rage Drake	5	Brute	Monster Manual 1	92	Standard	Brute
+Slaad Tadpole	5	Lurker	Monster Manual 1	237	Standard	Lurker
+Tangler Beetle	5	Controller	Monster Manual 1	30	Standard	Controller
+Vine Horror	5	Controller	Monster Manual 1	260	Standard	Controller
+Wight	5	Skirmisher	Monster Manual 1	262	Standard	Skirmisher
+Wraith	5	Lurker	Monster Manual 1	266	Standard	Lurker
+Young Green Dragon	5	Solo Skirmisher	Monster Manual 1	80	Solo	Skirmisher
+Duergar Theurge	5	Controller	Monster Manual 2	93	Standard	Controller
+Eladrin Arcane Archer	5	Artillery	Monster Manual 2	96	Standard	Artillery
+Hive Queen (Ant)	5	Elite Controller	Monster Manual 2	13	Elite	Controller
+Kenku Wing Mage	5	Artillery	Monster Manual 2	153	Standard	Artillery
+Krenshar Blood Slayer	5	Brute	Monster Manual 2	155	Standard	Brute
+Chitine Grunt	5	Minion Brute	Monster Manual 3	31	Minion	Brute
+Chitine Scout	5	Artillery	Monster Manual 3	32	Standard	Artillery
+Chitine Warrior	5	Brute	Monster Manual 3	31	Standard	Brute
+Craud King	5	Soldier	Monster Manual 3	37	Standard	Soldier
+Dread Marauder	5	Skirmisher	Monster Manual 3	75	Standard	Skirmisher
+Fire Lord Cultist	5	Minion Brute	Monster Manual 3	114	Minion	Brute
+Gremlin Deceiver	5	Controller	Monster Manual 3	106	Standard	Controller
+Shadow Bolter	5	Artillery	Monster Manual 3	39	Standard	Artillery
+Silverback Ape	5	Brute	Monster Manual 3	11	Standard	Brute
+Skulk Hunter	5	Soldier	Monster Manual 3	177	Standard	Soldier
+Spring Nymph	5	Controller	Monster Manual 3	151	Standard	Controller
+Yeti Rampager	5	Skirmisher	Monster Manual 3	211	Standard	Skirmisher
+Dark Creeper Necromancer	5	Elite Skirmisher	Underdark	55	Elite	Skirmisher
+Ixitxachitl Priest	5	Controller	Demonomicon	119	Standard	Controller
+Ambush Drake	6	Skirmisher	Draconomicon 1	222	Standard	Skirmisher
+Dragonkin Defender	6	Soldier	Draconomicon 1	226	Standard	Soldier
+Hobbler Trap Savant	6	Controller	Draconomicon 1	224	Standard	Controller
+Pact-Bound Adept	6	Artillery	Draconomicon 1	227	Standard	Artillery
+Purple Dragon, Young	6	Solo Controller	Draconomicon 1	177	Solo	Controller
+Swarmtongue Worm	6	Skirmisher	Draconomicon 1	213	Standard	Skirmisher
+Venomous Abishai	6	Controller	Draconomicon 1	210	Standard	Controller
+Wyrmwarped Scaleshaper	6	Controller	Draconomicon 1	225	Standard	Controller
+Adamaaz Draconian	6	Soldier	Draconomicon 2	189	Standard	Soldier
+Cave Stirge Swarm	6	Brute	Draconomicon 2	104	Standard	Brute
+Chevkos	6	Artillery	Draconomicon 2	96	Standard	Artillery
+Korzinalikur	6	Elite Skirmisher	Draconomicon 2	96	Elite	Skirmisher
+Mercury Dragon, Young	6	Solo Lurker	Draconomicon 2	163	Solo	Lurker
+Orium Dragon Wyrmling	6	Elite Soldier	Draconomicon 2	182	Elite	Soldier
+Wyrmling Vaporous Serpent	6	Minion Brute	Draconomicon 2	182	Minion	Brute
+Blackscale Bruiser (Lizardfolk)	6	Brute	Monster Manual 1	179	Standard	Brute
+Bugbear Strangler (Goblin)	6	Lurker	Monster Manual 1	136	Standard	Lurker
+Cave Bear	6	Elite Brute	Monster Manual 1	29	Elite	Brute
+Chillborn Zombie	6	Soldier	Monster Manual 1	275	Standard	Soldier
+Dire Boar	6	Brute	Monster Manual 1	35	Standard	Brute
+Evistro (Carnage Demon)	6	Brute	Monster Manual 1	54	Standard	Brute
+Greenscale Marsh Mystic	6	Controller	Monster Manual 1	179	Standard	Controller
+Halfling Prowler	6	Lurker	Monster Manual 1	153	Standard	Lurker
+Harpy	6	Controller	Monster Manual 1	154	Standard	Controller
+Iron Cobra (Homunculus)	6	Skirmisher	Monster Manual 1	157	Standard	Skirmisher
+Kruthik Hive Lord	6	Elite Controller	Monster Manual 1	170	Elite	Controller
+Longtooth Hunter (Shifter)	6	Soldier	Monster Manual 1	233	Standard	Soldier
+Mad Wraith	6	Controller	Monster Manual 1	266	Standard	Controller
+Sahuagin Raider	6	Soldier	Monster Manual 1	224	Standard	Soldier
+Shadar-Kai Chainfighter	6	Skirmisher	Monster Manual 1	230	Standard	Skirmisher
+Shadar-Kai Gloomblade	6	Lurker	Monster Manual 1	230	Standard	Lurker
+Shadow Hound	6	Skirmisher	Monster Manual 1	160	Standard	Skirmisher
+Tiefling Heretic	6	Artillery	Monster Manual 1	250	Standard	Artillery
+Troglodyte Mauler	6	Soldier	Monster Manual 1	252	Standard	Soldier
+Warforged Captain	6	Soldier	Monster Manual 1	261	Standard	Soldier
+Young Blue Dragon	6	Solo Artillery	Monster Manual 1	78	Solo	Artillery
+Bone Crown Behemoth	6	Soldier	Monster Manual 3	20	Standard	Soldier
+Chitine Marauder	6	Skirmisher	Monster Manual 3	32	Standard	Skirmisher
+Chitine Web Crafter	6	Controller	Monster Manual 3	33	Standard	Controller
+Dread Archer	6	Artillery	Monster Manual 3	75	Standard	Artillery
+Ghast	6	Brute	Monster Manual 3	95	Standard	Brute
+Servant of the Fire Lord	6	Skirmisher	Monster Manual 3	115	Standard	Skirmisher
+Shard mind Warseeker	6	Soldier	Monster Manual 3	174	Standard	Soldier
+Thri-Kreen Ambusher	6	Lurker	Monster Manual 3	192	Standard	Lurker
+Rutterkin Foot Soldier	6	Soldier	Demonomicon	141	Standard	Soldier
+Dragonborn Exemplar of Tiamat	7	Elite Soldier	Draconomicon 1	214	Elite	Soldier
+Hoard Scarab Larva Swarm	7	Lurker	Draconomicon 1	212	Standard	Lurker
+Storm Abishai	7	Artillery	Draconomicon 1	211	Standard	Artillery
+Bronze Dragon, Young	7	Solo Brute	Draconomicon 2	159	Solo	Brute
+Gold Dragon Wyrmling	7	Elite Controller	Draconomicon 2	179	Elite	Controller
+Bloodweb Spider Swarm	7	Soldier	Monster Manual 1	246	Standard	Soldier
+Cacklefiend Hyena	7	Brute	Monster Manual 1	166	Standard	Brute
+Carrion Crawler	7	Controller	Monster Manual 1	40	Standard	Controller
+Crimson Acolyte (Orcus)	7	Skirmisher	Monster Manual 1	210	Standard	Skirmisher
+Dire Stirge	7	Lurker	Monster Manual 1	248	Standard	Lurker
+Eladrin Fey Knight	7	Soldier	Monster Manual 1	102	Standard	Soldier
+Grick	7	Brute	Monster Manual 1	145	Standard	Brute
+Griffon	7	Brute	Monster Manual 1	147	Standard	Brute
+Howling Hag	7	Controller	Monster Manual 1	150	Standard	Controller
+Orc Bloodrager	7	Elite Brute	Monster Manual 1	204	Elite	Brute
+Otyugh	7	Soldier	Monster Manual 1	211	Standard	Soldier
+Razorclaw Stalker (Shifter)	7	Skirmisher	Monster Manual 1	233	Standard	Skirmisher
+Satyr Rake	7	Skirmisher	Monster Manual 1	228	Standard	Skirmisher
+Shadar-Kai Witch	7	Controller	Monster Manual 1	231	Standard	Controller
+Tiefling Darkblade	7	Lurker	Monster Manual 1	250	Standard	Lurker
+Troglodyte Impaler	7	Artillery	Monster Manual 1	252	Standard	Artillery
+Vine Horror Spellfiend	7	Artillery	Monster Manual 1	260	Standard	Artillery
+Young Red Dragon	7	Solo Soldier	Monster Manual 1	82	Solo	Soldier
+Fire Temple Elect	7	Minion Skirmisher	Monster Manual 3	115	Minion	Skirmisher
+Foulspawn Wretch	7	Minion Skirmisher	Monster Manual 3	88	Minion	Skirmisher
+Gremlin Skulker	7	Lurker	Monster Manual 3	107	Standard	Lurker
+Hyena Spirit	7	Minion Soldier	Monster Manual 3	105	Minion	Soldier
+Ironstone Gargoyle	7	Skirmisher	Monster Manual 3	92	Standard	Skirmisher
+Skinwing Behemoth	7	Skirmisher	Monster Manual 3	21	Standard	Skirmisher
+Thri-Kreen Scout	7	Skirmisher	Monster Manual 3	193	Standard	Skirmisher
+Ustilagor	7	Lurker	Monster Manual 3	118	Standard	Lurker
+Young Blizzard Dragon	7	Elite Controller	Monster Manual 3	66	Elite	Controller
+Ambush Drake Packleader	8	Brute	Draconomicon 1	222	Standard	Brute
+Inferno Abishai	8	Elite Soldier	Draconomicon 1	211	Elite	Soldier
+Onion Dragon, Young	8	Solo Soldier	Draconomicon 2	170	Solo	Soldier
+Vaporous Serpent, Young	8	Minion Brute	Draconomicon 2	170	Minion	Brute
+Barlgura (Demon)	8	Brute	Monster Manual 1	53	Standard	Brute
+Cambion Hellsword	8	Brute	Monster Manual 1	39	Standard	Brute
+Doppelganger Assassin	8	Lurker	Monster Manual 1	71	Standard	Lurker
+Eladrin Twilight Incanter	8	Controller	Monster Manual 1	102	Standard	Controller
+Foulspawn Grue	8	Controller	Monster Manual 1	112	Standard	Controller
+Foulspawn Mangler	8	Skirmisher	Monster Manual 1	112	Standard	Skirmisher
+Galeb Duhr Earthbreaker	8	Artillery	Monster Manual 1	114	Standard	Artillery
+Hobgoblin Hand of Bane	8	Elite Soldier	Monster Manual 1	140	Elite	Soldier
+Mummy Guardian	8	Brute	Monster Manual 1	192	Standard	Brute
+Ogre Savage	8	Brute	Monster Manual 1	199	Standard	Brute
+Oni Night Haunter	8	Elite Controller	Monster Manual 1	200	Elite	Controller
+Orc Chieftain	8	Elite Brute	Monster Manual 1	204	Elite	Brute
+Owlbear	8	Elite Brute	Monster Manual 1	212	Elite	Brute
+Rot Scarab Swarm (Beetle)	8	Soldier	Monster Manual 1	30	Standard	Soldier
+Sahuagin Priest	8	Artillery	Monster Manual 1	224	Standard	Artillery
+Satyr Piper	8	Controller	Monster Manual 1	228	Standard	Controller
+Shadar-Kai Warrior	8	Soldier	Monster Manual 1	231	Standard	Soldier
+Snaketongue Warrior (Yuan-Ti)	8	Brute	Monster Manual 1	272	Standard	Brute
+Trap Haunt (Ghost)	8	Lurker	Monster Manual 1	116	Standard	Lurker
+Troglodyte Curse Chanter	8	Controller	Monster Manual 1	252	Standard	Controller
+Werewolf (Lycanthrope)	8	Brute	Monster Manual 1	181	Standard	Brute
+Zombie Hulk	8	Brute	Monster Manual 1	275	Standard	Brute
+Autumn Nymph	8	Skirmisher	Monster Manual 3	151	Standard	Skirmisher
+Choldrith	8	Controller	Monster Manual 3	33	Standard	Controller
+Earth Cultist	8	Minion Controller	Monster Manual 3	163	Minion	Controller
+Fire Temple Champion	8	Soldier	Monster Manual 3	115	Standard	Soldier
+Green Arcanian	8	Artillery	Monster Manual 3	16	Standard	Artillery
+Homstone Gargoyle	8	Brute	Monster Manual 3	93	Standard	Brute
+Object Mimic	8	Lurker	Monster Manual 3	134	Standard	Lurker
+Ogre Cave Hunter	8	Lurker	Monster Manual 3	158	Standard	Lurker
+Rot Grub Zombie	8	Skirmisher	Monster Manual 3	167	Standard	Skirmisher
+Runic Gargoyle	8	Soldier	Monster Manual 3	93	Standard	Soldier
+Shard mind Dominator	8	Controller	Monster Manual 3	175	Standard	Controller
+Thri-Kreen Desert Talker	8	Controller	Monster Manual 3	193	Standard	Controller
+Demon Spawn Adept	8	Artillery	Demonomicon	110	Standard	Artillery
+Wendigo Manhunter	8	Lurker	Demonomicon	152	Standard	Lurker
+Lesser Fire Demon	8	Skirmisher	Demonomicon	113	Standard	Skirmisher
+Guardian Demon Abomination	8	Soldier	Demonomicon	114	Standard	Soldier
+Bluespawn Stormlizard	9	Brute	Draconomicon 1	219	Standard	Brute
+Winged Putrescence	9	Elite Brute	Draconomicon 1	205	Elite	Brute
+Dragon Wynoling	9	Elite Skirmisher	Draconomicon 2	181	Elite	Skirmisher
+Vaporous Serpent	9	Minion Brute	Draconomicon 2	106	Minion	Brute
+Vulture Drake	9	Brute	Draconomicon 2	194	Standard	Brute
+Wyringuard Scout (Kobold)	9	Artillery	Draconomicon 2	200	Standard	Artillery
+Zanathakla	9	Solo Soldier	Draconomicon 2	106	Solo	Soldier
+Adult White Dragon	9	Solo Brute	Monster Manual 1	85	Solo	Brute
+Battle Wight	9	Soldier	Monster Manual 1	262	Standard	Soldier
+Bloodfire Harpy	9	Soldier	Monster Manual 1	154	Standard	Soldier
+Bloodspike Behemoth	9	Brute	Monster Manual 1	31	Standard	Brute
+Bulette	9	Elite Skirmisher	Monster Manual 1	38	Elite	Skirmisher
+Crushgrip Constrictor (Snake)	9	Soldier	Monster Manual 1	240	Standard	Soldier
+Deathpriest of Orcus (Orcus)	9	Controller	Monster Manual 1	210	Standard	Controller
+Destrachan	9	Artillery	Monster Manual 1	59	Standard	Artillery
+Displacer Beast	9	Skirmisher	Monster Manual 1	70	Standard	Skirmisher
+Dryad	9	Skirmisher	Monster Manual 1	96	Standard	Skirmisher
+Flame Snake	9	Artillery	Monster Manual 1	240	Standard	Artillery
+Foulspawn Berserker	9	Soldier	Monster Manual 1	112	Standard	Soldier
+Gargoyle	9	Lurker	Monster Manual 1	115	Standard	Lurker
+Grick Alpha	9	Brute	Monster Manual 1	145	Standard	Brute
+Quickling Runner	9	Skirmisher	Monster Manual 1	215	Standard	Skirmisher
+Shambling Mound	9	Brute	Monster Manual 1	232	Standard	Brute
+Snaketongue Assassin (Yuan-Ti)	9	Lurker	Monster Manual 1	273	Standard	Lurker
+Unicorn	9	Skirmisher	Monster Manual 1	257	Standard	Skirmisher
+Worg	9	Brute	Monster Manual 1	265	Standard	Brute
+Flux Slaad	9	Skirmisher	Monster Manual 2	184	Standard	Skirmisher
+Gnome Wolverine	9	Skirmisher	Monster Manual 2	129	Standard	Skirmisher
+Goliath Guardian	9	Soldier	Monster Manual 2	136	Standard	Soldier
+Human Dire Beast Hunter	9	Artillery	Monster Manual 2	145	Standard	Artillery
+Human Pirate	9	Skirmisher	Monster Manual 2	148	Standard	Skirmisher
+Troglodyte Deepscourge	9	Artillery	Monster Manual 2	200	Standard	Artillery
+Troglodyte Temple Champion	9	Soldier	Monster Manual 2	201	Standard	Soldier
+Witherling Rabble	9	Minion Skirmisher	Monster Manual 2	213	Minion	Skirmisher
+Xorn	9	Skirmisher	Monster Manual 2	215	Standard	Skirmisher
+Young Gold Dragon	9	Solo Controller	Monster Manual 2	81	Solo	Controller
+Cambion Wrath born	9	Skirmisher	Monster Manual 3	24	Standard	Skirmisher
+Fist of the Stone Tyrant	9	Soldier	Monster Manual 3	163	Standard	Soldier
+Howler Dread Hound	9	Minion Controller	Monster Manual 3	110	Minion	Controller
+Meenlock S	9	Controller	Monster Manual 3	132	Standard	Controller
+Nagpa Corruptor	9	Controller	Monster Manual 3	142	Standard	Controller
+Ogre Ironclad	9	Soldier	Monster Manual 3	158	Standard	Soldier
+Spirehorn Behemoth	9	Elite Brute	Monster Manual 3	21	Elite	Brute
+Verbeeg Rowdy	9	Skirmisher	Monster Manual 3	200	Standard	Skirmisher
+Young Earthquake Dragon	9	Elite Soldier	Monster Manual 3	69	Elite	Soldier
+Incubus	9	Lurker	Demonomicon	118	Standard	Lurker
+Brown Dragon, Adult	10	Solo Lurker	Draconomicon 1	170	Solo	Lurker
+Razcoreth	10	Solo Skirmisher	Draconomicon 1	116	Solo	Skirmisher
+Squamous Maw	10	Elite Soldier	Draconomicon 1	231	Elite	Soldier
+Three-Tooth (Kobold)	10	Elite Artillery	Draconomicon 2	201	Elite	Artillery
+Berbalang	10	Solo Skirmisher	Monster Manual 1	34	Solo	Skirmisher
+Blade Spider	10	Brute	Monster Manual 1	246	Standard	Brute
+Bog Hag	10	Skirmisher	Monster Manual 1	150	Standard	Skirmisher
+Dark Stalker (Dark One)	10	Lurker	Monster Manual 1	49	Standard	Lurker
+Dragonborn Gladiator	10	Soldier	Monster Manual 1	86	Standard	Soldier
+Ettin Marauder	10	Elite Soldier	Monster Manual 1	108	Elite	Soldier
+Feymire Crocodile	10	Elite Soldier	Monster Manual 1	45	Elite	Soldier
+Gibbering Mouther	10	Controller	Monster Manual 1	126	Standard	Controller
+Magma Strider (Magma Beast)	10	Skirmisher	Monster Manual 1	182	Standard	Skirmisher
+Manticore	10	Elite Skirmisher	Monster Manual 1	184	Elite	Skirmisher
+Medusa Archer	10	Elite Controller	Monster Manual 1	186	Elite	Controller
+Minotaur Warrior	10	Soldier	Monster Manual 1	190	Standard	Soldier
+Oni Mage	10	Elite Lurker	Monster Manual 1	201	Elite	Lurker
+Sahuagin Baron	10	Elite Brute	Monster Manual 1	224	Elite	Brute
+Venom-eye Basilisk	10	Artillery	Monster Manual 1	26	Standard	Artillery
+Wyvern	10	Skirmisher	Monster Manual 1	268	Standard	Skirmisher
+Fleshtearer Shark	10	Brute	Monster Manual 2	182	Standard	Brute
+Genasi Stoneshield	10	Soldier	Monster Manual 2	117	Standard	Soldier
+Human Pirate Captain	10	Soldier	Monster Manual 2	148	Standard	Soldier
+Neogi Slaver	10	Controller	Monster Manual 2	166	Standard	Controller
+Neogi Spawn Swarm	10	Brute	Monster Manual 2	166	Standard	Brute
+Scytheclaw Drake	10	Skirmisher	Monster Manual 2	88	Standard	Skirmisher
+Tomb Spider Broodswarm	10	Lurker	Monster Manual 2	191	Standard	Lurker
+Awakened Rot Grub Swarm	10	Brute	Monster Manual 3	167	Standard	Brute
+Blue Arcanian	10	Controller	Monster Manual 3	17	Standard	Controller
+Catoblepas Harbinger	10	Elite Controller	Monster Manual 3	27	Elite	Controller
+Chained Cambion	10	Controller	Monster Manual 3	25	Standard	Controller
+Foulspawn Mockery	10	Controller	Monster Manual 3	89	Standard	Controller
+Scarecrow Shambler	10	Minion Brute	Monster Manual 3	168	Minion	Brute
+Sea Kraken	10	Solo Soldier	Monster Manual 3	122	Solo	Soldier
+Shardmind Executioner	10	Lurker	Monster Manual 3	175	Standard	Lurker
+Wood Nymph	10	Soldier	Monster Manual 3	152	Standard	Soldier
+Young Volcanic Dragon	10	Elite Brute	Monster Manual 3	72	Elite	Brute
+Jovoc	10	Skirmisher	Demonomicon	121	Standard	Skirmisher
+Arachnid Horror	10	Minion Soldier	Demonomicon	109	Minion	Soldier
+Scion of Zuggtmoy Overgrowth	10	Soldier	Demonomicon	142	Standard	Soldier
+Frostforged Wyrm, Adult	11	Brute	Draconomicon 1	188	Standard	Brute
+Rotclaw	11	Brute	Draconomicon 1	205	Standard	Brute
+Stoneborn Dracolich	11	Solo Soldier	Draconomicon 1	201	Solo	Soldier
+Adult Black Dragon	11	Solo Lurker	Monster Manual 1	75	Solo	Lurker
+Banshrae Dartswarmer	11	Artillery	Monster Manual 1	25	Standard	Artillery
+Dire Bear	11	Elite Brute	Monster Manual 1	29	Elite	Brute
+Drow Warrior	11	Lurker	Monster Manual 1	94	Standard	Lurker
+Foulspawn Seer	11	Artillery	Monster Manual 1	113	Standard	Artillery
+Galeb Duhr Rockcaller	11	Controller	Monster Manual 1	114	Standard	Controller
+Githzerai Cenobite	11	Soldier	Monster Manual 1	130	Standard	Soldier
+Grimlock Ambusher	11	Skirmisher	Monster Manual 1	148	Standard	Skirmisher
+Iron Gorgon	11	Soldier	Monster Manual 1	143	Standard	Soldier
+Mezzodemon (Demon)	11	Soldier	Monster Manual 1	58	Standard	Soldier
+Ogre Warhulk	11	Elite Brute	Monster Manual 1	199	Elite	Brute
+Snaketongue Celebrant	11	Controller	Monster Manual 1	273	Standard	Controller
+Spirit Devourer	11	Elite Soldier	Monster Manual 1	68	Elite	Soldier
+Stormrage Shambler	11	Elite Controller	Monster Manual 1	232	Elite	Controller
+Vampire Lord	11	Elite Lurker	Monster Manual 1	258	Elite	Lurker
+Adult Iron Dragon	11	Solo Lurker	Monster Manual 2	84	Solo	Lurker
+Deva Knight-Errant	11	Soldier	Monster Manual 2	62	Standard	Soldier
+Direguard Assassin	11	Skirmisher	Monster Manual 2	70	Standard	Skirmisher
+Duergar Fleshtearer	11	Lurker	Monster Manual 2	93	Standard	Lurker
+Eladrin Bladesinger	11	Skirmisher	Monster Manual 2	97	Standard	Skirmisher
+Firbolg Hounder	11	Soldier	Monster Manual 2	108	Standard	Soldier
+Genasi Fireblade	11	Brute	Monster Manual 2	116	Standard	Brute
+Slaughterstone Slicer	11	Elite Brute	Monster Manual 2	187	Elite	Brute
+Tomb Spider	11	Elite Controller	Monster Manual 2	190	Elite	Controller
+Weretiger (Lycanthrope)	11	Elite Skirmisher	Monster Manual 2	159	Elite	Skirmisher
+Meenlock Corruptor	11	Lurker	Monster Manual 3	133	Standard	Lurker
+Ogre Storm Shaman	11	Controller	Monster Manual 3	159	Standard	Controller
+Pact Hag	11	Controller	Monster Manual 3	108	Standard	Controller
+Kuo-Toa Warder	11	Minion Artillery	Underdark	148	Minion	Artillery
+Scion of Zuggtmoy Infector	11	Artillery	Demonomicon	143	Standard	Artillery
+Bulezau	11	Brute	Demonomicon	107	Standard	Brute
+Scion of Juiblex Sludge Dredge	11	Minion Brute	Demonomicon	149	Minion	Brute
+Blight Dragon, Adult	12	Elite Controller	Draconomicon 1	198	Elite	Controller
+Gray Dragon, Adult	12	Solo Soldier	Draconomicon 1	174	Solo	Soldier
+Cobalt Dragon, Adult	12	Solo Controller	Draconomicon 2	162	Solo	Controller
+Liondrake	12	Skirmisher	Draconomicon 2	194	Standard	Skirmisher
+Adult Green Dragon	12	Solo Controller	Monster Manual 1	80	Solo	Controller
+Banshrae Warrior	12	Skirmisher	Monster Manual 1	25	Standard	Skirmisher
+Battle Wight Commander	12	Soldier	Monster Manual 1	262	Standard	Soldier
+Dusk Unicorn	12	Elite Controller	Monster Manual 1	257	Elite	Controller
+Ettin Spirit-Talker	12	Elite Controller	Monster Manual 1	108	Elite	Controller
+Fen Hydra	12	Solo Brute	Monster Manual 1	164	Solo	Brute
+Feygrove Choker	12	Lurker	Monster Manual 1	42	Standard	Lurker
+Fire Archon Emberguard	12	Brute	Monster Manual 1	18	Standard	Brute
+Flesh Golem	12	Elite Brute	Monster Manual 1	142	Elite	Brute
+Foulspawn Hulk	12	Brute	Monster Manual 1	113	Standard	Brute
+Githyanki Warrior	12	Soldier	Monster Manual 1	128	Standard	Soldier
+Guardian Naga	12	Elite Artillery	Monster Manual 1	194	Elite	Artillery
+Kuo-Toa Marauder	12	Skirmisher	Monster Manual 1	172	Standard	Skirmisher
+Lamia	12	Elite Controller	Monster Manual 1	174	Elite	Controller
+Redspawn Firebelcher	12	Artillery	Monster Manual 1	88	Standard	Artillery
+Stirge Swarm	12	Brute	Monster Manual 1	248	Standard	Brute
+Stone-eye Basilisk	12	Soldier	Monster Manual 1	26	Standard	Soldier
+Umber Hulk	12	Elite Soldier	Monster Manual 1	256	Elite	Soldier
+Viscera Devourer	12	Controller	Monster Manual 1	68	Standard	Controller
+Wailing Ghost (Banshee)	12	Controller	Monster Manual 1	117	Standard	Controller
+Bone Golem	12	Elite Brute	Monster Manual 2	133	Elite	Brute
+Centaur Hunter	12	Artillery	Monster Manual 2	30	Standard	Artillery
+Centaur Ravager	12	Brute	Monster Manual 2	30	Standard	Brute
+Duergar Hellcaller	12	Artillery	Monster Manual 2	94	Standard	Artillery
+Firbolg Hunter	12	Skirmisher	Monster Manual 2	108	Standard	Skirmisher
+Lolthbound Goblin Slave	12	Minion Skirmisher	Monster Manual 2	131	Minion	Skirmisher
+Needle Demon	12	Controller	Monster Manual 2	56	Standard	Controller
+Oni Overlord	12	Elite Brute	Monster Manual 2	170	Elite	Brute
+Phoelarch Mage	12	Elite Artillery	Monster Manual 2	174	Elite	Artillery
+Phoelarch Warrior	12	Elite Skirmisher	Monster Manual 2	174	Elite	Skirmisher
+Phoera (Phoelarch)	12	Elite Skirmisher	Monster Manual 2	175	Elite	Skirmisher
+Adult Blizzard Dragon	12	Elite Controller	Monster Manual 3	66	Elite	Controller
+Cloaker Ambusher	12	Lurker	Monster Manual 3	34	Standard	Lurker
+Foulspawn Warpcaller	12	Controller	Monster Manual 3	89	Standard	Controller
+Mossling Creeper	12	Minion Skirmisher	Monster Manual 3	156	Minion	Skirmisher
+Mossling Grower	12	Minion Controller	Monster Manual 3	157	Minion	Controller
+Mossling Hurler	12	Minion Artillery	Monster Manual 3	156	Minion	Artillery
+MosslingGuardian	12	Minion Soldier	Monster Manual 3	155	Minion	Soldier
+Norker tone Shield	12	Soldier	Monster Manual 3	148	Standard	Soldier
+Oblivion Moss Mindmaster	12	Elite Controller	Monster Manual 3	155	Elite	Controller
+Pale Bloodflend	12	Brute	Monster Manual 3	140	Standard	Brute
+Su Alpha	12	Brute	Monster Manual 3	189	Standard	Brute
+Kuo-Toa Spearflend	12	Brute	Underdark	148	Standard	Brute
+Scion of Zuggtmoy Spore Lord	12	Skirmisher	Demonomicon	143	Standard	Skirmisher
+Dregchogmon	12	Elite Soldier	Demonomicon	111	Elite	Soldier
+Spawn of Juiblex Ooze Horror	12	Soldier	Demonomicon	148	Standard	Soldier
+Tomb Demon Constrictor	12	Soldier	Demonomicon	150	Standard	Soldier
+Greenspawn Razorfiend	13	Elite Skirmisher	Draconomicon 1	219	Elite	Skirmisher
+Pact Dragon, Adult	13	Skirmisher	Draconomicon 1	191	Standard	Skirmisher
+Purple Dragon, Adult	13	Solo Controller	Draconomicon 1	177	Solo	Controller
+Swarmtongue Hydra	13	Elite Skirmisher	Draconomicon 1	213	Elite	Skirmisher
+Mercury Dragon, Adult	13	Solo Lurker	Draconomicon 2	164	Solo	Lurker
+Orium Dragon, Adult	13	Solo Soldier	Draconomicon 2	170	Solo	Soldier
+Priest	13	Artillery	Draconomicon 2	120	Standard	Artillery
+Sand Knives Bandit	13	Minion Soldier	Draconomicon 2	203	Minion	Soldier
+Vaporous Serpent, Adult	13	Minion Brute	Draconomicon 2	170	Minion	Brute
+Adult Blue Dragon	13	Solo Artillery	Monster Manual 1	78	Solo	Artillery
+Balhannoth	13	Elite Lurker	Monster Manual 1	24	Elite	Lurker
+Beholder Eye of Flame	13	Elite Artillery	Monster Manual 1	32	Elite	Artillery
+Briar Witch Dryad	13	Elite Controller	Monster Manual 1	96	Elite	Controller
+Displacer Beast Packlord	13	Elite Skirmisher	Monster Manual 1	70	Elite	Skirmisher
+Dragonborn Raider	13	Skirmisher	Monster Manual 1	86	Standard	Skirmisher
+Drow Arachnomancer	13	Artillery	Monster Manual 1	94	Standard	Artillery
+Drow Blademaster	13	Elite Skirmisher	Monster Manual 1	94	Elite	Skirmisher
+Eidolon	13	Controller	Monster Manual 1	101	Standard	Controller
+Githyanki Mindslicer	13	Artillery	Monster Manual 1	128	Standard	Artillery
+Githzerai Zerth	13	Elite Controller	Monster Manual 1	130	Elite	Controller
+Gray Slaad (Rift Slaad)	13	Skirmisher	Monster Manual 1	238	Standard	Skirmisher
+Grimlock Berserker	13	Brute	Monster Manual 1	148	Standard	Brute
+Hellstinger Scorpion	13	Soldier	Monster Manual 1	229	Standard	Soldier
+Helmed Horror	13	Soldier	Monster Manual 1	155	Standard	Soldier
+Hook Horror	13	Soldier	Monster Manual 1	158	Standard	Soldier
+Medusa Warrior	13	Elite Soldier	Monster Manual 1	186	Elite	Soldier
+Minotaur Cabalist	13	Controller	Monster Manual 1	190	Standard	Controller
+Mummy Lord	13	Elite Controller	Monster Manual 1	192	Elite	Controller
+Nightmare	13	Skirmisher	Monster Manual 1	196	Standard	Skirmisher
+Vrock (Demon)	13	Skirmisher	Monster Manual 1	58	Standard	Skirmisher
+Yuan-Ti Malison Sharp-Eye	13	Artillery	Monster Manual 1	269	Standard	Artillery
+Adult Copper Dragon	13	Solo Skirmisher	Monster Manual 2	78	Solo	Skirmisher
+Centaur Mystic	13	Controller	Monster Manual 2	30	Standard	Controller
+Drakkoth Ambusher	13	Skirmisher	Monster Manual 2	90	Standard	Skirmisher
+Duergar Blackguard	13	Elite Soldier	Monster Manual 2	94	Elite	Soldier
+Ghost Legionnaire	13	Soldier	Monster Manual 2	119	Standard	Soldier
+Werewolf Lord (Lycanthrope)	13	Elite Brute	Monster Manual 2	160	Elite	Brute
+Derro Warrior	13	Artillery	Monster Manual 3	49	Standard	Artillery
+Green Slaad Madjack	13	Elite Controller	The Plane Below	142	Elite	Controller
+Gnome Caravan Guard	13	Soldier	Underdark	142	Standard	Soldier
+Blood Demon	13	Brute	Demonomicon	105	Standard	Brute
+Malgodeemon Thug	13	Brute	Demonomicon	125	Standard	Brute
+Battle Dragon, Adult	14	Elite Soldier	Draconomicon 1	190	Elite	Soldier
+Razortalon	14	Soldier	Draconomicon 1	207	Standard	Soldier
+Bronze Dragon, Adult	14	Solo Brute	Draconomicon 2	159	Solo	Brute
+Ilvokula	14	Elite Brute	Draconomicon 2	120	Elite	Brute
+Vanathia	14	Solo Soldier	Draconomicon 2	116	Solo	Soldier
+War Shark	14	Skirmisher	Draconomicon 2	121	Standard	Skirmisher
+Xyplinmens	14	Solo Brute	Draconomicon 2	122	Solo	Brute
+Boneclaw	14	Soldier	Monster Manual 1	37	Standard	Soldier
+Cyclops Impaler	14	Artillery	Monster Manual 1	46	Standard	Artillery
+Cyclops Rambler	14	Skirmisher	Monster Manual 1	47	Standard	Skirmisher
+Demonweb Terror (Spider)	14	Elite Controller	Monster Manual 1	247	Elite	Controller
+Drider Fanglord	14	Brute	Monster Manual 1	93	Standard	Brute
+Drider Shadowspinner	14	Skirmisher	Monster Manual 1	93	Standard	Skirmisher
+Githzerai Mindmage	14	Artillery	Monster Manual 1	131	Standard	Artillery
+Kuo-Toa Harpooner	14	Soldier	Monster Manual 1	172	Standard	Soldier
+Lich, Human Wizard	14	Elite Controller	Monster Manual 1	176	Elite	Controller
+Mind Flayer Infiltrator	14	Lurker	Monster Manual 1	188	Standard	Lurker
+Night Hag	14	Lurker	Monster Manual 1	151	Standard	Lurker
+Quickling Zephyr	14	Lurker	Monster Manual 1	215	Standard	Lurker
+Roc	14	Elite Skirmisher	Monster Manual 1	220	Elite	Skirmisher
+Roper	14	Elite Controller	Monster Manual 1	222	Elite	Controller
+Salamander Lancer	14	Brute	Monster Manual 1	226	Standard	Brute
+Shield Guardian	14	Soldier	Monster Manual 1	149	Standard	Soldier
+Warthorn Battlebriar	14	Controller	Monster Manual 1	28	Standard	Controller
+Winterclaw Owlbear	14	Elite Controller	Monster Manual 1	212	Elite	Controller
+Yuan-Ti Abomination	14	Soldier	Monster Manual 1	270	Standard	Soldier
+Adult Adamantine Dragon	14	Solo Soldier	Monster Manual 2	75	Solo	Soldier
+Behir	14	Solo Soldier	Monster Manual 2	22	Solo	Soldier
+Beholder Eye of Frost	14	Elite Artillery	Monster Manual 2	24	Elite	Artillery
+Cyclops Crusher	14	Brute	Monster Manual 2	40	Standard	Brute
+Deva Zealot	14	Skirmisher	Monster Manual 2	62	Standard	Skirmisher
+Duergar Blasphemer	14	Controller	Monster Manual 2	94	Standard	Controller
+Earth Archon Ground Rager	14	Controller	Monster Manual 2	14	Standard	Controller
+Firbolg Moon Seer	14	Controller	Monster Manual 2	109	Standard	Controller
+Human Gladiator	14	Elite Soldier	Monster Manual 2	145	Elite	Soldier
+Shadar-Kai Dawnkiller	14	Lurker	Monster Manual 2	180	Standard	Lurker
+Shadar-Kai Gloom Lord	14	Artillery	Monster Manual 2	180	Standard	Artillery
+Stone Giant	14	Soldier	Monster Manual 2	124	Standard	Soldier
+Winter Wolf	14	Skirmisher	Monster Manual 2	210	Standard	Skirmisher
+Banesworn 'Var Priest	14	Controller (L)	The Plane Above	134	Standard	Controller (L)
+Blue Slaad Digester	14	Elite Soldier	The Plane Below	143	Elite	Soldier
+Iron Archon Interceptor	14	Soldier	The Plane Below	130	Standard	Soldier
+Mud Archon Skulker	14	Lurker	The Plane Below	131	Standard	Lurker
+Grimlock Bodyguard	14	Soldier	Underdark	144	Standard	Soldier
+Spawn of Juiblex Plague Hurler	14	Artillery	Demonomicon	149	Standard	Artillery
+Piscodemon	14	Controller	Demonomicon	136	Standard	Controller
+Wendigo Soulcatcher	14	Controller	Demonomicon	153	Standard	Controller
+Dragonborn Fire Adept	15	Controller	Draconomicon 1	215	Standard	Controller
+Grayspawn Fleshreaver	15	Soldier	Draconomicon 1	220	Standard	Soldier
+Mirage Dragon, Adult	15	Solo Controller	Draconomicon 1	196	Solo	Controller
+Squamous Spitter	15	Solo Soldier	Draconomicon 1	230	Solo	Soldier
+Thief of Life	15	Solo Skirmisher	Draconomicon 1	208	Solo	Skirmisher
+Andracmos	15	Solo Artillery	Draconomicon 2	202	Solo	Artillery
+Adult Red Dragon	15	Solo Soldier	Monster Manual 1	83	Solo	Soldier
+Azer Rager	15	Brute	Monster Manual 1	22	Standard	Brute
+Chimera	15	Elite Brute	Monster Manual 1	41	Elite	Brute
+Destrachan Far Voice	15	Artillery	Monster Manual 1	59	Standard	Artillery
+Drow Priest	15	Controller	Monster Manual 1	95	Standard	Controller
+Githyanki Gish	15	Elite Skirmisher	Monster Manual 1	128	Elite	Skirmisher
+Immolith (Demon)	15	Controller	Monster Manual 1	56	Standard	Controller
+Rakshasa Archer	15	Artillery	Monster Manual 1	216	Standard	Artillery
+Rakshasa Warrior	15	Soldier	Monster Manual 1	216	Standard	Soldier
+Red Slaad (Blood Slaad)	15	Soldier	Monster Manual 1	238	Standard	Soldier
+Salamander Archer	15	Artillery	Monster Manual 1	226	Standard	Artillery
+Salamander Noble	15	Controller	Monster Manual 1	227	Standard	Controller
+Thunderfury Boar	15	Brute	Monster Manual 1	35	Standard	Brute
+Yuan-Ti Malison Incanter	15	Artillery	Monster Manual 1	269	Standard	Artillery
+Adult Silver Dragon	15	Solo Brute	Monster Manual 2	86	Solo	Brute
+Ambush Vine Shoot	15	Minion Controller	Monster Manual 2	204	Minion	Controller
+Bristle Spider	15	Elite Lurker	Monster Manual 2	189	Elite	Lurker
+Clay Golem	15	Elite Brute	Monster Manual 2	134	Elite	Brute
+Couad Star Serpent	15	Elite Controller	Monster Manual 2	38	Elite	Controller
+Drakkoth Rager	15	Elite Brute	Monster Manual 2	91	Elite	Brute
+Firbolg Bloodbear	15	Elite Brute	Monster Manual 2	109	Elite	Brute
+Herald of Hadar (Star Spawn)	15	Brute	Monster Manual 2	196	Standard	Brute
+Maw of Acamar (Star Spawn)	15	Controller	Monster Manual 2	196	Standard	Controller
+Nothic Cackler	15	Artillery	Monster Manual 2	168	Standard	Artillery
+Pod Demon	15	Elite Artillery	Monster Manual 2	58	Elite	Artillery
+Podspawn (Demon)	15	Minion Skirmisher	Monster Manual 2	59	Minion	Skirmisher
+Shadar-Kai Painbearer	15	Skirmisher	Monster Manual 2	181	Standard	Skirmisher
+Water Archon Tide Strider	15	Skirmisher	Monster Manual 2	18	Standard	Skirmisher
+Lnrker	15	Minion Artillery	Monster Manual 3	15	Minion	Artillery
+Kuo-Toa Leviathan	15	Elite Brute	Underdark	149	Elite	Brute
+Yagnodemon	15	Soldier	Demonomicon	154	Standard	Soldier
+Bonespitter	16	Artillery	Draconomicon 1	207	Standard	Artillery
+Brown Dragon, Elder	16	Solo Lurker	Draconomicon 1	170	Solo	Lurker
+Icewrought Dracolich	16	Solo Controller	Draconomicon 1	201	Solo	Controller
+Indomitable Bulwark	16	Soldier	Draconomicon 1	228	Standard	Soldier
+Roper Lasher	16	Elite Controller	Draconomicon 1	130	Elite	Controller
+Gold Hollow Dragon	16	Solo Brute	Draconomicon 2	184	Solo	Brute
+Blackspawn Gloomweb	16	Lurker	Monster Manual 1	88	Standard	Lurker
+Bodak Skulk	16	Lurker	Monster Manual 1	36	Standard	Lurker
+Bone Naga	16	Elite Controller	Monster Manual 1	194	Elite	Controller
+Cyclops Hewer	16	Soldier	Monster Manual 1	47	Standard	Soldier
+Earth Titan (Giant)	16	Elite Brute	Monster Manual 1	122	Elite	Brute
+Guulvorg (Worg)	16	Elite Brute	Monster Manual 1	265	Elite	Brute
+Ice Archon Hailscourge	16	Artillery	Monster Manual 1	20	Standard	Artillery
+Kuo-Toa Monitor	16	Skirmisher	Monster Manual 1	172	Standard	Skirmisher
+Kuo-Toa Whip	16	Controller	Monster Manual 1	173	Standard	Controller
+Purple Worm	16	Solo Soldier	Monster Manual 1	214	Solo	Soldier
+Savage Minotaur	16	Brute	Monster Manual 1	191	Standard	Brute
+Shadow Snake	16	Skirmisher	Monster Manual 1	240	Standard	Skirmisher
+Sphinx	16	Elite Soldier	Monster Manual 1	245	Elite	Soldier
+Treant	16	Elite Controller	Monster Manual 1	251	Elite	Controller
+Ambush Vine	16	Elite Controller	Monster Manual 2	204	Elite	Controller
+Diamondhide Xorn	16	Skirmisher	Monster Manual 2	215	Standard	Skirmisher
+Drakkoth Venomshot	16	Artillery	Monster Manual 2	91	Standard	Artillery
+Earth Archon Seismic Striker	16	Soldier	Monster Manual 2	14	Standard	Soldier
+Fey-Knight Vestige (Fey Lingerer)	16	Lurker	Monster Manual 2	106	Standard	Lurker
+Firbolg Ghostraven	16	Elite Lurker	Monster Manual 2	110	Elite	Lurker
+Fomorian Ghost Shaman	16	Elite Controller	Monster Manual 2	112	Elite	Controller
+Lingerer Knight (Fey Lingerer)	16	Elite Soldier	Monster Manual 2	106	Elite	Soldier
+Neogi Great Old Master	16	Controller	Monster Manual 2	166	Standard	Controller
+Prismatic Shard (Chaos Shard)	16	Artillery	Monster Manual 2	35	Standard	Artillery
+Razor Hydra	16	Solo Brute	Monster Manual 2	150	Solo	Brute
+Stone Giant Runecarver	16	Controller	Monster Manual 2	125	Standard	Controller
+Water Archon Waveshaper	16	Controller	Monster Manual 2	18	Standard	Controller
+Winter Wolf Snowfang	16	Lurker	Monster Manual 2	210	Standard	Lurker
+Consumptive Parasite	16	Minion Skirmisher	The Plane Below	133	Minion	Skirmisher
+Iron Archon Crescent Blade	16	Skirmisher	The Plane Below	130	Standard	Skirmisher
+Incunabulum Cursebringer	16	Artillery	Underdark	146	Standard	Artillery
+Incunabulum Slayer	16	Lurker	Underdark	146	Standard	Lurker
+Hydrodaemon	16	Skirmisher	Demonomicon	117	Standard	Skirmisher
+Ruin Demon	16	Skirmisher	Demonomicon	140	Standard	Skirmisher
+Aspect of Tiamat	17	Solo Brute	Draconomicon 1	246	Solo	Brute
+Azer Beastmaster	17	Soldier	Draconomicon 1	138	Standard	Soldier
+Deathless Hunger	17	Elite Soldier	Draconomicon 1	206	Elite	Soldier
+Dragonborn Bloodreaver	17	Skirmisher	Draconomicon 1	215	Standard	Skirmisher
+Gray Wing Vrock	17	Skirmisher	Draconomicon 1	157	Standard	Skirmisher
+Icy Wrath	17	Brute	Draconomicon 1	228	Standard	Brute
+Purplespawn Nightmare	17	Lurker	Draconomicon 1	220	Standard	Lurker
+Wretch Dragon, Adult	17	Elite Brute	Draconomicon 1	197	Elite	Brute
+Aboleth Lasher	17	Brute	Monster Manual 1	8	Standard	Brute
+Aboleth Slime Mage	17	Artillery	Monster Manual 1	8	Standard	Artillery
+Azer Beastlord	17	Soldier	Monster Manual 1	23	Standard	Soldier
+Azer Taskmaster	17	Controller	Monster Manual 1	23	Standard	Controller
+Battle Guardian	17	Controller	Monster Manual 1	149	Standard	Controller
+Blue Slaad (Talon Slaad)	17	Brute	Monster Manual 1	238	Standard	Brute
+Cyclops Battleweaver	17	Skirmisher	Monster Manual 1	48	Standard	Skirmisher
+Cyclops Storm Shaman	17	Artillery	Monster Manual 1	48	Standard	Artillery
+Death Knight, Human	17	Elite Soldier	Monster Manual 1	50	Elite	Soldier
+Elder White Dragon	17	Solo Brute	Monster Manual 1	85	Solo	Brute
+Enormous Carrion Crawler	17	Elite Controller	Monster Manual 1	40	Elite	Controller
+Fomorian Warrior	17	Elite Soldier	Monster Manual 1	110	Elite	Soldier
+Rakshasa Assassin	17	Skirmisher	Monster Manual 1	217	Standard	Skirmisher
+Shadow Hulk (Umber Hulk)	17	Solo Soldier	Monster Manual 1	256	Solo	Soldier
+Stone Golem	17	Elite Soldier	Monster Manual 1	142	Elite	Soldier
+Sword Wraith	17	Lurker	Monster Manual 1	267	Standard	Lurker
+Yuan-Ti Malison	17	Controller	Monster Manual 1	270	Standard	Controller
+Adult Gold Dragon	17	Solo Controller	Monster Manual 2	81	Solo	Controller
+Coure of Mischief and Strife	17	Lurker	Monster Manual 2	97	Standard	Lurker
+Earth Archon Rumbler	17	Brute	Monster Manual 2	14	Standard	Brute
+Fomorian Cackler	17	Elite Lurker	Monster Manual 2	112	Elite	Lurker
+Frost Giant	17	Brute	Monster Manual 2	122	Standard	Brute
+Nyfellar Mammoth	17	Brute	Monster Manual 2	161	Standard	Brute
+Rime Hound (Winter Wolf)	17	Elite Skirmisher	Monster Manual 2	211	Elite	Skirmisher
+Scion of Gibbeth (Star Spawn)	17	Controller	Monster Manual 2	197	Standard	Controller
+Slaad Spawn	17	Minion Skirmisher	Monster Manual 2	185	Minion	Skirmisher
+Storm Archon Squallshield	17	Soldier	Monster Manual 2	16	Standard	Soldier
+Incunabulum Keeper	17	Soldier (L)	Underdark	146	Standard	Soldier (L)
+Rageborn Frosthurler	17	Artillery	Demonomicon	138	Standard	Artillery
+Zovvut	17	Skirmisher	Demonomicon	155	Standard	Skirmisher
+Rageborn Barbedclaw	17	Soldier	Demonomicon	139	Standard	Soldier
+Gray Dragon, Elder	18	Solo Soldier	Draconomicon 1	174	Solo	Soldier
+Tempest Dragon, Elder	18	Solo Soldier	Draconomicon 1	193	Solo	Soldier
+Adult	18	Solo Skirmisher	Draconomicon 2	167	Solo	Skirmisher
+Aspect of Bahamut	18	Solo Soldier	Draconomicon 2	208	Solo	Soldier
+Aboleth Overseer	18	Elite Controller	Monster Manual 1	8	Elite	Controller
+Bodak Reaver	18	Soldier	Monster Manual 1	36	Standard	Soldier
+Cambion Hellfire Magus	18	Artillery	Monster Manual 1	39	Standard	Artillery
+Death Hag	18	Soldier	Monster Manual 1	151	Standard	Soldier
+Dire Bulette	18	Elite Skirmisher	Monster Manual 1	38	Elite	Skirmisher
+Dracolich	18	Solo Controller	Monster Manual 1	72	Solo	Controller
+Elder Black Dragon	18	Solo Lurker	Monster Manual 1	76	Solo	Lurker
+Fire Giant	18	Soldier	Monster Manual 1	123	Standard	Soldier
+Fire Giant Forgecaller	18	Artillery	Monster Manual 1	123	Standard	Artillery
+Gibbering Abomination	18	Controller	Monster Manual 1	126	Standard	Controller
+Greater Helmed Horror	18	Elite Soldier	Monster Manual 1	155	Elite	Soldier
+Green Slaad (Curse Slaad)	18	Controller	Monster Manual 1	238	Standard	Controller
+Medusa Shroud of Zehir	18	Skirmisher	Monster Manual 1	187	Standard	Skirmisher
+Mind Flayer Mastermind	18	Elite Controller	Monster Manual 1	188	Elite	Controller
+Mordant Hydra	18	Solo Brute	Monster Manual 1	164	Solo	Brute
+Nabassu Gargoyle	18	Lurker	Monster Manual 1	115	Standard	Lurker
+Rockfire Dreadnought	18	Soldier	Monster Manual 1	104	Standard	Soldier
+Slaughter Wight	18	Brute	Monster Manual 1	263	Standard	Brute
+Abolethic Skum (Ooze)	18	Minion Brute	Monster Manual 2	172	Minion	Brute
+Bebilith (Demon)	18	Solo Brute	Monster Manual 2	52	Solo	Brute
+Centaur Fey Charger	18	Soldier	Monster Manual 2	31	Standard	Soldier
+Fang Titan Drake	18	Elite Controller	Monster Manual 2	89	Elite	Controller
+Fey-incanter Vestige	18	Lurker	Monster Manual 2	107	Standard	Lurker
+Fomorian Totemist	18	Elite Skirmisher	Monster Manual 2	113	Elite	Skirmisher
+Slaughterstone Eviscerator	18	Brute	Monster Manual 2	186	Standard	Brute
+Stone Titan (Giant)	18	Elite Soldier	Monster Manual 2	125	Elite	Soldier
+Storm Archon Lightning Walker	18	Skirmisher	Monster Manual 2	16	Standard	Skirmisher
+Acolyte of Entropy	18	Skirmisher	The Plane Below	158	Standard	Skirmisher
+Eisk Jaat Mystic	18	Lurker	The Plane Below	137	Standard	Lurker
+The Cringe	18	Elite Brute	Underdark	158	Elite	Brute
+Mezzodemon Psychophant	18	Minion Soldier	Demonomicon	90	Minion	Soldier
+Fire Demon	18	Elite Skirmisher	Demonomicon	113	Elite	Skirmisher
+Rageborn Ambusher	18	Skirmisher	Demonomicon	139	Standard	Skirmisher
+Dreambreath Dracolich	19	Solo Controller	Draconomicon 1	202	Solo	Controller
+Purple Dragon, Elder	19	Solo Controller	Draconomicon 1	177	Solo	Controller
+Cobalt Dragon, Elder	19	Solo Controller	Draconomicon 2	162	Solo	Controller
+Beholder Eye Tyrant	19	Solo Artillery	Monster Manual 1	32	Solo	Artillery
+Blackroot Treant	19	Elite Soldier	Monster Manual 1	251	Elite	Soldier
+Bralani of Autumn Winds	19	Controller	Monster Manual 1	102	Standard	Controller
+Elder Green Dragon	19	Solo Controller	Monster Manual 1	80	Solo	Controller
+Fomorian Painbringer	19	Elite Controller	Monster Manual 1	110	Elite	Controller
+Goristro (Demon)	19	Elite Brute	Monster Manual 1	55	Elite	Brute
+Ice Archon Rimehammer	19	Soldier	Monster Manual 1	20	Standard	Soldier
+Phoenix (Roc)	19	Elite Brute	Monster Manual 1	220	Elite	Brute
+Rakshasa Noble	19	Controller	Monster Manual 1	217	Standard	Controller
+Elder Iron Dragon	19	Solo Lurker	Monster Manual 2	84	Solo	Lurker
+Frost Giant Ice Shaper	19	Controller	Monster Manual 2	123	Standard	Controller
+Gray Render	19	Elite Brute	Monster Manual 2	137	Elite	Brute
+Nothic Mindblight	19	Controller	Monster Manual 2	168	Standard	Controller
+Sphinx Mystery	19	Brute	Monster Manual 2	188	Standard	Brute
+Warforged Titan	19	Elite Soldier	Monster Manual 2	208	Elite	Soldier
+Banesworn Iron Bulwark	19	Soldier	The Plane Above	135	Standard	Soldier
+Duthka'gith	19	Brute	The Plane Above	143	Standard	Brute
+Quom Harpoonist	19	Artillery	The Plane Above	156	Standard	Artillery
+Ash-Wrought Soulburner	19	Controller	The Plane Below	133	Standard	Controller
+Mud Archon Ambusher	19	Skirmisher	The Plane Below	131	Standard	Skirmisher
+Rageborn Horror	19	Brute	Demonomicon	139	Standard	Brute
+Mavavhan	19	Skirmisher	Demonomicon	127	Standard	Skirmisher
+Nillung	20	Solo Controller	Draconomicon 2	21	Solo	Controller
+Black Slaad (Void Slaad)	20	Skirmisher	Monster Manual 1	239	Standard	Skirmisher
+Elder Blue Dragon	20	Solo Artillery	Monster Manual 1	79	Solo	Artillery
+Fire Archon Ash Disciple	20	Artillery	Monster Manual 1	19	Standard	Artillery
+Ice Archon Frostshaper	20	Controller	Monster Manual 1	21	Standard	Controller
+Nightwalker	20	Elite Brute	Monster Manual 1	197	Elite	Brute
+Rimefire Griffon	20	Skirmisher	Monster Manual 1	147	Standard	Skirmisher
+Rot Harbinger	20	Soldier	Monster Manual 1	223	Standard	Soldier
+Soulspike Devourer	20	Elite Soldier	Monster Manual 1	69	Elite	Soldier
+Djinn Thunderer	20	Artillery	Monster Manual 2	71	Standard	Artillery
+Elder Copper Dragon	20	Solo Skirmisher	Monster Manual 2	79	Solo	Skirmisher
+Fomorian Blinder	20	Elite Artillery	Monster Manual 2	114	Elite	Artillery
+Frost Titan (Giant)	20	Elite Brute	Monster Manual 2	123	Elite	Brute
+Heroslayer Hydra	20	Solo Brute	Monster Manual 2	151	Solo	Brute
+Human Diabolist	20	Artillery	Monster Manual 2	144	Standard	Artillery
+Human Mystagogue	20	Controller	Monster Manual 2	147	Standard	Controller
+Iron Golem	20	Elite Soldier	Monster Manual 2	134	Elite	Soldier
+Kazrith (Demon)	20	Lurker	Monster Manual 2	55	Standard	Lurker
+Durud Fragment Mage	20	Elite Controller	The Plane Above	157	Elite	Controller
+Shaadee	20	Controller	Demonomicon	145	Standard	Controller
+Nabassu	20	Lurker	Demonomicon	129	Standard	Lurker
+Groom Guardian	20	Minion Skirmisher	Demonomicon	93	Minion	Skirmisher
+Armanite Lancer	20	Soldier	Demonomicon	104	Standard	Soldier
+Haures	20	Soldier	Demonomicon	116	Standard	Soldier
+Deathmask Dragon, Elder	21	Solo Controller	Draconomicon 1	189	Solo	Controller
+Pyroclastic Dragon, Elder	21	Solo Brute	Draconomicon 1	194	Solo	Brute
+Siegewyrm	21	Elite Controller	Draconomicon 1	208	Elite	Controller
+Bronze Dragon, Elder	21	Solo Brute	Draconomicon 2	159	Solo	Brute
+Galzaik	21	Elite Controller	Draconomicon 2	134	Elite	Controller
+Grave-Burn Drakkensteed	21	Artillery	Draconomicon 2	196	Standard	Artillery
+Mercury Dragon, Elder	21	Solo Lurker	Draconomicon 2	165	Solo	Lurker
+Dark Naga	21	Elite Controller	Monster Manual 1	194	Elite	Controller
+Deathpriest Hierophant	21	Elite Controller	Monster Manual 1	209	Elite	Controller
+Fire Titan (Giant)	21	Elite Soldier	Monster Manual 1	124	Elite	Soldier
+Ghaele of Winter (Eladrin)	21	Artillery	Monster Manual 1	103	Standard	Artillery
+Giant Mummy	21	Brute	Monster Manual 1	193	Standard	Brute
+Larva Mage	21	Elite Artillery	Monster Manual 1	175	Elite	Artillery
+Marut Blademaster	21	Soldier	Monster Manual 1	185	Standard	Soldier
+Tormenting Ghost	21	Controller	Monster Manual 1	117	Standard	Controller
+Wild Hunt Hound	21	Skirmisher	Monster Manual 1	161	Standard	Skirmisher
+Yuan-Ti Anathema	21	Elite Skirmisher	Monster Manual 1	271	Elite	Skirmisher
+Cyclops Feyblade	21	Soldier	Monster Manual 2	40	Standard	Soldier
+Elder Adamantine Dragon	21	Solo Soldier	Monster Manual 2	76	Solo	Soldier
+Eldritch Titan (Giant)	21	Elite Skirmisher	Monster Manual 2	120	Elite	Skirmisher
+Marut Castigator	21	Skirmisher	Monster Manual 2	162	Standard	Skirmisher
+Marut Prosecutor	21	Controller	Monster Manual 2	162	Standard	Controller
+Remorhaz	21	Elite Brute	Monster Manual 2	176	Elite	Brute
+Storm Archon Tempest Weaver	21	Artillery	Monster Manual 2	17	Standard	Artillery
+Quarrak	21	Skirmisher	Demonomicon	137	Standard	Skirmisher
+Burning Vortex	22	Controller	Draconomicon 1	229	Standard	Controller
+Squamous Spewer	22	Solo Soldier	Draconomicon 1	231	Solo	Soldier
+Bluespawn Godslayer	22	Elite Brute	Monster Manual 1	89	Elite	Brute
+Death Giant	22	Brute	Monster Manual 1	120	Standard	Brute
+Efreet Fireblade	22	Soldier	Monster Manual 1	98	Standard	Soldier
+Elder Red Dragon	22	Solo Soldier	Monster Manual 1	83	Solo	Soldier
+Hezrou (Demon)	22	Brute	Monster Manual 1	56	Standard	Brute
+Marut Concordant	22	Elite Controller	Monster Manual 1	185	Elite	Controller
+Rot Slinger	22	Artillery	Monster Manual 1	223	Standard	Artillery
+Thunderhawk (Roc)	22	Elite Soldier	Monster Manual 1	221	Elite	Soldier
+Chain Golem	22	Elite Soldier	Monster Manual 2	133	Elite	Soldier
+Chaos Hydra	22	Solo Brute	Monster Manual 2	151	Solo	Brute
+Djinn Windbow	22	Skirmisher	Monster Manual 2	72	Standard	Skirmisher
+Elder Silver Dragon	22	Solo Brute	Monster Manual 2	86	Solo	Brute
+Firbolg Master of the Wild Hunt	22	Elite Skirmisher	Monster Manual 2	110	Elite	Skirmisher
+Fomorian Butcher	22	Elite Brute	Monster Manual 2	115	Elite	Brute
+Human Dread Assassin	22	Lurker	Monster Manual 2	145	Standard	Lurker
+Marut Executioner	22	Brute	Monster Manual 2	162	Standard	Brute
+Nothic Eye of Vecna	22	Lurker	Monster Manual 2	169	Standard	Lurker
+Nycademon (Demon)	22	Skirmisher	Monster Manual 2	57	Standard	Skirmisher
+Oni Thunderer	22	Skirmisher	Monster Manual 2	171	Standard	Skirmisher
+Voracia	22	Elite Skirmisher	The Plane Above	133	Elite	Skirmisher
+Archdemon Kaugothirn	22	Elite Controller	Demonomicon	91	Elite	Controller
+Zuggtmoy	22	Solo Controller	Demonomicon	156	Solo	Controller
+City Corruptor (Evanissu)	22	Skirmisher	Demonomicon	108	Standard	Skirmisher
+Bloodwind	23	Solo Lurker	Draconomicon 1	209	Solo	Lurker
+Cyan Bloodbane	23	Solo Controller	Draconomicon 1	234	Solo	Controller
+Dragonborn Warmaster	23	Elite Soldier	Draconomicon 1	216	Elite	Soldier
+Rancid Tide	23	Elite Artillery	Draconomicon 1	206	Elite	Artillery
+Kuyutha, Exarch of Bahamut	23	Elite Controller	Draconomicon 2	209	Elite	Controller
+Blackfire Dracolich	23	Solo Controller	Monster Manual 1	73	Solo	Controller
+Blood Fiend (Abomination)	23	Soldier	Monster Manual 1	12	Standard	Soldier
+Efreet Cinderlord	23	Artillery	Monster Manual 1	98	Standard	Artillery
+Efreet Flamestrider	23	Skirmisher	Monster Manual 1	99	Standard	Skirmisher
+Glabrezu (Demon)	23	Elite Brute	Monster Manual 1	54	Elite	Brute
+Human Insane Noble	23	Elite Skirmisher	Monster Manual 2	146	Elite	Skirmisher
+Shardstorm Vortex Whirlwind	23	Minion Skirmisher	Monster Manual 2	101	Minion	Skirmisher
+Swordwing Slasher	23	Lurker	Underdark	153	Standard	Lurker
+Shemeskha	23	Elite Controller	Demonomicon	92	Elite	Controller
+Nabassu Deathwing	23	Skirmisher	Demonomicon	129	Standard	Skirmisher
+Madras Kalgore, the Poison Fist	24	Elite Lurker	Draconomicon 1	247	Elite	Lurker
+Shadow Dragon, Elder	24	Solo Lurker	Draconomicon 1	199	Solo	Lurker
+Gold Hollow Wyrm	24	Solo Soldier	Draconomicon 2	184	Solo	Soldier
+Silvara	24	Solo Soldier	Draconomicon 2	214	Solo	Soldier
+Ancient White Dragon	24	Solo Brute	Monster Manual 1	85	Solo	Brute
+Aspect of Orcus	24	Elite Brute	Monster Manual 1	208	Elite	Brute
+Elder Purple Worm	24	Solo Soldier	Monster Manual 1	214	Solo	Soldier
+Lich, Eladrin Wizard	24	Elite Controller	Monster Manual 1	176	Elite	Controller
+Marilith (Demon)	24	Elite Skirmisher	Monster Manual 1	57	Elite	Skirmisher
+Rakshasa Dread Knight	24	Soldier	Monster Manual 1	218	Standard	Soldier
+Storm Giant	24	Controller	Monster Manual 1	124	Standard	Controller
+Behir Stormsteed	24	Soldier	Monster Manual 2	23	Standard	Soldier
+Elder Gold Dragon	24	Solo Controller	Monster Manual 2	82	Solo	Controller
+Caustic Slayer	24	Elite Lurker	The Plane Below	139	Elite	Lurker
+Djinn Cloudstalker	24	Lurker	The Plane Below	151	Standard	Lurker
+Sezraseth	24	Brute	Demonomicon	144	Standard	Brute
+Bonehogue Assassin	24	Lurker	Demonomicon	106	Standard	Lurker
+Ieroliith	24	Soldier	Demonomicon	112	Standard	Soldier
+Brown Dragon, Ancient	25	Solo Lurker	Draconomicon 1	171	Solo	Lurker
+Redspawn Devastator	25	Elite Brute	Draconomicon 1	221	Elite	Brute
+Astrklaria	25	Solo Skirmisher	Draconomicon 2	136	Solo	Skirmisher
+Death Knight, Dragonborn	25	Elite Soldier	Monster Manual 1	51	Elite	Soldier
+Death Titan (Giant)	25	Elite Brute	Monster Manual 1	120	Elite	Brute
+Dread Wraith	25	Lurker	Monster Manual 1	267	Standard	Lurker
+Efreet Pyresinger	25	Controller	Monster Manual 1	99	Standard	Controller
+Sorrowsworn Soulripper	25	Skirmisher	Monster Manual 1	242	Standard	Skirmisher
+Swordwing	25	Soldier	Monster Manual 1	249	Standard	Soldier
+Aspect of Demogorgon	25	Elite Controller	Monster Manual 2	44	Elite	Controller
+Beholder Eye of Chaos	25	Elite Artillery	Monster Manual 2	25	Elite	Artillery
+Centaur Campaigner	25	Soldier	Monster Manual 2	31	Standard	Soldier
+Djinn Skylord	25	Controller	Monster Manual 2	73	Standard	Controller
+Slaughterstone Hammerer	25	Soldier	Monster Manual 2	186	Standard	Soldier
+Ehkahk	25	Elite Controller (L)	The Plane Below	146	Elite	Controller (L)
+Flaying Wrackspawn	25	Controller	Underdark	155	Standard	Controller
+Wendigo Primal Spirit	25	Artillery	Demonomicon	153	Standard	Artillery
+Demogorgon Fury Cultist	25	Brute	Demonomicon	99	Standard	Brute
+Yvocalith	25	Brute	Demonomicon	151	Standard	Brute
+Zythar	25	Artillery	Demonomicon	158	Standard	Artillery
+Anthraxin the Devourer	26	Solo Controller	Draconomicon 1	154	Solo	Controller
+Champion of Tiamat	26	Elite Soldier	Draconomicon 1	165	Elite	Soldier
+Dragon Guardian	26	Solo Lurker	Draconomicon 1	162	Solo	Lurker
+Rime	26	Solo Brute	Draconomicon 1	242	Solo	Brute
+Bred Dralckensteed	26	Skirmisher	Draconomicon 2	196	Standard	Skirmisher
+Ancient Black Dragon	26	Solo Lurker	Monster Manual 1	76	Solo	Lurker
+Crownwing (Swordwing)	26	Skirmisher	Monster Manual 1	249	Standard	Skirmisher
+Dragonborn Champion	26	Soldier	Monster Manual 1	87	Standard	Soldier
+Phane (Abomination)	26	Elite Controller	Monster Manual 1	13	Elite	Controller
+Storm Gorgon	26	Skirmisher	Monster Manual 1	143	Standard	Skirmisher
+Thunderblast Cyclone	26	Elite Artillery	Monster Manual 1	105	Elite	Artillery
+Ancient Iron Dragon	26	Solo Lurker	Monster Manual 2	85	Solo	Lurker
+Deva Fallen Star	26	Artillery	Monster Manual 2	62	Standard	Artillery
+Son of the Spirit Wolf	26	Elite Skirmisher	Monster Manual 2	211	Elite	Skirmisher
+Thrarak, Exarch of Demogorgon	26	Elite Brute	Monster Manual 2	47	Elite	Brute
+Guardian Demon Soul Drinker	26	Soldier	Demonomicon	115	Standard	Soldier
+Abyrix Chain Master	26	Elite Soldier	Demonomicon	146	Elite	Soldier
+Gray Dragon, Ancient	27	Solo Soldier	Draconomicon 1	174	Solo	Soldier
+Mindfire Miasma	27	Soldier	Draconomicon 1	229	Standard	Soldier
+Cobalt Dragon, Ancient	27	Solo Controller	Draconomicon 2	162	Solo	Controller
+Death Giant Soulfire Hurler	27	Artillery	Draconomicon 2	142	Standard	Artillery
+Ancient Green Dragon	27	Solo Controller	Monster Manual 1	81	Solo	Controller
+Balor (Demon)	27	Elite Brute	Monster Manual 1	53	Elite	Brute
+Gibbering Orb	27	Solo Controller	Monster Manual 1	127	Solo	Controller
+Shadowraven Swarm	27	Brute	Monster Manual 1	243	Standard	Brute
+Sorrowsworn Reaper	27	Soldier	Monster Manual 1	242	Standard	Soldier
+Storm Titan (Giant)	27	Elite Controller	Monster Manual 1	125	Elite	Controller
+Ancient Copper Dragon	27	Solo Skirmisher	Monster Manual 2	79	Solo	Skirmisher
+Retriever	27	Soldier	Monster Manual 2	177	Standard	Soldier
+Sirrajadt	27	Elite Lurker (L)	The Plane Below	150	Elite	Lurker (L)
+Purple Dragon, Ancient	28	Solo Controller	Draconomicon 1	178	Solo	Controller
+Soulgrinder	28	Solo Controller	Draconomicon 1	204	Solo	Controller
+Mercury Dragon, Ancient	28	Solo Lurker	Draconomicon 2	165	Solo	Lurker
+Orium Dragon, Ancient	28	Solo Soldier	Draconomicon 2	171	Solo	Soldier
+Vaporous Serpent, Ancient	28	Minion Brute	Draconomicon 2	171	Minion	Brute
+Ancient Blue Dragon	28	Solo Artillery	Monster Manual 1	79	Solo	Artillery
+Earthrage Battlebriar	28	Elite Brute	Monster Manual 1	28	Elite	Brute
+Efreet Karadjin	28	Soldier	Monster Manual 1	100	Standard	Soldier
+Sorrowsworn Deathlord	28	Lurker	Monster Manual 1	242	Standard	Lurker
+Ancient Adamantine Dragon	28	Solo Soldier	Monster Manual 2	76	Solo	Soldier
+Mirmakur	28	Elite Brute	The Plane Below	154	Elite	Brute
+Storm That Walks	28	Solo Controller	The Plane Below	129	Solo	Controller
+Tholundru	28	Elite Controller (L)	The Plane Below	105	Elite	Controller (L)
+Sibirex Spawn	28	Minion Brute	Demonomicon	147	Minion	Brute
+Sibirex Flesh Crafter	28	Elite Controller	Demonomicon	147	Elite	Controller
+Mahataa	28	Lurker	Demonomicon	124	Standard	Lurker
+Dragonborn Annihilator	29	Solo Soldier	Draconomicon 1	216	Solo	Soldier
+Tiamat	29	Solo Controller	Draconomicon 1	164	Solo	Controller
+Bronze Dragon, Ancient	29	Solo Brute	Draconomicon 2	160	Solo	Brute
+Godforged Colossus	29	Elite Brute	Monster Manual 1	44	Elite	Brute
+Runescribed Dracolich	29	Solo Controller	Monster Manual 1	73	Solo	Controller
+Beholder Ultimate Tyrant	29	Solo Artillery	Monster Manual 2	26	Solo	Artillery
+Hundred-Handed One	29	Elite Soldier	The Plane Above	130	Elite	Soldier
+Ashardalon	30	Solo Brute	Draconomicon 1	232	Solo	Brute
+Valamaradace	30	Solo Artillery	Draconomicon 2	216	Solo	Artillery
+Ancient Red Dragon	30	Solo Soldier	Monster Manual 1	83	Solo	Soldier
+Tarrasque (Abomination)	30	Solo Brute	Monster Manual 1	13	Solo	Brute
+Oublivae	30	Solo Controller	Demonomicon	130	Solo	Controller
+Ancient Abyssal Wurm	30	Elite Skirmisher	Demonomicon	103	Elite	Skirmisher
+Dragotha	31	Solo Controller	Draconomicon 1	236	Solo	Controller
+Nefermandias	31	Solo Artillery	Draconomicon 1	240	Solo	Artillery
+Kostchtchie	31	Solo Brute	Demonomicon	122	Solo	Brute
+Baernaloth Vizier	31	Minion Lurker	Demonomicon	135	Minion	Lurker
+Phraxas	31	Solo Controller	Demonomicon	134	Solo	Controller
+Orcus	33	Solo Brute	Monster Manual 1	206	Solo	Brute
+Pazuzu	33	Solo Skirmisher	Demonomicon	132	Solo	Skirmisher
+Demogorgon	34	Solo Controller	Monster Manual 2	42	Solo	Controller
+Solkara	34	Solo Controller	The Plane Below	152	Solo	Controller
+Crawling Blood Swarm	34	Minion Skirmisher	Underdark	157	Minion	Skirmisher
+Torog	34	Solo Lurker	Underdark	156	Solo	Lurker
+Tiamat	35	Solo Brute	Draconomicon 1	245	Solo	Brute
+Bahamut	36	Solo Soldier	Draconomicon 2	208	Solo	Soldier
+The Old Man with the Canaries	36	Solo Soldier	Draconomicon 2	206	Solo	Soldier

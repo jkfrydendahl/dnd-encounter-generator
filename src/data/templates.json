@@ -5,10 +5,30 @@
     "mode": "standard",
     "weight": 3,
     "slots": [
-      { "id": "frontline", "count": 1, "requirement": "Brute|Soldier" },
-      { "id": "artillery", "count": 1, "requirement": "Artillery" },
-      { "id": "mobile", "count": 1, "requirement": "Skirmisher" },
-      { "id": "control", "count": 1, "requirement": "Controller" }
+      {
+        "id": "frontline",
+        "count": 1,
+        "requirement": "Brute|Soldier",
+        "label": "Frontline"
+      },
+      {
+        "id": "artillery",
+        "count": 1,
+        "requirement": "Artillery",
+        "label": "Ranged"
+      },
+      {
+        "id": "mobile",
+        "count": 1,
+        "requirement": "Skirmisher",
+        "label": "Mobile"
+      },
+      {
+        "id": "control",
+        "count": 1,
+        "requirement": "Controller",
+        "label": "Control"
+      }
     ]
   },
   {
@@ -17,22 +37,382 @@
     "mode": "standard",
     "weight": 2,
     "slots": [
-      { "id": "mobile-1", "count": 1, "requirement": "Skirmisher" },
-      { "id": "mobile-2", "count": 1, "requirement": "Skirmisher" },
-      { "id": "artillery", "count": 1, "requirement": "Artillery" },
-      { "id": "control", "count": 1, "requirement": "Controller" }
+      {
+        "id": "mobile-1",
+        "count": 1,
+        "requirement": "Skirmisher",
+        "label": "Flanker"
+      },
+      {
+        "id": "mobile-2",
+        "count": 1,
+        "requirement": "Skirmisher",
+        "label": "Flanker"
+      },
+      {
+        "id": "artillery",
+        "count": 1,
+        "requirement": "Artillery",
+        "label": "Ranged"
+      },
+      {
+        "id": "control",
+        "count": 1,
+        "requirement": "Controller",
+        "label": "Control"
+      }
+    ]
+  },
+  {
+    "id": "ambush",
+    "name": "Ambush",
+    "mode": "standard",
+    "weight": 2,
+    "slots": [
+      {
+        "id": "lurker-1",
+        "count": 1,
+        "requirement": "Lurker",
+        "label": "Ambusher"
+      },
+      {
+        "id": "lurker-2",
+        "count": 1,
+        "requirement": "Lurker",
+        "label": "Ambusher"
+      },
+      {
+        "id": "skirmisher",
+        "count": 1,
+        "requirement": "Skirmisher",
+        "label": "Flanker"
+      },
+      {
+        "id": "control",
+        "count": 1,
+        "requirement": "Controller",
+        "label": "Control"
+      }
+    ]
+  },
+  {
+    "id": "skirmish-line",
+    "name": "Skirmish Line",
+    "mode": "standard",
+    "weight": 2,
+    "slots": [
+      {
+        "id": "soldier",
+        "count": 1,
+        "requirement": "Soldier",
+        "label": "Anchor"
+      },
+      {
+        "id": "artillery-1",
+        "count": 1,
+        "requirement": "Artillery|Lurker",
+        "label": "Ranged"
+      },
+      {
+        "id": "artillery-2",
+        "count": 1,
+        "requirement": "Artillery|Lurker",
+        "label": "Ranged"
+      },
+      {
+        "id": "skirmisher",
+        "count": 1,
+        "requirement": "Skirmisher|Controller",
+        "label": "Harasser"
+      }
+    ]
+  },
+  {
+    "id": "guardian-post",
+    "name": "Guardian Post",
+    "mode": "standard",
+    "weight": 2,
+    "slots": [
+      {
+        "id": "soldier-1",
+        "count": 1,
+        "requirement": "Soldier",
+        "label": "Guard"
+      },
+      {
+        "id": "soldier-2",
+        "count": 1,
+        "requirement": "Soldier",
+        "label": "Guard"
+      },
+      {
+        "id": "controller",
+        "count": 1,
+        "requirement": "Controller|Artillery",
+        "label": "Overseer"
+      },
+      {
+        "id": "lurker",
+        "count": 1,
+        "requirement": "Lurker",
+        "label": "Hidden Threat"
+      }
+    ]
+  },
+  {
+    "id": "horde-assault",
+    "name": "Horde Assault",
+    "mode": "standard",
+    "weight": 1,
+    "slots": [
+      {
+        "id": "minions-1",
+        "count": 4,
+        "requirement": "Minion",
+        "label": "Minion Wave"
+      },
+      {
+        "id": "brute",
+        "count": 1,
+        "requirement": "Brute|Soldier",
+        "label": "Warchief"
+      },
+      {
+        "id": "artillery",
+        "count": 1,
+        "requirement": "Artillery",
+        "label": "Support"
+      },
+      {
+        "id": "controller",
+        "count": 1,
+        "requirement": "Controller",
+        "label": "Shaman"
+      }
+    ]
+  },
+  {
+    "id": "pincer-attack",
+    "name": "Pincer Attack",
+    "mode": "standard",
+    "weight": 1,
+    "slots": [
+      {
+        "id": "frontline",
+        "count": 1,
+        "requirement": "Brute|Soldier",
+        "label": "Hammer"
+      },
+      {
+        "id": "skirmisher-1",
+        "count": 1,
+        "requirement": "Skirmisher",
+        "label": "Left Flank"
+      },
+      {
+        "id": "skirmisher-2",
+        "count": 1,
+        "requirement": "Skirmisher",
+        "label": "Right Flank"
+      },
+      {
+        "id": "lurker",
+        "count": 1,
+        "requirement": "Lurker",
+        "label": "Anvil"
+      }
+    ]
+  },
+  {
+    "id": "control-zone",
+    "name": "Control Zone",
+    "mode": "standard",
+    "weight": 2,
+    "slots": [
+      {
+        "id": "controller-1",
+        "count": 1,
+        "requirement": "Controller",
+        "label": "Zone Keeper"
+      },
+      {
+        "id": "controller-2",
+        "count": 1,
+        "requirement": "Controller",
+        "label": "Battlefield Shaper"
+      },
+      {
+        "id": "soldier",
+        "count": 1,
+        "requirement": "Soldier",
+        "label": "Anchor"
+      },
+      {
+        "id": "artillery",
+        "count": 1,
+        "requirement": "Artillery|Lurker",
+        "label": "Punisher"
+      }
+    ]
+  },
+  {
+    "id": "sniper-nest",
+    "name": "Sniper Nest",
+    "mode": "standard",
+    "weight": 1,
+    "slots": [
+      {
+        "id": "artillery-1",
+        "count": 1,
+        "requirement": "Artillery",
+        "label": "Sniper"
+      },
+      {
+        "id": "artillery-2",
+        "count": 1,
+        "requirement": "Artillery",
+        "label": "Sniper"
+      },
+      {
+        "id": "lurker",
+        "count": 1,
+        "requirement": "Lurker",
+        "label": "Spotter"
+      },
+      {
+        "id": "soldier",
+        "count": 1,
+        "requirement": "Soldier|Brute",
+        "label": "Meatshield"
+      }
+    ]
+  },
+  {
+    "id": "brute-rush",
+    "name": "Brute Rush",
+    "mode": "standard",
+    "weight": 1,
+    "slots": [
+      {
+        "id": "brute-1",
+        "count": 1,
+        "requirement": "Brute",
+        "label": "Charger"
+      },
+      {
+        "id": "brute-2",
+        "count": 1,
+        "requirement": "Brute",
+        "label": "Charger"
+      },
+      {
+        "id": "skirmisher",
+        "count": 1,
+        "requirement": "Skirmisher",
+        "label": "Flanker"
+      },
+      {
+        "id": "controller",
+        "count": 1,
+        "requirement": "Controller|Lurker",
+        "label": "Disruptor"
+      }
+    ]
+  },
+  {
+    "id": "defensive-holdout",
+    "name": "Defensive Holdout",
+    "mode": "standard",
+    "weight": 2,
+    "slots": [
+      {
+        "id": "soldier-1",
+        "count": 1,
+        "requirement": "Soldier",
+        "label": "Shield Wall"
+      },
+      {
+        "id": "soldier-2",
+        "count": 1,
+        "requirement": "Soldier",
+        "label": "Shield Wall"
+      },
+      {
+        "id": "controller",
+        "count": 1,
+        "requirement": "Controller",
+        "label": "Ward Keeper"
+      },
+      {
+        "id": "artillery",
+        "count": 1,
+        "requirement": "Artillery",
+        "label": "Tower Archer"
+      }
+    ]
+  },
+  {
+    "id": "minion-tide",
+    "name": "Minion Tide",
+    "mode": "standard",
+    "weight": 1,
+    "slots": [
+      {
+        "id": "minions-1",
+        "count": 4,
+        "requirement": "Minion",
+        "label": "First Wave"
+      },
+      {
+        "id": "minions-2",
+        "count": 3,
+        "requirement": "Minion",
+        "label": "Second Wave"
+      },
+      {
+        "id": "controller",
+        "count": 1,
+        "requirement": "Controller|Soldier",
+        "label": "Taskmaster"
+      },
+      {
+        "id": "skirmisher",
+        "count": 1,
+        "requirement": "Skirmisher",
+        "label": "Outrider"
+      }
     ]
   },
   {
     "id": "boss-fight",
     "name": "Boss Fight",
     "mode": "boss",
-    "weight": 2,
+    "weight": 3,
     "slots": [
-      { "id": "elite", "count": 1, "requirement": "Elite" },
-      { "id": "control", "count": 1, "requirement": "Controller" },
-      { "id": "mobile-1", "count": 1, "requirement": "Skirmisher" },
-      { "id": "mobile-2", "count": 1, "requirement": "Skirmisher" }
+      {
+        "id": "elite",
+        "count": 1,
+        "requirement": "Elite",
+        "label": "Boss"
+      },
+      {
+        "id": "control",
+        "count": 1,
+        "requirement": "Controller",
+        "label": "Lieutenant"
+      },
+      {
+        "id": "mobile-1",
+        "count": 1,
+        "requirement": "Skirmisher",
+        "label": "Bodyguard"
+      },
+      {
+        "id": "mobile-2",
+        "count": 1,
+        "requirement": "Skirmisher|Lurker",
+        "label": "Bodyguard"
+      }
     ]
   },
   {
@@ -41,9 +421,198 @@
     "mode": "boss",
     "weight": 2,
     "slots": [
-      { "id": "elite", "count": 1, "requirement": "Elite" },
-      { "id": "minions", "count": 3, "requirement": "Minion" },
-      { "id": "support", "count": 1, "requirement": "Controller|Artillery" }
+      {
+        "id": "elite",
+        "count": 1,
+        "requirement": "Elite",
+        "label": "Boss"
+      },
+      {
+        "id": "minions",
+        "count": 3,
+        "requirement": "Minion",
+        "label": "Minion Retinue"
+      },
+      {
+        "id": "support",
+        "count": 1,
+        "requirement": "Controller|Artillery",
+        "label": "Advisor"
+      }
+    ]
+  },
+  {
+    "id": "solo-showdown",
+    "name": "Solo Showdown",
+    "mode": "boss",
+    "weight": 1,
+    "slots": [
+      {
+        "id": "solo",
+        "count": 1,
+        "requirement": "Solo",
+        "label": "Solo Boss"
+      },
+      {
+        "id": "minions",
+        "count": 4,
+        "requirement": "Minion",
+        "label": "Minion Screen"
+      }
+    ]
+  },
+  {
+    "id": "dragon-encounter",
+    "name": "Dragon Encounter",
+    "mode": "boss",
+    "weight": 1,
+    "slots": [
+      {
+        "id": "solo",
+        "count": 1,
+        "requirement": "Solo",
+        "label": "Dragon"
+      },
+      {
+        "id": "artillery",
+        "count": 1,
+        "requirement": "Artillery|Lurker",
+        "label": "Kobold Support"
+      },
+      {
+        "id": "minions",
+        "count": 3,
+        "requirement": "Minion",
+        "label": "Kobold Swarm"
+      }
+    ]
+  },
+  {
+    "id": "rival-warband",
+    "name": "Rival Warband",
+    "mode": "boss",
+    "weight": 2,
+    "slots": [
+      {
+        "id": "elite",
+        "count": 1,
+        "requirement": "Elite",
+        "label": "Rival Leader"
+      },
+      {
+        "id": "soldier",
+        "count": 1,
+        "requirement": "Soldier",
+        "label": "Champion"
+      },
+      {
+        "id": "artillery",
+        "count": 1,
+        "requirement": "Artillery",
+        "label": "Warlock"
+      },
+      {
+        "id": "skirmisher",
+        "count": 1,
+        "requirement": "Skirmisher",
+        "label": "Scout"
+      }
+    ]
+  },
+  {
+    "id": "caster-boss",
+    "name": "Caster Boss",
+    "mode": "boss",
+    "weight": 2,
+    "slots": [
+      {
+        "id": "elite",
+        "count": 1,
+        "requirement": "Elite",
+        "label": "Arcane Boss"
+      },
+      {
+        "id": "soldier-1",
+        "count": 1,
+        "requirement": "Soldier",
+        "label": "Bodyguard"
+      },
+      {
+        "id": "soldier-2",
+        "count": 1,
+        "requirement": "Soldier|Brute",
+        "label": "Bodyguard"
+      },
+      {
+        "id": "lurker",
+        "count": 1,
+        "requirement": "Lurker",
+        "label": "Assassin"
+      }
+    ]
+  },
+  {
+    "id": "twin-threat",
+    "name": "Twin Threat",
+    "mode": "boss",
+    "weight": 1,
+    "slots": [
+      {
+        "id": "elite-1",
+        "count": 1,
+        "requirement": "Elite",
+        "label": "Co-Boss"
+      },
+      {
+        "id": "elite-2",
+        "count": 1,
+        "requirement": "Elite",
+        "label": "Co-Boss"
+      },
+      {
+        "id": "minions",
+        "count": 3,
+        "requirement": "Minion",
+        "label": "Entourage"
+      },
+      {
+        "id": "artillery",
+        "count": 1,
+        "requirement": "Artillery|Controller",
+        "label": "Support"
+      }
+    ]
+  },
+  {
+    "id": "summoner",
+    "name": "Summoner",
+    "mode": "boss",
+    "weight": 1,
+    "slots": [
+      {
+        "id": "elite",
+        "count": 1,
+        "requirement": "Elite",
+        "label": "Summoner"
+      },
+      {
+        "id": "minions-1",
+        "count": 4,
+        "requirement": "Minion",
+        "label": "Summoned Wave"
+      },
+      {
+        "id": "minions-2",
+        "count": 3,
+        "requirement": "Minion",
+        "label": "Reinforcements"
+      },
+      {
+        "id": "controller",
+        "count": 1,
+        "requirement": "Controller",
+        "label": "Channeler"
+      }
     ]
   }
 ]

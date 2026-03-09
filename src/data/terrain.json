@@ -2,19 +2,2832 @@
   {
     "id": "lava-bridge",
     "name": "Lava Bridge",
-    "tags": ["Fire", "Elemental"],
-    "description": "A narrow stone crossing over lava channels, with dangerous edges and heat shimmer."
+    "tags": [
+      "Fire",
+      "Elemental"
+    ],
+    "description": "A narrow stone crossing over lava channels, with dangerous edges and heat shimmer.",
+    "actions": [
+      {
+        "name": "Erupting Fissure",
+        "trigger": "Initiative count 10",
+        "effect": "A 2×2 square section of the bridge cracks. Each creature in the area takes 2d6 fire damage and is pushed 1 square toward the nearest edge. The squares become difficult terrain.",
+        "recharge": "Recharges when no creature is in the area"
+      },
+      {
+        "name": "Heat Shimmer",
+        "trigger": "A creature ends its turn on the bridge",
+        "effect": "The creature grants combat advantage until the start of its next turn as heat distortion warps line of sight."
+      }
+    ]
   },
   {
     "id": "ruined-pillars",
     "name": "Ruined Pillars",
-    "tags": ["Ruin"],
-    "description": "Broken columns and scattered masonry create cover and difficult terrain."
+    "tags": [
+      "Humanoid",
+      "Construct"
+    ],
+    "description": "Broken columns and scattered masonry create cover and difficult terrain.",
+    "actions": [
+      {
+        "name": "Collapsing Pillar",
+        "trigger": "Initiative count 10",
+        "effect": "One pillar (GM's choice) collapses. Each creature adjacent to it must succeed on a DC 15 Reflex save or take 1d10 damage and be knocked prone. The pillar's square becomes difficult terrain providing superior cover."
+      },
+      {
+        "name": "Shifting Rubble",
+        "trigger": "A creature uses a push, pull, or slide effect",
+        "effect": "The target is pushed 1 additional square as loose stone shifts underfoot."
+      }
+    ]
   },
   {
     "id": "graveyard-fog",
     "name": "Graveyard Fog",
-    "tags": ["Undead"],
-    "description": "Heavy fog obscures lines of sight and makes movement harder to predict."
+    "tags": [
+      "Undead",
+      "Shadow"
+    ],
+    "description": "Heavy fog obscures lines of sight and makes movement harder to predict.",
+    "actions": [
+      {
+        "name": "Grasping Mist",
+        "trigger": "Initiative count 10",
+        "effect": "The fog thickens in a burst 2 centered on a random square. Creatures in the area are slowed until the end of their next turn. Undead in the area gain +2 to attack rolls instead."
+      },
+      {
+        "name": "Spectral Whispers",
+        "trigger": "A living creature starts its turn in the fog",
+        "effect": "The creature takes a −2 penalty to Will defense until the start of its next turn as ghostly voices erode resolve."
+      }
+    ]
+  },
+  {
+    "id": "dragon-lair",
+    "name": "Dragon Lair",
+    "tags": [
+      "Dragon"
+    ],
+    "description": "A vast cavern littered with bones and treasure, with elevated ledges for aerial attacks.",
+    "actions": [
+      {
+        "name": "Treasure Avalanche",
+        "trigger": "Initiative count 10",
+        "effect": "A hoard pile shifts. Each creature in a burst 1 (GM places) takes 1d8 damage and is knocked prone (DC 15 Reflex negates the prone condition). The squares become difficult terrain."
+      },
+      {
+        "name": "Elevated Strike Zone",
+        "trigger": "A creature attacks from 2+ squares higher than its target",
+        "effect": "The attack deals 1d6 extra damage as the elevated position provides devastating advantage."
+      }
+    ]
+  },
+  {
+    "id": "frozen-lake",
+    "name": "Frozen Lake",
+    "tags": [
+      "Cold",
+      "Elemental"
+    ],
+    "description": "Cracked ice over dark water. The surface is slippery and sections may break under weight.",
+    "actions": [
+      {
+        "name": "Cracking Ice",
+        "trigger": "Initiative count 10",
+        "effect": "A 3×3 square section cracks. Creatures in the area must succeed on a DC 14 Acrobatics check or fall prone. On the next round, the section breaks — creatures still there fall into freezing water (2d6 cold damage, restrained until escape DC 15).",
+        "recharge": "Each section can only crack once"
+      },
+      {
+        "name": "Slippery Surface",
+        "trigger": "A creature charges or runs on the ice",
+        "effect": "The creature must succeed on a DC 12 Acrobatics check or slide 1d4 squares in its direction of movement past its target."
+      }
+    ]
+  },
+  {
+    "id": "feywild-glade",
+    "name": "Feywild Glade",
+    "tags": [
+      "Fey",
+      "Plant"
+    ],
+    "description": "Luminescent mushrooms and twisting roots surround a misty clearing where reality shifts.",
+    "actions": [
+      {
+        "name": "Reality Warp",
+        "trigger": "Initiative count 10",
+        "effect": "Two random creatures swap positions (teleportation). Each is dazed until the end of its next turn as reality reorients."
+      },
+      {
+        "name": "Luminescent Spores",
+        "trigger": "A creature moves more than 4 squares on its turn",
+        "effect": "Disturbed mushrooms release spores in a burst 1 around the creature's starting position. Creatures in the area cannot benefit from invisibility or concealment until end of next turn."
+      }
+    ]
+  },
+  {
+    "id": "demon-rift",
+    "name": "Demon Rift",
+    "tags": [
+      "Demon",
+      "Fiend"
+    ],
+    "description": "A jagged tear in the ground leaks brimstone fumes and chaotic energy.",
+    "actions": [
+      {
+        "name": "Brimstone Eruption",
+        "trigger": "Initiative count 10",
+        "effect": "The rift spews energy. Each creature within 3 squares of the rift takes 1d8 fire and poison damage (DC 15 Fortitude for half)."
+      },
+      {
+        "name": "Chaotic Pull",
+        "trigger": "A creature is bloodied while within 5 squares of the rift",
+        "effect": "The rift pulls the creature 2 squares toward itself. If this moves the creature into the rift's square, it takes 2d8 damage."
+      }
+    ]
+  },
+  {
+    "id": "goblin-warrens",
+    "name": "Goblin Warrens",
+    "tags": [
+      "Goblinoid",
+      "Humanoid"
+    ],
+    "description": "Cramped tunnels with pit traps, narrow choke points, and ambush alcoves.",
+    "actions": [
+      {
+        "name": "Hidden Pit Trap",
+        "trigger": "A creature enters a trapped square (GM places 1d4 traps at setup)",
+        "effect": "The floor gives way. The creature takes 1d10 damage and falls prone in a 10-foot pit (DC 15 Athletics to climb out)."
+      },
+      {
+        "name": "Tunnel Ambush",
+        "trigger": "Initiative count 10",
+        "effect": "A narrow tunnel (GM's choice) collapses to 1 square wide until cleared (DC 15 Athletics, standard action). Creatures inside take 1d6 damage."
+      }
+    ]
+  },
+  {
+    "id": "shadow-rift",
+    "name": "Shadow Rift",
+    "tags": [
+      "Shadow",
+      "Aberration"
+    ],
+    "description": "Patches of darkness move on their own, and sounds echo from impossible directions.",
+    "actions": [
+      {
+        "name": "Creeping Darkness",
+        "trigger": "Initiative count 10",
+        "effect": "Darkness spreads. One random square and all squares within burst 1 become heavily obscured until the end of the next round."
+      },
+      {
+        "name": "Echo Displacement",
+        "trigger": "A creature misses with a ranged attack",
+        "effect": "Sounds echo from impossible directions. The target of the attack can shift 1 square as a free action."
+      }
+    ]
+  },
+  {
+    "id": "storm-plateau",
+    "name": "Storm Plateau",
+    "tags": [
+      "Lightning",
+      "Elemental"
+    ],
+    "description": "An exposed rocky plateau crackling with static. Metal objects attract bolts.",
+    "actions": [
+      {
+        "name": "Lightning Strike",
+        "trigger": "Initiative count 10",
+        "effect": "Lightning strikes a random creature wearing metal armor or holding a metal weapon. The creature takes 2d8 lightning damage (DC 15 Reflex for half). Each creature adjacent to the target takes 1d6 lightning damage."
+      },
+      {
+        "name": "Static Buildup",
+        "trigger": "A creature scores a critical hit",
+        "effect": "Residual static arcs to the nearest creature within 3 squares, dealing 1d8 lightning damage."
+      }
+    ]
+  },
+  {
+    "id": "acid-cavern",
+    "name": "Acid Cavern",
+    "tags": [
+      "Acid",
+      "Ooze"
+    ],
+    "description": "Pools of caustic liquid dot the floor, and stalactites drip corrosive slime.",
+    "actions": [
+      {
+        "name": "Acid Geyser",
+        "trigger": "Initiative count 10",
+        "effect": "An acid pool erupts in a burst 1 (GM places). Creatures in the area take 2d6 acid damage (DC 14 Reflex for half). The area becomes an acid zone until end of next round (entering or starting turn: 1d6 acid)."
+      },
+      {
+        "name": "Dripping Stalactite",
+        "trigger": "A creature takes acid damage",
+        "effect": "A caustic stalactite above destabilizes. At the start of the creature's next turn, it drips acid on the creature for 1d6 acid damage (DC 12 Reflex negates)."
+      }
+    ]
+  },
+  {
+    "id": "beast-den",
+    "name": "Beast Den",
+    "tags": [
+      "Beast"
+    ],
+    "description": "A natural cave strewn with bones and nests, with narrow escape tunnels.",
+    "actions": [
+      {
+        "name": "Cornered Beast Fury",
+        "trigger": "A beast is bloodied for the first time",
+        "effect": "The beast can immediately shift 2 squares and make a basic melee attack as a free action."
+      },
+      {
+        "name": "Narrow Escape Tunnel",
+        "trigger": "A creature is adjacent to a tunnel entrance and uses a move action",
+        "effect": "The creature can squeeze through the narrow tunnel, emerging in a square of the GM's choice within 5 squares (counts as full move)."
+      }
+    ]
+  },
+  {
+    "id": "giant-stronghold",
+    "name": "Giant Stronghold",
+    "tags": [
+      "Giant",
+      "Humanoid"
+    ],
+    "description": "Oversized furniture and crumbling walls create difficult terrain for small creatures.",
+    "actions": [
+      {
+        "name": "Hurled Furniture",
+        "trigger": "Initiative count 10",
+        "effect": "An oversized piece of furniture shifts. One random Medium or smaller creature in the room must succeed on DC 14 Reflex or take 2d6 damage and be pushed 2 squares."
+      },
+      {
+        "name": "Unstable Floor",
+        "trigger": "A Large or larger creature moves 3+ squares",
+        "effect": "The floor shakes. Each Small or Medium creature within 3 squares of the path must succeed on DC 12 Acrobatics or fall prone."
+      }
+    ]
+  },
+  {
+    "id": "poison-swamp",
+    "name": "Poison Swamp",
+    "tags": [
+      "Poison",
+      "Plant",
+      "Beast"
+    ],
+    "description": "Murky water, venomous reeds, and toxic gas pockets make every step dangerous.",
+    "actions": [
+      {
+        "name": "Toxic Gas Pocket",
+        "trigger": "Initiative count 10",
+        "effect": "A gas pocket erupts in burst 2 (GM places). Creatures in the area take 1d8 poison damage and are weakened until end of next turn (DC 15 Fortitude negates the weakened condition)."
+      },
+      {
+        "name": "Sucking Mud",
+        "trigger": "A creature starts its turn in swamp water",
+        "effect": "The creature must spend 1 extra square of movement to leave its current square. If it cannot, it is immobilized until the end of its turn."
+      }
+    ]
+  },
+  {
+    "id": "celestial-ruins",
+    "name": "Celestial Ruins",
+    "tags": [
+      "Celestial"
+    ],
+    "description": "Shattered marble halls glowing with fading divine radiance. Holy ground shifts allegiance.",
+    "actions": [
+      {
+        "name": "Divine Radiance Flare",
+        "trigger": "Initiative count 10",
+        "effect": "Fading divine energy pulses from a ruin fragment. Each undead or fiend creature within burst 3 takes 1d10 radiant damage. Each other creature in the area gains 5 temporary hit points."
+      },
+      {
+        "name": "Shifting Allegiance",
+        "trigger": "A creature with a healing power uses it in the ruins",
+        "effect": "Holy ground resonates — the healing grants 1d6 additional hit points."
+      }
+    ]
+  },
+  {
+    "id": "shapechanger-maze",
+    "name": "Shifting Maze",
+    "tags": [
+      "Shapechanger",
+      "Fey"
+    ],
+    "description": "Walls rearrange themselves between rounds. Nothing stays where you last saw it.",
+    "actions": [
+      {
+        "name": "Walls Rearrange",
+        "trigger": "Initiative count 10",
+        "effect": "The maze shifts. Each creature must succeed on DC 14 Perception or lose line of sight to all other creatures until the end of its next turn. The GM may move one wall section up to 3 squares."
+      },
+      {
+        "name": "False Passage",
+        "trigger": "A creature moves through a doorway or opening",
+        "effect": "Roll 1d6. On a 1-2, the doorway leads somewhere unexpected — the creature appears in a random opening within 6 squares instead."
+      }
+    ]
+  },
+  {
+    "id": "volcanic-vent",
+    "name": "Volcanic Vent",
+    "tags": [
+      "Fire",
+      "Elemental",
+      "Dragon"
+    ],
+    "description": "Geysers of flame erupt unpredictably. Sulfur clouds reduce visibility.",
+    "actions": [
+      {
+        "name": "Flame Geyser",
+        "trigger": "Initiative count 10",
+        "effect": "A vent erupts in burst 1 (GM places). Creatures in the area take 2d6 fire damage (DC 15 Reflex for half). The area becomes a fire zone for 1 round (entering or starting turn: 1d6 fire)."
+      },
+      {
+        "name": "Sulfur Cloud",
+        "trigger": "A creature takes fire damage from a terrain source",
+        "effect": "Choking fumes fill a burst 1 around the fire source. Creatures entering or starting their turn there take a −2 penalty to attack rolls (Fortitude DC 12 negates)."
+      }
+    ]
+  },
+  {
+    "id": "abandoned-temple",
+    "name": "Abandoned Temple",
+    "tags": [
+      "Undead",
+      "Fiend",
+      "Construct"
+    ],
+    "description": "Desecrated altars and shattered statues line the nave. Dark energy pools in the apse.",
+    "actions": [
+      {
+        "name": "Dark Energy Pulse",
+        "trigger": "Initiative count 10",
+        "effect": "Necrotic energy surges from the desecrated altar. Each living creature within burst 3 of the altar takes 1d8 necrotic damage. Each undead creature in the area gains +1 to attack rolls until end of next round."
+      },
+      {
+        "name": "Shattering Statue",
+        "trigger": "A creature is pushed or slid into a statue",
+        "effect": "The statue shatters. The creature takes 1d10 damage and each creature in burst 1 takes 1d6 damage from fragments. The square becomes difficult terrain."
+      }
+    ]
+  },
+  {
+    "id": "crystal-cavern",
+    "name": "Crystal Cavern",
+    "tags": [
+      "Aberration",
+      "Elemental"
+    ],
+    "description": "Razor-sharp crystal formations refract light into blinding patterns and create echoes.",
+    "actions": [
+      {
+        "name": "Prismatic Flash",
+        "trigger": "Initiative count 10",
+        "effect": "Crystals refract ambient energy. Each creature in the cavern must succeed on DC 14 Fortitude or be blinded until end of its next turn."
+      },
+      {
+        "name": "Resonance Shatter",
+        "trigger": "A thunder or force power hits a crystal formation",
+        "effect": "The crystal explodes. Each creature within burst 1 of the crystal takes 2d6 damage. The crystal is destroyed."
+      }
+    ]
+  },
+  {
+    "id": "blood-rock",
+    "name": "Blood Rock",
+    "tags": [
+      "Fiend",
+      "Demon"
+    ],
+    "description": "The site of ceremonial sacrifices or a great slaughter. Crimson stone that empowers those who spill blood nearby. (DMG p.67)",
+    "actions": [
+      {
+        "name": "Bloodfrenzy",
+        "trigger": "A creature is bloodied while on blood rock",
+        "effect": "The creature gains +1 to melee damage rolls until end of encounter but takes a −1 penalty to Will defense."
+      },
+      {
+        "name": "Crimson Surge",
+        "trigger": "Initiative count 10",
+        "effect": "Blood rock pulses. Each bloodied creature on the rock takes 1d6 necrotic damage. Each non-bloodied creature on the rock gains 5 temporary hit points."
+      }
+    ]
+  },
+  {
+    "id": "cave-slime",
+    "name": "Cave Slime",
+    "tags": [
+      "Ooze"
+    ],
+    "description": "Thin blue slime coating the floor. Harmless but extremely slick — creatures that move too fast risk falling. (DMG p.67)",
+    "actions": [
+      {
+        "name": "Slick Surface",
+        "trigger": "A creature charges or runs through cave slime",
+        "effect": "The creature must succeed on DC 14 Acrobatics or fall prone and slide 1d4 squares."
+      }
+    ]
+  },
+  {
+    "id": "choke-frost",
+    "name": "Choke Frost",
+    "tags": [
+      "Cold",
+      "Elemental"
+    ],
+    "description": "Light, white mist that congeals into thick ice as creatures move through it, slowing and immobilizing. (DMG p.67)",
+    "actions": [
+      {
+        "name": "Frost Snap",
+        "trigger": "Initiative count 10",
+        "effect": "Choke frost congeals. Each creature in a frost square is slowed (save ends). A creature already slowed is immobilized instead (save ends)."
+      }
+    ]
+  },
+  {
+    "id": "cloudspore",
+    "name": "Cloudspore",
+    "tags": [
+      "Plant"
+    ],
+    "description": "Strange Underdark mushrooms that release a thick cloud of choking spores when disturbed. (DMG p.67)",
+    "actions": [
+      {
+        "name": "Spore Cloud",
+        "trigger": "A creature enters or starts its turn in a cloudspore square",
+        "effect": "The creature takes 1d6 poison damage and is blinded until the start of its next turn (DC 14 Fortitude negates blindness)."
+      }
+    ]
+  },
+  {
+    "id": "ember-moss",
+    "name": "Ember Moss",
+    "tags": [
+      "Fire",
+      "Plant"
+    ],
+    "description": "Strange Underdark moss that is highly flammable. Burns brightly when ignited, spreading fire rapidly. (DMG p.67)",
+    "actions": [
+      {
+        "name": "Moss Ignition",
+        "trigger": "A fire attack hits a square containing ember moss",
+        "effect": "The moss ignites in burst 2. Each creature in the area takes 2d6 fire damage. The area burns for 2 rounds (entering or starting turn: 1d6 fire). The moss is destroyed."
+      }
+    ]
+  },
+  {
+    "id": "font-of-power",
+    "name": "Font of Power",
+    "tags": [
+      "Elemental",
+      "Celestial"
+    ],
+    "description": "Planar energy or a powerful artifact boosts attacks made from within this area. (DMG p.68)",
+    "actions": [
+      {
+        "name": "Power Surge",
+        "trigger": "A creature uses an encounter or daily power while in the font",
+        "effect": "The power deals 1d6 extra damage or the creature gains +2 to the attack roll (creature's choice)."
+      }
+    ]
+  },
+  {
+    "id": "grab-grass",
+    "name": "Grab Grass",
+    "tags": [
+      "Fey",
+      "Plant"
+    ],
+    "description": "Thick, tough grass of the deep Feywild forests that grasps at creatures, slowing movement. (DMG p.68)",
+    "actions": [
+      {
+        "name": "Grasping Tendrils",
+        "trigger": "A creature enters a grab grass square",
+        "effect": "The creature is slowed until the start of its next turn. If already slowed, it is immobilized instead (DC 14 Athletics or Acrobatics to escape as a move action)."
+      }
+    ]
+  },
+  {
+    "id": "grasping-slime",
+    "name": "Grasping Slime",
+    "tags": [
+      "Ooze",
+      "Aberration"
+    ],
+    "description": "Black, viscous goo whose clingy surface can cause creatures to become stuck in place. (DMG p.68)",
+    "actions": [
+      {
+        "name": "Sticky Grasp",
+        "trigger": "A creature enters a grasping slime square",
+        "effect": "The creature is immobilized (escape DC 15 Athletics). A creature that starts its turn immobilized by the slime takes 1d6 acid damage."
+      }
+    ]
+  },
+  {
+    "id": "mirror-crystal",
+    "name": "Mirror Crystal",
+    "tags": [
+      "Aberration",
+      "Fey"
+    ],
+    "description": "Crystals that cause strange twists and turns in space — teleportation becomes unpredictable. (DMG p.68)",
+    "actions": [
+      {
+        "name": "Spatial Twist",
+        "trigger": "A creature uses a teleport power within 3 squares of a mirror crystal",
+        "effect": "Roll 1d6. On 1-3, the destination shifts 1d4 squares in a random direction. On 4-6, the teleport works normally."
+      }
+    ]
+  },
+  {
+    "id": "pillar-of-life",
+    "name": "Pillar of Life",
+    "tags": [
+      "Celestial"
+    ],
+    "description": "A tall stone pillar infused with life energy. Creatures nearby heal faster but also attract attention. (DMG p.68)",
+    "actions": [
+      {
+        "name": "Life Pulse",
+        "trigger": "Initiative count 10",
+        "effect": "Each creature within burst 2 of the pillar regains 5 hit points. Undead take 5 radiant damage instead."
+      }
+    ]
+  },
+  {
+    "id": "sacred-circle",
+    "name": "Sacred Circle",
+    "tags": [
+      "Celestial",
+      "Undead"
+    ],
+    "description": "A circle dedicated to a specific deity and infused with divine energy. Sacred ground that may aid or hinder. (DMG p.68)",
+    "actions": [
+      {
+        "name": "Sacred Ward",
+        "trigger": "An undead or fiend enters the sacred circle",
+        "effect": "The creature takes 1d10 radiant damage and is pushed 1 square out of the circle."
+      },
+      {
+        "name": "Divine Blessing",
+        "trigger": "A creature uses a healing power within the circle",
+        "effect": "The healing restores 1d6 additional hit points."
+      }
+    ]
+  },
+  {
+    "id": "spiderwebs",
+    "name": "Spiderwebs",
+    "tags": [
+      "Beast",
+      "Shadow"
+    ],
+    "description": "Thick webs of giant spiders fill an area, creating difficult terrain and potentially restraining creatures. (DMG p.69)",
+    "actions": [
+      {
+        "name": "Web Snare",
+        "trigger": "A creature enters a webbed square",
+        "effect": "The creature is restrained (escape DC 14 Athletics or Acrobatics, or destroy the web: AC 12, 15 HP, vulnerable 10 fire)."
+      }
+    ]
+  },
+  {
+    "id": "whirlwind",
+    "name": "Whirlwind",
+    "tags": [
+      "Elemental"
+    ],
+    "description": "Whirlwinds form where elemental energy is strong. They slide creatures around and disrupt ranged attacks. (DMG p.69)",
+    "actions": [
+      {
+        "name": "Gust Blast",
+        "trigger": "Initiative count 10",
+        "effect": "The whirlwind slides each creature within burst 2 of its center 1d4 squares in a random direction. Ranged attacks through the whirlwind take a −2 penalty until end of next round."
+      }
+    ]
+  },
+  {
+    "id": "blast-cloud",
+    "name": "Blast Cloud",
+    "tags": [
+      "Elemental",
+      "Fire"
+    ],
+    "description": "Rust-hued dust particles that conduct and amplify energy and elemental forces. Attacks within deal extra damage. (DMG2 p.58)",
+    "actions": [
+      {
+        "name": "Energy Amplification",
+        "trigger": "A creature uses a power with fire, lightning, or thunder keyword while in the cloud",
+        "effect": "The power deals 1d8 extra damage of that type."
+      }
+    ]
+  },
+  {
+    "id": "blood-midge-cloud",
+    "name": "Blood Midge Cloud",
+    "tags": [
+      "Beast",
+      "Poison"
+    ],
+    "description": "A swarm of biting insects that harass creatures moving through the area. (DMG2 p.58)",
+    "actions": [
+      {
+        "name": "Midge Frenzy",
+        "trigger": "A bloodied creature starts its turn in the cloud",
+        "effect": "The creature takes 1d8 damage and grants combat advantage until end of its next turn as midges swarm the wound."
+      }
+    ]
+  },
+  {
+    "id": "bolt-stone",
+    "name": "Bolt Stone",
+    "tags": [
+      "Lightning",
+      "Elemental"
+    ],
+    "description": "Lightning energy fused with rock forming a highly unstable, dangerous mixture that arcs when struck. (DMG2 p.58)",
+    "actions": [
+      {
+        "name": "Arc Discharge",
+        "trigger": "A creature strikes bolt stone with a melee weapon",
+        "effect": "Lightning arcs to the attacker and each creature adjacent to the bolt stone, dealing 1d8 lightning damage (DC 14 Reflex for half)."
+      }
+    ]
+  },
+  {
+    "id": "creeping-ice",
+    "name": "Creeping Ice",
+    "tags": [
+      "Cold"
+    ],
+    "description": "Areas infused with cold energy that slowly drain living creatures of warmth and vitality. (DMG2 p.58)",
+    "actions": [
+      {
+        "name": "Frostbite Aura",
+        "trigger": "A creature starts its turn on creeping ice",
+        "effect": "The creature takes 5 cold damage. If the creature doesn't move at least 2 squares on its turn, it is slowed until end of next turn."
+      }
+    ]
+  },
+  {
+    "id": "defiled-ground",
+    "name": "Defiled Ground",
+    "tags": [
+      "Undead",
+      "Shadow"
+    ],
+    "description": "The dead do not always rest in peace. Necrotic energy seeps from the earth, empowering undead. (DMG2 p.59)",
+    "actions": [
+      {
+        "name": "Necrotic Empowerment",
+        "trigger": "An undead creature starts its turn on defiled ground",
+        "effect": "The undead regains 5 hit points and gains +1 to attack rolls until end of its turn."
+      },
+      {
+        "name": "Life Drain",
+        "trigger": "A living creature is bloodied while on defiled ground",
+        "effect": "The creature takes ongoing 5 necrotic damage (save ends)."
+      }
+    ]
+  },
+  {
+    "id": "doomlight-crystal",
+    "name": "Doomlight Crystal",
+    "tags": [
+      "Elemental",
+      "Aberration"
+    ],
+    "description": "Glowing rock formations trapping volatile gas that explodes violently on contact with air. (DMG2 p.59)",
+    "actions": [
+      {
+        "name": "Volatile Detonation",
+        "trigger": "A doomlight crystal takes any damage",
+        "effect": "It explodes: burst 2, 2d8 damage to each creature in the area (DC 15 Reflex for half). Crystal is destroyed."
+      }
+    ]
+  },
+  {
+    "id": "fey-circle",
+    "name": "Fey Circle",
+    "tags": [
+      "Fey"
+    ],
+    "description": "A location empowered with extraordinary Feywild energy. Teleportation and illusion magic intensifies. (DMG2 p.60)",
+    "actions": [
+      {
+        "name": "Fey Warp",
+        "trigger": "A creature uses a teleport power within the fey circle",
+        "effect": "The distance of the teleport increases by 2 squares. The creature gains concealment until end of its next turn."
+      }
+    ]
+  },
+  {
+    "id": "grasping-bog",
+    "name": "Grasping Bog",
+    "tags": [
+      "Plant",
+      "Beast"
+    ],
+    "description": "An area of deep, viscous mud that hampers movement and can pull creatures under. (DMG2 p.60)",
+    "actions": [
+      {
+        "name": "Quicksand Pull",
+        "trigger": "A creature starts its turn in the bog",
+        "effect": "DC 14 Athletics check or the creature sinks — slowed on first failure, immobilized on second, restrained on third. Each escape requires a standard action (DC 14 Athletics)."
+      }
+    ]
+  },
+  {
+    "id": "infernal-fumes",
+    "name": "Infernal Fumes",
+    "tags": [
+      "Fiend",
+      "Fire"
+    ],
+    "description": "Great clouds of gray smoke that drift as if alive, choking and blinding those within. (DMG2 p.60)",
+    "actions": [
+      {
+        "name": "Choking Cloud",
+        "trigger": "A creature starts its turn in the fumes",
+        "effect": "The creature takes 1d6 fire and poison damage and cannot use immediate actions until end of its turn (DC 14 Fortitude negates the action restriction)."
+      }
+    ]
+  },
+  {
+    "id": "jade-flame",
+    "name": "Jade Flame",
+    "tags": [
+      "Fey",
+      "Elemental"
+    ],
+    "description": "Strange, vibrant green fire that burns everything near yet protects from other heat sources. (DMG2 p.60)",
+    "actions": [
+      {
+        "name": "Green Fire Shield",
+        "trigger": "A creature starts its turn in jade flame",
+        "effect": "The creature takes 1d6 fire damage but gains resist 5 fire from other sources until end of its next turn."
+      }
+    ]
+  },
+  {
+    "id": "necrotic-ground",
+    "name": "Necrotic Ground",
+    "tags": [
+      "Undead",
+      "Shadow"
+    ],
+    "description": "An area infused with necrotic energy that drains life from the living and empowers the dead. (DMG2 p.60)",
+    "actions": [
+      {
+        "name": "Death's Grasp",
+        "trigger": "Initiative count 10",
+        "effect": "Each living creature on necrotic ground takes 1d6 necrotic damage. Each undead creature on it gains +2 to damage rolls until end of next round."
+      }
+    ]
+  },
+  {
+    "id": "needle-hedge",
+    "name": "Needle Hedge",
+    "tags": [
+      "Shadow",
+      "Plant"
+    ],
+    "description": "Sharp-needled bushes from the dark forests of the Shadowfell that slash at creatures passing through. (DMG2 p.61)",
+    "actions": [
+      {
+        "name": "Thorn Slash",
+        "trigger": "A creature is pushed or pulled through a needle hedge square",
+        "effect": "The creature takes 2d6 damage and ongoing 5 damage (save ends) from embedded thorns."
+      }
+    ]
+  },
+  {
+    "id": "phase-mist",
+    "name": "Phase Mist",
+    "tags": [
+      "Aberration",
+      "Fey"
+    ],
+    "description": "A hazy cloud of swirling color connected to the spaces between planes. Creatures may phase in and out. (DMG2 p.61)",
+    "actions": [
+      {
+        "name": "Phase Flicker",
+        "trigger": "A creature starts its turn in phase mist",
+        "effect": "Roll 1d6. On 1-2, the creature is phased (insubstantial and can move through solid objects) until end of its turn."
+      }
+    ]
+  },
+  {
+    "id": "rage-stone",
+    "name": "Rage Stone",
+    "tags": [
+      "Giant",
+      "Demon"
+    ],
+    "description": "Black-veined crimson stone infused with psychic residue of brutal atrocities. Drives creatures to fury. (DMG2 p.61)",
+    "actions": [
+      {
+        "name": "Fury Surge",
+        "trigger": "A creature starts its turn on rage stone",
+        "effect": "The creature gains +2 to melee damage rolls until end of its turn but must make a melee basic attack on its turn if able (takes 1d8 psychic damage if it doesn't)."
+      }
+    ]
+  },
+  {
+    "id": "thunder-shards",
+    "name": "Thunder Shards",
+    "tags": [
+      "Lightning",
+      "Elemental"
+    ],
+    "description": "Crystalline shards of solidified thunder energy. Unstable and dangerous — they detonate when disturbed. (DMG2 p.61)",
+    "actions": [
+      {
+        "name": "Shard Detonation",
+        "trigger": "A creature moves into a thunder shard square",
+        "effect": "The shard detonates: burst 1, 2d6 thunder damage (DC 14 Reflex for half). Each creature damaged is also deafened (save ends). The shard is destroyed."
+      }
+    ]
+  },
+  {
+    "id": "haunted-terrain",
+    "name": "Haunted Terrain",
+    "tags": [
+      "Undead",
+      "Shadow"
+    ],
+    "description": "This terrain radiates negative emotions — vague unease to crippling sorrow to virulent hatred of life. (Open Grave p.29)",
+    "actions": [
+      {
+        "name": "Haunting Dread",
+        "trigger": "Initiative count 10",
+        "effect": "Each living creature in the area takes a −2 penalty to Will defense and cannot willingly move closer to the center of the haunted zone until end of next round (DC 15 Will negates)."
+      },
+      {
+        "name": "Manifestation",
+        "trigger": "A creature drops to 0 HP in the haunted area",
+        "effect": "A spectral echo appears in the fallen creature's square — the echo grants combat advantage to enemies and has 1 HP. It vanishes at end of next round."
+      }
+    ]
+  },
+  {
+    "id": "razorvine",
+    "name": "Razorvine",
+    "tags": [
+      "Plant",
+      "Fiend"
+    ],
+    "description": "A hardy creeper with serrated leaves sharp enough to shred flesh. Ubiquitous throughout the planes. (Manual of the Planes p.22)",
+    "actions": [
+      {
+        "name": "Razor Lash",
+        "trigger": "A creature is pushed, pulled, or slid through razorvine",
+        "effect": "The creature takes 2d6 damage and ongoing 5 damage (save ends)."
+      },
+      {
+        "name": "Entangling Creep",
+        "trigger": "A creature starts its turn in razorvine",
+        "effect": "The creature is slowed until end of its turn unless it succeeds on DC 14 Athletics."
+      }
+    ]
+  },
+  {
+    "id": "dungeon-corridor",
+    "name": "Dungeon Corridor",
+    "tags": [],
+    "description": "A wide stone hallway with alcoves, side doors, and a collapsed section creating a bottleneck.",
+    "actions": [
+      {
+        "name": "Ceiling Collapse",
+        "trigger": "Initiative count 10 (once per encounter)",
+        "effect": "A 2×2 section of ceiling collapses (GM places in the corridor). Each creature beneath takes 2d6 damage (DC 14 Reflex for half). The squares become blocking terrain."
+      },
+      {
+        "name": "Bottleneck",
+        "trigger": "Two or more creatures end their turns in the collapsed section",
+        "effect": "Creatures in the bottleneck grant combat advantage to enemies outside it."
+      }
+    ]
+  },
+  {
+    "id": "open-clearing",
+    "name": "Open Clearing",
+    "tags": [],
+    "description": "A broad clearing with sparse boulders for cover and uneven ground slowing movement.",
+    "actions": [
+      {
+        "name": "Exposed Ground",
+        "trigger": "A creature ends its turn more than 3 squares from any cover",
+        "effect": "Ranged attacks against the creature gain +1 to attack rolls until the creature moves to cover."
+      }
+    ]
+  },
+  {
+    "id": "forest-road",
+    "name": "Forest Road",
+    "tags": [],
+    "description": "A dirt path through dense trees. Undergrowth creates difficult terrain off the road.",
+    "actions": [
+      {
+        "name": "Falling Branch",
+        "trigger": "Initiative count 10",
+        "effect": "A heavy branch falls in a random 2×1 area. Each creature underneath takes 1d10 damage and is knocked prone (DC 14 Reflex negates). The branch creates difficult terrain."
+      }
+    ]
+  },
+  {
+    "id": "underground-river",
+    "name": "Underground River",
+    "tags": [],
+    "description": "A natural cavern bisected by a fast-flowing river. Stepping stones offer risky crossings.",
+    "actions": [
+      {
+        "name": "River Surge",
+        "trigger": "Initiative count 10",
+        "effect": "The river's current intensifies. Any creature in the water is pushed 3 squares downstream. Creatures on stepping stones must succeed on DC 14 Acrobatics or fall in."
+      }
+    ]
+  },
+  {
+    "id": "ruined-bridge",
+    "name": "Ruined Bridge",
+    "tags": [],
+    "description": "A half-collapsed stone bridge over a deep chasm. Gaps force jumps or careful climbing.",
+    "actions": [
+      {
+        "name": "Crumbling Section",
+        "trigger": "Two or more creatures stand on the same bridge section (3×1 area)",
+        "effect": "The section collapses. Each creature falls 20 feet (2d10 falling damage) unless it succeeds on DC 15 Acrobatics to grab the edge."
+      }
+    ]
+  },
+  {
+    "id": "tavern-interior",
+    "name": "Tavern Interior",
+    "tags": [],
+    "description": "Overturned tables, a long bar, and a staircase to a balcony. Tight quarters with improvised cover.",
+    "actions": [
+      {
+        "name": "Overturned Table Cover",
+        "trigger": "A creature uses a move action to flip a table",
+        "effect": "The table provides superior cover (+5 AC) in one direction until destroyed (AC 4, 20 HP). A creature can kick the table — push it 2 squares as a standard action."
+      },
+      {
+        "name": "Chandelier Drop",
+        "trigger": "A creature uses a standard action to cut the chandelier rope",
+        "effect": "The chandelier crashes: burst 1 under it, 2d6 damage (DC 14 Reflex for half) and the area is lit on fire (entering: 1d6 fire, 2 rounds)."
+      }
+    ]
+  },
+  {
+    "id": "marketplace",
+    "name": "Marketplace",
+    "tags": [],
+    "description": "Vendor stalls, crates, and awnings create a maze of cover and narrow lanes.",
+    "actions": [
+      {
+        "name": "Toppling Stall",
+        "trigger": "A Large creature moves through a market stall",
+        "effect": "The stall collapses: burst 1, creatures take 1d6 damage and fall prone (DC 12 Reflex negates). The area becomes difficult terrain."
+      },
+      {
+        "name": "Crowd Chaos",
+        "trigger": "Initiative count 10 (first round only)",
+        "effect": "Panicked civilians flee. Each creature not adjacent to a wall is pushed 1 square in a random direction and grants combat advantage until end of next turn."
+      }
+    ]
+  },
+  {
+    "id": "clifftop-camp",
+    "name": "Clifftop Camp",
+    "tags": [],
+    "description": "A campsite on a rocky ledge. One side drops away steeply — forced movement is deadly.",
+    "actions": [
+      {
+        "name": "Cliff Edge",
+        "trigger": "A creature is pushed to within 1 square of the cliff edge",
+        "effect": "DC 15 Acrobatics or the creature goes over. It can grab the edge (DC 12 Athletics) or fall, taking 5d10 damage."
+      }
+    ]
+  },
+  {
+    "id": "flooded-cellar",
+    "name": "Flooded Cellar",
+    "tags": [],
+    "description": "Knee-deep water slows movement. Pillars support a low ceiling. Barrels float as unstable platforms.",
+    "actions": [
+      {
+        "name": "Barrel Platform",
+        "trigger": "A creature jumps onto a floating barrel (move action, DC 12 Acrobatics)",
+        "effect": "The barrel provides a dry platform but is unstable — if the creature is hit by an attack, DC 14 Acrobatics to stay on or fall prone in the water."
+      },
+      {
+        "name": "Water Surge",
+        "trigger": "Initiative count 10",
+        "effect": "Water sloshes. Each creature in the cellar is slid 1 square toward the room's lowest point."
+      }
+    ]
+  },
+  {
+    "id": "canyon-pass",
+    "name": "Canyon Pass",
+    "tags": [],
+    "description": "A narrow ravine with high walls on both sides. Enemies above have superior positioning.",
+    "actions": [
+      {
+        "name": "Rockfall",
+        "trigger": "Initiative count 10",
+        "effect": "Rocks tumble from the canyon walls. Each creature in a random 3×1 area takes 2d6 damage (DC 14 Reflex for half) and the area becomes difficult terrain."
+      },
+      {
+        "name": "High Ground Advantage",
+        "trigger": "A creature on the canyon rim attacks a creature on the canyon floor",
+        "effect": "The attack gains +2 to hit and +1d6 damage as the height advantage is extreme."
+      }
+    ]
+  },
+  {
+    "id": "crumbling-tower",
+    "name": "Crumbling Tower",
+    "tags": [],
+    "description": "A multi-level ruin with holes in the floors, a spiral stair, and precarious ledges.",
+    "actions": [
+      {
+        "name": "Floor Collapse",
+        "trigger": "A creature uses a power that deals thunder, force, or more than 15 damage in the tower",
+        "effect": "Roll 1d6. On 1-2, a 2×2 floor section collapses. Creatures on it fall one level (1d10 damage, prone). The hole persists."
+      }
+    ]
+  },
+  {
+    "id": "winding-staircase",
+    "name": "Winding Staircase",
+    "tags": [],
+    "description": "A spiral staircase with landings at different levels. Height advantage and tight corners define the fight.",
+    "actions": [
+      {
+        "name": "Tumble Down",
+        "trigger": "A creature on the stairs is knocked prone",
+        "effect": "The creature tumbles 1d4 landings downward, taking 1d6 damage per landing. Other creatures in the path must succeed on DC 12 Reflex or be knocked prone."
+      }
+    ]
+  },
+  {
+    "id": "city-rooftops",
+    "name": "City Rooftops",
+    "tags": [],
+    "description": "Flat rooftops of varying heights connected by narrow planks. Falls to the streets below are lethal.",
+    "actions": [
+      {
+        "name": "Plank Bridge",
+        "trigger": "A creature moves across a connecting plank",
+        "effect": "DC 12 Acrobatics or the creature falls to the streets below (varies, typically 3d10 damage). The plank can be kicked away as a minor action."
+      },
+      {
+        "name": "Loose Tiles",
+        "trigger": "A creature charges on a rooftop",
+        "effect": "DC 14 Acrobatics or the creature falls prone as tiles slide. The tiles scatter into the square below: creatures underneath take 1d6 damage."
+      }
+    ]
+  },
+  {
+    "id": "muddy-riverbank",
+    "name": "Muddy Riverbank",
+    "tags": [],
+    "description": "Soft ground along a river. Movement is hampered near the water, but the current offers escape routes.",
+    "actions": [
+      {
+        "name": "Sucking Mud",
+        "trigger": "A creature ends its turn in the mud",
+        "effect": "DC 12 Athletics or the creature is slowed until end of its next turn."
+      }
+    ]
+  },
+  {
+    "id": "abandoned-mine",
+    "name": "Abandoned Mine",
+    "tags": [],
+    "description": "Timber-braced tunnels with minecart tracks, rubble piles for cover, and risk-of-collapse choke points.",
+    "actions": [
+      {
+        "name": "Minecart Launch",
+        "trigger": "A creature uses a standard action to push a minecart",
+        "effect": "The cart rolls 6 squares in a straight line along the track. Each creature in its path takes 2d6 damage and is pushed 1 square to the side (DC 14 Reflex to jump aside: no damage)."
+      },
+      {
+        "name": "Support Beam Collapse",
+        "trigger": "A support beam is destroyed (AC 4, 25 HP)",
+        "effect": "The ceiling collapses in a 3×3 area: 2d10 damage (DC 15 Reflex for half). The area becomes blocking terrain."
+      }
+    ]
+  },
+  {
+    "id": "ancient-library",
+    "name": "Ancient Library",
+    "tags": [],
+    "description": "Towering shelves of books create corridors. Ladders offer height. Toppling shelves can block or crush.",
+    "actions": [
+      {
+        "name": "Toppling Bookshelf",
+        "trigger": "A creature uses a standard action to push a bookshelf",
+        "effect": "The shelf topples in a 1×3 line. Each creature in the path takes 2d6 damage and is knocked prone (DC 14 Reflex: half damage, not prone). The area becomes difficult terrain."
+      }
+    ]
+  },
+  {
+    "id": "ship-deck",
+    "name": "Ship Deck",
+    "tags": [],
+    "description": "The rolling deck of a ship at sea. Masts, rigging, and rails create vertical terrain. Falling overboard is punishing.",
+    "actions": [
+      {
+        "name": "Rolling Deck",
+        "trigger": "Initiative count 10",
+        "effect": "The ship rolls. Each creature on deck is slid 2 squares toward the lower rail. DC 12 Acrobatics negates. Creatures hitting the rail take 1d6 damage."
+      },
+      {
+        "name": "Rigging Swing",
+        "trigger": "A creature grabs rigging (move action, must be adjacent to a mast)",
+        "effect": "The creature swings up to 6 squares in a straight line, landing in any unoccupied square along the path. Does not provoke opportunity attacks."
+      }
+    ]
+  },
+  {
+    "id": "courtyard",
+    "name": "Courtyard",
+    "tags": [],
+    "description": "A stone courtyard surrounded by walls with archer positions. A fountain or well at the center provides partial cover.",
+    "actions": [
+      {
+        "name": "Arrow Slit Volleys",
+        "trigger": "Initiative count 10 (if archers are positioned)",
+        "effect": "Arrows rain into the courtyard: burst 2 (centered on the courtyard), +12 vs. AC, 1d8+4 damage. Cover from the fountain provides +2 to defenses against this attack."
+      }
+    ]
+  },
+  {
+    "id": "mountain-switchback",
+    "name": "Mountain Switchback",
+    "tags": [],
+    "description": "A narrow trail carved into a mountainside. The uphill side offers high ground; the downhill side, a long drop.",
+    "actions": [
+      {
+        "name": "Switchback Slide",
+        "trigger": "A creature is pushed off the uphill side of the trail",
+        "effect": "The creature slides 2d4 squares down the mountainside, taking 1d6 damage per 2 squares, landing prone. DC 14 Athletics to grab a handhold after 1d4 squares."
+      }
+    ]
+  },
+  {
+    "id": "illusions",
+    "name": "Illusions",
+    "tags": [
+      "Fey"
+    ],
+    "description": "Illusions can mimic any terrain, tricking creatures into dangerous positions or hiding real hazards. (DMG p.68)",
+    "actions": [
+      {
+        "name": "Illusory Terrain Shift",
+        "trigger": "Initiative count 10",
+        "effect": "One 3×3 area of illusory terrain shifts location (GM places). Creatures who enter it believing it is real terrain: DC 15 Insight to disbelieve. Failing creatures treat it as difficult terrain and grant combat advantage."
+      }
+    ]
+  },
+  {
+    "id": "illusory-wall",
+    "name": "Illusory Wall",
+    "tags": [
+      "Fey"
+    ],
+    "description": "An illusory wall blocks line of sight but allows creatures to pass through. Enemies can hide behind it or ambush from within. (DMG p.68)",
+    "actions": [
+      {
+        "name": "Ambush Passage",
+        "trigger": "A creature behind the illusory wall attacks through it",
+        "effect": "The attacker gains combat advantage and +2 to the attack roll. After the attack, the wall shimmers and is partially revealed (DC 10 Insight to see through it)."
+      }
+    ]
+  },
+  {
+    "id": "loadstone",
+    "name": "Loadstone",
+    "tags": [
+      "Elemental"
+    ],
+    "description": "This strange rock dramatically increases the weight of all objects near it, slowing movement and hampering flight. (DMG p.68)",
+    "actions": [
+      {
+        "name": "Gravitational Pull",
+        "trigger": "A creature starts its turn within 2 squares of the loadstone",
+        "effect": "The creature is pulled 1 square toward the loadstone and is slowed until end of its turn. Flying creatures are pulled 2 squares instead and must land if pulled adjacent."
+      }
+    ]
+  },
+  {
+    "id": "slides",
+    "name": "Slides",
+    "tags": [],
+    "description": "A surface coated with a slick substance. Creatures that enter may slide uncontrollably in one direction. (DMG p.68)",
+    "actions": [
+      {
+        "name": "Slippery Slide",
+        "trigger": "A creature enters a slide square",
+        "effect": "The creature slides to the end of the slick surface, moving up to 6 squares in the slide's direction. It cannot stop until it reaches the end or hits an obstacle (1d6 damage to both)."
+      }
+    ]
+  },
+  {
+    "id": "teleporters",
+    "name": "Teleporters",
+    "tags": [],
+    "description": "Magical gates that whisk characters from one spot to another, disrupting positioning and enabling surprise flanks. (DMG p.69)",
+    "actions": [
+      {
+        "name": "Warp Gate",
+        "trigger": "A creature enters a teleporter square",
+        "effect": "The creature is teleported to the linked teleporter square. If unwilling, DC 14 Fortitude to resist. Creatures emerging from a teleporter are dazed until end of their next turn."
+      }
+    ]
+  },
+  {
+    "id": "dimensional-turbulence",
+    "name": "Dimensional Turbulence",
+    "tags": [
+      "Aberration"
+    ],
+    "description": "Instability in the fabric of a plane making teleportation difficult and inaccurate. Teleporting creatures may end up in the wrong spot. (DMG2 p.59)",
+    "actions": [
+      {
+        "name": "Teleport Scatter",
+        "trigger": "A creature uses a teleport power in the area",
+        "effect": "The destination scatters 1d4 squares in a random direction. If the new destination is occupied or solid, the teleport fails and the creature takes 1d8 force damage."
+      }
+    ]
+  },
+  {
+    "id": "eldritch-influx",
+    "name": "Eldritch Influx",
+    "tags": [
+      "Elemental"
+    ],
+    "description": "Magical energy pools in this area, flowing into the void left behind by the expenditure of magical item powers. Recharges spent abilities. (DMG2 p.59)",
+    "actions": [
+      {
+        "name": "Power Recharge",
+        "trigger": "A creature starts its turn in the influx zone",
+        "effect": "The creature can recharge one expended encounter power (roll 1d6; recharges on 4+). Each creature can only benefit once per encounter."
+      }
+    ]
+  },
+  {
+    "id": "elemental-windchurn",
+    "name": "Elemental Windchurn",
+    "tags": [
+      "Elemental"
+    ],
+    "description": "Elemental turbulence crackling with energy, its swirling winds making flying difficult and pushing creatures off course. (DMG2 p.59)",
+    "actions": [
+      {
+        "name": "Gale Force",
+        "trigger": "Initiative count 10",
+        "effect": "Each flying creature in the area is pushed 2d4 squares in a random direction. Non-flying creatures in the area are pushed 1 square. Ranged attacks passing through take a −4 penalty."
+      }
+    ]
+  },
+  {
+    "id": "energy-node",
+    "name": "Energy Node",
+    "tags": [
+      "Elemental"
+    ],
+    "description": "A particularly strong confluence of arcane, divine, or other forms of power. Boosts attacks or healing for those standing within. (DMG2 p.59)",
+    "actions": [
+      {
+        "name": "Energy Surge",
+        "trigger": "A creature uses a power with a damage roll while in the node",
+        "effect": "Add 1d6 extra damage of a random type (roll 1d4: 1=fire, 2=cold, 3=lightning, 4=thunder)."
+      }
+    ]
+  },
+  {
+    "id": "healing-ground",
+    "name": "Healing Ground",
+    "tags": [
+      "Celestial"
+    ],
+    "description": "An area infused with primal energy that allows life of all sorts to flourish. Creatures within regenerate hit points. (DMG2 p.60)",
+    "actions": [
+      {
+        "name": "Regenerative Pulse",
+        "trigger": "A creature starts its turn on healing ground",
+        "effect": "The creature regains 5 hit points. A creature at full HP instead gains 5 temporary hit points."
+      }
+    ]
+  },
+  {
+    "id": "martyrs-monument",
+    "name": "Martyr's Monument",
+    "tags": [
+      "Celestial"
+    ],
+    "description": "The life energy of an ancient and powerful champion of the gods, embodied in a statue or holy icon. Empowers divine abilities. (DMG2 p.60)",
+    "actions": [
+      {
+        "name": "Martyr's Blessing",
+        "trigger": "A creature uses a divine power within 3 squares of the monument",
+        "effect": "The creature gains +2 to the attack roll or the power restores 1d6 additional HP (creature's choice)."
+      }
+    ]
+  },
+  {
+    "id": "quick-sear",
+    "name": "Quick Sear",
+    "tags": [
+      "Acid"
+    ],
+    "description": "A viscous, silvery green liquid resulting from the mixture of acid and quicksilver. Burns on contact and corrodes metal. (DMG2 p.61)",
+    "actions": [
+      {
+        "name": "Caustic Splash",
+        "trigger": "A creature enters a quick-sear pool",
+        "effect": "The creature takes 2d6 acid damage and takes ongoing 5 acid damage (save ends). Metal armor or weapons in contact take a cumulative −1 penalty to AC or attack rolls (save ends)."
+      }
+    ]
+  },
+  {
+    "id": "abyssal-wellspring",
+    "name": "Abyssal Wellspring",
+    "tags": [
+      "Demon",
+      "Fiend"
+    ],
+    "description": "A suppurating wound in reality where the raw madness and evil of the Abyss bulges into another plane. (Manual of the Planes p.21)",
+    "actions": [
+      {
+        "name": "Madness Pulse",
+        "trigger": "Initiative count 10",
+        "effect": "Each creature within burst 3 of the wellspring makes a DC 15 Will save or makes a basic melee attack against the nearest creature as a free action."
+      }
+    ]
+  },
+  {
+    "id": "angelic-lantern",
+    "name": "Angelic Lantern",
+    "tags": [
+      "Celestial"
+    ],
+    "description": "Small, pulsating balls of light that are faint manifestations of divine will. They illuminate and may aid the righteous. (Manual of the Planes p.21)",
+    "actions": [
+      {
+        "name": "Guiding Light",
+        "trigger": "A creature starts its turn within 2 squares of a lantern",
+        "effect": "The creature gains +1 to attack rolls against undead and fiends until end of its turn."
+      }
+    ]
+  },
+  {
+    "id": "astral-flame",
+    "name": "Astral Flame",
+    "tags": [
+      "Fire",
+      "Elemental"
+    ],
+    "description": "A fountain of fiery liquid — the burning essence of the Astral Sea. Burns with otherworldly heat. (Manual of the Planes p.21)",
+    "actions": [
+      {
+        "name": "Astral Burn",
+        "trigger": "Initiative count 10",
+        "effect": "The flame erupts in burst 1. Each creature in the area takes 2d6 fire and radiant damage (DC 15 Reflex for half)."
+      }
+    ]
+  },
+  {
+    "id": "divine-blood",
+    "name": "Divine Blood",
+    "tags": [
+      "Celestial"
+    ],
+    "description": "Wreckage from the ancient war between the gods and primordials still litters the planes. Divine blood pools radiate power. (Manual of the Planes p.22)",
+    "actions": [
+      {
+        "name": "Divine Resonance",
+        "trigger": "A creature with a healing surge starts its turn in the blood pool",
+        "effect": "The creature can spend a healing surge as a free action but is dazed until end of its next turn as divine power overwhelms."
+      }
+    ]
+  },
+  {
+    "id": "elemental-seepage",
+    "name": "Elemental Seepage",
+    "tags": [
+      "Elemental"
+    ],
+    "description": "A strange, viscous mass pulsating with the energy of the Elemental Chaos — fire, cold, thunder, lightning, or a combination. (Manual of the Planes p.22)",
+    "actions": [
+      {
+        "name": "Random Energy Burst",
+        "trigger": "Initiative count 10",
+        "effect": "The seepage discharges in burst 2. Roll 1d4 for damage type (fire/cold/lightning/thunder). Each creature takes 2d6 damage of that type (DC 14 Reflex for half)."
+      }
+    ]
+  },
+  {
+    "id": "energy-crystals",
+    "name": "Energy Crystals",
+    "tags": [
+      "Elemental"
+    ],
+    "description": "Weird crystals that collect and store energy of all kinds. They discharge violently when disturbed. (Manual of the Planes p.22)",
+    "actions": [
+      {
+        "name": "Crystal Discharge",
+        "trigger": "A creature strikes a crystal with a melee attack",
+        "effect": "The crystal shatters: burst 1, 2d8 damage of a random energy type. Each creature in the area also takes ongoing 5 damage of that type (save ends)."
+      }
+    ]
+  },
+  {
+    "id": "erratic-portal",
+    "name": "Erratic Portal",
+    "tags": [
+      "Aberration"
+    ],
+    "description": "When the magic of a portal finally fails, it may transform into an erratic portal — flickering unpredictably between destinations. (Manual of the Planes p.22)",
+    "actions": [
+      {
+        "name": "Unstable Transit",
+        "trigger": "A creature enters or is pushed into the portal",
+        "effect": "Roll 1d6: 1-2 creature appears in a random square within 10; 3-4 creature is teleported to the GM's choice within 20 squares; 5-6 portal flickers and nothing happens."
+      }
+    ]
+  },
+  {
+    "id": "hellfire",
+    "name": "Hellfire",
+    "tags": [
+      "Fiend",
+      "Fire"
+    ],
+    "description": "Fire found predominantly in the Nine Hells. Burns hotter than natural flame and sears the soul. (Manual of the Planes p.22)",
+    "actions": [
+      {
+        "name": "Hellfire Eruption",
+        "trigger": "Initiative count 10",
+        "effect": "Hellfire surges in burst 2 (GM places). Each creature takes 2d8 fire damage (DC 15 Reflex for half). Fire resistance is reduced by 5 against this damage."
+      }
+    ]
+  },
+  {
+    "id": "phase-rock",
+    "name": "Phase Rock",
+    "tags": [
+      "Elemental"
+    ],
+    "description": "Phase rocks are slightly out of sync with reality. Creatures near them may phase in and out unpredictably. (Manual of the Planes p.22)",
+    "actions": [
+      {
+        "name": "Phasing Flicker",
+        "trigger": "A creature starts its turn on phase rock",
+        "effect": "Roll 1d6. On 1-2, the creature is phased until end of its turn (insubstantial, can move through walls). On 6, the creature is teleported 1d6 squares in a random direction."
+      }
+    ]
+  },
+  {
+    "id": "aberrant-structures",
+    "name": "Aberrant Structures",
+    "tags": [
+      "Aberration"
+    ],
+    "description": "Desiccated, long-dead structures in ruins left over from Nihilath. Their alien geometry warps perception. (Underdark p.82)",
+    "actions": [
+      {
+        "name": "Warped Geometry",
+        "trigger": "A creature uses a ranged power while within the structures",
+        "effect": "The range changes by 1d4−2 squares (may increase or decrease). On a result of 0 or less, the attack targets a random creature within range instead."
+      }
+    ]
+  },
+  {
+    "id": "blinkrock",
+    "name": "Blinkrock",
+    "tags": [
+      "Aberration"
+    ],
+    "description": "Nondescript gray-black stone with texture similar to granite and the ability to warp space. Creatures on it may teleport unexpectedly. (Underdark p.65)",
+    "actions": [
+      {
+        "name": "Spatial Hiccup",
+        "trigger": "A creature starts its turn on blinkrock",
+        "effect": "Roll 1d6. On 1-2, the creature teleports 1d4 squares in a random direction. This does not provoke opportunity attacks."
+      }
+    ]
+  },
+  {
+    "id": "blood-grate",
+    "name": "Blood Grate",
+    "tags": [
+      "Giant"
+    ],
+    "description": "Hideous contraptions that revitalize fomorians and their allies with the blood of intruders. (Underdark p.103)",
+    "actions": [
+      {
+        "name": "Blood Harvest",
+        "trigger": "A bloodied creature starts its turn on the grate",
+        "effect": "The creature takes 1d6 necrotic damage. One fomorian or fey creature within 5 squares regains the same amount of HP."
+      }
+    ]
+  },
+  {
+    "id": "brainmoss",
+    "name": "Brainmoss",
+    "tags": [
+      "Aberration"
+    ],
+    "description": "Tissue seeded from living brains growing on cavern walls and floors. Picks up and retains strong emotional impressions, affecting the minds of living creatures. (Underdark p.83)",
+    "actions": [
+      {
+        "name": "Psychic Echo",
+        "trigger": "A creature takes psychic damage within 3 squares of brainmoss",
+        "effect": "The brainmoss amplifies the pain. Each creature within burst 1 of the moss takes 1d6 psychic damage."
+      },
+      {
+        "name": "Emotional Surge",
+        "trigger": "Initiative count 10",
+        "effect": "DC 15 Will save for each creature within 3 squares or the creature gains either +2 to attack (rage) or −2 to attack (despair), GM's choice, until end of next turn."
+      }
+    ]
+  },
+  {
+    "id": "caught-breath",
+    "name": "Caught Breath",
+    "tags": [
+      "Cold"
+    ],
+    "description": "Tinkling crystals of warm breath frozen in air. Fragile and beautiful, but they shatter into cutting shards when disturbed. (Underdark p.120)",
+    "actions": [
+      {
+        "name": "Breath Shatter",
+        "trigger": "A creature moves through caught breath crystals",
+        "effect": "Burst 1 around the square: 1d8 cold damage and the area becomes difficult terrain of sharp crystal fragments."
+      }
+    ]
+  },
+  {
+    "id": "darkrock",
+    "name": "Darkrock",
+    "tags": [
+      "Shadow"
+    ],
+    "description": "Darkrock drinks in illumination, weakening the light and creating strange, unpredictable shadows. (Underdark p.14)",
+    "actions": [
+      {
+        "name": "Light Devourer",
+        "trigger": "A light source enters within 3 squares of darkrock",
+        "effect": "The light's radius is halved. Creatures relying on the light source grant combat advantage to creatures in the dark."
+      }
+    ]
+  },
+  {
+    "id": "eye-unblinking",
+    "name": "Eye Unblinking",
+    "tags": [
+      "Aberration",
+      "Giant"
+    ],
+    "description": "Magic weapons made from ritually enlarged evil eyes and nourished by the blood of wounded foes, which loose beams of arcane energy at invaders. (Underdark p.103)",
+    "actions": [
+      {
+        "name": "Arcane Beam",
+        "trigger": "Initiative count 10",
+        "effect": "The eye fires a beam: ranged 10, +15 vs. Reflex, 2d6+4 force damage. On hit, the target is also dazed until end of its next turn."
+      }
+    ]
+  },
+  {
+    "id": "glowstone",
+    "name": "Glowstone",
+    "tags": [],
+    "description": "Glowstone provides patches of dim light that break up the darkness of the Underdark. (Underdark p.14)",
+    "actions": [
+      {
+        "name": "Dim Beacon",
+        "trigger": "A creature is hidden within 3 squares of glowstone",
+        "effect": "The creature's Stealth check takes a −2 penalty as faint luminescence undermines concealment."
+      }
+    ]
+  },
+  {
+    "id": "godrock",
+    "name": "Godrock",
+    "tags": [],
+    "description": "Where fragments of Torog's bones struck the earth, formations called godrock sprouted. They radiate lingering divine agony. (Underdark p.119)",
+    "actions": [
+      {
+        "name": "Agony Pulse",
+        "trigger": "Initiative count 10",
+        "effect": "Each creature within burst 2 of the godrock takes 1d6 psychic damage and is slowed until end of its next turn (DC 15 Will negates the slowed condition)."
+      }
+    ]
+  },
+  {
+    "id": "godsblood",
+    "name": "Godsblood",
+    "tags": [],
+    "description": "The divine energy remaining within this godsblood temporarily supercharges natural healing, but at the cost of stamina and sanity. (Underdark p.102)",
+    "actions": [
+      {
+        "name": "Divine Healing Surge",
+        "trigger": "A creature drinks from or touches the godsblood",
+        "effect": "The creature regains hit points as if spending two healing surges but loses one healing surge and is dazed until end of next turn."
+      }
+    ]
+  },
+  {
+    "id": "godsdream",
+    "name": "Godsdream",
+    "tags": [],
+    "description": "Energy remaining from Torog's passage through the Shallows provides certainty of one incredible blow against a foe, but hides everything beneath a filmy dream layer. (Underdark p.33)",
+    "actions": [
+      {
+        "name": "Prophetic Strike",
+        "trigger": "A creature starts its turn within the godsdream area",
+        "effect": "The creature gains +4 to its next attack roll but takes −2 to all defenses until end of its turn as the dream demands focus."
+      }
+    ]
+  },
+  {
+    "id": "godsrage",
+    "name": "Godsrage",
+    "tags": [],
+    "description": "An echo of Torog's ancient fury — a terrible and appalling anger that infects travelers with raging power. (Underdark p.64)",
+    "actions": [
+      {
+        "name": "Rage Infusion",
+        "trigger": "A creature takes damage while in the godsrage area",
+        "effect": "The creature gains +4 to its next melee damage roll but must charge or make a melee basic attack on its next turn if able."
+      }
+    ]
+  },
+  {
+    "id": "ground-swarms",
+    "name": "Ground Swarms",
+    "tags": [
+      "Beast"
+    ],
+    "description": "Masses of rats, beetles, tiny drakes, or other nuisance creatures that harass and distract anyone entering their territory. (Underdark p.100)",
+    "actions": [
+      {
+        "name": "Swarm Surge",
+        "trigger": "A creature starts its turn in a swarm square",
+        "effect": "The creature takes 1d6 damage and takes a −2 penalty to attack rolls until end of its turn as vermin crawl over it."
+      }
+    ]
+  },
+  {
+    "id": "hungry-void",
+    "name": "Hungry Void",
+    "tags": [
+      "Shadow"
+    ],
+    "description": "Some places in the unending night below sap existence and unravel the threads of life. Creatures nearby feel their vitality drain. (Underdark p.120)",
+    "actions": [
+      {
+        "name": "Void Drain",
+        "trigger": "A creature starts its turn in the hungry void",
+        "effect": "The creature loses a healing surge. If it has no healing surges, it takes 1d10 necrotic damage instead."
+      }
+    ]
+  },
+  {
+    "id": "insect-cloud",
+    "name": "Insect Cloud",
+    "tags": [
+      "Beast"
+    ],
+    "description": "Swarms of flying, blood-drinking bugs searching for targets. They obscure vision and harass creatures. (Underdark p.100)",
+    "actions": [
+      {
+        "name": "Biting Swarm",
+        "trigger": "A creature enters or starts its turn in the insect cloud",
+        "effect": "The creature takes 1d6 damage, grants combat advantage, and takes a −2 penalty to ranged attack rolls until end of its next turn."
+      }
+    ]
+  },
+  {
+    "id": "lifedrinker-caverns",
+    "name": "Lifedrinker Caverns",
+    "tags": [
+      "Shadow"
+    ],
+    "description": "Strange, black-speckled lichen that feeds on nearby injuries, sapping life from wounded creatures. (Underdark p.64)",
+    "actions": [
+      {
+        "name": "Life Siphon",
+        "trigger": "A bloodied creature starts its turn in the area",
+        "effect": "The creature takes 5 necrotic damage. The lichen stores this — the next creature to start its turn in the area while bloodied takes 5 less damage."
+      }
+    ]
+  },
+  {
+    "id": "living-stone",
+    "name": "Living Stone",
+    "tags": [
+      "Elemental"
+    ],
+    "description": "Rock formations that grow on their own, slowly reshaping the cavern and potentially trapping those who linger. (Underdark p.13)",
+    "actions": [
+      {
+        "name": "Stone Grasp",
+        "trigger": "A creature ends its turn without moving at least 2 squares",
+        "effect": "The stone crawls up the creature's legs. DC 14 Athletics or the creature is immobilized (save ends). On second failed save, the creature is restrained instead."
+      }
+    ]
+  },
+  {
+    "id": "mushroom-arch",
+    "name": "Mushroom Arch",
+    "tags": [
+      "Plant"
+    ],
+    "description": "A series of glowing mushrooms that grow together to form an arch over a corridor, shedding spores and dim light. (Underdark p.101)",
+    "actions": [
+      {
+        "name": "Spore Burst",
+        "trigger": "A creature moves through the mushroom arch",
+        "effect": "Burst 1 around the arch: creatures are blinded until end of their next turn (DC 12 Fortitude negates). The arch's light goes out for 1 round."
+      }
+    ]
+  },
+  {
+    "id": "primal-mud",
+    "name": "Primal Mud",
+    "tags": [
+      "Fey",
+      "Ooze"
+    ],
+    "description": "Organic sludge that forms where life force rises up through the Feydark into the Feywild. Teeming with nascent life. (Underdark p.101)",
+    "actions": [
+      {
+        "name": "Life Surge",
+        "trigger": "A creature falls prone in primal mud",
+        "effect": "Tiny creatures sprout and attack: the prone creature takes 1d8 damage and is dazed until it stands. If the creature is bloodied, it regains 5 HP as the mud's primal energy responds to weakness."
+      }
+    ]
+  },
+  {
+    "id": "soul-shard-clusters",
+    "name": "Soul Shard Clusters",
+    "tags": [
+      "Shadow",
+      "Undead"
+    ],
+    "description": "Remnants of living creatures slain in the Shadowdark linger as soul shards — crystallized anguish that cuts body and spirit. (Underdark p.121)",
+    "actions": [
+      {
+        "name": "Soul Shred",
+        "trigger": "A creature enters a soul shard square",
+        "effect": "The creature takes 1d10 necrotic and psychic damage and must succeed on DC 14 Will or grant combat advantage until end of next turn."
+      }
+    ]
+  },
+  {
+    "id": "spore-field",
+    "name": "Spore Field",
+    "tags": [
+      "Plant",
+      "Poison"
+    ],
+    "description": "Intoxicating spores that rapidly decompose organic matter. Creatures that breathe them in become disoriented. (Underdark p.109)",
+    "actions": [
+      {
+        "name": "Decomposition Cloud",
+        "trigger": "Initiative count 10",
+        "effect": "Spores burst in burst 2 (GM places). Creatures take 1d6 poison damage and are dazed until end of next turn (DC 14 Fortitude negates dazed). Organic equipment degrades: −1 to next damage roll."
+      }
+    ]
+  },
+  {
+    "id": "the-weeping-lady",
+    "name": "The Weeping Lady",
+    "tags": [
+      "Shadow",
+      "Undead"
+    ],
+    "description": "The heart-wrenching sobs of a seemingly female voice haunt the Deeps, distracting and demoralizing those who hear her. (Underdark p.64)",
+    "actions": [
+      {
+        "name": "Sorrowful Wail",
+        "trigger": "Initiative count 10",
+        "effect": "Each creature in the area must succeed on DC 15 Will or be immobilized until end of its next turn as grief overwhelms it. Creatures that save are slowed instead."
+      }
+    ]
+  },
+  {
+    "id": "wormrock",
+    "name": "Wormrock",
+    "tags": [],
+    "description": "Porous orange rock that is easy to dig through. Tunnels collapse readily, and the ground is unstable. (Underdark p.14)",
+    "actions": [
+      {
+        "name": "Collapse",
+        "trigger": "A creature uses a power that deals thunder or force damage in the area",
+        "effect": "Burst 1 around the target square: ceiling debris falls. 2d6 damage (DC 14 Reflex for half) and the area becomes difficult terrain."
+      }
+    ]
+  },
+  {
+    "id": "acidic-mire",
+    "name": "Acidic Mire",
+    "tags": [
+      "Acid",
+      "Elemental"
+    ],
+    "description": "Seas of flesh-dissolving liquids bordered by shores of moors that churn with acid bubbling up from below. (The Plane Below p.12)",
+    "actions": [
+      {
+        "name": "Acid Geyser",
+        "trigger": "Initiative count 10",
+        "effect": "A geyser erupts in burst 1 (GM places). Each creature takes 2d6 acid damage (DC 14 Reflex for half). The area becomes an acid zone for 1 round."
+      }
+    ]
+  },
+  {
+    "id": "bonepowder-haze",
+    "name": "Bonepowder Haze",
+    "tags": [
+      "Undead"
+    ],
+    "description": "Strange haze of fine white powder crackling with necrotic energy that saps the life force of creatures and empowers nearby undead. (The Plane Below p.13)",
+    "actions": [
+      {
+        "name": "Necrotic Haze",
+        "trigger": "A living creature starts its turn in the haze",
+        "effect": "The creature takes 1d6 necrotic damage. An undead creature instead gains +1 to attack rolls until end of its turn."
+      }
+    ]
+  },
+  {
+    "id": "chaos-breath",
+    "name": "Chaos Breath",
+    "tags": [
+      "Elemental"
+    ],
+    "description": "Powerful, unpredictable wind gusts that extend high into the atmosphere, hurling creatures and debris. (The Plane Below p.13)",
+    "actions": [
+      {
+        "name": "Wind Blast",
+        "trigger": "Initiative count 10",
+        "effect": "Each creature in the area is pushed 1d6 squares in a random direction. Flying creatures are pushed double distance."
+      }
+    ]
+  },
+  {
+    "id": "crawling-earth",
+    "name": "Crawling Earth",
+    "tags": [
+      "Elemental"
+    ],
+    "description": "Ground that animates when stepped on, then quiets after a few moments. It grasps at ankles and drags creatures down. (The Plane Below p.13)",
+    "actions": [
+      {
+        "name": "Earth Grasp",
+        "trigger": "A creature ends its turn on crawling earth",
+        "effect": "The ground grasps the creature — DC 14 Athletics or immobilized (save ends). On a failed save while immobilized, the creature is pulled underground and restrained (escape DC 18)."
+      }
+    ]
+  },
+  {
+    "id": "demon-jags",
+    "name": "Demon Jags",
+    "tags": [
+      "Demon"
+    ],
+    "description": "Sharp, rugged stone formed when demons are trampled or violently absorbed into the surrounding surface. Razor-edged and blood-stained. (The Plane Below p.13)",
+    "actions": [
+      {
+        "name": "Razor Ground",
+        "trigger": "A creature is pushed, pulled, or slid through demon jags",
+        "effect": "The creature takes 1d10 damage per square of forced movement through the jags."
+      }
+    ]
+  },
+  {
+    "id": "demon-slick",
+    "name": "Demon Slick",
+    "tags": [
+      "Demon"
+    ],
+    "description": "Odd, vile-smelling slime that makes footing treacherous. Widespread where demons congregate. (The Plane Below p.13)",
+    "actions": [
+      {
+        "name": "Vile Slip",
+        "trigger": "A creature charges through demon slick",
+        "effect": "DC 15 Acrobatics or the creature falls prone, ending the charge. Prone creatures in the slick grant combat advantage and take a −2 to escape checks."
+      }
+    ]
+  },
+  {
+    "id": "earth-flow",
+    "name": "Earth Flow",
+    "tags": [
+      "Elemental"
+    ],
+    "description": "In the Elemental Chaos, earth moves constantly in rivers of rock, dirt, or mud, carrying creatures along or burying them. (The Plane Below p.13)",
+    "actions": [
+      {
+        "name": "River Drag",
+        "trigger": "A creature starts its turn in the earth flow",
+        "effect": "The creature is slid 2 squares in the flow's direction. If this moves the creature into a wall or off an edge, it takes 1d10 damage."
+      }
+    ]
+  },
+  {
+    "id": "elemental-spout",
+    "name": "Elemental Spout",
+    "tags": [
+      "Elemental"
+    ],
+    "description": "Eruptions of material or elemental energy issuing forth from solid surfaces, bodies of liquid, raging storms, or empty air. (The Plane Below p.13)",
+    "actions": [
+      {
+        "name": "Elemental Blast",
+        "trigger": "Initiative count 10",
+        "effect": "The spout erupts: burst 2, 2d6 damage of the spout's element (GM determines fire/cold/lightning/acid). DC 14 Reflex for half."
+      }
+    ]
+  },
+  {
+    "id": "energy-alteration-field",
+    "name": "Energy Alteration Field",
+    "tags": [
+      "Elemental"
+    ],
+    "description": "The air sparkles and the ground buzzes in chaotic energy alteration fields, transforming one damage type into another. (The Plane Below p.15)",
+    "actions": [
+      {
+        "name": "Type Conversion",
+        "trigger": "A power with a damage type keyword is used in the field",
+        "effect": "Roll 1d6: 1-2 the damage type changes to fire, 3-4 to cold, 5-6 to lightning. This can benefit or harm the attacker depending on the target's resistances."
+      }
+    ]
+  },
+  {
+    "id": "frozen-fire",
+    "name": "Frozen Fire",
+    "tags": [
+      "Fire",
+      "Cold",
+      "Elemental"
+    ],
+    "description": "Portions of the Elemental Chaos experience cold so intense that even fire freezes, forming a highly unstable substance. (The Plane Below p.15)",
+    "actions": [
+      {
+        "name": "Unstable Thaw",
+        "trigger": "A fire power is used within 3 squares",
+        "effect": "The frozen fire melts, releasing energy: burst 2, 2d6 fire and cold damage (DC 15 Reflex for half). The substance is destroyed."
+      }
+    ]
+  },
+  {
+    "id": "ice-maws",
+    "name": "Ice Maws",
+    "tags": [
+      "Cold",
+      "Elemental"
+    ],
+    "description": "Expanses of permafrost that come alive with mouthlike openings, snapping shut on creatures that step on them. (The Plane Below p.15)",
+    "actions": [
+      {
+        "name": "Snapping Jaw",
+        "trigger": "A creature enters an ice maw square",
+        "effect": "The maw snaps shut: 2d6 cold damage and the creature is restrained (escape DC 15 Athletics). If not escaped by end of next turn, 1d10 cold damage."
+      }
+    ]
+  },
+  {
+    "id": "infectious-pallor",
+    "name": "Infectious Pallor",
+    "tags": [
+      "Demon",
+      "Poison"
+    ],
+    "description": "Pockets of diseased air that drift through the Abyss, sickening and weakening all who breathe them. (The Plane Below p.16)",
+    "actions": [
+      {
+        "name": "Plague Cloud",
+        "trigger": "A creature starts its turn in the pallor",
+        "effect": "DC 14 Fortitude or the creature is weakened and takes ongoing 5 poison damage (save ends both). A creature that saves is immune for 1 round."
+      }
+    ]
+  },
+  {
+    "id": "lightning-mist",
+    "name": "Lightning Mist",
+    "tags": [
+      "Lightning",
+      "Elemental"
+    ],
+    "description": "Fields of gray-blue fog that drift slowly through the Elemental Chaos, hazardous to traverse quickly — crackling with static. (The Plane Below p.16)",
+    "actions": [
+      {
+        "name": "Static Discharge",
+        "trigger": "A creature moves more than 3 squares through the mist on its turn",
+        "effect": "The creature takes 2d6 lightning damage and each creature adjacent to it takes 1d6 lightning damage."
+      }
+    ]
+  },
+  {
+    "id": "liquid-thunder",
+    "name": "Liquid Thunder",
+    "tags": [
+      "Lightning",
+      "Elemental"
+    ],
+    "description": "Highly volatile liquid pools coalesced from the force of a powerful elemental storm. Detonates on impact. (The Plane Below p.16)",
+    "actions": [
+      {
+        "name": "Thunder Detonation",
+        "trigger": "A creature enters a liquid thunder pool or the pool is struck",
+        "effect": "Burst 2: 2d8 thunder damage (DC 15 Reflex for half) and each creature is deafened (save ends). The pool is consumed."
+      }
+    ]
+  },
+  {
+    "id": "phase-crystal",
+    "name": "Phase Crystal",
+    "tags": [
+      "Elemental"
+    ],
+    "description": "Translucent silvery crystal that can discharge extradimensional energy and shunt a creature out of phase for a short time. (The Plane Below p.17)",
+    "actions": [
+      {
+        "name": "Phase Pulse",
+        "trigger": "Initiative count 10",
+        "effect": "Each creature within burst 2 of a phase crystal is phased until end of its next turn (insubstantial, can pass through walls, cannot be opportunity attacked)."
+      }
+    ]
+  },
+  {
+    "id": "primordial-font",
+    "name": "Primordial Font",
+    "tags": [
+      "Elemental"
+    ],
+    "description": "Volatile fountains of liquid elemental energy that change those who bathe in them — granting power at a cost. (The Plane Below p.17)",
+    "actions": [
+      {
+        "name": "Elemental Baptism",
+        "trigger": "A creature enters the font",
+        "effect": "Roll 1d4: 1=resist 5 fire, 2=resist 5 cold, 3=resist 5 lightning, 4=resist 5 acid. Lasts until end of encounter. The creature also takes 1d8 damage of the same type. Each creature can benefit only once."
+      }
+    ]
+  },
+  {
+    "id": "strangling-wind",
+    "name": "Strangling Wind",
+    "tags": [
+      "Elemental"
+    ],
+    "description": "Wind pressure so great and blasts so turbulent that it slows and even suffocates those who push themselves too hard. (The Plane Below p.17)",
+    "actions": [
+      {
+        "name": "Suffocating Gale",
+        "trigger": "A creature runs or charges in the wind",
+        "effect": "The creature loses a healing surge at the end of its turn. If no surges remain, it is weakened until end of next turn."
+      }
+    ]
+  },
+  {
+    "id": "wrath-mud",
+    "name": "Wrath Mud",
+    "tags": [
+      "Elemental"
+    ],
+    "description": "Eerie mud that saps sanity from creatures within it, pushing them to violence through psychic pain. (The Plane Below p.17)",
+    "actions": [
+      {
+        "name": "Psychic Agony",
+        "trigger": "A creature starts its turn in wrath mud",
+        "effect": "1d6 psychic damage and the creature must use at least one attack on its turn or take 1d6 additional psychic damage."
+      }
+    ]
+  },
+  {
+    "id": "armorfields",
+    "name": "Armorfields",
+    "tags": [
+      "Celestial"
+    ],
+    "description": "Where Moradin's exalted tread, armorfields spring up — ground that hardens and protects those who stand upon it. (The Plane Above p.50)",
+    "actions": [
+      {
+        "name": "Armored Ground",
+        "trigger": "A creature starts its turn on armorfields",
+        "effect": "The creature gains +1 to AC and Fortitude until end of its turn."
+      }
+    ]
+  },
+  {
+    "id": "brainswell-nebula",
+    "name": "Brainswell Nebula",
+    "tags": [
+      "Aberration"
+    ],
+    "description": "Gigantic cloud formations resembling a diseased, pulsating brain, often encountered in githyanki-controlled sectors of the Astral Sea. (The Plane Above p.28)",
+    "actions": [
+      {
+        "name": "Psychic Squall",
+        "trigger": "Initiative count 10",
+        "effect": "Each creature in the area takes 1d8 psychic damage and is dazed until end of its next turn (DC 15 Will negates daze)."
+      }
+    ]
+  },
+  {
+    "id": "carpet-of-serpents",
+    "name": "Carpet of Serpents",
+    "tags": [
+      "Beast",
+      "Poison"
+    ],
+    "description": "Swarms of serpents or other venomous creatures that dart in and out of hidden dens, striking exposed ankles. (The Plane Above p.86)",
+    "actions": [
+      {
+        "name": "Serpent Strike",
+        "trigger": "A creature enters a serpent square",
+        "effect": "1d8 poison damage and ongoing 5 poison damage (save ends). The creature is slowed as serpents coil around its legs."
+      }
+    ]
+  },
+  {
+    "id": "chainstorm",
+    "name": "Chainstorm",
+    "tags": [
+      "Elemental"
+    ],
+    "description": "Phantasmal, shrieking chains — thought to be echoes of an imprisoned deity's rage manifesting in the Astral Sea. (The Plane Above p.29)",
+    "actions": [
+      {
+        "name": "Phantom Chain Lash",
+        "trigger": "Initiative count 10",
+        "effect": "Each creature in the area: +12 vs. Reflex, 1d10 damage and the creature is immobilized until end of its next turn."
+      }
+    ]
+  },
+  {
+    "id": "chaos-spots",
+    "name": "Chaos Spots",
+    "tags": [
+      "Elemental"
+    ],
+    "description": "Certain locations in constant flux — terrain shifts, gravity reverses, and the environment changes unpredictably. (The Plane Above p.109)",
+    "actions": [
+      {
+        "name": "Reality Hiccup",
+        "trigger": "Initiative count 10",
+        "effect": "GM rolls 1d6: 1-2=gravity reverses for 1 round, 3-4=all creatures shift 1 square clockwise, 5-6=terrain type in a burst 3 changes (water, fire, ice)."
+      }
+    ]
+  },
+  {
+    "id": "choking-vapors",
+    "name": "Choking Vapors",
+    "tags": [
+      "Fire",
+      "Elemental"
+    ],
+    "description": "Fumes rising from volcanic vents that choke and blind creatures, restricting movement and visibility. (The Plane Above p.86)",
+    "actions": [
+      {
+        "name": "Volcanic Choke",
+        "trigger": "A creature starts its turn in the vapors",
+        "effect": "1d6 fire and poison damage. The creature cannot speak or use verbal components until end of its turn (DC 14 Fortitude negates the silence)."
+      }
+    ]
+  },
+  {
+    "id": "cursed-obelisk",
+    "name": "Cursed Obelisk",
+    "tags": [
+      "Shadow"
+    ],
+    "description": "Black stone obelisks usually covered in runes that radiate curses, weakening or hindering those nearby. (The Plane Above p.87)",
+    "actions": [
+      {
+        "name": "Curse Pulse",
+        "trigger": "Initiative count 10",
+        "effect": "Each creature within burst 3 of the obelisk takes a −2 penalty to saving throws until end of its next turn (DC 15 Will negates)."
+      }
+    ]
+  },
+  {
+    "id": "desponds-draining-waters",
+    "name": "Despond's Draining Waters",
+    "tags": [
+      "Shadow"
+    ],
+    "description": "The Lake of Despond has a diminishing effect upon living creatures that touch it, sapping strength and will. (The Plane Above p.69)",
+    "actions": [
+      {
+        "name": "Draining Touch",
+        "trigger": "A creature enters or starts its turn in the water",
+        "effect": "The creature loses 1 healing surge. If no surges remain, 1d10 necrotic damage. The creature is also slowed until end of turn."
+      }
+    ]
+  },
+  {
+    "id": "devouring-cloud",
+    "name": "Devouring Cloud",
+    "tags": [
+      "Beast"
+    ],
+    "description": "A chittering cloud of bright-red astral beetles that swarm and devour anything organic in their path. (The Plane Above p.29)",
+    "actions": [
+      {
+        "name": "Beetle Storm",
+        "trigger": "A creature starts its turn engulfed by the cloud",
+        "effect": "2d6 damage, ongoing 5 damage (save ends), and the creature grants combat advantage as beetles cover its eyes."
+      }
+    ]
+  },
+  {
+    "id": "drainer-lichen",
+    "name": "Drainer Lichen",
+    "tags": [
+      "Plant"
+    ],
+    "description": "The Foothills' rockier slopes are mottled by drainer lichen — vegetation that drains life from those who touch it. (The Plane Above p.50)",
+    "actions": [
+      {
+        "name": "Life Drain Touch",
+        "trigger": "A creature starts its turn adjacent to drainer lichen",
+        "effect": "1d6 necrotic damage and a -1 penalty to Fortitude defense until end of next turn."
+      }
+    ]
+  },
+  {
+    "id": "earthen-maw",
+    "name": "Earthen Maw",
+    "tags": [
+      "Elemental"
+    ],
+    "description": "Parts of the broken badlands open and close like jaws, seeking to snare passersby and drag them underground. (The Plane Above p.87)",
+    "actions": [
+      {
+        "name": "Ground Snap",
+        "trigger": "A creature enters an earthen maw square",
+        "effect": "The maw bites: 2d6 damage and the creature is restrained (escape DC 16). At the start of the creature's next turn while restrained, the maw deals 1d10 damage."
+      }
+    ]
+  },
+  {
+    "id": "gramble",
+    "name": "Gramble",
+    "tags": [
+      "Plant"
+    ],
+    "description": "A dense, thorny bush with carnivorous instincts covering the rugged heaths of the Foothills. (The Plane Above p.50)",
+    "actions": [
+      {
+        "name": "Thorny Grasp",
+        "trigger": "A creature enters a gramble square",
+        "effect": "1d6 damage and the creature is immobilized until end of its turn. If forced into gramble, the damage increases to 2d6."
+      }
+    ]
+  },
+  {
+    "id": "grasping-vines",
+    "name": "Grasping Vines",
+    "tags": [
+      "Aberration",
+      "Plant"
+    ],
+    "description": "Vines, roots, and vegetation infused with aberrant energies that entangle those who come near. (The Plane Above p.107)",
+    "actions": [
+      {
+        "name": "Vine Snare",
+        "trigger": "A creature enters or starts its turn in vine squares",
+        "effect": "The creature is restrained (escape DC 14 Athletics). While restrained, the vines deal 1d6 damage at the start of each turn."
+      }
+    ]
+  },
+  {
+    "id": "insect-swarms",
+    "name": "Insect Swarms",
+    "tags": [
+      "Beast"
+    ],
+    "description": "Swarms of biting, sucking insects drawn by fresh blood and looking for their next source of food. (The Plane Above p.107)",
+    "actions": [
+      {
+        "name": "Swarm Attack",
+        "trigger": "A bloodied creature enters or starts its turn in a swarm square",
+        "effect": "1d8 damage, ongoing 5 (save ends), and the creature takes −2 to attack rolls until end of turn."
+      }
+    ]
+  },
+  {
+    "id": "mask-of-zorthos",
+    "name": "Mask of Zorthos",
+    "tags": [
+      "Aberration"
+    ],
+    "description": "A Gargantuan phantasmal clay mask — believed to be the hollowed-out head of Zorthos, the slain god of doubt — spinning endlessly through the Astral Sea. (The Plane Above p.29)",
+    "actions": [
+      {
+        "name": "Doubt Aura",
+        "trigger": "A creature starts its turn within 5 squares of the mask",
+        "effect": "DC 15 Will or the creature cannot use daily powers until end of its next turn."
+      }
+    ]
+  },
+  {
+    "id": "mercyfields",
+    "name": "Mercyfields",
+    "tags": [
+      "Celestial",
+      "Dragon"
+    ],
+    "description": "Locations visited by Bahamut's exalted dragons develop into mercyfields — ground that heals and shelters the wounded. (The Plane Above p.51)",
+    "actions": [
+      {
+        "name": "Merciful Ground",
+        "trigger": "A creature drops to 0 HP or fewer on mercyfields",
+        "effect": "The creature instead drops to 1 HP. This can happen only once per creature per encounter."
+      }
+    ]
+  },
+  {
+    "id": "nihilath-shroud",
+    "name": "Nihilath Shroud",
+    "tags": [
+      "Aberration"
+    ],
+    "description": "A roiling wave of gray ectoplasmic matter continually sprouting tentacles that pull and tear at each other before reabsorbing. (The Plane Above p.29)",
+    "actions": [
+      {
+        "name": "Tentacle Lash",
+        "trigger": "Initiative count 10",
+        "effect": "Tentacles reach out — each creature within burst 3: +13 vs. Reflex, 1d10 damage and pulled 2 squares toward the shroud's center."
+      }
+    ]
+  },
+  {
+    "id": "pocket-of-night",
+    "name": "Pocket of Night",
+    "tags": [
+      "Shadow"
+    ],
+    "description": "In the darkest places, shadows have unnatural weight and no natural light can penetrate the darkness. (The Plane Above p.87)",
+    "actions": [
+      {
+        "name": "Deepening Dark",
+        "trigger": "A light source enters the pocket",
+        "effect": "The light is extinguished. The creature holding it takes 1d6 psychic damage as darkness presses in. Darkvision is reduced to 2 squares within the pocket."
+      }
+    ]
+  },
+  {
+    "id": "psychic-storm",
+    "name": "Psychic Storm",
+    "tags": [
+      "Aberration"
+    ],
+    "description": "Psychic storms darken the astral clouds and reach the size of earthly hurricanes, assaulting minds. (The Plane Above p.29)",
+    "actions": [
+      {
+        "name": "Mind Blast",
+        "trigger": "Initiative count 10",
+        "effect": "Each creature in the area takes 2d6 psychic damage and is stunned until end of its next turn (DC 16 Will: half damage and dazed instead of stunned)."
+      }
+    ]
+  },
+  {
+    "id": "sehils-guts",
+    "name": "Sehil's Guts",
+    "tags": [],
+    "description": "A Huge phantasmal knot of blood-red tubes — remains of the intestines of Sehil, a primordial that Kord slew barehanded. (The Plane Above p.29)",
+    "actions": [
+      {
+        "name": "Visceral Pulse",
+        "trigger": "A creature starts its turn within 3 squares",
+        "effect": "1d6 psychic damage and the creature grants combat advantage until end of its turn as revulsion overwhelms focus."
+      }
+    ]
+  },
+  {
+    "id": "soul-venom",
+    "name": "Soul Venom",
+    "tags": [
+      "Poison",
+      "Shadow"
+    ],
+    "description": "Areas containing tainted atmosphere that poisons the soul as much as the body. (The Plane Above p.87)",
+    "actions": [
+      {
+        "name": "Spiritual Poison",
+        "trigger": "A creature starts its turn in soul venom",
+        "effect": "1d6 poison and necrotic damage. The creature cannot benefit from temporary HP until end of its next turn."
+      }
+    ]
+  },
+  {
+    "id": "soulshocked-ground",
+    "name": "Soulshocked Ground",
+    "tags": [],
+    "description": "Patches of ground infused with psychic residue to keep arena fights bloody — drives combatants to greater ferocity. (The Plane Above p.115)",
+    "actions": [
+      {
+        "name": "Arena Fury",
+        "trigger": "A creature bloodies an enemy while on soulshocked ground",
+        "effect": "The creature can make a melee basic attack as a free action against a different target within reach."
+      }
+    ]
+  },
+  {
+    "id": "valorfields",
+    "name": "Valorfields",
+    "tags": [
+      "Celestial"
+    ],
+    "description": "When Kord's exalted gather to fight, they leave valorfields in their wake — ground that empowers martial prowess. (The Plane Above p.51)",
+    "actions": [
+      {
+        "name": "Warrior's Might",
+        "trigger": "A creature hits with a melee attack while on valorfields",
+        "effect": "The creature gains 5 temporary hit points and can push the target 1 extra square."
+      }
+    ]
+  },
+  {
+    "id": "venomous-air",
+    "name": "Venomous Air",
+    "tags": [
+      "Poison"
+    ],
+    "description": "Clouds of nigh-undetectable poisons that hang in the air and amplify other poison attacks. (The Plane Above p.87)",
+    "actions": [
+      {
+        "name": "Venom Amplification",
+        "trigger": "A creature takes poison damage while in venomous air",
+        "effect": "The poison damage increases by 1d6 and any ongoing poison damage increases by 2."
+      }
+    ]
+  },
+  {
+    "id": "combustibles",
+    "name": "Combustibles",
+    "tags": [
+      "Fire",
+      "Dragon"
+    ],
+    "description": "Treasures like paper, scrolls, and precious wood that are flammable and can go up in flames during battle. (Draconomicon p.60)",
+    "actions": [
+      {
+        "name": "Spreading Fire",
+        "trigger": "A fire attack hits within 2 squares of combustibles",
+        "effect": "The combustibles ignite: burst 1, 1d8 fire damage (DC 12 Reflex for half). Fire spreads to adjacent combustible squares next round."
+      }
+    ]
+  },
+  {
+    "id": "dazzling-treasure",
+    "name": "Dazzling Treasure",
+    "tags": [
+      "Dragon"
+    ],
+    "description": "A mirror, shield, or shiny surface that reflects and intensifies light, temporarily blinding those nearby. (Draconomicon p.60)",
+    "actions": [
+      {
+        "name": "Blinding Glare",
+        "trigger": "A bright light source or radiant power activates within 3 squares",
+        "effect": "Burst 2: each creature must succeed on DC 14 Fortitude or be blinded until end of its next turn."
+      }
+    ]
+  },
+  {
+    "id": "distracting-prisoner",
+    "name": "Distracting Prisoner",
+    "tags": [
+      "Dragon"
+    ],
+    "description": "A dragon's charisma and terror can unravel its prisoners' minds. These fools might hamper or distract would-be rescuers. (Draconomicon p.60)",
+    "actions": [
+      {
+        "name": "Desperate Plea",
+        "trigger": "Initiative count 10",
+        "effect": "The prisoner cries for help. Each PC within 5 squares must succeed on DC 14 Will or grant combat advantage until end of next turn as attention splits."
+      }
+    ]
+  },
+  {
+    "id": "dragon-cursed-treasure",
+    "name": "Dragon-Cursed Treasure",
+    "tags": [
+      "Dragon"
+    ],
+    "description": "Treasures carrying their owner's maliciousness — anyone who handles them falls under a mild curse. (Draconomicon p.61)",
+    "actions": [
+      {
+        "name": "Malicious Curse",
+        "trigger": "A creature picks up or handles cursed treasure",
+        "effect": "DC 15 Will or the creature takes −2 to all defenses until end of encounter. If a creature with this curse drops to 0 HP, the curse spreads to the nearest ally within 5 squares."
+      }
+    ]
+  },
+  {
+    "id": "shifting-piles",
+    "name": "Shifting Piles and Slippery Coins",
+    "tags": [
+      "Dragon"
+    ],
+    "description": "Loose coins that create unstable footing. Moving through them risks falling or sliding. (Draconomicon p.61)",
+    "actions": [
+      {
+        "name": "Coin Slide",
+        "trigger": "A creature moves more than 3 squares through coin piles",
+        "effect": "DC 14 Acrobatics or the creature falls prone and slides 1d4 squares downhill. Adjacent creatures hear the clattering (Stealth checks in the area fail automatically)."
+      }
+    ]
+  },
+  {
+    "id": "vicious-treasure",
+    "name": "Vicious Treasure",
+    "tags": [
+      "Dragon"
+    ],
+    "description": "Caches containing weapons, armor, and other sharp objects that can snag and cut the unwary. (Draconomicon p.61)",
+    "actions": [
+      {
+        "name": "Hidden Blade",
+        "trigger": "A creature falls prone in vicious treasure",
+        "effect": "The creature takes 1d8 damage from concealed weapons and takes ongoing 5 damage (save ends) as blades tear flesh."
+      }
+    ]
+  },
+  {
+    "id": "ash-field",
+    "name": "Ash Field",
+    "tags": [
+      "Shadow"
+    ],
+    "description": "Defiling magic withers verdant areas, dissolving plants into fine powder and creating extended areas of lifeless ash. (Dark Sun Creature Catalog p.34)",
+    "actions": [
+      {
+        "name": "Choking Ash",
+        "trigger": "A creature moves through an ash field",
+        "effect": "The creature must succeed on DC 14 Endurance or be slowed and take −2 to attack rolls until end of its next turn as ash fills lungs."
+      }
+    ]
+  },
+  {
+    "id": "barbed-cacti",
+    "name": "Barbed Cacti",
+    "tags": [
+      "Plant"
+    ],
+    "description": "Cacti with wicked hooks that cling to a creature's flesh, damaging and slowing those who brush against them. (Dark Sun Creature Catalog p.34)",
+    "actions": [
+      {
+        "name": "Barbed Hook",
+        "trigger": "A creature is pushed into barbed cacti",
+        "effect": "1d10 damage and the creature is immobilized as barbs dig in (escape DC 14 Athletics; escaping deals 1d6 additional damage)."
+      }
+    ]
+  },
+  {
+    "id": "black-sand",
+    "name": "Black Sand",
+    "tags": [
+      "Shadow"
+    ],
+    "description": "When defiling magic is used to slaughter innocents, a residue mixes with the ground to create black sand that drains life. (Dark Sun Creature Catalog p.34)",
+    "actions": [
+      {
+        "name": "Defiling Drain",
+        "trigger": "A creature starts its turn on black sand",
+        "effect": "The creature loses 1 healing surge. If no surges remain, 1d8 necrotic damage. Vegetation in burst 2 withers and dies."
+      }
+    ]
+  },
+  {
+    "id": "brambleweed",
+    "name": "Brambleweed",
+    "tags": [
+      "Plant"
+    ],
+    "description": "Brambleweed has finger-length thorns, sharp and sturdy enough to rend flesh. It tangles and tears. (Dark Sun Creature Catalog p.34)",
+    "actions": [
+      {
+        "name": "Thorn Tangle",
+        "trigger": "A creature enters a brambleweed square",
+        "effect": "1d6 damage and the creature is slowed (save ends). If already slowed, it is immobilized instead."
+      }
+    ]
+  },
+  {
+    "id": "dead-magic",
+    "name": "Dead Magic",
+    "tags": [],
+    "description": "The most powerful arcane magic completely drains an area of plant and animal life, leaving a dead magic zone. (Dark Sun Creature Catalog p.35)",
+    "actions": [
+      {
+        "name": "Power Void",
+        "trigger": "A creature enters the dead magic zone",
+        "effect": "Encounter and daily powers cannot be used in the zone. At-will powers function normally. Magic items provide no bonuses."
+      }
+    ]
+  },
+  {
+    "id": "defiled-terrain",
+    "name": "Defiled Terrain",
+    "tags": [
+      "Shadow"
+    ],
+    "description": "Terrain created by the use of powerful defiling magic — withered, lifeless ground that saps vitality. (Dark Sun Creature Catalog p.34)",
+    "actions": [
+      {
+        "name": "Withering Touch",
+        "trigger": "A creature starts its turn on defiled terrain",
+        "effect": "The creature takes 5 necrotic damage and cannot regain HP by any means until end of its next turn."
+      }
+    ]
+  },
+  {
+    "id": "glimmering-mirage",
+    "name": "Glimmering Mirage",
+    "tags": [
+      "Fey"
+    ],
+    "description": "Crafted by cruel primal spirits to confuse and distress wanderers with false visions of oases and shelter. (Dark Sun Creature Catalog p.35)",
+    "actions": [
+      {
+        "name": "False Oasis",
+        "trigger": "A creature moves toward the mirage",
+        "effect": "DC 15 Insight or the creature must spend its move action moving toward the mirage. On reaching it, the illusion vanishes and the creature grants combat advantage until end of next turn."
+      }
+    ]
+  },
+  {
+    "id": "lightning-pillar",
+    "name": "Lightning Pillar",
+    "tags": [
+      "Lightning",
+      "Elemental"
+    ],
+    "description": "A pillar humming with elemental power — clearly an otherworldly formation that arcs lightning at those nearby. (Dark Sun Creature Catalog p.35)",
+    "actions": [
+      {
+        "name": "Pillar Arc",
+        "trigger": "Initiative count 10",
+        "effect": "The pillar discharges: burst 3, 2d8 lightning damage (DC 15 Reflex for half). Creatures in metal armor take +1d8 extra damage."
+      }
+    ]
+  },
+  {
+    "id": "mudflats",
+    "name": "Mudflats",
+    "tags": [],
+    "description": "Underground water reservoirs seep through the soil to create a dusty sludge that hampers movement. (Dark Sun Creature Catalog p.35)",
+    "actions": [
+      {
+        "name": "Sinking Muck",
+        "trigger": "A creature starts its turn in mudflats",
+        "effect": "DC 12 Athletics or the creature is slowed until end of turn. Two consecutive failures: immobilized instead (escape DC 14)."
+      }
+    ]
+  },
+  {
+    "id": "psychic-reservoir",
+    "name": "Psychic Reservoir",
+    "tags": [
+      "Aberration"
+    ],
+    "description": "Odd violet crystals growing in caverns or rocky terrain, containing latent psychic energy that assaults the mind. (Dark Sun Creature Catalog p.36)",
+    "actions": [
+      {
+        "name": "Psionic Burst",
+        "trigger": "A creature with an Intelligence of 12+ starts its turn within 2 squares",
+        "effect": "1d8 psychic damage and the creature is dazed until end of its turn (DC 14 Will negates daze)."
+      }
+    ]
+  },
+  {
+    "id": "rocky-badlands",
+    "name": "Rocky Badlands",
+    "tags": [],
+    "description": "Rugged, arid canyons and wastes with precarious footing, hidden drops, and ambush positions. (Dark Sun Creature Catalog p.36)",
+    "actions": [
+      {
+        "name": "Crumbling Edge",
+        "trigger": "A creature is pushed to within 1 square of a ledge",
+        "effect": "DC 14 Acrobatics or the creature falls 1d4 × 10 feet, taking falling damage."
+      }
+    ]
+  },
+  {
+    "id": "salt-flats",
+    "name": "Salt Flats",
+    "tags": [],
+    "description": "Bleak plains encrusted with saline deposits and bone-dry sand. The glaring white surface blinds and disorients. (Dark Sun Creature Catalog p.36)",
+    "actions": [
+      {
+        "name": "Blinding Glare",
+        "trigger": "A creature without eye protection starts its turn on salt flats during daylight",
+        "effect": "The creature is blinded until end of its turn (DC 12 Endurance negates). Attacks from outside the flats targeting creatures on the flats take a −2 penalty."
+      }
+    ]
+  },
+  {
+    "id": "sandy-wastes",
+    "name": "Sandy Wastes",
+    "tags": [],
+    "description": "Featureless stretches of sand, wind, and relentless heat. Soft ground slows movement and obscures tracks. (Dark Sun Creature Catalog p.36)",
+    "actions": [
+      {
+        "name": "Sand Vortex",
+        "trigger": "Initiative count 10",
+        "effect": "A dust devil forms: burst 2 (GM places), each creature is pushed 1d4 squares and blinded until end of next turn (DC 14 Fortitude negates blindness)."
+      }
+    ]
+  },
+  {
+    "id": "sickening-heat",
+    "name": "Sickening Heat",
+    "tags": [
+      "Fire"
+    ],
+    "description": "The sun burns with peculiar intensity in areas where magic has defiled plant life, causing exhaustion and delirium. (Dark Sun Creature Catalog p.35)",
+    "actions": [
+      {
+        "name": "Heat Stroke",
+        "trigger": "A creature takes a standard action and a move action on the same turn in sickening heat",
+        "effect": "DC 15 Endurance or the creature is dazed until end of its next turn and takes 1d6 fire damage."
+      }
+    ]
+  },
+  {
+    "id": "silt-pool",
+    "name": "Silt Pool",
+    "tags": [],
+    "description": "Natural dips filled with extremely light, powdery silt that acts like quicksand, swallowing creatures who step in. (Dark Sun Creature Catalog p.36)",
+    "actions": [
+      {
+        "name": "Silt Swallow",
+        "trigger": "A creature enters a silt pool",
+        "effect": "The creature sinks: slowed on round 1, immobilized on round 2, restrained on round 3 (escape DC 16 Athletics). Restrained creatures begin suffocating."
+      }
+    ]
+  },
+  {
+    "id": "slipsand",
+    "name": "Slipsand",
+    "tags": [],
+    "description": "Ground saturated with glass particles from heavy magic use. The surface is treacherously slick and abrasive. (Dark Sun Creature Catalog p.37)",
+    "actions": [
+      {
+        "name": "Glass Slide",
+        "trigger": "A creature charges or runs on slipsand",
+        "effect": "DC 15 Acrobatics or the creature falls prone and slides 2d4 squares, taking 1d6 damage from abrasion. Difficult terrain for all movement."
+      }
+    ]
+  },
+  {
+    "id": "tree-of-life",
+    "name": "Tree of Life",
+    "tags": [
+      "Plant"
+    ],
+    "description": "A tree mystically infused with primal forces of life, sheltering and healing those beneath its canopy. (Dark Sun Creature Catalog p.37)",
+    "actions": [
+      {
+        "name": "Life Canopy",
+        "trigger": "A creature starts its turn under the tree of life",
+        "effect": "The creature regains 5 HP and gains +2 to saving throws until end of its turn. The tree has AC 5, 100 HP; if destroyed, the area becomes defiled terrain."
+      }
+    ]
+  },
+  {
+    "id": "ztal-horde",
+    "name": "Z'Tal Horde",
+    "tags": [
+      "Beast",
+      "Poison"
+    ],
+    "description": "Colonies of z'tal lizards gathered in a mass, exuding slippery ooze and noxious vapor. (Dark Sun Creature Catalog p.37)",
+    "actions": [
+      {
+        "name": "Noxious Swarm",
+        "trigger": "A creature enters or starts its turn in a z'tal square",
+        "effect": "1d6 poison damage and the creature falls prone (DC 12 Reflex negates prone) as slippery ooze and darting lizards trip it."
+      }
+    ]
   }
 ]

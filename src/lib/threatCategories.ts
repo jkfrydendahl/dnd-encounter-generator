@@ -1,40 +1,48 @@
-/*
-Threat category utilities.
+import type { MonsterRole, GeneratedEncounterEntry, ThreatSummary } from "../types";
 
-This module maps monster roles to encounter threat categories.
+export type ThreatCategory = "pressure" | "damage" | "control" | "neutral";
 
-Threat categories are used by:
-- slot-level scoring bias
-- final encounter evaluation
-- UI diagnostics
+const roleToCategoryMap: Record<MonsterRole, ThreatCategory> = {
+  Brute: "pressure",
+  Soldier: "pressure",
+  Artillery: "damage",
+  Lurker: "damage",
+  Skirmisher: "damage",
+  Controller: "control",
+  Minion: "neutral",
+};
 
-Threat categories:
+export function getThreatCategory(role: MonsterRole): ThreatCategory {
+  return roleToCategoryMap[role];
+}
 
-Pressure
-Frontline monsters that engage the party directly.
-Examples: Brute, Soldier
+export function buildThreatSummary(entries: GeneratedEncounterEntry[]): ThreatSummary {
+  const summary: ThreatSummary = { pressure: 0, damage: 0, control: 0 };
 
-Damage
-Monsters that deliver high damage or ranged pressure.
-Examples: Artillery, Lurker, Skirmisher
+  for (const entry of entries) {
+    const category = getThreatCategory(entry.role);
+    if (category === "pressure") summary.pressure += entry.count;
+    else if (category === "damage") summary.damage += entry.count;
+    else if (category === "control") summary.control += entry.count;
+  }
 
-Control
-Monsters that disrupt player positioning or actions.
-Examples: Controller
+  return summary;
+}
 
-Neutral
-Monsters that do not strongly define encounter pressure.
-Example: Minion
+export function countThreatCategories(summary: ThreatSummary): number {
+  let count = 0;
+  if (summary.pressure > 0) count++;
+  if (summary.damage > 0) count++;
+  if (summary.control > 0) count++;
+  return count;
+}
 
-This mapping should remain centralized here so that all parts of the
-generator use the same classification logic.
-
-The module will eventually expose helper functions such as:
-
-- getThreatCategory(role)
-- buildThreatSummary(encounterEntries)
-- countThreatCategories(summary)
-- getPresentThreatCategories(summary)
-
-These helpers allow the generator to reason about encounter composition.
-*/
+export function getPresentThreatCategories(
+  summary: ThreatSummary
+): ThreatCategory[] {
+  const categories: ThreatCategory[] = [];
+  if (summary.pressure > 0) categories.push("pressure");
+  if (summary.damage > 0) categories.push("damage");
+  if (summary.control > 0) categories.push("control");
+  return categories;
+}

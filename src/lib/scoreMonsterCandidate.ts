@@ -1,62 +1,130 @@
-/*
-Scores a monster candidate for a specific encounter slot.
+import type {
+  Monster,
+  GeneratedEncounterEntry,
+  ThreatSummary,
+  DuplicatePolicy,
+} from "../types";
+import {
+  getThreatCategory,
+  buildThreatSummary,
+  getPresentThreatCategories,
+} from "./threatCategories";
+import {
+  MISSING_THREAT_BONUS,
+  UNDERREPRESENTED_THREAT_BONUS,
+  THEME_MATCH_BONUS,
+  TAG_COHERENCE_BONUS,
+  THEME_COHERENCE_BONUS,
+  DUPLICATE_PENALTY,
+  EXCESS_BRUTE_PENALTY,
+  OVERREPRESENTED_CATEGORY_PENALTY,
+  BRUTE_LIMIT,
+} from "./constants";
 
-This module is used during slot resolution while building a candidate encounter.
+export interface CandidateContext {
+  currentEntries: GeneratedEncounterEntry[];
+  targetLevel: number;
+  themeTag?: string;
+  duplicatePolicy: DuplicatePolicy;
+}
 
-Purpose:
-Guide the generator toward stronger encounter composition before the
-final encounter is evaluated.
+export function scoreMonsterCandidate(
+  monster: Monster,
+  context: CandidateContext
+): number {
+  let score = 0;
 
-This is a local scoring step, not the final encounter score.
+  // Level proximity: +20 for exact target, scaling down
+  const levelDiff = Math.abs(monster.level - context.targetLevel);
+  score += Math.max(0, 20 - levelDiff * 5);
 
-The function should combine:
-- a small random factor for variation
-- level-based weighting
-- theme-based weighting
-- role-balance bias
-- duplicate penalties
-- brute-overuse penalties
+  // Theme match bonus
+  if (
+    context.themeTag &&
+    monster.tags.some(
+      (t) => t.toLowerCase() === context.themeTag!.toLowerCase()
+    )
+  ) {
+    score += THEME_MATCH_BONUS;
+  }
 
-Intended score factors:
+  // Threat category analysis
+  const summary = buildThreatSummary(context.currentEntries);
+  const presentCategories = getPresentThreatCategories(summary);
+  const monsterCategory = getThreatCategory(monster.role);
 
-+ level proximity
-  Prefer monsters close to the target difficulty level.
+  // Fills missing threat category
+  if (
+    monsterCategory !== "neutral" &&
+    !presentCategories.includes(monsterCategory)
+  ) {
+    score += MISSING_THREAT_BONUS;
+  }
 
-+ theme match
-  Increase score if the monster matches the selected encounter theme.
+  // Supports underrepresented category
+  if (monsterCategory !== "neutral" && presentCategories.includes(monsterCategory)) {
+    const categoryValue = summary[monsterCategory as keyof ThreatSummary];
+    const maxValue = Math.max(summary.pressure, summary.damage, summary.control);
+    if (maxValue > 0 && categoryValue < maxValue) {
+      score += UNDERREPRESENTED_THREAT_BONUS;
+    }
+  }
 
-+ fills missing threat category
-  Increase score if the monster adds a threat category the partial
-  encounter does not yet contain.
+  // Overrepresented category penalty
+  if (monsterCategory !== "neutral" && presentCategories.length > 0) {
+    const categoryValue = summary[monsterCategory as keyof ThreatSummary];
+    const total = summary.pressure + summary.damage + summary.control;
+    if (total > 0 && categoryValue / total > 0.5) {
+      score -= OVERREPRESENTED_CATEGORY_PENALTY;
+    }
+  }
 
-+ supports underrepresented category
-  Slightly increase score if the monster strengthens a category that is
-  currently present but underrepresented.
+  // Duplicate penalty
+  if (context.duplicatePolicy !== "allow") {
+    const isDuplicate = context.currentEntries.some(
+      (e) => e.monsterId === monster.id
+    );
+    if (isDuplicate) {
+      score -= context.duplicatePolicy === "avoid"
+        ? DUPLICATE_PENALTY * 2
+        : DUPLICATE_PENALTY;
+    }
+  }
 
-- duplicate monster
-  Reduce score if the same monster has already been chosen in another
-  slot, unless duplicates are intentional.
+  // Brute over-cap penalty
+  if (monster.role === "Brute") {
+    const bruteCount = context.currentEntries.filter(
+      (e) => e.role === "Brute"
+    ).length;
+    if (bruteCount >= BRUTE_LIMIT) {
+      score -= EXCESS_BRUTE_PENALTY;
+    }
+  }
 
-- brute over-cap
-  Reduce score if adding the monster would push the encounter above the
-  preferred Brute limit.
+  // Tag coherence: bonus for sharing tags with already-selected monsters
+  if (context.currentEntries.length > 0) {
+    const existingTags = new Set(
+      context.currentEntries.flatMap((e) => e.tags)
+    );
+    const sharedTags = monster.tags.filter((t) => existingTags.has(t));
+    if (sharedTags.length > 0) {
+      score += TAG_COHERENCE_BONUS;
+    }
+  }
 
-- overrepresented threat category
-  Reduce score if the monster adds more weight to a threat category that
-  is already dominant in the partial encounter.
+  // Theme coherence: bonus for sharing themes with already-selected monsters
+  if (monster.themes && monster.themes.length > 0 && context.currentEntries.length > 0) {
+    const existingThemes = new Set(
+      context.currentEntries.flatMap((e) => e.themes ?? [])
+    );
+    const sharedThemes = monster.themes.filter((t) => existingThemes.has(t));
+    if (sharedThemes.length > 0) {
+      score += THEME_COHERENCE_BONUS;
+    }
+  }
 
-This scoring should bias the generator toward:
-- pressure + damage + control coverage
-- role diversity
-- tactically varied encounters
-- bonus if candidate matches selected encounter theme
-- bonus if candidate shares a theme with already chosen monsters
-- small penalty if candidate breaks theme coherence too hard
+  // Small random factor for variation
+  score += Math.random() * 5;
 
-This module should not:
-- choose the final monster directly
-- evaluate the full encounter
-- mutate encounter state
-
-It should only return a numeric weight for one candidate monster.
-*/
+  return score;
+}
