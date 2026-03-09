@@ -196,6 +196,51 @@
   background: rgba(255, 255, 255, 0.02);
 }
 
+.monster-table tbody tr.slot-locked {
+  background: rgba(201, 151, 92, 0.06);
+}
+
+.slot-actions-col {
+  width: 4.5rem;
+}
+
+.slot-actions {
+  white-space: nowrap;
+  text-align: center;
+}
+
+.slot-lock-btn,
+.slot-reroll-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  padding: 0.2rem 0.4rem;
+  font-size: 0.85rem;
+  line-height: 1;
+  color: var(--text-secondary);
+  transition: all var(--transition);
+  margin: 0 0.1rem;
+}
+
+.slot-lock-btn:hover,
+.slot-reroll-btn:hover:not(:disabled) {
+  border-color: var(--accent);
+  background: rgba(255, 255, 255, 0.14);
+  color: var(--text-primary);
+}
+
+.slot-lock-btn.locked {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-subtle);
+}
+
+.slot-reroll-btn:disabled {
+  opacity: 0.25;
+  cursor: not-allowed;
+}
+
 .terrain-suggestion {
   background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
@@ -218,13 +263,13 @@
   line-height: 1.55;
 }
 
-.terrain-actions {
+.terrain-powers {
   margin-top: 0.75rem;
   border-top: 1px solid var(--border-subtle);
   padding-top: 0.6rem;
 }
 
-.terrain-actions h4 {
+.terrain-powers h4 {
   margin: 0 0 0.5rem;
   color: var(--text-secondary);
   font-size: 0.75rem;
@@ -233,21 +278,21 @@
   font-weight: 600;
 }
 
-.terrain-action {
+.terrain-power {
   background: rgba(0, 0, 0, 0.15);
   border-radius: var(--radius-sm);
   padding: 0.6rem 0.75rem;
   margin-bottom: 0.4rem;
 }
 
-.terrain-action strong {
+.terrain-power strong {
   display: block;
   color: var(--text-primary);
   font-size: 0.82rem;
   margin-bottom: 0.2rem;
 }
 
-.terrain-action .action-trigger {
+.terrain-power .power-trigger {
   display: block;
   color: var(--accent);
   font-size: 0.75rem;
@@ -255,14 +300,14 @@
   margin-bottom: 0.25rem;
 }
 
-.terrain-action .action-effect {
+.terrain-power .power-effect {
   margin: 0;
   color: var(--text-secondary);
   font-size: 0.8rem;
   line-height: 1.5;
 }
 
-.terrain-action .action-recharge {
+.terrain-power .power-recharge {
   display: block;
   margin-top: 0.2rem;
   color: var(--text-muted);
@@ -272,7 +317,10 @@
 
 .encounter-actions {
   display: flex;
-  gap: 0.5rem;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-subtle);
 }
 
 .reroll-button,

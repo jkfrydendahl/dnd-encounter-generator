@@ -1,6 +1,8 @@
 import { useState } from "react";
 import type { GeneratedEncounter } from "../../types";
 
+export type LockedSlots = Set<string>;
+
 function encounterToText(encounter: GeneratedEncounter): string {
   const lines: string[] = [];
   lines.push(encounter.name);
@@ -24,18 +26,18 @@ function encounterToText(encounter: GeneratedEncounter): string {
     lines.push(row);
   }
 
-  if (encounter.terrainSuggestion) {
+  for (const terrain of encounter.terrainSuggestions) {
     lines.push("");
-    lines.push(`Terrain: ${encounter.terrainSuggestion.name}`);
-    lines.push(encounter.terrainSuggestion.description);
-    if (encounter.terrainSuggestion.actions?.length) {
+    lines.push(`Terrain: ${terrain.name}`);
+    lines.push(terrain.description);
+    if (terrain.powers?.length) {
       lines.push("");
-      lines.push("Terrain Actions:");
-      for (const action of encounter.terrainSuggestion.actions) {
-        lines.push(`  ${action.name}`);
-        lines.push(`    Trigger: ${action.trigger}`);
-        lines.push(`    Effect: ${action.effect}`);
-        if (action.recharge) lines.push(`    Recharge: ${action.recharge}`);
+      lines.push("Terrain Powers:");
+      for (const power of terrain.powers) {
+        lines.push(`  ${power.name}`);
+        lines.push(`    Trigger: ${power.trigger}`);
+        lines.push(`    Effect: ${power.effect}`);
+        if (power.recharge) lines.push(`    Recharge: ${power.recharge}`);
       }
     }
   }
@@ -45,12 +47,16 @@ function encounterToText(encounter: GeneratedEncounter): string {
 
 interface EncounterDisplayProps {
   encounter: GeneratedEncounter | null;
-  onReroll: () => void;
+  onRerollSlot?: (slotId: string) => void;
+  lockedSlots?: LockedSlots;
+  onToggleLock?: (slotId: string) => void;
 }
 
 export function EncounterDisplay({
   encounter,
-  onReroll,
+  onRerollSlot,
+  lockedSlots,
+  onToggleLock,
 }: EncounterDisplayProps) {
   const [copied, setCopied] = useState(false);
 
@@ -61,6 +67,7 @@ export function EncounterDisplay({
       setTimeout(() => setCopied(false), 2000);
     });
   }
+
   if (!encounter) {
     return (
       <div className="encounter-panel empty">
@@ -85,48 +92,68 @@ export function EncounterDisplay({
             <th>Level</th>
             <th>Count</th>
             <th>Source</th>
+            {onRerollSlot && <th className="slot-actions-col"></th>}
           </tr>
         </thead>
         <tbody>
-          {encounter.entries.map((entry) => (
-            <tr key={entry.slotId}>
-              <td>{entry.monsterName}</td>
-              <td>{entry.role}</td>
-              <td>{entry.rank}</td>
-              <td>{entry.level}</td>
-              <td>{entry.count}</td>
-              <td>{entry.source} p.{entry.page}</td>
-            </tr>
-          ))}
+          {encounter.entries.map((entry) => {
+            const isLocked = lockedSlots?.has(entry.slotId) ?? false;
+            return (
+              <tr key={entry.slotId} className={isLocked ? "slot-locked" : ""}>
+                <td>{entry.monsterName}</td>
+                <td>{entry.role}</td>
+                <td>{entry.rank}</td>
+                <td>{entry.level}</td>
+                <td>{entry.count}</td>
+                <td>{entry.source} p.{entry.page}</td>
+                {onRerollSlot && (
+                  <td className="slot-actions">
+                    <button
+                      className={"slot-lock-btn" + (isLocked ? " locked" : "")}
+                      onClick={() => onToggleLock?.(entry.slotId)}
+                      title={isLocked ? "Unlock slot" : "Lock slot"}
+                    >
+                      {isLocked ? "🔒" : "🔓"}
+                    </button>
+                    <button
+                      className="slot-reroll-btn"
+                      onClick={() => onRerollSlot(entry.slotId)}
+                      disabled={isLocked}
+                      title="Reroll this slot"
+                    >
+                      ↻
+                    </button>
+                  </td>
+                )}
+              </tr>
+            );
+          })}
         </tbody>
       </table>
 
-      {encounter.terrainSuggestion && (
-        <div className="terrain-suggestion">
-          <h3>Terrain: {encounter.terrainSuggestion.name}</h3>
-          <p>{encounter.terrainSuggestion.description}</p>
-          {encounter.terrainSuggestion.actions?.length ? (
-            <div className="terrain-actions">
-              <h4>Terrain Actions</h4>
-              {encounter.terrainSuggestion.actions.map((action) => (
-                <div key={action.name} className="terrain-action">
-                  <strong>{action.name}</strong>
-                  <span className="action-trigger">{action.trigger}</span>
-                  <p className="action-effect">{action.effect}</p>
-                  {action.recharge && (
-                    <span className="action-recharge">{action.recharge}</span>
+      {encounter.terrainSuggestions.length > 0 && encounter.terrainSuggestions.map((terrain) => (
+        <div key={terrain.id} className="terrain-suggestion">
+          <h3>Terrain: {terrain.name}</h3>
+          <p>{terrain.description}</p>
+          {terrain.powers?.length ? (
+            <div className="terrain-powers">
+              <h4>Terrain Powers</h4>
+              {terrain.powers.map((power) => (
+                <div key={power.name} className="terrain-power">
+                  <strong>{power.name}</strong>
+                  <span className="power-trigger">{power.trigger}</span>
+                  <p className="power-effect">{power.effect}</p>
+                  {power.recharge && (
+                    <span className="power-recharge">{power.recharge}</span>
                   )}
                 </div>
               ))}
             </div>
           ) : null}
         </div>
-      )}
+      ))}
 
       <div className="encounter-actions">
-        <button className="reroll-button" onClick={onReroll}>
-          Reroll Encounter
-        </button>
         <button className="copy-button" onClick={handleCopy}>
           {copied ? "Copied!" : "Copy to Clipboard"}
         </button>

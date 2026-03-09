@@ -146,15 +146,19 @@ export function ControlsPanel({
         </select>
       </label>
 
-      <label className="checkbox-label">
-        <input
-          type="checkbox"
-          checked={settings.includeTerrain}
+      <label>
+        Terrain Features
+        <select
+          value={settings.terrainCount}
           onChange={(e) =>
-            onUpdateSetting("includeTerrain", e.target.checked)
+            onUpdateSetting("terrainCount", Number(e.target.value))
           }
-        />
-        Include Terrain
+        >
+          <option value={0}>None</option>
+          <option value={1}>1 terrain</option>
+          <option value={2}>2 terrains</option>
+          <option value={3}>3 terrains</option>
+        </select>
       </label>
 
       <button

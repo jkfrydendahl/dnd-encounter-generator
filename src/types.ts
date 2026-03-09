@@ -65,7 +65,7 @@ export interface GeneratorSettings {
   themeTag?: string;
   templateMode: string;
   duplicatePolicy: DuplicatePolicy;
-  includeTerrain: boolean;
+  terrainCount: number;
 }
 
 export interface GeneratedEncounterEntry {
@@ -98,7 +98,7 @@ export interface EncounterDiagnostics {
   isValid: boolean;
 }
 
-export interface TerrainAction {
+export interface TerrainPower {
   name: string;
   trigger: string;
   effect: string;
@@ -110,7 +110,7 @@ export interface TerrainSuggestion {
   name: string;
   tags: string[];
   description: string;
-  actions?: TerrainAction[];
+  powers?: TerrainPower[];
 }
 
 export interface GeneratedEncounter {
@@ -121,5 +121,5 @@ export interface GeneratedEncounter {
   entries: GeneratedEncounterEntry[];
   threatSummary: ThreatSummary;
   diagnostics: EncounterDiagnostics;
-  terrainSuggestion?: TerrainSuggestion;
+  terrainSuggestions: TerrainSuggestion[];
 }

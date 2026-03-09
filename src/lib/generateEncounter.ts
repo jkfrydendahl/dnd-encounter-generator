@@ -200,30 +200,36 @@ function buildCandidateEncounter(
   return entries;
 }
 
-function selectTerrain(
+function selectTerrains(
   terrainOptions: TerrainSuggestion[],
-  entries: GeneratedEncounterEntry[]
-): TerrainSuggestion | undefined {
-  if (terrainOptions.length === 0) return undefined;
+  entries: GeneratedEncounterEntry[],
+  count: number
+): TerrainSuggestion[] {
+  if (terrainOptions.length === 0 || count <= 0) return [];
 
   const encounterTags = new Set(entries.flatMap((e) => e.tags));
   const encounterThemes = new Set(entries.flatMap((e) => e.themes ?? []));
 
-  // Score terrain by tag + theme overlap
-  let bestTerrain: TerrainSuggestion | undefined;
-  let bestScore = -1;
-
-  for (const terrain of terrainOptions) {
+  // Score all terrains by tag + theme overlap
+  const scored = terrainOptions.map((terrain) => {
     const tagOverlap = terrain.tags.filter((t) => encounterTags.has(t)).length;
     const themeOverlap = terrain.tags.filter((t) => encounterThemes.has(t)).length;
     const score = tagOverlap * 2 + themeOverlap + Math.random() * 0.5;
-    if (score > bestScore) {
-      bestScore = score;
-      bestTerrain = terrain;
+    return { terrain, score };
+  });
+
+  scored.sort((a, b) => b.score - a.score);
+
+  // Pick top N unique terrains
+  const picked: TerrainSuggestion[] = [];
+  for (const { terrain } of scored) {
+    if (picked.length >= count) break;
+    if (!picked.some((p) => p.id === terrain.id)) {
+      picked.push(terrain);
     }
   }
 
-  return bestTerrain;
+  return picked;
 }
 
 const TAG_FLAVOR: Record<string, string[]> = {
@@ -361,9 +367,11 @@ export function generateEncounter(
       bestIsValid = diagnostics.isValid;
 
       const threatSummary = buildThreatSummaryFromEntries(entries);
-      const terrainSuggestion = effectiveSettings.includeTerrain
-        ? selectTerrain(terrain, entries)
-        : undefined;
+      const terrainSuggestions = selectTerrains(
+        terrain,
+        entries,
+        effectiveSettings.terrainCount ?? 0
+      );
       const name = generateEncounterName(template.name, entries);
 
       bestEncounter = {
@@ -374,10 +382,58 @@ export function generateEncounter(
         entries,
         threatSummary,
         diagnostics,
-        terrainSuggestion,
+        terrainSuggestions,
       };
     }
   }
 
   return bestEncounter;
+}
+
+export function rerollSlot(
+  encounter: GeneratedEncounter,
+  slotId: string,
+  input: GenerateEncounterInput
+): GeneratedEncounter {
+  const { monsters, templates, settings } = input;
+
+  const template = templates.find((t) => t.id === encounter.templateId);
+  if (!template) return encounter;
+
+  const adapted = adaptTemplateSlots(template, settings.monsterCount ?? DEFAULT_MONSTER_COUNT);
+  const slot = adapted.slots.find((s) => s.id === slotId);
+  if (!slot) return encounter;
+
+  const countDelta = DEFAULT_MONSTER_COUNT - (settings.monsterCount ?? DEFAULT_MONSTER_COUNT);
+  const countAdjustment = Math.round(countDelta * 0.75);
+  const effectiveSettings: GeneratorSettings = {
+    ...settings,
+    minLevelOffset: (settings.minLevelOffset ?? DEFAULT_LEVEL_MIN_OFFSET) + Math.min(countAdjustment, 0),
+    maxLevelOffset: (settings.maxLevelOffset ?? DEFAULT_LEVEL_MAX_OFFSET) + Math.max(countAdjustment, 0),
+    targetDifficultyOffset:
+      (settings.targetDifficultyOffset ?? DEFAULT_TARGET_OFFSET) + countAdjustment,
+  };
+
+  // Other entries stay fixed — pass them as context for scoring
+  const otherEntries = encounter.entries.filter((e) => e.slotId !== slotId);
+  const newEntry = resolveSlot(slot, monsters, otherEntries, effectiveSettings);
+  if (!newEntry) return encounter;
+
+  const entries = encounter.entries.map((e) =>
+    e.slotId === slotId ? newEntry : e
+  );
+
+  const targetLevel =
+    effectiveSettings.partyLevel + effectiveSettings.targetDifficultyOffset;
+  const diagnostics = evaluateEncounter(entries, targetLevel);
+  const threatSummary = buildThreatSummaryFromEntries(entries);
+  const name = generateEncounterName(encounter.templateName, entries);
+
+  return {
+    ...encounter,
+    name,
+    entries,
+    threatSummary,
+    diagnostics,
+  };
 }

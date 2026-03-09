@@ -2,8 +2,9 @@ import { useState, useCallback } from "react";
 import { useGeneratorSettings } from "../hooks/useGeneratorSettings";
 import { ControlsPanel } from "../components/controls/ControlsPanel";
 import { EncounterDisplay } from "../components/encounter/EncounterDisplay";
+import type { LockedSlots } from "../components/encounter/EncounterDisplay";
 import { DiagnosticsPanel } from "../components/encounter/DiagnosticsPanel";
-import { generateEncounter } from "../lib/generateEncounter";
+import { generateEncounter, rerollSlot } from "../lib/generateEncounter";
 import type { GeneratedEncounter, Monster, EncounterTemplate, TerrainSuggestion } from "../types";
 
 import monstersData from "../data/monsters.json";
@@ -22,22 +23,51 @@ export function HomePage() {
   const { settings, updateSetting } = useGeneratorSettings();
   const [encounter, setEncounter] = useState<GeneratedEncounter | null>(null);
   const [isGenerating, setIsGenerating] = useState(false);
+  const [lockedSlots, setLockedSlots] = useState<LockedSlots>(new Set());
+
+  const generatorInput = { monsters, templates, terrain, settings };
 
   const handleGenerate = useCallback(() => {
     setIsGenerating(true);
 
     // Use setTimeout to allow the UI to show the generating state
     setTimeout(() => {
-      const result = generateEncounter({
-        monsters,
-        templates,
-        terrain,
-        settings,
-      });
-      setEncounter(result);
+      if (encounter && lockedSlots.size > 0) {
+        // Reroll only unlocked slots
+        let result = encounter;
+        for (const entry of encounter.entries) {
+          if (!lockedSlots.has(entry.slotId)) {
+            result = rerollSlot(result, entry.slotId, generatorInput);
+          }
+        }
+        setEncounter(result);
+      } else {
+        setLockedSlots(new Set());
+        const result = generateEncounter(generatorInput);
+        setEncounter(result);
+      }
       setIsGenerating(false);
     }, 0);
-  }, [settings]);
+  }, [settings, encounter, lockedSlots]);
+
+  const handleRerollSlot = useCallback(
+    (slotId: string) => {
+      if (!encounter) return;
+      const result = rerollSlot(encounter, slotId, generatorInput);
+      setEncounter(result);
+    },
+    [encounter, settings]
+  );
+
+  const handleToggleLock = useCallback((slotId: string) => {
+    setLockedSlots((prev) => {
+      const next = new Set(prev);
+      if (next.has(slotId)) next.delete(slotId);
+      else next.add(slotId);
+      return next;
+    });
+  }, []);
+
 
   return (
     <div className="home-page">
@@ -57,7 +87,9 @@ export function HomePage() {
 
         <EncounterDisplay
           encounter={encounter}
-          onReroll={handleGenerate}
+          onRerollSlot={handleRerollSlot}
+          lockedSlots={lockedSlots}
+          onToggleLock={handleToggleLock}
         />
 
         <DiagnosticsPanel

@@ -7,7 +7,7 @@ A Progressive Web App that generates tactically interesting D&D 4th Edition enco
 - **Template-driven generation.** 20 encounter templates (12 standard, 8 boss) covering tactical archetypes from ambushes to dragon encounters
 - **Two-pass quality scoring.** Slot-level role-balance biasing during construction + final encounter evaluation across multiple candidates
 - **978 monsters.** From official 4e sources (Monster Manual, DMG, Draconomicon, etc.) with role, rank, level, and tag data
-- **178 terrain suggestions.** With tactical terrain actions (Similar to 5e lair actions) sourced from DMG, DMG2, Manual of the Planes, Underdark, and more
+- **178 terrain suggestions.** With tactical terrain powers sourced from DMG, DMG2, Manual of the Planes, Underdark, and more
 - **Theme-aware filtering.** Select a creature tag (Undead, Fire, Fey, etc.) to generate thematically coherent encounters
 - **Configurable monster count.** Adjust the number of unique monsters (2-7) with automatic difficulty scaling
 - **Encounter diagnostics.** Threat summary, role diversity, quality score, and validation warnings
@@ -50,7 +50,7 @@ src/
   data/
     monsters.json           # 978 monster entries
     templates.json          # 20 encounter templates
-    terrain.json            # 178 terrain suggestions with actions
+    terrain.json            # 178 terrain suggestions with powers
   components/
     controls/ControlsPanel.tsx
     encounter/EncounterDisplay.tsx

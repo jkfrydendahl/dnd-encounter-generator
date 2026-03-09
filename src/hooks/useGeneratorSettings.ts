@@ -18,7 +18,7 @@ const defaultSettings: GeneratorSettings = {
   themeTag: undefined,
   templateMode: "any",
   duplicatePolicy: "soft-avoid",
-  includeTerrain: true,
+  terrainCount: 1,
 };
 
 function loadSettings(): GeneratorSettings {
