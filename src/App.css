@@ -249,11 +249,45 @@
   margin-bottom: 1.5rem;
 }
 
+.terrain-suggestion.terrain-locked {
+  background: rgba(201, 151, 92, 0.06);
+}
+
+.terrain-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .terrain-suggestion h3 {
   margin: 0 0 0.35rem;
   color: var(--accent);
   font-size: 0.85rem;
   font-weight: 600;
+}
+
+.terrain-lock-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  padding: 0.2rem 0.4rem;
+  font-size: 0.85rem;
+  line-height: 1;
+  color: var(--text-secondary);
+  transition: all var(--transition);
+}
+
+.terrain-lock-btn:hover {
+  border-color: var(--accent);
+  background: rgba(255, 255, 255, 0.14);
+  color: var(--text-primary);
+}
+
+.terrain-lock-btn.locked {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-subtle);
 }
 
 .terrain-suggestion p {
@@ -318,11 +352,13 @@
 .encounter-actions {
   display: flex;
   justify-content: flex-end;
+  gap: 0.5rem;
   margin-top: 1.5rem;
   padding-top: 1rem;
   border-top: 1px solid var(--border-subtle);
 }
 
+.clear-locks-button,
 .reroll-button,
 .copy-button {
   padding: 0.5rem 1rem;
@@ -337,11 +373,17 @@
   transition: all var(--transition);
 }
 
+.clear-locks-button:hover,
 .reroll-button:hover,
 .copy-button:hover {
   color: var(--text-primary);
   border-color: var(--border-accent);
   background: var(--accent-subtle);
+}
+
+.clear-locks-button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
 }
 
 /* ─── Diagnostics Panel ──────────────────────────────── */

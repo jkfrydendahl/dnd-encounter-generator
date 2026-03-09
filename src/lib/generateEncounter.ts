@@ -200,7 +200,7 @@ function buildCandidateEncounter(
   return entries;
 }
 
-function selectTerrains(
+export function selectTerrains(
   terrainOptions: TerrainSuggestion[],
   entries: GeneratedEncounterEntry[],
   count: number

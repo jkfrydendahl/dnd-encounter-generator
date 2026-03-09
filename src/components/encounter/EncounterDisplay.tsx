@@ -50,6 +50,9 @@ interface EncounterDisplayProps {
   onRerollSlot?: (slotId: string) => void;
   lockedSlots?: LockedSlots;
   onToggleLock?: (slotId: string) => void;
+  lockedTerrains?: Set<string>;
+  onToggleTerrainLock?: (terrainId: string) => void;
+  onClearAllLocks?: () => void;
 }
 
 export function EncounterDisplay({
@@ -57,6 +60,9 @@ export function EncounterDisplay({
   onRerollSlot,
   lockedSlots,
   onToggleLock,
+  lockedTerrains,
+  onToggleTerrainLock,
+  onClearAllLocks,
 }: EncounterDisplayProps) {
   const [copied, setCopied] = useState(false);
 
@@ -131,9 +137,22 @@ export function EncounterDisplay({
         </tbody>
       </table>
 
-      {encounter.terrainSuggestions.length > 0 && encounter.terrainSuggestions.map((terrain) => (
-        <div key={terrain.id} className="terrain-suggestion">
-          <h3>Terrain: {terrain.name}</h3>
+      {encounter.terrainSuggestions.length > 0 && encounter.terrainSuggestions.map((terrain) => {
+        const isTerrainLocked = lockedTerrains?.has(terrain.id) ?? false;
+        return (
+        <div key={terrain.id} className={"terrain-suggestion" + (isTerrainLocked ? " terrain-locked" : "")}>
+          <div className="terrain-header">
+            <h3>Terrain: {terrain.name}</h3>
+            {onToggleTerrainLock && (
+              <button
+                className={"terrain-lock-btn" + (isTerrainLocked ? " locked" : "")}
+                onClick={() => onToggleTerrainLock(terrain.id)}
+                title={isTerrainLocked ? "Unlock terrain" : "Lock terrain"}
+              >
+                {isTerrainLocked ? "🔒" : "🔓"}
+              </button>
+            )}
+          </div>
           <p>{terrain.description}</p>
           {terrain.powers?.length ? (
             <div className="terrain-powers">
@@ -151,9 +170,15 @@ export function EncounterDisplay({
             </div>
           ) : null}
         </div>
-      ))}
+        );
+      })}
 
       <div className="encounter-actions">
+        {onClearAllLocks && (
+          <button className="clear-locks-button" onClick={onClearAllLocks} disabled={(lockedSlots?.size ?? 0) === 0 && (lockedTerrains?.size ?? 0) === 0}>
+            Clear All Locks
+          </button>
+        )}
         <button className="copy-button" onClick={handleCopy}>
           {copied ? "Copied!" : "Copy to Clipboard"}
         </button>
