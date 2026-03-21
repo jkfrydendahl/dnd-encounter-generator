@@ -597,6 +597,25 @@
   padding: 1.5rem;
   position: relative;
   box-shadow: 0 24px 48px rgba(0, 0, 0, 0.4);
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-default) transparent;
+}
+
+.monster-card-modal::-webkit-scrollbar {
+  width: 6px;
+}
+
+.monster-card-modal::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.monster-card-modal::-webkit-scrollbar-thumb {
+  background: var(--border-default);
+  border-radius: 3px;
+}
+
+.monster-card-modal::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
 }
 
 .monster-card-close {
@@ -811,9 +830,10 @@
 
 .pinned-cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
   gap: 1rem;
   margin-top: 0.75rem;
+  margin-bottom: 1rem;
 }
 
 .pinned-card {
@@ -824,6 +844,25 @@
   position: relative;
   max-height: 70vh;
   overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-default) transparent;
+}
+
+.pinned-card::-webkit-scrollbar {
+  width: 6px;
+}
+
+.pinned-card::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.pinned-card::-webkit-scrollbar-thumb {
+  background: var(--border-default);
+  border-radius: 3px;
+}
+
+.pinned-card::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
 }
 
 .pinned-card-unpin {
