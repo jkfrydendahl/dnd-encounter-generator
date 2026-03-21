@@ -722,14 +722,16 @@
     ]
   },
   {
-    "id": "vilden-destroyer",
-    "name": "Vilden Destroyer",
+    "id": "wilden-destroyer",
+    "name": "Wilden Destroyer",
     "level": 2,
     "role": "Soldier",
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 206,
-    "tags": []
+    "tags": [
+      "Fey"
+    ]
   },
   {
     "id": "wilden-hunter",
@@ -1216,8 +1218,8 @@
     "tags": []
   },
   {
-    "id": "jackalwerc-harrier",
-    "name": "Jackalwerc Harrier",
+    "id": "jackalwere-harrier",
+    "name": "Jackalwere Harrier",
     "level": 3,
     "role": "Minion",
     "rank": "Standard",
@@ -1437,7 +1439,7 @@
   },
   {
     "id": "chevkos-s-guard",
-    "name": "Chevkos 's Guard",
+    "name": "Chevkos's Guard",
     "level": 4,
     "role": "Soldier",
     "rank": "Standard",
@@ -1446,8 +1448,8 @@
     "tags": []
   },
   {
-    "id": "chevkos-s-cmssbownian",
-    "name": "Chevkos's Cmssbownian",
+    "id": "chevkos-s-crossbowman",
+    "name": "Chevkos's Crossbowman",
     "level": 4,
     "role": "Artillery",
     "rank": "Standard",
@@ -1456,8 +1458,8 @@
     "tags": []
   },
   {
-    "id": "cheykos-s-lackey",
-    "name": "Cheykos's Lackey",
+    "id": "chevkos-s-lackey",
+    "name": "Chevkos's Lackey",
     "level": 4,
     "role": "Minion",
     "rank": "Standard",
@@ -1479,8 +1481,8 @@
     ]
   },
   {
-    "id": "eh-raeslik",
-    "name": "Eh raeslik",
+    "id": "thraesk",
+    "name": "Thraesk",
     "level": 4,
     "role": "Lurker",
     "rank": "Solo",
@@ -1489,8 +1491,8 @@
     "tags": []
   },
   {
-    "id": "karmic-draconian",
-    "name": "Karmic Draconian",
+    "id": "kapak-draconian",
+    "name": "Kapak Draconian",
     "level": 4,
     "role": "Lurker",
     "rank": "Standard",
@@ -2154,8 +2156,8 @@
     ]
   },
   {
-    "id": "houk-draconian",
-    "name": "Houk Draconian",
+    "id": "bozak-draconian",
+    "name": "Bozak Draconian",
     "level": 5,
     "role": "Artillery",
     "rank": "Standard",
@@ -2179,16 +2181,14 @@
     ]
   },
   {
-    "id": "zealot",
-    "name": "Zealot (Kobold)",
+    "id": "dragonkin-zealot",
+    "name": "Dragonkin Zealot",
     "level": 5,
     "role": "Lurker",
     "rank": "Standard",
     "source": "Draconomicon 2",
     "page": 198,
-    "tags": [
-      "Humanoid"
-    ]
+    "tags": []
   },
   {
     "id": "blazing-skeleton",
@@ -3138,8 +3138,8 @@
     ]
   },
   {
-    "id": "shard-mind-warseeker",
-    "name": "Shard mind Warseeker",
+    "id": "shardmind-warseeker",
+    "name": "Shardmind Warseeker",
     "level": 6,
     "role": "Soldier",
     "rank": "Standard",
@@ -3909,8 +3909,8 @@
     "tags": []
   },
   {
-    "id": "homstone-gargoyle",
-    "name": "Homstone Gargoyle",
+    "id": "hornstone-gargoyle",
+    "name": "Hornstone Gargoyle",
     "level": 8,
     "role": "Brute",
     "rank": "Standard",
@@ -3967,8 +3967,8 @@
     ]
   },
   {
-    "id": "shard-mind-dominator",
-    "name": "Shard mind Dominator",
+    "id": "shardmind-dominator",
+    "name": "Shardmind Dominator",
     "level": 8,
     "role": "Controller",
     "rank": "Standard",
@@ -4058,8 +4058,8 @@
     "tags": []
   },
   {
-    "id": "dragon-wynoling",
-    "name": "Dragon Wynoling",
+    "id": "mithral-dragon-wyrmling",
+    "name": "Mithral Dragon Wyrmling",
     "level": 9,
     "role": "Skirmisher",
     "rank": "Elite",
@@ -4070,8 +4070,8 @@
     ]
   },
   {
-    "id": "vaporous-serpent",
-    "name": "Vaporous Serpent",
+    "id": "zanathakla-vaporous-serpent",
+    "name": "Zanathakla Vaporous Serpent",
     "level": 9,
     "role": "Minion",
     "rank": "Standard",
@@ -4094,16 +4094,14 @@
     ]
   },
   {
-    "id": "wyringuard-scout",
-    "name": "Wyringuard Scout (Kobold)",
+    "id": "wyrmguard-scout",
+    "name": "Wyrmguard Scout",
     "level": 9,
     "role": "Artillery",
     "rank": "Standard",
     "source": "Draconomicon 2",
     "page": 200,
-    "tags": [
-      "Humanoid"
-    ]
+    "tags": []
   },
   {
     "id": "zanathakla",
@@ -4455,8 +4453,8 @@
     ]
   },
   {
-    "id": "cambion-wrath-born",
-    "name": "Cambion Wrath born",
+    "id": "cambion-wrathborn",
+    "name": "Cambion Wrathborn",
     "level": 9,
     "role": "Skirmisher",
     "rank": "Standard",
@@ -4487,8 +4485,8 @@
     "tags": []
   },
   {
-    "id": "meenlock-s",
-    "name": "Meenlock S",
+    "id": "meenlock-spawn",
+    "name": "Meenlock Spawn",
     "level": 9,
     "role": "Controller",
     "rank": "Standard",
@@ -4576,8 +4574,8 @@
     ]
   },
   {
-    "id": "razcoreth",
-    "name": "Razcoreth",
+    "id": "razecoreth",
+    "name": "Razecoreth",
     "level": 10,
     "role": "Skirmisher",
     "rank": "Solo",
@@ -4990,8 +4988,8 @@
     "tags": []
   },
   {
-    "id": "arachnid-horror",
-    "name": "Arachnid Horror",
+    "id": "arachnid-clockwork-horror",
+    "name": "Arachnid Clockwork Horror",
     "level": 10,
     "role": "Minion",
     "rank": "Standard",
@@ -5251,8 +5249,8 @@
     ]
   },
   {
-    "id": "duergar-fleshtearer",
-    "name": "Duergar Fleshtearer",
+    "id": "duergar-flesheater",
+    "name": "Duergar Flesheater",
     "level": 11,
     "role": "Lurker",
     "rank": "Standard",
@@ -5403,8 +5401,8 @@
     "tags": []
   },
   {
-    "id": "scion-of-juiblex-sludge-dredge",
-    "name": "Scion of Juiblex Sludge Dredge",
+    "id": "spawn-of-juiblex-sludge-dredge",
+    "name": "Spawn of Juiblex Sludge Dredge",
     "level": 11,
     "role": "Minion",
     "rank": "Standard",
@@ -5890,8 +5888,8 @@
     "tags": []
   },
   {
-    "id": "mosslingguardian",
-    "name": "MosslingGuardian",
+    "id": "mossling-guardian",
+    "name": "Mossling Guardian",
     "level": 12,
     "role": "Minion",
     "rank": "Standard",
@@ -5900,14 +5898,15 @@
     "tags": []
   },
   {
-    "id": "norker-tone-shield",
-    "name": "Norker tone Shield",
+    "id": "norker-stone-shield",
+    "name": "Norker Stone Shield",
     "level": 12,
     "role": "Soldier",
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 148,
     "tags": [
+      "Elemental",
       "Humanoid",
       "Goblinoid"
     ]
@@ -5925,8 +5924,8 @@
     ]
   },
   {
-    "id": "pale-bloodflend",
-    "name": "Pale Bloodflend",
+    "id": "pale-bloodfiend",
+    "name": "Pale Bloodfiend",
     "level": 12,
     "role": "Brute",
     "rank": "Standard",
@@ -5945,8 +5944,8 @@
     "tags": []
   },
   {
-    "id": "kuo-toa-spearflend",
-    "name": "Kuo-Toa Spearflend",
+    "id": "kuo-toa-spearfiend",
+    "name": "Kuo-Toa Spearfiend",
     "level": 12,
     "role": "Brute",
     "rank": "Standard",
@@ -5970,8 +5969,8 @@
     ]
   },
   {
-    "id": "dregchogmon",
-    "name": "Dregchogmon",
+    "id": "derghodemon",
+    "name": "Derghodemon",
     "level": 12,
     "role": "Soldier",
     "rank": "Elite",
@@ -6077,8 +6076,8 @@
     ]
   },
   {
-    "id": "priest",
-    "name": "Priest",
+    "id": "aelathric-sahuagin-priest",
+    "name": "Aelathric Sahuagin Priest",
     "level": 13,
     "role": "Artillery",
     "rank": "Standard",
@@ -6495,8 +6494,8 @@
     ]
   },
   {
-    "id": "malgodeemon-thug",
-    "name": "Malgodeemon Thug",
+    "id": "malgodemon-thug",
+    "name": "Malgodemon Thug",
     "level": 13,
     "role": "Brute",
     "rank": "Standard",
@@ -6540,8 +6539,8 @@
     ]
   },
   {
-    "id": "ilvokula",
-    "name": "Ilvokula",
+    "id": "uvokula",
+    "name": "Uvokula",
     "level": 14,
     "role": "Brute",
     "rank": "Elite",
@@ -6570,8 +6569,8 @@
     "tags": []
   },
   {
-    "id": "xyplinmens",
-    "name": "Xyplinmens",
+    "id": "xyphreneus",
+    "name": "Xyphreneus",
     "level": 14,
     "role": "Brute",
     "rank": "Solo",
@@ -6672,16 +6671,16 @@
     ]
   },
   {
-    "id": "lich-human-wizard",
-    "name": "Lich, Human Wizard",
+    "id": "lich",
+    "name": "Lich (Human Wizard)",
     "level": 14,
     "role": "Controller",
     "rank": "Elite",
     "source": "Monster Manual 1",
     "page": 176,
     "tags": [
-      "Undead",
-      "Humanoid"
+      "Humanoid",
+      "Undead"
     ]
   },
   {
@@ -7050,8 +7049,8 @@
     ]
   },
   {
-    "id": "grayspawn-fleshreaver",
-    "name": "Grayspawn Fleshreaver",
+    "id": "grayspawn-fleshtearer",
+    "name": "Grayspawn Fleshtearer",
     "level": 15,
     "role": "Soldier",
     "rank": "Standard",
@@ -7092,8 +7091,8 @@
     "tags": []
   },
   {
-    "id": "andracmos",
-    "name": "Andracmos",
+    "id": "andraemos",
+    "name": "Andraemos",
     "level": 15,
     "role": "Artillery",
     "rank": "Solo",
@@ -7315,8 +7314,8 @@
     ]
   },
   {
-    "id": "couad-star-serpent",
-    "name": "Couad Star Serpent",
+    "id": "couatl-star-serpent",
+    "name": "Couatl Star Serpent",
     "level": 15,
     "role": "Controller",
     "rank": "Elite",
@@ -7900,8 +7899,8 @@
     "tags": []
   },
   {
-    "id": "hydrodaemon",
-    "name": "Hydrodaemon",
+    "id": "hydrodemon",
+    "name": "Hydrodemon",
     "level": 16,
     "role": "Skirmisher",
     "rank": "Standard",
@@ -8109,16 +8108,16 @@
     ]
   },
   {
-    "id": "death-knight-human",
-    "name": "Death Knight, Human",
+    "id": "death-knight",
+    "name": "Death Knight (Human Fighter)",
     "level": 17,
     "role": "Soldier",
     "rank": "Elite",
     "source": "Monster Manual 1",
     "page": 50,
     "tags": [
-      "Undead",
-      "Humanoid"
+      "Humanoid",
+      "Undead"
     ]
   },
   {
@@ -8210,8 +8209,8 @@
     ]
   },
   {
-    "id": "yuan-ti-malison",
-    "name": "Yuan-Ti Malison",
+    "id": "yuan-ti-malison-disciple-of-zehir",
+    "name": "Yuan-ti Malison Disciple of Zehir",
     "level": 17,
     "role": "Controller",
     "rank": "Standard",
@@ -8358,8 +8357,8 @@
     "tags": []
   },
   {
-    "id": "rageborn-barbedclaw",
-    "name": "Rageborn Barbedclaw",
+    "id": "rageborn-barbclaw",
+    "name": "Rageborn Barbclaw",
     "level": 17,
     "role": "Soldier",
     "rank": "Standard",
@@ -8392,14 +8391,16 @@
     ]
   },
   {
-    "id": "adult",
-    "name": "Adult",
+    "id": "adult-mithral-dragon",
+    "name": "Adult Mithral Dragon",
     "level": 18,
     "role": "Skirmisher",
     "rank": "Solo",
     "source": "Draconomicon 2",
     "page": 167,
-    "tags": []
+    "tags": [
+      "Dragon"
+    ]
   },
   {
     "id": "aspect-of-bahamut",
@@ -8770,8 +8771,8 @@
     "tags": []
   },
   {
-    "id": "mezzodemon-psychophant",
-    "name": "Mezzodemon Psychophant",
+    "id": "mezzodemon-sycophant",
+    "name": "Mezzodemon Sycophant",
     "level": 18,
     "role": "Minion",
     "rank": "Standard",
@@ -9079,8 +9080,8 @@
     "tags": []
   },
   {
-    "id": "mavavhan",
-    "name": "Mavavhan",
+    "id": "mavawhan",
+    "name": "Mavawhan",
     "level": 19,
     "role": "Skirmisher",
     "rank": "Standard",
@@ -9089,8 +9090,8 @@
     "tags": []
   },
   {
-    "id": "nillung",
-    "name": "Nillung",
+    "id": "niflung",
+    "name": "Niflung",
     "level": 20,
     "role": "Controller",
     "rank": "Solo",
@@ -9423,8 +9424,8 @@
     "tags": []
   },
   {
-    "id": "grave-burn-drakkensteed",
-    "name": "Grave-Burn Drakkensteed",
+    "id": "grave-born-drakkensteed",
+    "name": "Grave-Born Drakkensteed",
     "level": 21,
     "role": "Artillery",
     "rank": "Standard",
@@ -9900,8 +9901,8 @@
     "tags": []
   },
   {
-    "id": "archdemon-kaugothirn",
-    "name": "Archdemon Kaugothirn",
+    "id": "archdegog-kaugothirn",
+    "name": "Archdegog Kaugothirn",
     "level": 22,
     "role": "Controller",
     "rank": "Elite",
@@ -10085,8 +10086,8 @@
     "tags": []
   },
   {
-    "id": "shemeskha",
-    "name": "Shemeskha",
+    "id": "shemeshka",
+    "name": "Shemeshka",
     "level": 23,
     "role": "Controller",
     "rank": "Elite",
@@ -10185,16 +10186,16 @@
     "tags": []
   },
   {
-    "id": "lich-eladrin-wizard",
-    "name": "Lich, Eladrin Wizard",
+    "id": "lich-2",
+    "name": "Lich (Eladrin Wizard)",
     "level": 24,
     "role": "Controller",
     "rank": "Elite",
     "source": "Monster Manual 1",
     "page": 176,
     "tags": [
-      "Undead",
-      "Fey"
+      "Fey",
+      "Undead"
     ]
   },
   {
@@ -10278,8 +10279,8 @@
     ]
   },
   {
-    "id": "sezraseth",
-    "name": "Sezraseth",
+    "id": "seszrath",
+    "name": "Seszrath",
     "level": 24,
     "role": "Brute",
     "rank": "Standard",
@@ -10288,8 +10289,8 @@
     "tags": []
   },
   {
-    "id": "bonehogue-assassin",
-    "name": "Bonehogue Assassin",
+    "id": "bonegouge-assassin",
+    "name": "Bonegouge Assassin",
     "level": 24,
     "role": "Lurker",
     "rank": "Standard",
@@ -10300,8 +10301,8 @@
     ]
   },
   {
-    "id": "ieroliith",
-    "name": "Ieroliith",
+    "id": "ferrolith",
+    "name": "Ferrolith",
     "level": 24,
     "role": "Soldier",
     "rank": "Standard",
@@ -10332,8 +10333,8 @@
     "tags": []
   },
   {
-    "id": "astrklaria",
-    "name": "Astrklaria",
+    "id": "astridaria",
+    "name": "Astridaria",
     "level": 25,
     "role": "Skirmisher",
     "rank": "Solo",
@@ -10342,8 +10343,8 @@
     "tags": []
   },
   {
-    "id": "death-knight-dragonborn",
-    "name": "Death Knight, Dragonborn",
+    "id": "death-knight-2",
+    "name": "Death Knight (Dragonborn Paladin)",
     "level": 25,
     "role": "Soldier",
     "rank": "Elite",
@@ -10351,8 +10352,8 @@
     "page": 51,
     "tags": [
       "Dragon",
-      "Undead",
-      "Humanoid"
+      "Humanoid",
+      "Undead"
     ]
   },
   {
@@ -10508,8 +10509,8 @@
     ]
   },
   {
-    "id": "yvocalith",
-    "name": "Yvocalith",
+    "id": "voracalith",
+    "name": "Voracalith",
     "level": 25,
     "role": "Brute",
     "rank": "Standard",
@@ -10573,14 +10574,16 @@
     "tags": []
   },
   {
-    "id": "bred-dralckensteed",
-    "name": "Bred Dralckensteed",
+    "id": "cobalt-dragon-bred-drakkensteed",
+    "name": "Cobalt Dragon-Bred Drakkensteed",
     "level": 26,
     "role": "Skirmisher",
     "rank": "Standard",
     "source": "Draconomicon 2",
     "page": 196,
-    "tags": []
+    "tags": [
+      "Dragon"
+    ]
   },
   {
     "id": "ancient-black-dragon",
@@ -10687,17 +10690,14 @@
     ]
   },
   {
-    "id": "thrarak-exarch-of-demogorgon",
-    "name": "Thrarak, Exarch of Demogorgon",
+    "id": "thrarak",
+    "name": "Thrarak",
     "level": 26,
     "role": "Brute",
     "rank": "Elite",
     "source": "Monster Manual 2",
     "page": 47,
-    "tags": [
-      "Demon",
-      "Fiend"
-    ]
+    "tags": []
   },
   {
     "id": "guardian-demon-soul-drinker",
@@ -10713,8 +10713,8 @@
     ]
   },
   {
-    "id": "abyrix-chain-master",
-    "name": "Abyrix Chain Master",
+    "id": "sibriex-chain-master",
+    "name": "Sibriex Chain Master",
     "level": 26,
     "role": "Soldier",
     "rank": "Elite",
@@ -11007,8 +11007,8 @@
     ]
   },
   {
-    "id": "sibirex-spawn",
-    "name": "Sibirex Spawn",
+    "id": "sibriex-spawn",
+    "name": "Sibriex Spawn",
     "level": 28,
     "role": "Minion",
     "rank": "Standard",
@@ -11017,8 +11017,8 @@
     "tags": []
   },
   {
-    "id": "sibirex-flesh-crafter",
-    "name": "Sibirex Flesh Crafter",
+    "id": "sibriex-flesh-crafter",
+    "name": "Sibriex Flesh Crafter",
     "level": 28,
     "role": "Controller",
     "rank": "Elite",
@@ -11051,7 +11051,7 @@
   },
   {
     "id": "tiamat",
-    "name": "Tiamat, Aspect of",
+    "name": "Tiamat",
     "level": 29,
     "role": "Controller",
     "rank": "Solo",
@@ -11131,8 +11131,8 @@
     "tags": []
   },
   {
-    "id": "valamaradace",
-    "name": "Valamaradace",
+    "id": "valamardace",
+    "name": "Valamardace",
     "level": 30,
     "role": "Artillery",
     "rank": "Solo",

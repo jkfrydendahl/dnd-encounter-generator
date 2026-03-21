@@ -57,15 +57,45 @@ async function main() {
 
   // Build compendium lookup: lowercased name → { id, name }
   const compendiumByName = new Map();
+  // Also build a lookup with parentheticals stripped from compendium names
+  const compendiumNoParens = new Map();
   for (const row of listingRows) {
     const [id, name] = row;
     const nameLower = name.toLowerCase();
     if (!compendiumByName.has(nameLower)) {
       compendiumByName.set(nameLower, { id, name });
     }
+    // Strip parenthetical suffix: "Medusa Archer (Female)" → "medusa archer"
+    const stripped = nameLower.replace(/\s*\(.*?\)\s*$/, "").trim();
+    if (stripped !== nameLower && !compendiumNoParens.has(stripped)) {
+      compendiumNoParens.set(stripped, { id, name });
+    }
   }
 
-  // Build name → compendium ID mapping with fuzzy matching
+  // Build prefix index for named creatures: "dragotha" → "Dragotha, Ancient Dracolich"
+  // Only index entries containing a comma (e.g., "Name, Description")
+  // or " the " (e.g., "Phraxas the Decayed")
+  const compendiumByPrefix = new Map();
+  for (const row of listingRows) {
+    const [id, name] = row;
+    const nameLower = name.toLowerCase();
+    const commaIdx = nameLower.indexOf(",");
+    if (commaIdx > 3) {
+      const prefix = nameLower.substring(0, commaIdx).trim();
+      if (!compendiumByPrefix.has(prefix)) {
+        compendiumByPrefix.set(prefix, { id, name });
+      }
+    }
+    const theIdx = nameLower.indexOf(" the ");
+    if (theIdx > 3) {
+      const prefix = nameLower.substring(0, theIdx).trim();
+      if (!compendiumByPrefix.has(prefix)) {
+        compendiumByPrefix.set(prefix, { id, name });
+      }
+    }
+  }
+
+  // Build name → compendium ID mapping with multi-pass matching
   const nameToId = new Map();
   for (const ourName of ourNames) {
     // 1. Exact match
@@ -73,7 +103,7 @@ async function main() {
       nameToId.set(ourName, compendiumByName.get(ourName).id);
       continue;
     }
-    // 2. Strip parenthetical: "Dretch (Demon)" → "Dretch"
+    // 2. Strip parenthetical from our name: "Dretch (Demon)" → "Dretch"
     const withoutParens = ourName.replace(/\s*\(.*?\)\s*$/, "").trim();
     if (withoutParens !== ourName && compendiumByName.has(withoutParens)) {
       nameToId.set(ourName, compendiumByName.get(withoutParens).id);
@@ -87,6 +117,18 @@ async function main() {
         nameToId.set(ourName, compendiumByName.get(swapped).id);
         continue;
       }
+    }
+    // 4. Match against compendium names with parentheticals stripped
+    //    e.g., our "Medusa Archer" matches compendium "Medusa Archer (Female)"
+    if (compendiumNoParens.has(ourName)) {
+      nameToId.set(ourName, compendiumNoParens.get(ourName).id);
+      continue;
+    }
+    // 5. Prefix match for named creatures with suffixes
+    //    e.g., our "Dragotha" matches "Dragotha, Ancient Dracolich"
+    if (ourName.length > 3 && compendiumByPrefix.has(ourName)) {
+      nameToId.set(ourName, compendiumByPrefix.get(ourName).id);
+      continue;
     }
   }
   console.log(
@@ -142,13 +184,13 @@ async function main() {
     `  Unmatched monsters (no compendium entry): ${ourNames.size - nameToId.size}`
   );
 
-  // Log some unmatched monster names for debugging
+  // Log all unmatched monster names for debugging
   const unmatched = ourMonsters
     .filter((m) => !nameToId.has(m.name.toLowerCase()))
     .map((m) => m.name);
   if (unmatched.length > 0) {
-    console.log(`\nFirst 20 unmatched monsters:`);
-    unmatched.slice(0, 20).forEach((n) => console.log(`  - ${n}`));
+    console.log(`\nUnmatched monsters:`);
+    unmatched.forEach((n) => console.log(`  - ${n}`));
   }
 
   writeFileSync("src/data/statblocks.json", JSON.stringify(output, null, 2) + "\n");
