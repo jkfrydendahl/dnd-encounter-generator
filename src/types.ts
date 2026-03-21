@@ -56,6 +56,13 @@ export interface EncounterTemplate {
 
 export type DuplicatePolicy = "allow" | "soft-avoid" | "avoid";
 
+export interface Environment {
+  id: string;
+  label: string;
+  description: string;
+  tags: string[];
+}
+
 export interface GeneratorSettings {
   partyLevel: number;
   monsterCount: number;
@@ -63,6 +70,7 @@ export interface GeneratorSettings {
   maxLevelOffset: number;
   targetDifficultyOffset: number;
   themeTag?: string;
+  environment?: string;
   templateMode: string;
   duplicatePolicy: DuplicatePolicy;
   terrainCount: number;

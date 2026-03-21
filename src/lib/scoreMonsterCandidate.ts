@@ -19,12 +19,14 @@ import {
   EXCESS_BRUTE_PENALTY,
   OVERREPRESENTED_CATEGORY_PENALTY,
   BRUTE_LIMIT,
+  ENVIRONMENT_BONUS,
 } from "./constants";
 
 export interface CandidateContext {
   currentEntries: GeneratedEncounterEntry[];
   targetLevel: number;
   themeTag?: string;
+  environmentTags?: string[];
   duplicatePolicy: DuplicatePolicy;
 }
 
@@ -46,6 +48,14 @@ export function scoreMonsterCandidate(
     )
   ) {
     score += THEME_MATCH_BONUS;
+  }
+
+  // Environment tag bonus
+  if (context.environmentTags && context.environmentTags.length > 0) {
+    const matchCount = monster.tags.filter((t) =>
+      context.environmentTags!.includes(t)
+    ).length;
+    score += matchCount * ENVIRONMENT_BONUS;
   }
 
   // Threat category analysis

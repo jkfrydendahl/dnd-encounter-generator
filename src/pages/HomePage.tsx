@@ -9,15 +9,18 @@ import { MonsterCardModal } from "../components/encounter/MonsterCardModal";
 import { PinnedCardsSection } from "../components/encounter/PinnedCardsSection";
 import { DiagnosticsPanel } from "../components/encounter/DiagnosticsPanel";
 import { generateEncounter, rerollSlot, selectTerrains } from "../lib/generateEncounter";
-import type { GeneratedEncounter, Monster, EncounterTemplate, TerrainSuggestion } from "../types";
+import { getEnvironmentTags } from "../lib/environmentLookup";
+import type { GeneratedEncounter, Monster, EncounterTemplate, TerrainSuggestion, Environment } from "../types";
 
 import monstersData from "../data/monsters.json";
 import templatesData from "../data/templates.json";
 import terrainData from "../data/terrain.json";
+import environmentsData from "../data/environments.json";
 
 const monsters = monstersData as Monster[];
 const templates = templatesData as EncounterTemplate[];
 const terrain = terrainData as TerrainSuggestion[];
+const environments = environmentsData as Environment[];
 
 const availableTags = Array.from(
   new Set(monsters.flatMap((m) => m.tags))
@@ -56,7 +59,8 @@ export function HomePage() {
         if (needed > 0) {
           const excludeIds = new Set(kept.map((t) => t.id));
           const available = terrain.filter((t) => !excludeIds.has(t.id));
-          const fresh = selectTerrains(available, result.entries, needed);
+          const envTags = getEnvironmentTags(settings.environment);
+          const fresh = selectTerrains(available, result.entries, needed, envTags.length > 0 ? envTags : undefined);
           result = { ...result, terrainSuggestions: [...kept, ...fresh] };
         } else {
           result = { ...result, terrainSuggestions: kept.slice(0, terrainCount) };
@@ -125,6 +129,7 @@ export function HomePage() {
           isGenerating={isGenerating}
           templates={templates}
           availableTags={availableTags}
+          environments={environments}
         />
 
         <EncounterDisplay
