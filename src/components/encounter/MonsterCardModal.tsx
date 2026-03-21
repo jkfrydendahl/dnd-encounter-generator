@@ -1,3 +1,4 @@
+import DOMPurify from 'dompurify';
 import type { GeneratedEncounterEntry } from '../../types';
 
 interface MonsterCardModalProps {
@@ -27,7 +28,7 @@ export function MonsterCardModal({ isOpen, statBlockHtml, monster, onClose }: Mo
         {statBlockHtml ? (
           <div
             className="monster-card-statblock"
-            dangerouslySetInnerHTML={{ __html: statBlockHtml }}
+            dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(statBlockHtml) }}
           />
         ) : (
           <div className="monster-card-fallback">

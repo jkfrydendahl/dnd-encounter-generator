@@ -135,7 +135,7 @@ export function HomePage() {
           onMonsterClick={openCard}
         />
 
-        {selectedMonster && (
+        {isOpen && selectedMonster && (
           <MonsterCardModal
             isOpen={isOpen}
             statBlockHtml={statBlockHtml}
