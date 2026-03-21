@@ -201,7 +201,7 @@
 }
 
 .slot-actions-col {
-  width: 4.5rem;
+  width: 6.5rem;
 }
 
 .slot-actions {
@@ -210,7 +210,8 @@
 }
 
 .slot-lock-btn,
-.slot-reroll-btn {
+.slot-reroll-btn,
+.pin-btn {
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: var(--radius-sm);
@@ -224,13 +225,15 @@
 }
 
 .slot-lock-btn:hover,
-.slot-reroll-btn:hover:not(:disabled) {
+.slot-reroll-btn:hover:not(:disabled),
+.pin-btn:hover {
   border-color: var(--accent);
   background: rgba(255, 255, 255, 0.14);
   color: var(--text-primary);
 }
 
-.slot-lock-btn.locked {
+.slot-lock-btn.locked,
+.pin-btn.pinned {
   color: var(--accent);
   border-color: var(--accent);
   background: var(--accent-subtle);
@@ -744,28 +747,8 @@
   font-size: 0.85rem;
 }
 
-/* ===== Pin Button (in monster table) ===== */
-
-.pin-btn {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  font-size: 0.8rem;
-  margin-left: 0.4rem;
-  opacity: 0.35;
-  transition: opacity var(--transition), transform var(--transition);
-  padding: 0;
-  vertical-align: middle;
-}
-
-.pin-btn:hover {
-  opacity: 0.8;
-  transform: scale(1.2);
-}
-
-.pin-btn.pinned {
-  opacity: 1;
-}
+/* ===== Pin Button ===== */
+/* Styles merged into .slot-lock-btn/.slot-reroll-btn/.pin-btn above */
 
 /* ===== Pinned Cards Section ===== */
 
