@@ -10,7 +10,8 @@
     "tags": [
       "Dragon",
       "Cold"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "dire-rat",
@@ -22,7 +23,8 @@
     "page": 219,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "fire-beetle",
@@ -36,7 +38,8 @@
       "Fire",
       "Elemental",
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "goblin-blackblade",
@@ -49,7 +52,8 @@
     "tags": [
       "Humanoid",
       "Goblinoid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "goblin-warrior",
@@ -62,7 +66,8 @@
     "tags": [
       "Humanoid",
       "Goblinoid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "halfling-slinger",
@@ -74,7 +79,8 @@
     "page": 152,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Any"
   },
   {
     "id": "kobold-slinger",
@@ -86,7 +92,8 @@
     "page": 168,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "riding-horse",
@@ -98,7 +105,8 @@
     "page": 159,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "spiretop-drake",
@@ -110,7 +118,8 @@
     "page": 90,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "stirge",
@@ -122,7 +131,8 @@
     "page": 248,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "stormclaw-scorpion",
@@ -134,7 +144,8 @@
     "page": 229,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "ankheg-broodling",
@@ -146,7 +157,8 @@
     "page": 11,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "blood-hawk",
@@ -158,7 +170,8 @@
     "page": 142,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "bullywug-mucker",
@@ -170,7 +183,8 @@
     "page": 28,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "goblin-acolyte-of-maglubiyet",
@@ -183,7 +197,8 @@
     "tags": [
       "Humanoid",
       "Goblinoid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "thornskin-frog",
@@ -195,7 +210,8 @@
     "page": 90,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "xivort-darter",
@@ -209,7 +225,8 @@
       "Humanoid",
       "Shadow",
       "Fey"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "xivort-net-caster",
@@ -223,7 +240,8 @@
       "Humanoid",
       "Shadow",
       "Fey"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "xivort-slasher",
@@ -237,7 +255,8 @@
       "Humanoid",
       "Shadow",
       "Fey"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "black-dragon-wyrmling",
@@ -250,7 +269,8 @@
     "tags": [
       "Dragon",
       "Acid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "brown-dragon-wyrmling",
@@ -262,7 +282,8 @@
     "page": 181,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "dragonborn-sellsword",
@@ -275,7 +296,8 @@
     "tags": [
       "Dragon",
       "Humanoid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "greenspawn-sneak",
@@ -285,7 +307,8 @@
     "rank": "Standard",
     "source": "Draconomicon 1",
     "page": 218,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "hoard-scarab",
@@ -295,7 +318,8 @@
     "rank": "Standard",
     "source": "Draconomicon 1",
     "page": 212,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "hobbler-trapmaster",
@@ -305,7 +329,8 @@
     "rank": "Standard",
     "source": "Draconomicon 1",
     "page": 224,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "baaz-draconian",
@@ -317,7 +342,8 @@
     "page": 190,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "brass-dragon-wyrmling",
@@ -330,7 +356,8 @@
     "tags": [
       "Dragon",
       "Fire"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "goblin-cursespewer",
@@ -343,7 +370,8 @@
     "tags": [
       "Humanoid",
       "Goblinoid"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "goblin-sentry",
@@ -356,7 +384,8 @@
     "tags": [
       "Humanoid",
       "Goblinoid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "clay-scout",
@@ -368,7 +397,8 @@
     "page": 156,
     "tags": [
       "Construct"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "elf-archer",
@@ -380,7 +410,8 @@
     "page": 106,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "elf-scout",
@@ -392,7 +423,8 @@
     "page": 106,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "gnome-skulk",
@@ -404,7 +436,8 @@
     "page": 134,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "goblin-sharpshooter",
@@ -417,7 +450,8 @@
     "tags": [
       "Humanoid",
       "Goblinoid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "gray-wolf",
@@ -429,7 +463,8 @@
     "page": 264,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "guard-drake",
@@ -441,7 +476,8 @@
     "page": 90,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "halfling-thief",
@@ -453,7 +489,8 @@
     "page": 152,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "human-bandit",
@@ -465,7 +502,8 @@
     "page": 162,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Any"
   },
   {
     "id": "hyena",
@@ -477,7 +515,8 @@
     "page": 166,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "kobold-dragonshield",
@@ -489,7 +528,8 @@
     "page": 168,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "kruthik-young",
@@ -501,7 +541,8 @@
     "page": 170,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "needlefang-drake-swarm",
@@ -514,7 +555,8 @@
     "tags": [
       "Dragon",
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "rat-swarm",
@@ -526,7 +568,8 @@
     "page": 219,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "zombie",
@@ -538,7 +581,8 @@
     "page": 274,
     "tags": [
       "Undead"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "bloodthorn-vine",
@@ -550,7 +594,8 @@
     "page": 205,
     "tags": [
       "Plant"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "bullywug-twitcher",
@@ -562,7 +607,8 @@
     "page": 28,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "centipede-swarm",
@@ -574,7 +620,8 @@
     "page": 33,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "dretch",
@@ -587,7 +634,8 @@
     "tags": [
       "Demon",
       "Fiend"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "hive-warrior",
@@ -597,7 +645,8 @@
     "rank": "Standard",
     "source": "Monster Manual 2",
     "page": 12,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "poisonscale-magus",
@@ -609,7 +658,8 @@
     "page": 156,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "poisonscale-savage",
@@ -621,7 +671,8 @@
     "page": 156,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "poisonscale-slitherer",
@@ -633,7 +684,8 @@
     "page": 156,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "stonefist-defender",
@@ -645,7 +697,8 @@
     "page": 143,
     "tags": [
       "Construct"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "ambush-spider",
@@ -657,7 +710,8 @@
     "page": 182,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "blizzard-dragon-wyrmling",
@@ -670,7 +724,8 @@
     "tags": [
       "Dragon",
       "Cold"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "cave-fisher-spawn",
@@ -682,7 +737,8 @@
     "page": 28,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "maw-demon",
@@ -695,7 +751,8 @@
     "tags": [
       "Demon",
       "Fiend"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "murklord-frog",
@@ -707,7 +764,8 @@
     "page": 91,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "sporeback-frog",
@@ -719,7 +777,8 @@
     "page": 91,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "wilden-destroyer",
@@ -731,7 +790,8 @@
     "page": 206,
     "tags": [
       "Fey"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "wilden-hunter",
@@ -743,7 +803,8 @@
     "page": 207,
     "tags": [
       "Fey"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "xivort-shadow-caller",
@@ -757,7 +818,8 @@
       "Shadow",
       "Humanoid",
       "Fey"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "abyssal-scavenger",
@@ -770,7 +832,8 @@
     "tags": [
       "Demon",
       "Fiend"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "brown-dragon-young",
@@ -782,7 +845,8 @@
     "page": 168,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "gray-dragon-wyrmling",
@@ -794,7 +858,8 @@
     "page": 182,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "cobalt-dragon-wyrmling",
@@ -806,7 +871,8 @@
     "page": 177,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "ferak-draconian",
@@ -818,7 +884,8 @@
     "page": 191,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "iron-dragon-wyrmling",
@@ -830,7 +897,8 @@
     "page": 179,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "doppelganger-sneak",
@@ -842,7 +910,8 @@
     "page": 71,
     "tags": [
       "Shapechanger"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "gnome-arcanist",
@@ -854,7 +923,8 @@
     "page": 134,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "goblin-hexer",
@@ -867,7 +937,8 @@
     "tags": [
       "Humanoid",
       "Goblinoid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "goblin-skullcleaver",
@@ -880,7 +951,8 @@
     "tags": [
       "Humanoid",
       "Goblinoid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "gravehound",
@@ -892,7 +964,8 @@
     "page": 274,
     "tags": [
       "Undead"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "hobgoblin-archer",
@@ -905,7 +978,8 @@
     "tags": [
       "Humanoid",
       "Goblinoid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "hobgoblin-warcaster",
@@ -918,7 +992,8 @@
     "tags": [
       "Humanoid",
       "Goblinoid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "human-guard",
@@ -930,7 +1005,8 @@
     "page": 162,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "iron-defender",
@@ -942,7 +1018,8 @@
     "page": 156,
     "tags": [
       "Construct"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "kobold-wyrmpriest",
@@ -954,7 +1031,8 @@
     "page": 168,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "ochre-jelly",
@@ -966,7 +1044,8 @@
     "page": 202,
     "tags": [
       "Ooze"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "orc-raider",
@@ -978,7 +1057,8 @@
     "page": 203,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "pseudodragon",
@@ -990,7 +1070,8 @@
     "page": 91,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "shadowhunter-bat",
@@ -1002,7 +1083,8 @@
     "page": 27,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "skeleton",
@@ -1014,7 +1096,8 @@
     "page": 234,
     "tags": [
       "Undead"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "spitting-drake",
@@ -1026,7 +1109,8 @@
     "page": 91,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "warhorse",
@@ -1036,7 +1120,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 159,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "wererat",
@@ -1049,7 +1134,8 @@
     "tags": [
       "Shapechanger",
       "Beast"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "young-white-dragon",
@@ -1062,7 +1148,8 @@
     "tags": [
       "Dragon",
       "Cold"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "ankheg",
@@ -1074,7 +1161,8 @@
     "page": 11,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "bullywug-croaker",
@@ -1086,7 +1174,8 @@
     "page": 28,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "bullywug-mud-lord",
@@ -1098,7 +1187,8 @@
     "page": 29,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "kenku-ruffian",
@@ -1110,7 +1200,8 @@
     "page": 152,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "kenku-warrior",
@@ -1122,7 +1213,8 @@
     "page": 152,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "lolthbound-goblin",
@@ -1135,7 +1227,8 @@
     "tags": [
       "Humanoid",
       "Goblinoid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "myconid-rotpriest",
@@ -1147,7 +1240,8 @@
     "page": 164,
     "tags": [
       "Plant"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "poisonscale-collector",
@@ -1159,7 +1253,8 @@
     "page": 156,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "poisonscale-myrmidon",
@@ -1171,7 +1266,8 @@
     "page": 157,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "cave-fisher-angler",
@@ -1183,7 +1279,8 @@
     "page": 28,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "cave-fisher-spiker",
@@ -1195,7 +1292,8 @@
     "page": 29,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "craud-impaler",
@@ -1205,7 +1303,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 36,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "dread-protector",
@@ -1215,7 +1314,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 74,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "jackalwere-harrier",
@@ -1225,7 +1325,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 121,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "jackalwere-bravo",
@@ -1235,7 +1336,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 120,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "skulk-mesmerist",
@@ -1245,7 +1347,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 176,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "skulk-murderer",
@@ -1255,7 +1358,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 177,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "yeti-hunter",
@@ -1265,7 +1369,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 210,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "mane",
@@ -1275,7 +1380,8 @@
     "rank": "Standard",
     "source": "Demonomicon",
     "page": 124,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "ixitxachitl-demon-ray",
@@ -1288,7 +1394,8 @@
     "tags": [
       "Demon",
       "Fiend"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "arbalester",
@@ -1298,7 +1405,8 @@
     "rank": "Standard",
     "source": "Draconomicon 1",
     "page": 98,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "blazewyrm-young",
@@ -1308,7 +1416,8 @@
     "rank": "Elite",
     "source": "Draconomicon 1",
     "page": 191,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "blue-dragon-wyrmling",
@@ -1321,7 +1430,8 @@
     "tags": [
       "Dragon",
       "Lightning"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "brownspawn-marauder",
@@ -1331,7 +1441,8 @@
     "rank": "Standard",
     "source": "Draconomicon 1",
     "page": 218,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "faerie-dragon-flitterwing-adult",
@@ -1343,7 +1454,8 @@
     "page": 195,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "faerie-dragon-windgleam-adult",
@@ -1355,7 +1467,8 @@
     "page": 196,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "green-dragon-wyrmling",
@@ -1368,7 +1481,8 @@
     "tags": [
       "Dragon",
       "Poison"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "hobbler-decoy",
@@ -1378,7 +1492,8 @@
     "rank": "Standard",
     "source": "Draconomicon 1",
     "page": 224,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "purple-dragon-wyrmling",
@@ -1390,7 +1505,8 @@
     "page": 184,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "stone-harrier",
@@ -1402,7 +1518,8 @@
     "page": 98,
     "tags": [
       "Elemental"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "wyrm-wisp",
@@ -1412,7 +1529,8 @@
     "rank": "Standard",
     "source": "Draconomicon 1",
     "page": 204,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "wyrmwarped-atrocity",
@@ -1422,7 +1540,8 @@
     "rank": "Standard",
     "source": "Draconomicon 1",
     "page": 225,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "brass-dragon-young",
@@ -1435,7 +1554,8 @@
     "tags": [
       "Dragon",
       "Fire"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "chevkos-s-guard",
@@ -1445,7 +1565,8 @@
     "rank": "Standard",
     "source": "Draconomicon 2",
     "page": 94,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "chevkos-s-crossbowman",
@@ -1455,7 +1576,8 @@
     "rank": "Standard",
     "source": "Draconomicon 2",
     "page": 94,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "chevkos-s-lackey",
@@ -1465,7 +1587,8 @@
     "rank": "Standard",
     "source": "Draconomicon 2",
     "page": 94,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "copper-dragon-wyrmling",
@@ -1478,7 +1601,8 @@
     "tags": [
       "Dragon",
       "Acid"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "thraesk",
@@ -1488,7 +1612,8 @@
     "rank": "Solo",
     "source": "Draconomicon 2",
     "page": 90,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "kapak-draconian",
@@ -1500,7 +1625,8 @@
     "page": 192,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "mercury-dragon-wyrmling",
@@ -1512,7 +1638,8 @@
     "page": 180,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "cavern-choker",
@@ -1522,7 +1649,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 42,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "corruption-corpse",
@@ -1534,7 +1662,8 @@
     "page": 274,
     "tags": [
       "Undead"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "dark-creeper",
@@ -1546,7 +1675,8 @@
     "page": 49,
     "tags": [
       "Shadow"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "deathjump-spider",
@@ -1558,7 +1688,8 @@
     "page": 246,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "deathlock-wight",
@@ -1570,7 +1701,8 @@
     "page": 262,
     "tags": [
       "Undead"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "dwarf-bolter",
@@ -1582,7 +1714,8 @@
     "page": 97,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "ettercap-fang-guard",
@@ -1592,7 +1725,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 107,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "fey-panther",
@@ -1604,7 +1738,8 @@
     "page": 213,
     "tags": [
       "Fey"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "goblin-underboss",
@@ -1617,7 +1752,8 @@
     "tags": [
       "Humanoid",
       "Goblinoid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "greenscale-hunter",
@@ -1629,7 +1765,8 @@
     "page": 178,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "human-berserker",
@@ -1641,7 +1778,8 @@
     "page": 163,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Any"
   },
   {
     "id": "human-mage",
@@ -1653,7 +1791,8 @@
     "page": 163,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Any"
   },
   {
     "id": "kobold-slyblade",
@@ -1665,7 +1804,8 @@
     "page": 169,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "kruthik-adult",
@@ -1677,7 +1817,8 @@
     "page": 170,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "magma-claw",
@@ -1690,7 +1831,8 @@
     "tags": [
       "Fire",
       "Elemental"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "magma-hurler",
@@ -1703,7 +1845,8 @@
     "tags": [
       "Fire",
       "Elemental"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "orc-berserker",
@@ -1715,7 +1858,8 @@
     "page": 203,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "phantom-warrior",
@@ -1728,7 +1872,8 @@
     "tags": [
       "Undead",
       "Shadow"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "rotwing-zombie",
@@ -1740,7 +1885,8 @@
     "page": 274,
     "tags": [
       "Undead"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "specter",
@@ -1753,7 +1899,8 @@
     "tags": [
       "Undead",
       "Shadow"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "visejaw-crocodile",
@@ -1765,7 +1912,8 @@
     "page": 45,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "young-black-dragon",
@@ -1778,7 +1926,8 @@
     "tags": [
       "Dragon",
       "Acid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "arbalester-2",
@@ -1790,7 +1939,8 @@
     "page": 143,
     "tags": [
       "Construct"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "barghest-savager",
@@ -1800,7 +1950,8 @@
     "rank": "Standard",
     "source": "Monster Manual 2",
     "page": 20,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "bloodseeker-drake",
@@ -1812,7 +1963,8 @@
     "page": 88,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "centipede-scuttler",
@@ -1822,7 +1974,8 @@
     "rank": "Standard",
     "source": "Monster Manual 2",
     "page": 33,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "duergar-guard",
@@ -1835,7 +1988,8 @@
     "tags": [
       "Humanoid",
       "Shadow"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "duergar-scout",
@@ -1848,7 +2002,8 @@
     "tags": [
       "Humanoid",
       "Shadow"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "green-slime",
@@ -1860,7 +2015,8 @@
     "page": 171,
     "tags": [
       "Ooze"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "kenku-ringleader",
@@ -1872,7 +2028,8 @@
     "page": 152,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "kenku-sneak",
@@ -1884,7 +2041,8 @@
     "page": 153,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "krenshar",
@@ -1894,7 +2052,8 @@
     "rank": "Standard",
     "source": "Monster Manual 2",
     "page": 155,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "myconid-guard",
@@ -1906,7 +2065,8 @@
     "page": 164,
     "tags": [
       "Plant"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "myconid-sovereign",
@@ -1918,7 +2078,8 @@
     "page": 164,
     "tags": [
       "Plant"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "storm-shard",
@@ -1930,7 +2091,8 @@
     "page": 34,
     "tags": [
       "Lightning"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "winged-drone",
@@ -1940,7 +2102,8 @@
     "rank": "Standard",
     "source": "Monster Manual 2",
     "page": 12,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "witherling",
@@ -1950,7 +2113,8 @@
     "rank": "Standard",
     "source": "Monster Manual 2",
     "page": 212,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "cave-fisher-line-spiker",
@@ -1962,7 +2126,8 @@
     "page": 29,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "craud-crusher",
@@ -1972,7 +2137,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 37,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "earthquake-dragon-wyrmling",
@@ -1984,7 +2150,8 @@
     "page": 69,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "great-ape",
@@ -1996,7 +2163,8 @@
     "page": 10,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "hex-knight",
@@ -2006,7 +2174,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 38,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "jackalwere-deceiver",
@@ -2016,7 +2185,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 121,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "rot-grub-swarm",
@@ -2028,7 +2198,8 @@
     "page": 166,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "spiderling",
@@ -2038,7 +2209,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 182,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "wilden-ancient",
@@ -2050,7 +2222,8 @@
     "page": 207,
     "tags": [
       "Fey"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "yeti-howler",
@@ -2060,7 +2233,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 211,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "myconid-gas-spore",
@@ -2072,7 +2246,8 @@
     "page": 151,
     "tags": [
       "Plant"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "dragonkin-sentry",
@@ -2082,7 +2257,8 @@
     "rank": "Standard",
     "source": "Draconomicon 1",
     "page": 226,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "gray-dragon-young",
@@ -2094,7 +2270,8 @@
     "page": 172,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "red-dragon-wyrmling",
@@ -2107,7 +2284,8 @@
     "tags": [
       "Dragon",
       "Fire"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "wrack-abishai",
@@ -2117,7 +2295,8 @@
     "rank": "Standard",
     "source": "Draconomicon 1",
     "page": 210,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "adamantine-dragon-wyrmling",
@@ -2129,7 +2308,8 @@
     "page": 174,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "cobalt-dragon-young",
@@ -2141,7 +2321,8 @@
     "page": 161,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "dragonkin-channeler",
@@ -2153,7 +2334,8 @@
     "page": 198,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "bozak-draconian",
@@ -2165,7 +2347,8 @@
     "page": 191,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "silver-dragon-wyrmling",
@@ -2178,7 +2361,8 @@
     "tags": [
       "Dragon",
       "Cold"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "dragonkin-zealot",
@@ -2188,7 +2372,8 @@
     "rank": "Standard",
     "source": "Draconomicon 2",
     "page": 198,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "blazing-skeleton",
@@ -2200,7 +2385,8 @@
     "page": 234,
     "tags": [
       "Undead"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "boneshard-skeleton",
@@ -2212,7 +2398,8 @@
     "page": 235,
     "tags": [
       "Undead"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "bugbear-warrior",
@@ -2225,7 +2412,8 @@
     "tags": [
       "Humanoid",
       "Goblinoid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "deathrattle-viper",
@@ -2237,7 +2425,8 @@
     "page": 240,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "dire-wolf",
@@ -2249,7 +2438,8 @@
     "page": 264,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "dwarf-hammerer",
@@ -2261,7 +2451,8 @@
     "page": 97,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "ettercap-webspinner",
@@ -2271,7 +2462,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 107,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "fire-bat",
@@ -2285,7 +2477,8 @@
       "Fire",
       "Elemental",
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "gelatinous-cube",
@@ -2297,7 +2490,8 @@
     "page": 202,
     "tags": [
       "Ooze"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "greenscale-darter",
@@ -2309,7 +2503,8 @@
     "page": 178,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "hippogriff",
@@ -2319,7 +2514,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 146,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "hippogriff-dreadmount",
@@ -2329,7 +2525,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 146,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "hobgoblin-commander",
@@ -2342,7 +2539,8 @@
     "tags": [
       "Humanoid",
       "Goblinoid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "orc-eye-of-gruumsh",
@@ -2354,7 +2552,8 @@
     "page": 204,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "rage-drake",
@@ -2366,7 +2565,8 @@
     "page": 92,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "slaad-tadpole",
@@ -2379,7 +2579,8 @@
     "tags": [
       "Elemental",
       "Aberration"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "tangler-beetle",
@@ -2391,7 +2592,8 @@
     "page": 30,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "vine-horror",
@@ -2403,7 +2605,8 @@
     "page": 260,
     "tags": [
       "Plant"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "wight",
@@ -2415,7 +2618,8 @@
     "page": 262,
     "tags": [
       "Undead"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "wraith",
@@ -2428,7 +2632,8 @@
     "tags": [
       "Undead",
       "Shadow"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "young-green-dragon",
@@ -2441,7 +2646,8 @@
     "tags": [
       "Dragon",
       "Poison"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "duergar-theurge",
@@ -2454,7 +2660,8 @@
     "tags": [
       "Humanoid",
       "Shadow"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "eladrin-arcane-archer",
@@ -2466,7 +2673,8 @@
     "page": 96,
     "tags": [
       "Fey"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "hive-queen",
@@ -2476,7 +2684,8 @@
     "rank": "Elite",
     "source": "Monster Manual 2",
     "page": 13,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "kenku-wing-mage",
@@ -2488,7 +2697,8 @@
     "page": 153,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "krenshar-blood-slayer",
@@ -2498,7 +2708,8 @@
     "rank": "Standard",
     "source": "Monster Manual 2",
     "page": 155,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "chitine-grunt",
@@ -2508,7 +2719,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 31,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "chitine-scout",
@@ -2518,7 +2730,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 32,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "chitine-warrior",
@@ -2528,7 +2741,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 31,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "craud-king",
@@ -2538,7 +2752,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 37,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "dread-marauder",
@@ -2548,7 +2763,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 75,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "fire-lord-cultist",
@@ -2561,7 +2777,8 @@
     "tags": [
       "Fire",
       "Elemental"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "gremlin-deceiver",
@@ -2571,7 +2788,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 106,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "shadow-bolter",
@@ -2583,7 +2801,8 @@
     "page": 39,
     "tags": [
       "Shadow"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "silverback-ape",
@@ -2595,7 +2814,8 @@
     "page": 11,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "skulk-hunter",
@@ -2605,7 +2825,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 177,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "spring-nymph",
@@ -2617,7 +2838,8 @@
     "page": 151,
     "tags": [
       "Fey"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "yeti-rampager",
@@ -2627,7 +2849,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 211,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "dark-creeper-necromancer",
@@ -2639,7 +2862,8 @@
     "page": 55,
     "tags": [
       "Undead"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "ixitxachitl-priest",
@@ -2651,7 +2875,8 @@
     "page": 119,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "ambush-drake",
@@ -2663,7 +2888,8 @@
     "page": 222,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "dragonkin-defender",
@@ -2673,7 +2899,8 @@
     "rank": "Standard",
     "source": "Draconomicon 1",
     "page": 226,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "hobbler-trap-savant",
@@ -2683,7 +2910,8 @@
     "rank": "Standard",
     "source": "Draconomicon 1",
     "page": 224,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "pact-bound-adept",
@@ -2693,7 +2921,8 @@
     "rank": "Standard",
     "source": "Draconomicon 1",
     "page": 227,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "purple-dragon-young",
@@ -2705,7 +2934,8 @@
     "page": 177,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "swarmtongue-worm",
@@ -2715,7 +2945,8 @@
     "rank": "Standard",
     "source": "Draconomicon 1",
     "page": 213,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "venomous-abishai",
@@ -2725,7 +2956,8 @@
     "rank": "Standard",
     "source": "Draconomicon 1",
     "page": 210,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "wyrmwarped-scaleshaper",
@@ -2735,7 +2967,8 @@
     "rank": "Standard",
     "source": "Draconomicon 1",
     "page": 225,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "adamaaz-draconian",
@@ -2747,7 +2980,8 @@
     "page": 189,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "cave-stirge-swarm",
@@ -2759,7 +2993,8 @@
     "page": 104,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "chevkos",
@@ -2769,7 +3004,8 @@
     "rank": "Standard",
     "source": "Draconomicon 2",
     "page": 96,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "korzinalikur",
@@ -2779,7 +3015,8 @@
     "rank": "Elite",
     "source": "Draconomicon 2",
     "page": 96,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "mercury-dragon-young",
@@ -2791,7 +3028,8 @@
     "page": 163,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "orium-dragon-wyrmling",
@@ -2803,7 +3041,8 @@
     "page": 182,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "wyrmling-vaporous-serpent",
@@ -2815,7 +3054,8 @@
     "page": 182,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "blackscale-bruiser",
@@ -2827,7 +3067,8 @@
     "page": 179,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "bugbear-strangler",
@@ -2840,7 +3081,8 @@
     "tags": [
       "Humanoid",
       "Goblinoid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "cave-bear",
@@ -2852,7 +3094,8 @@
     "page": 29,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "chillborn-zombie",
@@ -2864,7 +3107,8 @@
     "page": 275,
     "tags": [
       "Undead"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "dire-boar",
@@ -2876,7 +3120,8 @@
     "page": 35,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "evistro",
@@ -2889,7 +3134,8 @@
     "tags": [
       "Demon",
       "Fiend"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "greenscale-marsh-mystic",
@@ -2899,7 +3145,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 179,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "halfling-prowler",
@@ -2911,7 +3158,8 @@
     "page": 153,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "harpy",
@@ -2923,7 +3171,8 @@
     "page": 154,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "iron-cobra",
@@ -2935,7 +3184,8 @@
     "page": 157,
     "tags": [
       "Construct"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "kruthik-hive-lord",
@@ -2947,7 +3197,8 @@
     "page": 170,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "longtooth-hunter",
@@ -2957,7 +3208,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 233,
-    "tags": []
+    "tags": [],
+    "alignment": "Any"
   },
   {
     "id": "mad-wraith",
@@ -2970,7 +3222,8 @@
     "tags": [
       "Undead",
       "Shadow"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "sahuagin-raider",
@@ -2982,7 +3235,8 @@
     "page": 224,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "shadar-kai-chainfighter",
@@ -2995,7 +3249,8 @@
     "tags": [
       "Humanoid",
       "Shadow"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "shadar-kai-gloomblade",
@@ -3008,7 +3263,8 @@
     "tags": [
       "Humanoid",
       "Shadow"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "shadow-hound",
@@ -3020,7 +3276,8 @@
     "page": 160,
     "tags": [
       "Shadow"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "tiefling-heretic",
@@ -3033,7 +3290,8 @@
     "tags": [
       "Humanoid",
       "Fiend"
-    ]
+    ],
+    "alignment": "Any"
   },
   {
     "id": "troglodyte-mauler",
@@ -3045,7 +3303,8 @@
     "page": 252,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "warforged-captain",
@@ -3057,7 +3316,8 @@
     "page": 261,
     "tags": [
       "Construct"
-    ]
+    ],
+    "alignment": "Any"
   },
   {
     "id": "young-blue-dragon",
@@ -3070,7 +3330,8 @@
     "tags": [
       "Dragon",
       "Lightning"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "bone-crown-behemoth",
@@ -3082,7 +3343,8 @@
     "page": 20,
     "tags": [
       "Undead"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "chitine-marauder",
@@ -3092,7 +3354,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 32,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "chitine-web-crafter",
@@ -3102,7 +3365,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 33,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "dread-archer",
@@ -3112,7 +3376,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 75,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "ghast",
@@ -3122,7 +3387,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 95,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "servant-of-the-fire-lord",
@@ -3135,7 +3401,8 @@
     "tags": [
       "Fire",
       "Elemental"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "shardmind-warseeker",
@@ -3145,7 +3412,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 174,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "thri-kreen-ambusher",
@@ -3155,7 +3423,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 192,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "rutterkin-foot-soldier",
@@ -3165,7 +3434,8 @@
     "rank": "Standard",
     "source": "Demonomicon",
     "page": 141,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "dragonborn-exemplar-of-tiamat",
@@ -3179,7 +3449,8 @@
       "Dragon",
       "Humanoid",
       "Fiend"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "hoard-scarab-larva-swarm",
@@ -3191,7 +3462,8 @@
     "page": 212,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "storm-abishai",
@@ -3203,7 +3475,8 @@
     "page": 211,
     "tags": [
       "Lightning"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "bronze-dragon-young",
@@ -3216,7 +3489,8 @@
     "tags": [
       "Dragon",
       "Lightning"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "gold-dragon-wyrmling",
@@ -3228,7 +3502,8 @@
     "page": 179,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "bloodweb-spider-swarm",
@@ -3240,7 +3515,8 @@
     "page": 246,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "cacklefiend-hyena",
@@ -3252,7 +3528,8 @@
     "page": 166,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "carrion-crawler",
@@ -3264,7 +3541,8 @@
     "page": 40,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "crimson-acolyte",
@@ -3278,7 +3556,8 @@
       "Demon",
       "Fiend",
       "Undead"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "dire-stirge",
@@ -3290,7 +3569,8 @@
     "page": 248,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "eladrin-fey-knight",
@@ -3302,7 +3582,8 @@
     "page": 102,
     "tags": [
       "Fey"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "grick",
@@ -3312,7 +3593,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 145,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "griffon",
@@ -3322,7 +3604,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 147,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "howling-hag",
@@ -3332,7 +3615,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 150,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "orc-bloodrager",
@@ -3344,7 +3628,8 @@
     "page": 204,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "otyugh",
@@ -3354,7 +3639,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 211,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "razorclaw-stalker",
@@ -3364,7 +3650,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 233,
-    "tags": []
+    "tags": [],
+    "alignment": "Any"
   },
   {
     "id": "satyr-rake",
@@ -3376,7 +3663,8 @@
     "page": 228,
     "tags": [
       "Fey"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "shadar-kai-witch",
@@ -3389,7 +3677,8 @@
     "tags": [
       "Humanoid",
       "Shadow"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "tiefling-darkblade",
@@ -3402,7 +3691,8 @@
     "tags": [
       "Humanoid",
       "Fiend"
-    ]
+    ],
+    "alignment": "Any"
   },
   {
     "id": "troglodyte-impaler",
@@ -3414,7 +3704,8 @@
     "page": 252,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "vine-horror-spellfiend",
@@ -3426,7 +3717,8 @@
     "page": 260,
     "tags": [
       "Plant"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "young-red-dragon",
@@ -3439,7 +3731,8 @@
     "tags": [
       "Dragon",
       "Fire"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "fire-temple-elect",
@@ -3452,7 +3745,8 @@
     "tags": [
       "Fire",
       "Elemental"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "foulspawn-wretch",
@@ -3464,7 +3758,8 @@
     "page": 88,
     "tags": [
       "Aberration"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "gremlin-skulker",
@@ -3474,7 +3769,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 107,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "hyena-spirit",
@@ -3486,7 +3782,8 @@
     "page": 105,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "ironstone-gargoyle",
@@ -3498,7 +3795,8 @@
     "page": 92,
     "tags": [
       "Elemental"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "skinwing-behemoth",
@@ -3508,7 +3806,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 21,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "thri-kreen-scout",
@@ -3518,7 +3817,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 193,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "ustilagor",
@@ -3528,7 +3828,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 118,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "young-blizzard-dragon",
@@ -3541,7 +3842,8 @@
     "tags": [
       "Dragon",
       "Cold"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "ambush-drake-packleader",
@@ -3553,7 +3855,8 @@
     "page": 222,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "inferno-abishai",
@@ -3563,7 +3866,8 @@
     "rank": "Elite",
     "source": "Draconomicon 1",
     "page": 211,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "orium-dragon-young",
@@ -3575,7 +3879,8 @@
     "page": 170,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "vaporous-serpent-young",
@@ -3587,7 +3892,8 @@
     "page": 170,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "barlgura",
@@ -3600,7 +3906,8 @@
     "tags": [
       "Demon",
       "Fiend"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "cambion-hellsword",
@@ -3610,7 +3917,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 39,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "doppelganger-assassin",
@@ -3623,7 +3931,8 @@
     "tags": [
       "Humanoid",
       "Shapechanger"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "eladrin-twilight-incanter",
@@ -3635,7 +3944,8 @@
     "page": 102,
     "tags": [
       "Fey"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "foulspawn-grue",
@@ -3647,7 +3957,8 @@
     "page": 112,
     "tags": [
       "Aberration"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "foulspawn-mangler",
@@ -3659,7 +3970,8 @@
     "page": 112,
     "tags": [
       "Aberration"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "galeb-duhr-earthbreaker",
@@ -3669,7 +3981,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 114,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "hobgoblin-hand-of-bane",
@@ -3682,7 +3995,8 @@
     "tags": [
       "Humanoid",
       "Goblinoid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "mummy-guardian",
@@ -3694,7 +4008,8 @@
     "page": 192,
     "tags": [
       "Undead"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "ogre-savage",
@@ -3706,7 +4021,8 @@
     "page": 199,
     "tags": [
       "Giant"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "oni-night-haunter",
@@ -3718,7 +4034,8 @@
     "page": 200,
     "tags": [
       "Giant"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "orc-chieftain",
@@ -3730,7 +4047,8 @@
     "page": 204,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "owlbear",
@@ -3740,7 +4058,8 @@
     "rank": "Elite",
     "source": "Monster Manual 1",
     "page": 212,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "rot-scarab-swarm",
@@ -3752,7 +4071,8 @@
     "page": 30,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "sahuagin-priest",
@@ -3764,7 +4084,8 @@
     "page": 224,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "satyr-piper",
@@ -3776,7 +4097,8 @@
     "page": 228,
     "tags": [
       "Fey"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "shadar-kai-warrior",
@@ -3789,7 +4111,8 @@
     "tags": [
       "Humanoid",
       "Shadow"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "snaketongue-warrior",
@@ -3799,7 +4122,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 272,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "trap-haunt",
@@ -3812,7 +4136,8 @@
     "tags": [
       "Undead",
       "Shadow"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "troglodyte-curse-chanter",
@@ -3824,7 +4149,8 @@
     "page": 252,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "werewolf",
@@ -3837,7 +4163,8 @@
     "tags": [
       "Shapechanger",
       "Beast"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "zombie-hulk",
@@ -3849,7 +4176,8 @@
     "page": 275,
     "tags": [
       "Undead"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "autumn-nymph",
@@ -3861,7 +4189,8 @@
     "page": 151,
     "tags": [
       "Fey"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "choldrith",
@@ -3871,7 +4200,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 33,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "earth-cultist",
@@ -3883,7 +4213,8 @@
     "page": 163,
     "tags": [
       "Elemental"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "fire-temple-champion",
@@ -3896,7 +4227,8 @@
     "tags": [
       "Fire",
       "Elemental"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "green-arcanian",
@@ -3906,7 +4238,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 16,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "hornstone-gargoyle",
@@ -3918,7 +4251,8 @@
     "page": 93,
     "tags": [
       "Elemental"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "object-mimic",
@@ -3928,7 +4262,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 134,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "ogre-cave-hunter",
@@ -3940,7 +4275,8 @@
     "page": 158,
     "tags": [
       "Giant"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "rot-grub-zombie",
@@ -3952,7 +4288,8 @@
     "page": 167,
     "tags": [
       "Undead"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "runic-gargoyle",
@@ -3964,7 +4301,8 @@
     "page": 93,
     "tags": [
       "Elemental"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "shardmind-dominator",
@@ -3974,7 +4312,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 175,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "thri-kreen-desert-talker",
@@ -3984,7 +4323,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 193,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "demon-spawn-adept",
@@ -3997,7 +4337,8 @@
     "tags": [
       "Demon",
       "Fiend"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "wendigo-manhunter",
@@ -4007,7 +4348,8 @@
     "rank": "Standard",
     "source": "Demonomicon",
     "page": 152,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "lesser-fire-demon",
@@ -4022,7 +4364,8 @@
       "Fiend",
       "Fire",
       "Elemental"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "guardian-demon-abomination",
@@ -4035,7 +4378,8 @@
     "tags": [
       "Demon",
       "Fiend"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "bluespawn-stormlizard",
@@ -4045,7 +4389,8 @@
     "rank": "Standard",
     "source": "Draconomicon 1",
     "page": 219,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "winged-putrescence",
@@ -4055,7 +4400,8 @@
     "rank": "Elite",
     "source": "Draconomicon 1",
     "page": 205,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "mithral-dragon-wyrmling",
@@ -4067,7 +4413,8 @@
     "page": 181,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "zanathakla-vaporous-serpent",
@@ -4079,7 +4426,8 @@
     "page": 106,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "vulture-drake",
@@ -4091,7 +4439,8 @@
     "page": 194,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "wyrmguard-scout",
@@ -4101,7 +4450,8 @@
     "rank": "Standard",
     "source": "Draconomicon 2",
     "page": 200,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "zanathakla",
@@ -4111,7 +4461,8 @@
     "rank": "Solo",
     "source": "Draconomicon 2",
     "page": 106,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "adult-white-dragon",
@@ -4124,7 +4475,8 @@
     "tags": [
       "Dragon",
       "Cold"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "battle-wight",
@@ -4136,7 +4488,8 @@
     "page": 262,
     "tags": [
       "Undead"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "bloodfire-harpy",
@@ -4148,7 +4501,8 @@
     "page": 154,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "bloodspike-behemoth",
@@ -4158,7 +4512,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 31,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "bulette",
@@ -4168,7 +4523,8 @@
     "rank": "Elite",
     "source": "Monster Manual 1",
     "page": 38,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "crushgrip-constrictor",
@@ -4180,7 +4536,8 @@
     "page": 240,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "deathpriest-of-orcus",
@@ -4194,7 +4551,8 @@
       "Demon",
       "Fiend",
       "Undead"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "destrachan",
@@ -4206,7 +4564,8 @@
     "page": 59,
     "tags": [
       "Aberration"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "displacer-beast",
@@ -4216,7 +4575,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 70,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "dryad",
@@ -4228,7 +4588,8 @@
     "page": 96,
     "tags": [
       "Fey"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "flame-snake",
@@ -4242,7 +4603,8 @@
       "Fire",
       "Elemental",
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "foulspawn-berserker",
@@ -4255,7 +4617,8 @@
     "tags": [
       "Humanoid",
       "Aberration"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "gargoyle",
@@ -4267,7 +4630,8 @@
     "page": 115,
     "tags": [
       "Elemental"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "grick-alpha",
@@ -4277,7 +4641,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 145,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "quickling-runner",
@@ -4289,7 +4654,8 @@
     "page": 215,
     "tags": [
       "Fey"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "shambling-mound",
@@ -4301,7 +4667,8 @@
     "page": 232,
     "tags": [
       "Plant"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "snaketongue-assassin",
@@ -4313,7 +4680,8 @@
     "page": 273,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "unicorn",
@@ -4325,7 +4693,8 @@
     "page": 257,
     "tags": [
       "Fey"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "worg",
@@ -4335,7 +4704,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 265,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "flux-slaad",
@@ -4348,7 +4718,8 @@
     "tags": [
       "Elemental",
       "Aberration"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "gnome-wolverine",
@@ -4360,7 +4731,8 @@
     "page": 129,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "goliath-guardian",
@@ -4370,7 +4742,8 @@
     "rank": "Standard",
     "source": "Monster Manual 2",
     "page": 136,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "human-dire-beast-hunter",
@@ -4382,7 +4755,8 @@
     "page": 145,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "human-pirate",
@@ -4394,7 +4768,8 @@
     "page": 148,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "troglodyte-deepscourge",
@@ -4406,7 +4781,8 @@
     "page": 200,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "troglodyte-temple-champion",
@@ -4418,7 +4794,8 @@
     "page": 201,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "witherling-rabble",
@@ -4428,7 +4805,8 @@
     "rank": "Standard",
     "source": "Monster Manual 2",
     "page": 213,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "xorn",
@@ -4438,7 +4816,8 @@
     "rank": "Standard",
     "source": "Monster Manual 2",
     "page": 215,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "young-gold-dragon",
@@ -4450,7 +4829,8 @@
     "page": 81,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "cambion-wrathborn",
@@ -4460,7 +4840,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 24,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "fist-of-the-stone-tyrant",
@@ -4472,7 +4853,8 @@
     "page": 163,
     "tags": [
       "Elemental"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "howler-dread-hound",
@@ -4482,7 +4864,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 110,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "meenlock-spawn",
@@ -4492,7 +4875,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 132,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "nagpa-corruptor",
@@ -4502,7 +4886,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 142,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "ogre-ironclad",
@@ -4514,7 +4899,8 @@
     "page": 158,
     "tags": [
       "Giant"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "spirehorn-behemoth",
@@ -4524,7 +4910,8 @@
     "rank": "Elite",
     "source": "Monster Manual 3",
     "page": 21,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "verbeeg-rowdy",
@@ -4534,7 +4921,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 200,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "young-earthquake-dragon",
@@ -4546,7 +4934,8 @@
     "page": 69,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "incubus",
@@ -4559,7 +4948,8 @@
     "tags": [
       "Demon",
       "Fiend"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "brown-dragon-adult",
@@ -4571,7 +4961,8 @@
     "page": 170,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "razecoreth",
@@ -4581,7 +4972,8 @@
     "rank": "Solo",
     "source": "Draconomicon 1",
     "page": 116,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "squamous-maw",
@@ -4591,7 +4983,8 @@
     "rank": "Elite",
     "source": "Draconomicon 1",
     "page": 231,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "three-tooth",
@@ -4603,7 +4996,8 @@
     "page": 201,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "berbalang",
@@ -4613,7 +5007,8 @@
     "rank": "Solo",
     "source": "Monster Manual 1",
     "page": 34,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "blade-spider",
@@ -4625,7 +5020,8 @@
     "page": 246,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "bog-hag",
@@ -4635,7 +5031,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 150,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "dark-stalker",
@@ -4647,7 +5044,8 @@
     "page": 49,
     "tags": [
       "Shadow"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "dragonborn-gladiator",
@@ -4660,7 +5058,8 @@
     "tags": [
       "Dragon",
       "Humanoid"
-    ]
+    ],
+    "alignment": "Any"
   },
   {
     "id": "ettin-marauder",
@@ -4672,7 +5071,8 @@
     "page": 108,
     "tags": [
       "Giant"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "feymire-crocodile",
@@ -4684,7 +5084,8 @@
     "page": 45,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "gibbering-mouther",
@@ -4696,7 +5097,8 @@
     "page": 126,
     "tags": [
       "Aberration"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "magma-strider",
@@ -4709,7 +5111,8 @@
     "tags": [
       "Fire",
       "Elemental"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "manticore",
@@ -4719,7 +5122,8 @@
     "rank": "Elite",
     "source": "Monster Manual 1",
     "page": 184,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "medusa-archer",
@@ -4731,7 +5135,8 @@
     "page": 186,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "minotaur-warrior",
@@ -4743,7 +5148,8 @@
     "page": 190,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Any"
   },
   {
     "id": "oni-mage",
@@ -4755,7 +5161,8 @@
     "page": 201,
     "tags": [
       "Giant"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "sahuagin-baron",
@@ -4767,7 +5174,8 @@
     "page": 224,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "venom-eye-basilisk",
@@ -4777,7 +5185,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 26,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "wyvern",
@@ -4787,7 +5196,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 268,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "fleshtearer-shark",
@@ -4797,7 +5207,8 @@
     "rank": "Standard",
     "source": "Monster Manual 2",
     "page": 182,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "genasi-stoneshield",
@@ -4809,7 +5220,8 @@
     "page": 117,
     "tags": [
       "Elemental"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "human-pirate-captain",
@@ -4821,7 +5233,8 @@
     "page": 148,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "neogi-slaver",
@@ -4831,7 +5244,8 @@
     "rank": "Standard",
     "source": "Monster Manual 2",
     "page": 166,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "neogi-spawn-swarm",
@@ -4843,7 +5257,8 @@
     "page": 166,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "scytheclaw-drake",
@@ -4855,7 +5270,8 @@
     "page": 88,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "tomb-spider-broodswarm",
@@ -4867,7 +5283,8 @@
     "page": 191,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "awakened-rot-grub-swarm",
@@ -4879,7 +5296,8 @@
     "page": 167,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "blue-arcanian",
@@ -4889,7 +5307,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 17,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "catoblepas-harbinger",
@@ -4899,7 +5318,8 @@
     "rank": "Elite",
     "source": "Monster Manual 3",
     "page": 27,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "chained-cambion",
@@ -4909,7 +5329,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 25,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "foulspawn-mockery",
@@ -4921,7 +5342,8 @@
     "page": 89,
     "tags": [
       "Aberration"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "scarecrow-shambler",
@@ -4931,7 +5353,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 168,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "sea-kraken",
@@ -4941,7 +5364,8 @@
     "rank": "Solo",
     "source": "Monster Manual 3",
     "page": 122,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "shardmind-executioner",
@@ -4951,7 +5375,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 175,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "wood-nymph",
@@ -4963,7 +5388,8 @@
     "page": 152,
     "tags": [
       "Fey"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "young-volcanic-dragon",
@@ -4975,7 +5401,8 @@
     "page": 72,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "jovoc",
@@ -4985,7 +5412,8 @@
     "rank": "Standard",
     "source": "Demonomicon",
     "page": 121,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "arachnid-clockwork-horror",
@@ -4995,7 +5423,8 @@
     "rank": "Standard",
     "source": "Demonomicon",
     "page": 109,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "scion-of-zuggtmoy-overgrowth",
@@ -5008,7 +5437,8 @@
     "tags": [
       "Demon",
       "Fiend"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "frostforged-wyrm-adult",
@@ -5018,7 +5448,8 @@
     "rank": "Standard",
     "source": "Draconomicon 1",
     "page": 188,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "rotclaw",
@@ -5028,7 +5459,8 @@
     "rank": "Standard",
     "source": "Draconomicon 1",
     "page": 205,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "stoneborn-dracolich",
@@ -5041,7 +5473,8 @@
     "tags": [
       "Undead",
       "Dragon"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "adult-black-dragon",
@@ -5054,7 +5487,8 @@
     "tags": [
       "Dragon",
       "Acid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "banshrae-dartswarmer",
@@ -5064,7 +5498,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 25,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "dire-bear",
@@ -5076,7 +5511,8 @@
     "page": 29,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "drow-warrior",
@@ -5089,7 +5525,8 @@
     "tags": [
       "Humanoid",
       "Shadow"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "foulspawn-seer",
@@ -5101,7 +5538,8 @@
     "page": 113,
     "tags": [
       "Aberration"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "galeb-duhr-rockcaller",
@@ -5111,7 +5549,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 114,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "githzerai-cenobite",
@@ -5123,7 +5562,8 @@
     "page": 130,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "grimlock-ambusher",
@@ -5133,7 +5573,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 148,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "iron-gorgon",
@@ -5143,7 +5584,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 143,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "mezzodemon",
@@ -5156,7 +5598,8 @@
     "tags": [
       "Demon",
       "Fiend"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "ogre-warhulk",
@@ -5168,7 +5611,8 @@
     "page": 199,
     "tags": [
       "Giant"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "snaketongue-celebrant",
@@ -5178,7 +5622,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 273,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "spirit-devourer",
@@ -5188,7 +5633,8 @@
     "rank": "Elite",
     "source": "Monster Manual 1",
     "page": 68,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "stormrage-shambler",
@@ -5198,7 +5644,8 @@
     "rank": "Elite",
     "source": "Monster Manual 1",
     "page": 232,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "vampire-lord",
@@ -5210,7 +5657,8 @@
     "page": 258,
     "tags": [
       "Undead"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "adult-iron-dragon",
@@ -5222,7 +5670,8 @@
     "page": 84,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "deva-knight-errant",
@@ -5234,7 +5683,8 @@
     "page": 62,
     "tags": [
       "Celestial"
-    ]
+    ],
+    "alignment": "Good"
   },
   {
     "id": "direguard-assassin",
@@ -5246,7 +5696,8 @@
     "page": 70,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "duergar-flesheater",
@@ -5259,7 +5710,8 @@
     "tags": [
       "Humanoid",
       "Shadow"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "eladrin-bladesinger",
@@ -5271,7 +5723,8 @@
     "page": 97,
     "tags": [
       "Fey"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "firbolg-hounder",
@@ -5284,7 +5737,8 @@
     "tags": [
       "Giant",
       "Fey"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "genasi-fireblade",
@@ -5296,7 +5750,8 @@
     "page": 116,
     "tags": [
       "Elemental"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "slaughterstone-slicer",
@@ -5306,7 +5761,8 @@
     "rank": "Elite",
     "source": "Monster Manual 2",
     "page": 187,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "tomb-spider",
@@ -5318,7 +5774,8 @@
     "page": 190,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "weretiger",
@@ -5330,7 +5787,8 @@
     "page": 159,
     "tags": [
       "Shapechanger"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "meenlock-corruptor",
@@ -5340,7 +5798,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 133,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "ogre-storm-shaman",
@@ -5353,7 +5812,8 @@
     "tags": [
       "Lightning",
       "Giant"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "pact-hag",
@@ -5363,7 +5823,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 108,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "kuo-toa-warder",
@@ -5375,7 +5836,8 @@
     "page": 148,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "scion-of-zuggtmoy-infector",
@@ -5388,7 +5850,8 @@
     "tags": [
       "Demon",
       "Fiend"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "bulezau",
@@ -5398,7 +5861,8 @@
     "rank": "Standard",
     "source": "Demonomicon",
     "page": 107,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "spawn-of-juiblex-sludge-dredge",
@@ -5411,7 +5875,8 @@
     "tags": [
       "Demon",
       "Fiend"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "blight-dragon-adult",
@@ -5424,7 +5889,8 @@
     "tags": [
       "Dragon",
       "Plant"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "gray-dragon-adult",
@@ -5436,7 +5902,8 @@
     "page": 174,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "cobalt-dragon-adult",
@@ -5448,7 +5915,8 @@
     "page": 162,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "liondrake",
@@ -5458,7 +5926,8 @@
     "rank": "Standard",
     "source": "Draconomicon 2",
     "page": 194,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "adult-green-dragon",
@@ -5471,7 +5940,8 @@
     "tags": [
       "Dragon",
       "Poison"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "banshrae-warrior",
@@ -5481,7 +5951,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 25,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "battle-wight-commander",
@@ -5493,7 +5964,8 @@
     "page": 262,
     "tags": [
       "Undead"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "dusk-unicorn",
@@ -5505,7 +5977,8 @@
     "page": 257,
     "tags": [
       "Fey"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "ettin-spirit-talker",
@@ -5517,7 +5990,8 @@
     "page": 108,
     "tags": [
       "Giant"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "fen-hydra",
@@ -5529,7 +6003,8 @@
     "page": 164,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "feygrove-choker",
@@ -5539,7 +6014,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 42,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "fire-archon-emberguard",
@@ -5552,7 +6028,8 @@
     "tags": [
       "Fire",
       "Elemental"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "flesh-golem",
@@ -5564,7 +6041,8 @@
     "page": 142,
     "tags": [
       "Construct"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "foulspawn-hulk",
@@ -5576,7 +6054,8 @@
     "page": 113,
     "tags": [
       "Aberration"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "githyanki-warrior",
@@ -5588,7 +6067,8 @@
     "page": 128,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "guardian-naga",
@@ -5598,7 +6078,8 @@
     "rank": "Elite",
     "source": "Monster Manual 1",
     "page": 194,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "kuo-toa-marauder",
@@ -5610,7 +6091,8 @@
     "page": 172,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "lamia",
@@ -5620,7 +6102,8 @@
     "rank": "Elite",
     "source": "Monster Manual 1",
     "page": 174,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "redspawn-firebelcher",
@@ -5630,7 +6113,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 88,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "stirge-swarm",
@@ -5642,7 +6126,8 @@
     "page": 248,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "stone-eye-basilisk",
@@ -5654,7 +6139,8 @@
     "page": 26,
     "tags": [
       "Elemental"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "umber-hulk",
@@ -5664,7 +6150,8 @@
     "rank": "Elite",
     "source": "Monster Manual 1",
     "page": 256,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "viscera-devourer",
@@ -5674,7 +6161,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 68,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "wailing-ghost",
@@ -5687,7 +6175,8 @@
     "tags": [
       "Undead",
       "Shadow"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "bone-golem",
@@ -5700,7 +6189,8 @@
     "tags": [
       "Undead",
       "Construct"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "centaur-hunter",
@@ -5712,7 +6202,8 @@
     "page": 30,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "centaur-ravager",
@@ -5724,7 +6215,8 @@
     "page": 30,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "duergar-hellcaller",
@@ -5737,7 +6229,8 @@
     "tags": [
       "Humanoid",
       "Shadow"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "firbolg-hunter",
@@ -5750,7 +6243,8 @@
     "tags": [
       "Giant",
       "Fey"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "lolthbound-goblin-slave",
@@ -5763,7 +6257,8 @@
     "tags": [
       "Humanoid",
       "Goblinoid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "needle-demon",
@@ -5776,7 +6271,8 @@
     "tags": [
       "Demon",
       "Fiend"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "oni-overlord",
@@ -5788,7 +6284,8 @@
     "page": 170,
     "tags": [
       "Giant"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "phoelarch-mage",
@@ -5798,7 +6295,8 @@
     "rank": "Elite",
     "source": "Monster Manual 2",
     "page": 174,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "phoelarch-warrior",
@@ -5808,7 +6306,8 @@
     "rank": "Elite",
     "source": "Monster Manual 2",
     "page": 174,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "phoera",
@@ -5818,7 +6317,8 @@
     "rank": "Elite",
     "source": "Monster Manual 2",
     "page": 175,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "adult-blizzard-dragon",
@@ -5831,7 +6331,8 @@
     "tags": [
       "Dragon",
       "Cold"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "cloaker-ambusher",
@@ -5843,7 +6344,8 @@
     "page": 34,
     "tags": [
       "Aberration"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "foulspawn-warpcaller",
@@ -5855,7 +6357,8 @@
     "page": 89,
     "tags": [
       "Aberration"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "mossling-creeper",
@@ -5865,7 +6368,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 156,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "mossling-grower",
@@ -5875,7 +6379,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 157,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "mossling-hurler",
@@ -5885,7 +6390,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 156,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "mossling-guardian",
@@ -5895,7 +6401,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 155,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "norker-stone-shield",
@@ -5909,7 +6416,8 @@
       "Elemental",
       "Humanoid",
       "Goblinoid"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "oblivion-moss-mindmaster",
@@ -5921,7 +6429,8 @@
     "page": 155,
     "tags": [
       "Plant"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "pale-bloodfiend",
@@ -5931,7 +6440,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 140,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "su-alpha",
@@ -5941,7 +6451,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 189,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "kuo-toa-spearfiend",
@@ -5953,7 +6464,8 @@
     "page": 148,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "scion-of-zuggtmoy-spore-lord",
@@ -5966,7 +6478,8 @@
     "tags": [
       "Demon",
       "Fiend"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "derghodemon",
@@ -5976,7 +6489,8 @@
     "rank": "Elite",
     "source": "Demonomicon",
     "page": 111,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "spawn-of-juiblex-ooze-horror",
@@ -5990,7 +6504,8 @@
       "Demon",
       "Fiend",
       "Ooze"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "tomb-demon-constrictor",
@@ -6003,7 +6518,8 @@
     "tags": [
       "Demon",
       "Fiend"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "greenspawn-razorfiend",
@@ -6013,7 +6529,8 @@
     "rank": "Elite",
     "source": "Draconomicon 1",
     "page": 219,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "pact-dragon-adult",
@@ -6025,7 +6542,8 @@
     "page": 191,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "purple-dragon-adult",
@@ -6037,7 +6555,8 @@
     "page": 177,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "swarmtongue-hydra",
@@ -6049,7 +6568,8 @@
     "page": 213,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "mercury-dragon-adult",
@@ -6061,7 +6581,8 @@
     "page": 164,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "orium-dragon-adult",
@@ -6073,7 +6594,8 @@
     "page": 170,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "aelathric-sahuagin-priest",
@@ -6085,7 +6607,8 @@
     "page": 120,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "sand-knives-bandit",
@@ -6097,7 +6620,8 @@
     "page": 203,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "vaporous-serpent-adult",
@@ -6109,7 +6633,8 @@
     "page": 170,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "adult-blue-dragon",
@@ -6122,7 +6647,8 @@
     "tags": [
       "Dragon",
       "Lightning"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "balhannoth",
@@ -6132,7 +6658,8 @@
     "rank": "Elite",
     "source": "Monster Manual 1",
     "page": 24,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "beholder-eye-of-flame",
@@ -6146,7 +6673,8 @@
       "Fire",
       "Elemental",
       "Aberration"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "briar-witch-dryad",
@@ -6158,7 +6686,8 @@
     "page": 96,
     "tags": [
       "Fey"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "displacer-beast-packlord",
@@ -6168,7 +6697,8 @@
     "rank": "Elite",
     "source": "Monster Manual 1",
     "page": 70,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "dragonborn-raider",
@@ -6181,7 +6711,8 @@
     "tags": [
       "Dragon",
       "Humanoid"
-    ]
+    ],
+    "alignment": "Any"
   },
   {
     "id": "drow-arachnomancer",
@@ -6194,7 +6725,8 @@
     "tags": [
       "Humanoid",
       "Shadow"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "drow-blademaster",
@@ -6207,7 +6739,8 @@
     "tags": [
       "Humanoid",
       "Shadow"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "eidolon",
@@ -6217,7 +6750,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 101,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "githyanki-mindslicer",
@@ -6229,7 +6763,8 @@
     "page": 128,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "githzerai-zerth",
@@ -6241,7 +6776,8 @@
     "page": 130,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "gray-slaad",
@@ -6254,7 +6790,8 @@
     "tags": [
       "Elemental",
       "Aberration"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "grimlock-berserker",
@@ -6266,7 +6803,8 @@
     "page": 148,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "hellstinger-scorpion",
@@ -6278,7 +6816,8 @@
     "page": 229,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "helmed-horror",
@@ -6290,7 +6829,8 @@
     "page": 155,
     "tags": [
       "Construct"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "hook-horror",
@@ -6300,7 +6840,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 158,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "medusa-warrior",
@@ -6312,7 +6853,8 @@
     "page": 186,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "minotaur-cabalist",
@@ -6324,7 +6866,8 @@
     "page": 190,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "mummy-lord",
@@ -6336,7 +6879,8 @@
     "page": 192,
     "tags": [
       "Undead"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "nightmare",
@@ -6346,7 +6890,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 196,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "vrock",
@@ -6359,7 +6904,8 @@
     "tags": [
       "Demon",
       "Fiend"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "yuan-ti-malison-sharp-eye",
@@ -6369,7 +6915,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 269,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "adult-copper-dragon",
@@ -6382,7 +6929,8 @@
     "tags": [
       "Dragon",
       "Acid"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "centaur-mystic",
@@ -6394,7 +6942,8 @@
     "page": 30,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "drakkoth-ambusher",
@@ -6404,7 +6953,8 @@
     "rank": "Standard",
     "source": "Monster Manual 2",
     "page": 90,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "duergar-blackguard",
@@ -6417,7 +6967,8 @@
     "tags": [
       "Humanoid",
       "Shadow"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "ghost-legionnaire",
@@ -6430,7 +6981,8 @@
     "tags": [
       "Undead",
       "Shadow"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "werewolf-lord",
@@ -6443,7 +6995,8 @@
     "tags": [
       "Shapechanger",
       "Beast"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "derro-warrior",
@@ -6453,7 +7006,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 49,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "green-slaad-madjack",
@@ -6466,7 +7020,8 @@
     "tags": [
       "Elemental",
       "Aberration"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "gnome-caravan-guard",
@@ -6478,7 +7033,8 @@
     "page": 142,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "blood-demon",
@@ -6491,7 +7047,8 @@
     "tags": [
       "Demon",
       "Fiend"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "malgodemon-thug",
@@ -6501,7 +7058,8 @@
     "rank": "Standard",
     "source": "Demonomicon",
     "page": 125,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "battle-dragon-adult",
@@ -6513,7 +7071,8 @@
     "page": 190,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Any"
   },
   {
     "id": "razortalon",
@@ -6523,7 +7082,8 @@
     "rank": "Standard",
     "source": "Draconomicon 1",
     "page": 207,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "bronze-dragon-adult",
@@ -6536,7 +7096,8 @@
     "tags": [
       "Dragon",
       "Lightning"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "uvokula",
@@ -6546,7 +7107,8 @@
     "rank": "Elite",
     "source": "Draconomicon 2",
     "page": 120,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "vanathia",
@@ -6556,7 +7118,8 @@
     "rank": "Solo",
     "source": "Draconomicon 2",
     "page": 116,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "war-shark",
@@ -6566,7 +7129,8 @@
     "rank": "Standard",
     "source": "Draconomicon 2",
     "page": 121,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "xyphreneus",
@@ -6576,7 +7140,8 @@
     "rank": "Solo",
     "source": "Draconomicon 2",
     "page": 122,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "boneclaw",
@@ -6586,7 +7151,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 37,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "cyclops-impaler",
@@ -6599,7 +7165,8 @@
     "tags": [
       "Giant",
       "Fey"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "cyclops-rambler",
@@ -6612,7 +7179,8 @@
     "tags": [
       "Giant",
       "Fey"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "demonweb-terror",
@@ -6624,7 +7192,8 @@
     "page": 247,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "drider-fanglord",
@@ -6634,7 +7203,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 93,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "drider-shadowspinner",
@@ -6644,7 +7214,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 93,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "githzerai-mindmage",
@@ -6656,7 +7227,8 @@
     "page": 131,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "kuo-toa-harpooner",
@@ -6668,7 +7240,8 @@
     "page": 172,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "lich",
@@ -6681,7 +7254,8 @@
     "tags": [
       "Humanoid",
       "Undead"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "mind-flayer-infiltrator",
@@ -6693,7 +7267,8 @@
     "page": 188,
     "tags": [
       "Aberration"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "night-hag",
@@ -6703,7 +7278,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 151,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "quickling-zephyr",
@@ -6715,7 +7291,8 @@
     "page": 215,
     "tags": [
       "Fey"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "roc",
@@ -6725,7 +7302,8 @@
     "rank": "Elite",
     "source": "Monster Manual 1",
     "page": 220,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "roper",
@@ -6735,7 +7313,8 @@
     "rank": "Elite",
     "source": "Monster Manual 1",
     "page": 222,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "salamander-lancer",
@@ -6748,7 +7327,8 @@
     "tags": [
       "Fire",
       "Elemental"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "shield-guardian",
@@ -6760,7 +7340,8 @@
     "page": 149,
     "tags": [
       "Construct"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "warthorn-battlebriar",
@@ -6770,7 +7351,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 28,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "winterclaw-owlbear",
@@ -6780,7 +7362,8 @@
     "rank": "Elite",
     "source": "Monster Manual 1",
     "page": 212,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "yuan-ti-abomination",
@@ -6790,7 +7373,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 270,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "adult-adamantine-dragon",
@@ -6802,7 +7386,8 @@
     "page": 75,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "behir",
@@ -6812,7 +7397,8 @@
     "rank": "Solo",
     "source": "Monster Manual 2",
     "page": 22,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "beholder-eye-of-frost",
@@ -6825,7 +7411,8 @@
     "tags": [
       "Cold",
       "Aberration"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "cyclops-crusher",
@@ -6838,7 +7425,8 @@
     "tags": [
       "Giant",
       "Fey"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "deva-zealot",
@@ -6850,7 +7438,8 @@
     "page": 62,
     "tags": [
       "Celestial"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "duergar-blasphemer",
@@ -6863,7 +7452,8 @@
     "tags": [
       "Humanoid",
       "Shadow"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "earth-archon-ground-rager",
@@ -6875,7 +7465,8 @@
     "page": 14,
     "tags": [
       "Elemental"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "firbolg-moon-seer",
@@ -6888,7 +7479,8 @@
     "tags": [
       "Giant",
       "Fey"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "human-gladiator",
@@ -6900,7 +7492,8 @@
     "page": 145,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "shadar-kai-dawnkiller",
@@ -6913,7 +7506,8 @@
     "tags": [
       "Humanoid",
       "Shadow"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "shadar-kai-gloom-lord",
@@ -6926,7 +7520,8 @@
     "tags": [
       "Humanoid",
       "Shadow"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "stone-giant",
@@ -6939,7 +7534,8 @@
     "tags": [
       "Elemental",
       "Giant"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "winter-wolf",
@@ -6951,7 +7547,8 @@
     "page": 210,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "blue-slaad-digester",
@@ -6964,7 +7561,8 @@
     "tags": [
       "Elemental",
       "Aberration"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "iron-archon-interceptor",
@@ -6976,7 +7574,8 @@
     "page": 130,
     "tags": [
       "Elemental"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "mud-archon-skulker",
@@ -6988,7 +7587,8 @@
     "page": 131,
     "tags": [
       "Elemental"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "grimlock-bodyguard",
@@ -6998,7 +7598,8 @@
     "rank": "Standard",
     "source": "Underdark",
     "page": 144,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "spawn-of-juiblex-plague-hurler",
@@ -7011,7 +7612,8 @@
     "tags": [
       "Demon",
       "Fiend"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "piscodemon",
@@ -7021,7 +7623,8 @@
     "rank": "Standard",
     "source": "Demonomicon",
     "page": 136,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "wendigo-soulcatcher",
@@ -7031,7 +7634,8 @@
     "rank": "Standard",
     "source": "Demonomicon",
     "page": 153,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "dragonborn-fire-adept",
@@ -7046,7 +7650,8 @@
       "Fire",
       "Elemental",
       "Humanoid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "grayspawn-fleshtearer",
@@ -7056,7 +7661,8 @@
     "rank": "Standard",
     "source": "Draconomicon 1",
     "page": 220,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "mirage-dragon-adult",
@@ -7068,7 +7674,8 @@
     "page": 196,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "squamous-spitter",
@@ -7078,7 +7685,8 @@
     "rank": "Solo",
     "source": "Draconomicon 1",
     "page": 230,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "thief-of-life",
@@ -7088,7 +7696,8 @@
     "rank": "Solo",
     "source": "Draconomicon 1",
     "page": 208,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "andraemos",
@@ -7098,7 +7707,8 @@
     "rank": "Solo",
     "source": "Draconomicon 2",
     "page": 202,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "adult-red-dragon",
@@ -7111,7 +7721,8 @@
     "tags": [
       "Dragon",
       "Fire"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "azer-rager",
@@ -7121,7 +7732,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 22,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "chimera",
@@ -7131,7 +7743,8 @@
     "rank": "Elite",
     "source": "Monster Manual 1",
     "page": 41,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "destrachan-far-voice",
@@ -7143,7 +7756,8 @@
     "page": 59,
     "tags": [
       "Aberration"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "drow-priest",
@@ -7156,7 +7770,8 @@
     "tags": [
       "Humanoid",
       "Shadow"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "githyanki-gish",
@@ -7168,7 +7783,8 @@
     "page": 128,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "immolith",
@@ -7181,7 +7797,8 @@
     "tags": [
       "Demon",
       "Fiend"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "rakshasa-archer",
@@ -7191,7 +7808,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 216,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "rakshasa-warrior",
@@ -7201,7 +7819,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 216,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "red-slaad",
@@ -7214,7 +7833,8 @@
     "tags": [
       "Elemental",
       "Aberration"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "salamander-archer",
@@ -7227,7 +7847,8 @@
     "tags": [
       "Fire",
       "Elemental"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "salamander-noble",
@@ -7240,7 +7861,8 @@
     "tags": [
       "Fire",
       "Elemental"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "thunderfury-boar",
@@ -7252,7 +7874,8 @@
     "page": 35,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "yuan-ti-malison-incanter",
@@ -7262,7 +7885,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 269,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "adult-silver-dragon",
@@ -7275,7 +7899,8 @@
     "tags": [
       "Dragon",
       "Cold"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "ambush-vine-shoot",
@@ -7287,7 +7912,8 @@
     "page": 204,
     "tags": [
       "Plant"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "bristle-spider",
@@ -7299,7 +7925,8 @@
     "page": 189,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "clay-golem",
@@ -7311,7 +7938,8 @@
     "page": 134,
     "tags": [
       "Construct"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "couatl-star-serpent",
@@ -7323,7 +7951,8 @@
     "page": 38,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "drakkoth-rager",
@@ -7333,7 +7962,8 @@
     "rank": "Elite",
     "source": "Monster Manual 2",
     "page": 91,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "firbolg-bloodbear",
@@ -7346,7 +7976,8 @@
     "tags": [
       "Giant",
       "Fey"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "herald-of-hadar",
@@ -7356,7 +7987,8 @@
     "rank": "Standard",
     "source": "Monster Manual 2",
     "page": 196,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "maw-of-acamar",
@@ -7366,7 +7998,8 @@
     "rank": "Standard",
     "source": "Monster Manual 2",
     "page": 196,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "nothic-cackler",
@@ -7376,7 +8009,8 @@
     "rank": "Standard",
     "source": "Monster Manual 2",
     "page": 168,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "pod-demon",
@@ -7389,7 +8023,8 @@
     "tags": [
       "Demon",
       "Fiend"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "podspawn",
@@ -7402,7 +8037,8 @@
     "tags": [
       "Demon",
       "Fiend"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "shadar-kai-painbearer",
@@ -7415,7 +8051,8 @@
     "tags": [
       "Humanoid",
       "Shadow"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "water-archon-tide-strider",
@@ -7427,7 +8064,8 @@
     "page": 18,
     "tags": [
       "Elemental"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "lnrker",
@@ -7437,7 +8075,8 @@
     "rank": "Standard",
     "source": "Monster Manual 3",
     "page": 15,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "kuo-toa-leviathan",
@@ -7449,7 +8088,8 @@
     "page": 149,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "yagnodemon",
@@ -7459,7 +8099,8 @@
     "rank": "Standard",
     "source": "Demonomicon",
     "page": 154,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "bonespitter",
@@ -7469,7 +8110,8 @@
     "rank": "Standard",
     "source": "Draconomicon 1",
     "page": 207,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "brown-dragon-elder",
@@ -7481,7 +8123,8 @@
     "page": 170,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "icewrought-dracolich",
@@ -7494,7 +8137,8 @@
     "tags": [
       "Undead",
       "Dragon"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "indomitable-bulwark",
@@ -7504,7 +8148,8 @@
     "rank": "Standard",
     "source": "Draconomicon 1",
     "page": 228,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "roper-lasher",
@@ -7514,7 +8159,8 @@
     "rank": "Elite",
     "source": "Draconomicon 1",
     "page": 130,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "gold-hollow-dragon",
@@ -7526,7 +8172,8 @@
     "page": 184,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "blackspawn-gloomweb",
@@ -7536,7 +8183,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 88,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "bodak-skulk",
@@ -7546,7 +8194,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 36,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "bone-naga",
@@ -7558,7 +8207,8 @@
     "page": 194,
     "tags": [
       "Undead"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "cyclops-hewer",
@@ -7571,7 +8221,8 @@
     "tags": [
       "Giant",
       "Fey"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "earth-titan",
@@ -7584,7 +8235,8 @@
     "tags": [
       "Giant",
       "Elemental"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "guulvorg",
@@ -7594,7 +8246,8 @@
     "rank": "Elite",
     "source": "Monster Manual 1",
     "page": 265,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "ice-archon-hailscourge",
@@ -7607,7 +8260,8 @@
     "tags": [
       "Cold",
       "Elemental"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "kuo-toa-monitor",
@@ -7619,7 +8273,8 @@
     "page": 172,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "kuo-toa-whip",
@@ -7631,7 +8286,8 @@
     "page": 173,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "purple-worm",
@@ -7641,7 +8297,8 @@
     "rank": "Solo",
     "source": "Monster Manual 1",
     "page": 214,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "savage-minotaur",
@@ -7653,7 +8310,8 @@
     "page": 191,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "shadow-snake",
@@ -7666,7 +8324,8 @@
     "tags": [
       "Shadow",
       "Beast"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "sphinx",
@@ -7676,7 +8335,8 @@
     "rank": "Elite",
     "source": "Monster Manual 1",
     "page": 245,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "treant",
@@ -7689,7 +8349,8 @@
     "tags": [
       "Fey",
       "Plant"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "ambush-vine",
@@ -7701,7 +8362,8 @@
     "page": 204,
     "tags": [
       "Plant"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "diamondhide-xorn",
@@ -7711,7 +8373,8 @@
     "rank": "Standard",
     "source": "Monster Manual 2",
     "page": 215,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "drakkoth-venomshot",
@@ -7721,7 +8384,8 @@
     "rank": "Standard",
     "source": "Monster Manual 2",
     "page": 91,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "earth-archon-seismic-striker",
@@ -7733,7 +8397,8 @@
     "page": 14,
     "tags": [
       "Elemental"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "fey-knight-vestige",
@@ -7745,7 +8410,8 @@
     "page": 106,
     "tags": [
       "Fey"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "firbolg-ghostraven",
@@ -7758,7 +8424,8 @@
     "tags": [
       "Giant",
       "Fey"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "fomorian-ghost-shaman",
@@ -7773,7 +8440,8 @@
       "Shadow",
       "Fey",
       "Giant"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "lingerer-knight",
@@ -7785,7 +8453,8 @@
     "page": 106,
     "tags": [
       "Fey"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "neogi-great-old-master",
@@ -7795,7 +8464,8 @@
     "rank": "Standard",
     "source": "Monster Manual 2",
     "page": 166,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "prismatic-shard",
@@ -7805,7 +8475,8 @@
     "rank": "Standard",
     "source": "Monster Manual 2",
     "page": 35,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "razor-hydra",
@@ -7817,7 +8488,8 @@
     "page": 150,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "stone-giant-runecarver",
@@ -7830,7 +8502,8 @@
     "tags": [
       "Elemental",
       "Giant"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "water-archon-waveshaper",
@@ -7842,7 +8515,8 @@
     "page": 18,
     "tags": [
       "Elemental"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "winter-wolf-snowfang",
@@ -7854,7 +8528,8 @@
     "page": 210,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "consumptive-parasite",
@@ -7864,7 +8539,8 @@
     "rank": "Standard",
     "source": "The Plane Below",
     "page": 133,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "iron-archon-crescent-blade",
@@ -7876,7 +8552,8 @@
     "page": 130,
     "tags": [
       "Elemental"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "incunabulum-cursebringer",
@@ -7886,7 +8563,8 @@
     "rank": "Standard",
     "source": "Underdark",
     "page": 146,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "incunabulum-slayer",
@@ -7896,7 +8574,8 @@
     "rank": "Standard",
     "source": "Underdark",
     "page": 146,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "hydrodemon",
@@ -7906,7 +8585,8 @@
     "rank": "Standard",
     "source": "Demonomicon",
     "page": 117,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "ruin-demon",
@@ -7919,7 +8599,8 @@
     "tags": [
       "Demon",
       "Fiend"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "aspect-of-tiamat",
@@ -7932,7 +8613,8 @@
     "tags": [
       "Dragon",
       "Fiend"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "azer-beastmaster",
@@ -7942,7 +8624,8 @@
     "rank": "Standard",
     "source": "Draconomicon 1",
     "page": 138,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "deathless-hunger",
@@ -7952,7 +8635,8 @@
     "rank": "Elite",
     "source": "Draconomicon 1",
     "page": 206,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "dragonborn-bloodreaver",
@@ -7965,7 +8649,8 @@
     "tags": [
       "Dragon",
       "Humanoid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "gray-wing-vrock",
@@ -7978,7 +8663,8 @@
     "tags": [
       "Demon",
       "Fiend"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "icy-wrath",
@@ -7988,7 +8674,8 @@
     "rank": "Standard",
     "source": "Draconomicon 1",
     "page": 228,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "purplespawn-nightmare",
@@ -7998,7 +8685,8 @@
     "rank": "Standard",
     "source": "Draconomicon 1",
     "page": 220,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "wretch-dragon-adult",
@@ -8010,7 +8698,8 @@
     "page": 197,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "aboleth-lasher",
@@ -8022,7 +8711,8 @@
     "page": 8,
     "tags": [
       "Aberration"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "aboleth-slime-mage",
@@ -8035,7 +8725,8 @@
     "tags": [
       "Aberration",
       "Ooze"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "azer-beastlord",
@@ -8045,7 +8736,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 23,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "azer-taskmaster",
@@ -8055,7 +8747,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 23,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "battle-guardian",
@@ -8065,7 +8758,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 149,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "blue-slaad",
@@ -8078,7 +8772,8 @@
     "tags": [
       "Elemental",
       "Aberration"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "cyclops-battleweaver",
@@ -8091,7 +8786,8 @@
     "tags": [
       "Giant",
       "Fey"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "cyclops-storm-shaman",
@@ -8105,7 +8801,8 @@
       "Lightning",
       "Giant",
       "Fey"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "death-knight",
@@ -8118,7 +8815,8 @@
     "tags": [
       "Humanoid",
       "Undead"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "elder-white-dragon",
@@ -8131,7 +8829,8 @@
     "tags": [
       "Dragon",
       "Cold"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "enormous-carrion-crawler",
@@ -8143,7 +8842,8 @@
     "page": 40,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "fomorian-warrior",
@@ -8156,7 +8856,8 @@
     "tags": [
       "Fey",
       "Giant"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "rakshasa-assassin",
@@ -8168,7 +8869,8 @@
     "page": 217,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "shadow-hulk",
@@ -8180,7 +8882,8 @@
     "page": 256,
     "tags": [
       "Shadow"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "stone-golem",
@@ -8193,7 +8896,8 @@
     "tags": [
       "Elemental",
       "Construct"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "sword-wraith",
@@ -8206,7 +8910,8 @@
     "tags": [
       "Undead",
       "Shadow"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "yuan-ti-malison-disciple-of-zehir",
@@ -8216,7 +8921,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 270,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "adult-gold-dragon",
@@ -8228,7 +8934,8 @@
     "page": 81,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "coure-of-mischief-and-strife",
@@ -8238,7 +8945,8 @@
     "rank": "Standard",
     "source": "Monster Manual 2",
     "page": 97,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "earth-archon-rumbler",
@@ -8250,7 +8958,8 @@
     "page": 14,
     "tags": [
       "Elemental"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "fomorian-cackler",
@@ -8263,7 +8972,8 @@
     "tags": [
       "Fey",
       "Giant"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "frost-giant",
@@ -8276,7 +8986,8 @@
     "tags": [
       "Cold",
       "Giant"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "nyfellar-mammoth",
@@ -8286,7 +8997,8 @@
     "rank": "Standard",
     "source": "Monster Manual 2",
     "page": 161,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "rime-hound",
@@ -8298,7 +9010,8 @@
     "page": 211,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "scion-of-gibbeth",
@@ -8308,7 +9021,8 @@
     "rank": "Standard",
     "source": "Monster Manual 2",
     "page": 197,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "slaad-spawn",
@@ -8321,7 +9035,8 @@
     "tags": [
       "Elemental",
       "Aberration"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "storm-archon-squallshield",
@@ -8334,7 +9049,8 @@
     "tags": [
       "Lightning",
       "Elemental"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "rageborn-frosthurler",
@@ -8344,7 +9060,8 @@
     "rank": "Standard",
     "source": "Demonomicon",
     "page": 138,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "zovvut",
@@ -8354,7 +9071,8 @@
     "rank": "Standard",
     "source": "Demonomicon",
     "page": 155,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "rageborn-barbclaw",
@@ -8364,7 +9082,8 @@
     "rank": "Standard",
     "source": "Demonomicon",
     "page": 139,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "gray-dragon-elder",
@@ -8376,7 +9095,8 @@
     "page": 174,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "tempest-dragon-elder",
@@ -8388,7 +9108,8 @@
     "page": 193,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "adult-mithral-dragon",
@@ -8400,7 +9121,8 @@
     "page": 167,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "aspect-of-bahamut",
@@ -8413,7 +9135,8 @@
     "tags": [
       "Dragon",
       "Celestial"
-    ]
+    ],
+    "alignment": "Lawful Good"
   },
   {
     "id": "aboleth-overseer",
@@ -8425,7 +9148,8 @@
     "page": 8,
     "tags": [
       "Aberration"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "bodak-reaver",
@@ -8435,7 +9159,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 36,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "cambion-hellfire-magus",
@@ -8445,7 +9170,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 39,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "death-hag",
@@ -8455,7 +9181,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 151,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "dire-bulette",
@@ -8465,7 +9192,8 @@
     "rank": "Elite",
     "source": "Monster Manual 1",
     "page": 38,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "dracolich",
@@ -8478,7 +9206,8 @@
     "tags": [
       "Undead",
       "Dragon"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "elder-black-dragon",
@@ -8491,7 +9220,8 @@
     "tags": [
       "Dragon",
       "Acid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "fire-giant",
@@ -8505,7 +9235,8 @@
       "Fire",
       "Elemental",
       "Giant"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "fire-giant-forgecaller",
@@ -8519,7 +9250,8 @@
       "Fire",
       "Elemental",
       "Giant"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "gibbering-abomination",
@@ -8531,7 +9263,8 @@
     "page": 126,
     "tags": [
       "Aberration"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "greater-helmed-horror",
@@ -8543,7 +9276,8 @@
     "page": 155,
     "tags": [
       "Construct"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "green-slaad",
@@ -8556,7 +9290,8 @@
     "tags": [
       "Elemental",
       "Aberration"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "medusa-shroud-of-zehir",
@@ -8568,7 +9303,8 @@
     "page": 187,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "mind-flayer-mastermind",
@@ -8580,7 +9316,8 @@
     "page": 188,
     "tags": [
       "Aberration"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "mordant-hydra",
@@ -8592,7 +9329,8 @@
     "page": 164,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "nabassu-gargoyle",
@@ -8604,7 +9342,8 @@
     "page": 115,
     "tags": [
       "Elemental"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "rockfire-dreadnought",
@@ -8614,7 +9353,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 104,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "slaughter-wight",
@@ -8626,7 +9366,8 @@
     "page": 263,
     "tags": [
       "Undead"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "abolethic-skum",
@@ -8638,7 +9379,8 @@
     "page": 172,
     "tags": [
       "Ooze"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "bebilith",
@@ -8651,7 +9393,8 @@
     "tags": [
       "Demon",
       "Fiend"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "centaur-fey-charger",
@@ -8664,7 +9407,8 @@
     "tags": [
       "Fey",
       "Humanoid"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "fang-titan-drake",
@@ -8677,7 +9421,8 @@
     "tags": [
       "Dragon",
       "Giant"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "fey-incanter-vestige",
@@ -8689,7 +9434,8 @@
     "page": 107,
     "tags": [
       "Fey"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "fomorian-totemist",
@@ -8702,7 +9448,8 @@
     "tags": [
       "Fey",
       "Giant"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "slaughterstone-eviscerator",
@@ -8712,7 +9459,8 @@
     "rank": "Standard",
     "source": "Monster Manual 2",
     "page": 186,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "stone-titan",
@@ -8725,7 +9473,8 @@
     "tags": [
       "Giant",
       "Elemental"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "storm-archon-lightning-walker",
@@ -8738,7 +9487,8 @@
     "tags": [
       "Lightning",
       "Elemental"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "acolyte-of-entropy",
@@ -8748,7 +9498,8 @@
     "rank": "Standard",
     "source": "The Plane Below",
     "page": 158,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "eisk-jaat-mystic",
@@ -8758,7 +9509,8 @@
     "rank": "Standard",
     "source": "The Plane Below",
     "page": 137,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "the-cringe",
@@ -8768,7 +9520,8 @@
     "rank": "Elite",
     "source": "Underdark",
     "page": 158,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "mezzodemon-sycophant",
@@ -8778,7 +9531,8 @@
     "rank": "Standard",
     "source": "Demonomicon",
     "page": 90,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "fire-demon",
@@ -8793,7 +9547,8 @@
       "Fiend",
       "Fire",
       "Elemental"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "rageborn-ambusher",
@@ -8803,7 +9558,8 @@
     "rank": "Standard",
     "source": "Demonomicon",
     "page": 139,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "dreambreath-dracolich",
@@ -8816,7 +9572,8 @@
     "tags": [
       "Undead",
       "Dragon"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "purple-dragon-elder",
@@ -8828,7 +9585,8 @@
     "page": 177,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "cobalt-dragon-elder",
@@ -8840,7 +9598,8 @@
     "page": 162,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "beholder-eye-tyrant",
@@ -8852,7 +9611,8 @@
     "page": 32,
     "tags": [
       "Aberration"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "blackroot-treant",
@@ -8865,7 +9625,8 @@
     "tags": [
       "Fey",
       "Plant"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "bralani-of-autumn-winds",
@@ -8875,7 +9636,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 102,
-    "tags": []
+    "tags": [],
+    "alignment": "Any"
   },
   {
     "id": "elder-green-dragon",
@@ -8888,7 +9650,8 @@
     "tags": [
       "Dragon",
       "Poison"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "fomorian-painbringer",
@@ -8901,7 +9664,8 @@
     "tags": [
       "Fey",
       "Giant"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "goristro",
@@ -8914,7 +9678,8 @@
     "tags": [
       "Demon",
       "Fiend"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "ice-archon-rimehammer",
@@ -8927,7 +9692,8 @@
     "tags": [
       "Cold",
       "Elemental"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "phoenix",
@@ -8937,7 +9703,8 @@
     "rank": "Elite",
     "source": "Monster Manual 1",
     "page": 220,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "rakshasa-noble",
@@ -8947,7 +9714,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 217,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "elder-iron-dragon",
@@ -8959,7 +9727,8 @@
     "page": 84,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "frost-giant-ice-shaper",
@@ -8972,7 +9741,8 @@
     "tags": [
       "Cold",
       "Giant"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "gray-render",
@@ -8982,7 +9752,8 @@
     "rank": "Elite",
     "source": "Monster Manual 2",
     "page": 137,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "nothic-mindblight",
@@ -8992,7 +9763,8 @@
     "rank": "Standard",
     "source": "Monster Manual 2",
     "page": 168,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "sphinx-mystery",
@@ -9002,7 +9774,8 @@
     "rank": "Standard",
     "source": "Monster Manual 2",
     "page": 188,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "warforged-titan",
@@ -9015,7 +9788,8 @@
     "tags": [
       "Giant",
       "Construct"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "banesworn-iron-bulwark",
@@ -9025,7 +9799,8 @@
     "rank": "Standard",
     "source": "The Plane Above",
     "page": 135,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "duthka-gith",
@@ -9035,7 +9810,8 @@
     "rank": "Standard",
     "source": "The Plane Above",
     "page": 143,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "quom-harpoonist",
@@ -9045,7 +9821,8 @@
     "rank": "Standard",
     "source": "The Plane Above",
     "page": 156,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "ash-wrought-soulburner",
@@ -9055,7 +9832,8 @@
     "rank": "Standard",
     "source": "The Plane Below",
     "page": 133,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "mud-archon-ambusher",
@@ -9067,7 +9845,8 @@
     "page": 131,
     "tags": [
       "Elemental"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "rageborn-horror",
@@ -9077,7 +9856,8 @@
     "rank": "Standard",
     "source": "Demonomicon",
     "page": 139,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "mavawhan",
@@ -9087,7 +9867,8 @@
     "rank": "Standard",
     "source": "Demonomicon",
     "page": 127,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "niflung",
@@ -9097,7 +9878,8 @@
     "rank": "Solo",
     "source": "Draconomicon 2",
     "page": 21,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "black-slaad",
@@ -9110,7 +9892,8 @@
     "tags": [
       "Elemental",
       "Aberration"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "elder-blue-dragon",
@@ -9123,7 +9906,8 @@
     "tags": [
       "Dragon",
       "Lightning"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "fire-archon-ash-disciple",
@@ -9136,7 +9920,8 @@
     "tags": [
       "Fire",
       "Elemental"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "ice-archon-frostshaper",
@@ -9149,7 +9934,8 @@
     "tags": [
       "Cold",
       "Elemental"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "nightwalker",
@@ -9162,7 +9948,8 @@
     "tags": [
       "Shadow",
       "Undead"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "rimefire-griffon",
@@ -9172,7 +9959,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 147,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "rot-harbinger",
@@ -9182,7 +9970,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 223,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "soulspike-devourer",
@@ -9192,7 +9981,8 @@
     "rank": "Elite",
     "source": "Monster Manual 1",
     "page": 69,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "djinn-thunderer",
@@ -9204,7 +9994,8 @@
     "page": 71,
     "tags": [
       "Elemental"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "elder-copper-dragon",
@@ -9217,7 +10008,8 @@
     "tags": [
       "Dragon",
       "Acid"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "fomorian-blinder",
@@ -9230,7 +10022,8 @@
     "tags": [
       "Fey",
       "Giant"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "frost-titan",
@@ -9243,7 +10036,8 @@
     "tags": [
       "Giant",
       "Cold"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "heroslayer-hydra",
@@ -9255,7 +10049,8 @@
     "page": 151,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "human-diabolist",
@@ -9267,7 +10062,8 @@
     "page": 144,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "human-mystagogue",
@@ -9279,7 +10075,8 @@
     "page": 147,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "iron-golem",
@@ -9291,7 +10088,8 @@
     "page": 134,
     "tags": [
       "Construct"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "kazrith",
@@ -9304,7 +10102,8 @@
     "tags": [
       "Demon",
       "Fiend"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "durud-fragment-mage",
@@ -9314,7 +10113,8 @@
     "rank": "Elite",
     "source": "The Plane Above",
     "page": 157,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "shaadee",
@@ -9324,7 +10124,8 @@
     "rank": "Standard",
     "source": "Demonomicon",
     "page": 145,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "nabassu",
@@ -9334,7 +10135,8 @@
     "rank": "Standard",
     "source": "Demonomicon",
     "page": 129,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "groom-guardian",
@@ -9344,7 +10146,8 @@
     "rank": "Standard",
     "source": "Demonomicon",
     "page": 93,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "armanite-lancer",
@@ -9354,7 +10157,8 @@
     "rank": "Standard",
     "source": "Demonomicon",
     "page": 104,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "haures",
@@ -9364,7 +10168,8 @@
     "rank": "Standard",
     "source": "Demonomicon",
     "page": 116,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "deathmask-dragon-elder",
@@ -9376,7 +10181,8 @@
     "page": 189,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "pyroclastic-dragon-elder",
@@ -9388,7 +10194,8 @@
     "page": 194,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "siegewyrm",
@@ -9398,7 +10205,8 @@
     "rank": "Elite",
     "source": "Draconomicon 1",
     "page": 208,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "bronze-dragon-elder",
@@ -9411,7 +10219,8 @@
     "tags": [
       "Dragon",
       "Lightning"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "galzaik",
@@ -9421,7 +10230,8 @@
     "rank": "Elite",
     "source": "Draconomicon 2",
     "page": 134,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "grave-born-drakkensteed",
@@ -9431,7 +10241,8 @@
     "rank": "Standard",
     "source": "Draconomicon 2",
     "page": 196,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "mercury-dragon-elder",
@@ -9443,7 +10254,8 @@
     "page": 165,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "dark-naga",
@@ -9453,7 +10265,8 @@
     "rank": "Elite",
     "source": "Monster Manual 1",
     "page": 194,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "deathpriest-hierophant",
@@ -9463,7 +10276,8 @@
     "rank": "Elite",
     "source": "Monster Manual 1",
     "page": 209,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "fire-titan",
@@ -9477,7 +10291,8 @@
       "Giant",
       "Fire",
       "Elemental"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "ghaele-of-winter",
@@ -9489,7 +10304,8 @@
     "page": 103,
     "tags": [
       "Fey"
-    ]
+    ],
+    "alignment": "Any"
   },
   {
     "id": "giant-mummy",
@@ -9502,7 +10318,8 @@
     "tags": [
       "Undead",
       "Giant"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "larva-mage",
@@ -9512,7 +10329,8 @@
     "rank": "Elite",
     "source": "Monster Manual 1",
     "page": 175,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "marut-blademaster",
@@ -9522,7 +10340,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 185,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "tormenting-ghost",
@@ -9535,7 +10354,8 @@
     "tags": [
       "Undead",
       "Shadow"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "wild-hunt-hound",
@@ -9545,7 +10365,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 161,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "yuan-ti-anathema",
@@ -9555,7 +10376,8 @@
     "rank": "Elite",
     "source": "Monster Manual 1",
     "page": 271,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "cyclops-feyblade",
@@ -9568,7 +10390,8 @@
     "tags": [
       "Giant",
       "Fey"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "elder-adamantine-dragon",
@@ -9580,7 +10403,8 @@
     "page": 76,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "eldritch-titan",
@@ -9592,7 +10416,8 @@
     "page": 120,
     "tags": [
       "Giant"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "marut-castigator",
@@ -9602,7 +10427,8 @@
     "rank": "Standard",
     "source": "Monster Manual 2",
     "page": 162,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "marut-prosecutor",
@@ -9612,7 +10438,8 @@
     "rank": "Standard",
     "source": "Monster Manual 2",
     "page": 162,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "remorhaz",
@@ -9622,7 +10449,8 @@
     "rank": "Elite",
     "source": "Monster Manual 2",
     "page": 176,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "storm-archon-tempest-weaver",
@@ -9635,7 +10463,8 @@
     "tags": [
       "Lightning",
       "Elemental"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "quarrak",
@@ -9645,7 +10474,8 @@
     "rank": "Standard",
     "source": "Demonomicon",
     "page": 137,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "burning-vortex",
@@ -9655,7 +10485,8 @@
     "rank": "Standard",
     "source": "Draconomicon 1",
     "page": 229,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "squamous-spewer",
@@ -9665,7 +10496,8 @@
     "rank": "Solo",
     "source": "Draconomicon 1",
     "page": 231,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "bluespawn-godslayer",
@@ -9675,7 +10507,8 @@
     "rank": "Elite",
     "source": "Monster Manual 1",
     "page": 89,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "death-giant",
@@ -9687,7 +10520,8 @@
     "page": 120,
     "tags": [
       "Giant"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "efreet-fireblade",
@@ -9700,7 +10534,8 @@
     "tags": [
       "Fire",
       "Elemental"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "elder-red-dragon",
@@ -9713,7 +10548,8 @@
     "tags": [
       "Dragon",
       "Fire"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "hezrou",
@@ -9726,7 +10562,8 @@
     "tags": [
       "Demon",
       "Fiend"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "marut-concordant",
@@ -9736,7 +10573,8 @@
     "rank": "Elite",
     "source": "Monster Manual 1",
     "page": 185,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "rot-slinger",
@@ -9746,7 +10584,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 223,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "thunderhawk",
@@ -9756,7 +10595,8 @@
     "rank": "Elite",
     "source": "Monster Manual 1",
     "page": 221,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "chain-golem",
@@ -9768,7 +10608,8 @@
     "page": 133,
     "tags": [
       "Construct"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "chaos-hydra",
@@ -9780,7 +10621,8 @@
     "page": 151,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "djinn-windbow",
@@ -9792,7 +10634,8 @@
     "page": 72,
     "tags": [
       "Elemental"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "elder-silver-dragon",
@@ -9805,7 +10648,8 @@
     "tags": [
       "Dragon",
       "Cold"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "firbolg-master-of-the-wild-hunt",
@@ -9818,7 +10662,8 @@
     "tags": [
       "Giant",
       "Fey"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "fomorian-butcher",
@@ -9831,7 +10676,8 @@
     "tags": [
       "Fey",
       "Giant"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "human-dread-assassin",
@@ -9843,7 +10689,8 @@
     "page": 145,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "marut-executioner",
@@ -9853,7 +10700,8 @@
     "rank": "Standard",
     "source": "Monster Manual 2",
     "page": 162,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "nothic-eye-of-vecna",
@@ -9863,7 +10711,8 @@
     "rank": "Standard",
     "source": "Monster Manual 2",
     "page": 169,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "nycademon",
@@ -9876,7 +10725,8 @@
     "tags": [
       "Demon",
       "Fiend"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "oni-thunderer",
@@ -9888,7 +10738,8 @@
     "page": 171,
     "tags": [
       "Giant"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "voracia",
@@ -9898,7 +10749,8 @@
     "rank": "Elite",
     "source": "The Plane Above",
     "page": 133,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "archdegog-kaugothirn",
@@ -9908,7 +10760,8 @@
     "rank": "Elite",
     "source": "Demonomicon",
     "page": 91,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "zuggtmoy",
@@ -9921,7 +10774,8 @@
     "tags": [
       "Demon",
       "Fiend"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "city-corruptor",
@@ -9931,7 +10785,8 @@
     "rank": "Standard",
     "source": "Demonomicon",
     "page": 108,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "bloodwind",
@@ -9941,7 +10796,8 @@
     "rank": "Solo",
     "source": "Draconomicon 1",
     "page": 209,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "cyan-bloodbane",
@@ -9951,7 +10807,8 @@
     "rank": "Solo",
     "source": "Draconomicon 1",
     "page": 234,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "dragonborn-warmaster",
@@ -9964,7 +10821,8 @@
     "tags": [
       "Dragon",
       "Humanoid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "rancid-tide",
@@ -9974,7 +10832,8 @@
     "rank": "Elite",
     "source": "Draconomicon 1",
     "page": 206,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "kuyutha-exarch-of-bahamut",
@@ -9987,7 +10846,8 @@
     "tags": [
       "Dragon",
       "Celestial"
-    ]
+    ],
+    "alignment": "Lawful Good"
   },
   {
     "id": "blackfire-dracolich",
@@ -10000,7 +10860,8 @@
     "tags": [
       "Undead",
       "Dragon"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "blood-fiend",
@@ -10012,7 +10873,8 @@
     "page": 12,
     "tags": [
       "Fiend"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "efreet-cinderlord",
@@ -10025,7 +10887,8 @@
     "tags": [
       "Fire",
       "Elemental"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "efreet-flamestrider",
@@ -10038,7 +10901,8 @@
     "tags": [
       "Fire",
       "Elemental"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "glabrezu",
@@ -10051,7 +10915,8 @@
     "tags": [
       "Demon",
       "Fiend"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "human-insane-noble",
@@ -10063,7 +10928,8 @@
     "page": 146,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "shardstorm-vortex-whirlwind",
@@ -10073,7 +10939,8 @@
     "rank": "Standard",
     "source": "Monster Manual 2",
     "page": 101,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "swordwing-slasher",
@@ -10083,7 +10950,8 @@
     "rank": "Standard",
     "source": "Underdark",
     "page": 153,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "shemeshka",
@@ -10093,7 +10961,8 @@
     "rank": "Elite",
     "source": "Demonomicon",
     "page": 92,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "nabassu-deathwing",
@@ -10103,7 +10972,8 @@
     "rank": "Standard",
     "source": "Demonomicon",
     "page": 129,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "madras-kalgore-the-poison-fist",
@@ -10113,7 +10983,8 @@
     "rank": "Elite",
     "source": "Draconomicon 1",
     "page": 247,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "shadow-dragon-elder",
@@ -10126,7 +10997,8 @@
     "tags": [
       "Dragon",
       "Shadow"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "gold-hollow-wyrm",
@@ -10136,7 +11008,8 @@
     "rank": "Solo",
     "source": "Draconomicon 2",
     "page": 184,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "silvara",
@@ -10146,7 +11019,8 @@
     "rank": "Solo",
     "source": "Draconomicon 2",
     "page": 214,
-    "tags": []
+    "tags": [],
+    "alignment": "Good"
   },
   {
     "id": "ancient-white-dragon",
@@ -10159,7 +11033,8 @@
     "tags": [
       "Dragon",
       "Cold"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "aspect-of-orcus",
@@ -10173,7 +11048,8 @@
       "Demon",
       "Fiend",
       "Undead"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "elder-purple-worm",
@@ -10183,7 +11059,8 @@
     "rank": "Solo",
     "source": "Monster Manual 1",
     "page": 214,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "lich-2",
@@ -10196,7 +11073,8 @@
     "tags": [
       "Fey",
       "Undead"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "marilith",
@@ -10209,7 +11087,8 @@
     "tags": [
       "Demon",
       "Fiend"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "rakshasa-dread-knight",
@@ -10219,7 +11098,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 218,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "storm-giant",
@@ -10232,7 +11112,8 @@
     "tags": [
       "Lightning",
       "Giant"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "behir-stormsteed",
@@ -10242,7 +11123,8 @@
     "rank": "Standard",
     "source": "Monster Manual 2",
     "page": 23,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "elder-gold-dragon",
@@ -10254,7 +11136,8 @@
     "page": 82,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "caustic-slayer",
@@ -10264,7 +11147,8 @@
     "rank": "Elite",
     "source": "The Plane Below",
     "page": 139,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "djinn-cloudstalker",
@@ -10276,7 +11160,8 @@
     "page": 151,
     "tags": [
       "Elemental"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "seszrath",
@@ -10286,7 +11171,8 @@
     "rank": "Standard",
     "source": "Demonomicon",
     "page": 144,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "bonegouge-assassin",
@@ -10298,7 +11184,8 @@
     "page": 106,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "ferrolith",
@@ -10308,7 +11195,8 @@
     "rank": "Standard",
     "source": "Demonomicon",
     "page": 112,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "brown-dragon-ancient",
@@ -10320,7 +11208,8 @@
     "page": 171,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "redspawn-devastator",
@@ -10330,7 +11219,8 @@
     "rank": "Elite",
     "source": "Draconomicon 1",
     "page": 221,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "astridaria",
@@ -10340,7 +11230,8 @@
     "rank": "Solo",
     "source": "Draconomicon 2",
     "page": 136,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "death-knight-2",
@@ -10354,7 +11245,8 @@
       "Dragon",
       "Humanoid",
       "Undead"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "death-titan",
@@ -10366,7 +11258,8 @@
     "page": 120,
     "tags": [
       "Giant"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "dread-wraith",
@@ -10379,7 +11272,8 @@
     "tags": [
       "Undead",
       "Shadow"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "efreet-pyresinger",
@@ -10392,7 +11286,8 @@
     "tags": [
       "Fire",
       "Elemental"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "sorrowsworn-soulripper",
@@ -10404,7 +11299,8 @@
     "page": 242,
     "tags": [
       "Shadow"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "swordwing",
@@ -10414,7 +11310,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 249,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "aspect-of-demogorgon",
@@ -10427,7 +11324,8 @@
     "tags": [
       "Demon",
       "Fiend"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "beholder-eye-of-chaos",
@@ -10439,7 +11337,8 @@
     "page": 25,
     "tags": [
       "Aberration"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "centaur-campaigner",
@@ -10451,7 +11350,8 @@
     "page": 31,
     "tags": [
       "Humanoid"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "djinn-skylord",
@@ -10463,7 +11363,8 @@
     "page": 73,
     "tags": [
       "Elemental"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "slaughterstone-hammerer",
@@ -10473,7 +11374,8 @@
     "rank": "Standard",
     "source": "Monster Manual 2",
     "page": 186,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "flaying-wrackspawn",
@@ -10483,7 +11385,8 @@
     "rank": "Standard",
     "source": "Underdark",
     "page": 155,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "wendigo-primal-spirit",
@@ -10493,7 +11396,8 @@
     "rank": "Standard",
     "source": "Demonomicon",
     "page": 153,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "demogorgon-fury-cultist",
@@ -10506,7 +11410,8 @@
     "tags": [
       "Demon",
       "Fiend"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "voracalith",
@@ -10516,7 +11421,8 @@
     "rank": "Standard",
     "source": "Demonomicon",
     "page": 151,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "zythar",
@@ -10526,7 +11432,8 @@
     "rank": "Standard",
     "source": "Demonomicon",
     "page": 158,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "anthraxin-the-devourer",
@@ -10536,7 +11443,8 @@
     "rank": "Solo",
     "source": "Draconomicon 1",
     "page": 154,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "champion-of-tiamat",
@@ -10549,7 +11457,8 @@
     "tags": [
       "Dragon",
       "Fiend"
-    ]
+    ],
+    "alignment": "Any"
   },
   {
     "id": "dragon-guardian",
@@ -10561,7 +11470,8 @@
     "page": 162,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "rime",
@@ -10571,7 +11481,8 @@
     "rank": "Solo",
     "source": "Draconomicon 1",
     "page": 242,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "cobalt-dragon-bred-drakkensteed",
@@ -10583,7 +11494,8 @@
     "page": 196,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "ancient-black-dragon",
@@ -10596,7 +11508,8 @@
     "tags": [
       "Dragon",
       "Acid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "crownwing",
@@ -10606,7 +11519,8 @@
     "rank": "Standard",
     "source": "Monster Manual 1",
     "page": 249,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "dragonborn-champion",
@@ -10619,7 +11533,8 @@
     "tags": [
       "Dragon",
       "Humanoid"
-    ]
+    ],
+    "alignment": "Any"
   },
   {
     "id": "phane",
@@ -10629,7 +11544,8 @@
     "rank": "Elite",
     "source": "Monster Manual 1",
     "page": 13,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "storm-gorgon",
@@ -10641,7 +11557,8 @@
     "page": 143,
     "tags": [
       "Lightning"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "thunderblast-cyclone",
@@ -10651,7 +11568,8 @@
     "rank": "Elite",
     "source": "Monster Manual 1",
     "page": 105,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "ancient-iron-dragon",
@@ -10663,7 +11581,8 @@
     "page": 85,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "deva-fallen-star",
@@ -10675,7 +11594,8 @@
     "page": 62,
     "tags": [
       "Celestial"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "son-of-the-spirit-wolf",
@@ -10687,7 +11607,8 @@
     "page": 211,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "thrarak",
@@ -10697,7 +11618,8 @@
     "rank": "Elite",
     "source": "Monster Manual 2",
     "page": 47,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "guardian-demon-soul-drinker",
@@ -10710,7 +11632,8 @@
     "tags": [
       "Demon",
       "Fiend"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "sibriex-chain-master",
@@ -10720,7 +11643,8 @@
     "rank": "Elite",
     "source": "Demonomicon",
     "page": 146,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "gray-dragon-ancient",
@@ -10732,7 +11656,8 @@
     "page": 174,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "mindfire-miasma",
@@ -10742,7 +11667,8 @@
     "rank": "Standard",
     "source": "Draconomicon 1",
     "page": 229,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "cobalt-dragon-ancient",
@@ -10754,7 +11680,8 @@
     "page": 162,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "death-giant-soulfire-hurler",
@@ -10766,7 +11693,8 @@
     "page": 142,
     "tags": [
       "Giant"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "ancient-green-dragon",
@@ -10779,7 +11707,8 @@
     "tags": [
       "Dragon",
       "Poison"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "balor",
@@ -10792,7 +11721,8 @@
     "tags": [
       "Demon",
       "Fiend"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "gibbering-orb",
@@ -10804,7 +11734,8 @@
     "page": 127,
     "tags": [
       "Aberration"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "shadowraven-swarm",
@@ -10816,7 +11747,8 @@
     "page": 243,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "sorrowsworn-reaper",
@@ -10828,7 +11760,8 @@
     "page": 242,
     "tags": [
       "Shadow"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "storm-titan",
@@ -10841,7 +11774,8 @@
     "tags": [
       "Giant",
       "Lightning"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "ancient-copper-dragon",
@@ -10854,7 +11788,8 @@
     "tags": [
       "Dragon",
       "Acid"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "retriever",
@@ -10864,7 +11799,8 @@
     "rank": "Standard",
     "source": "Monster Manual 2",
     "page": 177,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "purple-dragon-ancient",
@@ -10876,7 +11812,8 @@
     "page": 178,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "soulgrinder",
@@ -10886,7 +11823,8 @@
     "rank": "Solo",
     "source": "Draconomicon 1",
     "page": 204,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "mercury-dragon-ancient",
@@ -10898,7 +11836,8 @@
     "page": 165,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "orium-dragon-ancient",
@@ -10910,7 +11849,8 @@
     "page": 171,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "vaporous-serpent-ancient",
@@ -10922,7 +11862,8 @@
     "page": 171,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "ancient-blue-dragon",
@@ -10935,7 +11876,8 @@
     "tags": [
       "Dragon",
       "Lightning"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "earthrage-battlebriar",
@@ -10945,7 +11887,8 @@
     "rank": "Elite",
     "source": "Monster Manual 1",
     "page": 28,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "efreet-karadjin",
@@ -10958,7 +11901,8 @@
     "tags": [
       "Fire",
       "Elemental"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "sorrowsworn-deathlord",
@@ -10970,7 +11914,8 @@
     "page": 242,
     "tags": [
       "Shadow"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "ancient-adamantine-dragon",
@@ -10982,7 +11927,8 @@
     "page": 76,
     "tags": [
       "Dragon"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "mirmakur",
@@ -10992,7 +11938,8 @@
     "rank": "Elite",
     "source": "The Plane Below",
     "page": 154,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "storm-that-walks",
@@ -11004,7 +11951,8 @@
     "page": 129,
     "tags": [
       "Lightning"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "sibriex-spawn",
@@ -11014,7 +11962,8 @@
     "rank": "Standard",
     "source": "Demonomicon",
     "page": 147,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "sibriex-flesh-crafter",
@@ -11024,7 +11973,8 @@
     "rank": "Elite",
     "source": "Demonomicon",
     "page": 147,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "mahataa",
@@ -11034,7 +11984,8 @@
     "rank": "Standard",
     "source": "Demonomicon",
     "page": 124,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "dragonborn-annihilator",
@@ -11047,7 +11998,8 @@
     "tags": [
       "Dragon",
       "Humanoid"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "tiamat",
@@ -11060,7 +12012,8 @@
     "tags": [
       "Dragon",
       "Fiend"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "bronze-dragon-ancient",
@@ -11073,7 +12026,8 @@
     "tags": [
       "Dragon",
       "Lightning"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "godforged-colossus",
@@ -11083,7 +12037,8 @@
     "rank": "Elite",
     "source": "Monster Manual 1",
     "page": 44,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "runescribed-dracolich",
@@ -11096,7 +12051,8 @@
     "tags": [
       "Undead",
       "Dragon"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "beholder-ultimate-tyrant",
@@ -11108,7 +12064,8 @@
     "page": 26,
     "tags": [
       "Aberration"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "hundred-handed-one",
@@ -11118,7 +12075,8 @@
     "rank": "Elite",
     "source": "The Plane Above",
     "page": 130,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "ashardalon",
@@ -11128,7 +12086,8 @@
     "rank": "Solo",
     "source": "Draconomicon 1",
     "page": 232,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "valamardace",
@@ -11138,7 +12097,8 @@
     "rank": "Solo",
     "source": "Draconomicon 2",
     "page": 216,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "ancient-red-dragon",
@@ -11151,7 +12111,8 @@
     "tags": [
       "Dragon",
       "Fire"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "tarrasque",
@@ -11161,7 +12122,8 @@
     "rank": "Solo",
     "source": "Monster Manual 1",
     "page": 13,
-    "tags": []
+    "tags": [],
+    "alignment": "Unaligned"
   },
   {
     "id": "oublivae",
@@ -11171,7 +12133,8 @@
     "rank": "Solo",
     "source": "Demonomicon",
     "page": 130,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "ancient-abyssal-wurm",
@@ -11185,7 +12148,8 @@
       "Demon",
       "Fiend",
       "Beast"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "dragotha",
@@ -11195,7 +12159,8 @@
     "rank": "Solo",
     "source": "Draconomicon 1",
     "page": 236,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "nefermandias",
@@ -11205,7 +12170,8 @@
     "rank": "Solo",
     "source": "Draconomicon 1",
     "page": 240,
-    "tags": []
+    "tags": [],
+    "alignment": "Evil"
   },
   {
     "id": "kostchtchie",
@@ -11219,7 +12185,8 @@
       "Demon",
       "Fiend",
       "Cold"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "baernaloth-vizier",
@@ -11229,7 +12196,8 @@
     "rank": "Standard",
     "source": "Demonomicon",
     "page": 135,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "phraxas",
@@ -11239,7 +12207,8 @@
     "rank": "Solo",
     "source": "Demonomicon",
     "page": 134,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "orcus",
@@ -11253,7 +12222,8 @@
       "Demon",
       "Fiend",
       "Undead"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "pazuzu",
@@ -11266,7 +12236,8 @@
     "tags": [
       "Demon",
       "Fiend"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "demogorgon",
@@ -11279,7 +12250,8 @@
     "tags": [
       "Demon",
       "Fiend"
-    ]
+    ],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "solkara",
@@ -11289,7 +12261,8 @@
     "rank": "Solo",
     "source": "The Plane Below",
     "page": 152,
-    "tags": []
+    "tags": [],
+    "alignment": "Chaotic Evil"
   },
   {
     "id": "crawling-blood-swarm",
@@ -11301,7 +12274,8 @@
     "page": 157,
     "tags": [
       "Beast"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "torog",
@@ -11313,7 +12287,8 @@
     "page": 156,
     "tags": [
       "Undead"
-    ]
+    ],
+    "alignment": "Evil"
   },
   {
     "id": "tiamat-2",
@@ -11326,7 +12301,8 @@
     "tags": [
       "Dragon",
       "Fiend"
-    ]
+    ],
+    "alignment": "Unaligned"
   },
   {
     "id": "bahamut",
@@ -11339,7 +12315,8 @@
     "tags": [
       "Dragon",
       "Celestial"
-    ]
+    ],
+    "alignment": "Lawful Good"
   },
   {
     "id": "the-old-man-with-the-canaries",
@@ -11349,6 +12326,7 @@
     "rank": "Solo",
     "source": "Draconomicon 2",
     "page": 206,
-    "tags": []
+    "tags": [],
+    "alignment": "Lawful Good"
   }
 ]

@@ -18,6 +18,7 @@ export interface Monster {
   source: string;
   page: number;
   tags: string[];
+  alignment: string;
   themes?: string[];
 }
 
@@ -61,6 +62,7 @@ export interface Environment {
   label: string;
   description: string;
   tags: string[];
+  preferredAlignments?: string[];
 }
 
 export interface GeneratorSettings {
@@ -87,6 +89,7 @@ export interface GeneratedEncounterEntry {
   source: string;
   page: number;
   tags: string[];
+  alignment: string;
   themes?: string[];
 }
 

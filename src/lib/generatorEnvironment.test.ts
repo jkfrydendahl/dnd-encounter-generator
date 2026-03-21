@@ -22,6 +22,7 @@ function makeEntry(tags: string[], themes: string[] = []): GeneratedEncounterEnt
     source: 'test',
     page: 0,
     tags,
+    alignment: 'Unaligned',
     themes,
   };
 }

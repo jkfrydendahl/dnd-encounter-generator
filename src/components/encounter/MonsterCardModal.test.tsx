@@ -15,9 +15,10 @@ const mockMonster: GeneratedEncounterEntry = {
   source: 'Monster Manual 1',
   page: 219,
   tags: ['Beast'],
+  alignment: 'Unaligned',
 };
 
-const sampleHtml = '<h1 class=monster>Dire Rat</h1><table class=bodytable><tr><td><b>HP</b> 38</td></tr></table>';
+const sampleHtml= '<h1 class=monster>Dire Rat</h1><table class=bodytable><tr><td><b>HP</b> 38</td></tr></table>';
 
 describe('MonsterCardModal', () => {
   it('renders stat block HTML when open', () => {
