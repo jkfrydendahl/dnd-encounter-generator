@@ -53,6 +53,7 @@ interface EncounterDisplayProps {
   lockedTerrains?: Set<string>;
   onToggleTerrainLock?: (terrainId: string) => void;
   onClearAllLocks?: () => void;
+  onMonsterClick?: (entry: GeneratedEncounter["entries"][number]) => void;
 }
 
 export function EncounterDisplay({
@@ -63,6 +64,7 @@ export function EncounterDisplay({
   lockedTerrains,
   onToggleTerrainLock,
   onClearAllLocks,
+  onMonsterClick,
 }: EncounterDisplayProps) {
   const [copied, setCopied] = useState(false);
 
@@ -106,7 +108,12 @@ export function EncounterDisplay({
             const isLocked = lockedSlots?.has(entry.slotId) ?? false;
             return (
               <tr key={entry.slotId} className={isLocked ? "slot-locked" : ""}>
-                <td>{entry.monsterName}</td>
+                <td
+                  className={onMonsterClick ? "monster-name-clickable" : ""}
+                  onClick={onMonsterClick ? () => onMonsterClick(entry) : undefined}
+                >
+                  {entry.monsterName}
+                </td>
                 <td>{entry.role}</td>
                 <td>{entry.rank}</td>
                 <td>{entry.level}</td>

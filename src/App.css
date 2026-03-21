@@ -557,3 +557,189 @@
     font-size: 1rem; /* prevent iOS zoom */
   }
 }
+
+/* ===== Monster Card Modal ===== */
+
+.monster-name-clickable {
+  cursor: pointer;
+  color: var(--accent);
+  transition: color var(--transition);
+}
+
+.monster-name-clickable:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+.monster-card-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 2rem;
+  backdrop-filter: blur(2px);
+}
+
+.monster-card-modal {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  max-width: 640px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: 1.5rem;
+  position: relative;
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.4);
+}
+
+.monster-card-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background: transparent;
+  border: 1px solid var(--border-subtle);
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 1.1rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition);
+  z-index: 1;
+}
+
+.monster-card-close:hover {
+  color: var(--error);
+  border-color: var(--error);
+}
+
+/* Stat block dark theme overrides */
+.monster-card-statblock {
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+.monster-card-statblock h1.monster {
+  color: var(--accent);
+  font-size: 1.3rem;
+  margin: 0 0 0.75rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--accent);
+  line-height: 1.3;
+}
+
+.monster-card-statblock h1.monster .type {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.monster-card-statblock h1.monster .level {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-weight: normal;
+}
+
+.monster-card-statblock h1.monster .xp {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+.monster-card-statblock .bodytable {
+  width: 100%;
+  margin: 0.5rem 0;
+  border-collapse: collapse;
+}
+
+.monster-card-statblock .bodytable td {
+  padding: 0.2rem 0;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+}
+
+.monster-card-statblock .bodytable .rightalign {
+  text-align: right;
+}
+
+.monster-card-statblock h2 {
+  color: var(--accent);
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 1rem 0 0.4rem 0;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.monster-card-statblock .flavor,
+.monster-card-statblock p.flavor {
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  margin: 0.3rem 0;
+}
+
+.monster-card-statblock .flavor.alt,
+.monster-card-statblock p.flavor.alt {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 0.3rem 0.5rem;
+  border-radius: 3px;
+  margin: 0.4rem 0;
+}
+
+.monster-card-statblock .flavorIndent,
+.monster-card-statblock p.flavorIndent {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  margin: 0.15rem 0 0.15rem 1rem;
+}
+
+.monster-card-statblock .publishedIn,
+.monster-card-statblock p.publishedIn {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  font-style: italic;
+  margin-top: 1rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.monster-card-statblock b {
+  color: var(--text-primary);
+}
+
+.monster-card-statblock i {
+  color: var(--accent);
+}
+
+/* Fallback card */
+.monster-card-fallback h1 {
+  color: var(--accent);
+  font-size: 1.3rem;
+  margin: 0 0 0.5rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--accent);
+}
+
+.monster-card-fallback p {
+  color: var(--text-secondary);
+  margin: 0.3rem 0;
+}
+
+.monster-card-fallback .monster-card-source {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.monster-card-fallback .monster-card-no-data {
+  color: var(--text-muted);
+  margin-top: 1rem;
+  font-size: 0.85rem;
+}

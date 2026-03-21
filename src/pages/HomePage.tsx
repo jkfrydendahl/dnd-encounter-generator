@@ -1,8 +1,10 @@
 import { useState, useCallback } from "react";
 import { useGeneratorSettings } from "../hooks/useGeneratorSettings";
+import { useMonsterCard } from "../hooks/useMonsterCard";
 import { ControlsPanel } from "../components/controls/ControlsPanel";
 import { EncounterDisplay } from "../components/encounter/EncounterDisplay";
 import type { LockedSlots } from "../components/encounter/EncounterDisplay";
+import { MonsterCardModal } from "../components/encounter/MonsterCardModal";
 import { DiagnosticsPanel } from "../components/encounter/DiagnosticsPanel";
 import { generateEncounter, rerollSlot, selectTerrains } from "../lib/generateEncounter";
 import type { GeneratedEncounter, Monster, EncounterTemplate, TerrainSuggestion } from "../types";
@@ -25,6 +27,8 @@ export function HomePage() {
   const [isGenerating, setIsGenerating] = useState(false);
   const [lockedSlots, setLockedSlots] = useState<LockedSlots>(new Set());
   const [lockedTerrains, setLockedTerrains] = useState<Set<string>>(new Set());
+
+  const { isOpen, selectedMonster, statBlockHtml, openCard, closeCard } = useMonsterCard();
 
   const generatorInput = { monsters, templates, terrain, settings };
 
@@ -128,7 +132,17 @@ export function HomePage() {
           lockedTerrains={lockedTerrains}
           onToggleTerrainLock={handleToggleTerrainLock}
           onClearAllLocks={handleClearAllLocks}
+          onMonsterClick={openCard}
         />
+
+        {selectedMonster && (
+          <MonsterCardModal
+            isOpen={isOpen}
+            statBlockHtml={statBlockHtml}
+            monster={selectedMonster}
+            onClose={closeCard}
+          />
+        )}
 
         <DiagnosticsPanel
           diagnostics={encounter?.diagnostics ?? null}
