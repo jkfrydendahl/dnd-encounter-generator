@@ -16,6 +16,7 @@ const defaultSettings: GeneratorSettings = {
   maxLevelOffset: DEFAULT_LEVEL_MAX_OFFSET,
   targetDifficultyOffset: DEFAULT_TARGET_OFFSET,
   themeTag: undefined,
+  environment: undefined,
   templateMode: "any",
   duplicatePolicy: "soft-avoid",
   terrainCount: 1,

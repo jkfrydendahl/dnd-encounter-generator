@@ -1,4 +1,4 @@
-import type { GeneratorSettings, DuplicatePolicy, EncounterTemplate } from "../../types";
+import type { GeneratorSettings, DuplicatePolicy, EncounterTemplate, Environment } from "../../types";
 
 interface ControlsPanelProps {
   settings: GeneratorSettings;
@@ -10,6 +10,7 @@ interface ControlsPanelProps {
   isGenerating: boolean;
   templates: EncounterTemplate[];
   availableTags: string[];
+  environments: Environment[];
 }
 
 export function ControlsPanel({
@@ -19,6 +20,7 @@ export function ControlsPanel({
   isGenerating,
   templates,
   availableTags,
+  environments,
 }: ControlsPanelProps) {
   return (
     <div className="controls-panel">
@@ -106,6 +108,24 @@ export function ControlsPanel({
           <option value="">Any</option>
           {availableTags.map((tag) => (
             <option key={tag} value={tag}>{tag}</option>
+          ))}
+        </select>
+      </label>
+
+      <label>
+        Environment
+        <select
+          value={settings.environment ?? ""}
+          onChange={(e) =>
+            onUpdateSetting(
+              "environment",
+              e.target.value || undefined
+            )
+          }
+        >
+          <option value="">Any</option>
+          {environments.map((env) => (
+            <option key={env.id} value={env.id}>{env.label}</option>
           ))}
         </select>
       </label>

@@ -11,6 +11,7 @@ import type {
 } from "../types";
 import { scoreMonsterCandidate } from "./scoreMonsterCandidate";
 import { evaluateEncounter, buildThreatSummaryFromEntries } from "./evaluateEncounter";
+import { getEnvironmentTags } from "./environmentLookup";
 import {
   MAX_GENERATION_ATTEMPTS,
   DEFAULT_LEVEL_MIN_OFFSET,
@@ -110,7 +111,8 @@ function resolveSlot(
   slot: EncounterSlot,
   monsters: Monster[],
   currentEntries: GeneratedEncounterEntry[],
-  settings: GeneratorSettings
+  settings: GeneratorSettings,
+  environmentTags?: string[]
 ): GeneratedEncounterEntry | null {
   const candidates = filterCandidates(monsters, slot, settings);
   if (candidates.length === 0) return null;
@@ -123,6 +125,7 @@ function resolveSlot(
       currentEntries,
       targetLevel,
       themeTag: settings.themeTag,
+      environmentTags,
       duplicatePolicy: settings.duplicatePolicy,
     })
   );
@@ -186,13 +189,14 @@ function adaptTemplateSlots(
 function buildCandidateEncounter(
   template: EncounterTemplate,
   monsters: Monster[],
-  settings: GeneratorSettings
+  settings: GeneratorSettings,
+  environmentTags?: string[]
 ): GeneratedEncounterEntry[] | null {
   const adapted = adaptTemplateSlots(template, settings.monsterCount ?? DEFAULT_MONSTER_COUNT);
   const entries: GeneratedEncounterEntry[] = [];
 
   for (const slot of adapted.slots) {
-    const entry = resolveSlot(slot, monsters, entries, settings);
+    const entry = resolveSlot(slot, monsters, entries, settings, environmentTags);
     if (!entry) return null; // Unfilled slot — reject candidate
     entries.push(entry);
   }
@@ -203,18 +207,21 @@ function buildCandidateEncounter(
 export function selectTerrains(
   terrainOptions: TerrainSuggestion[],
   entries: GeneratedEncounterEntry[],
-  count: number
+  count: number,
+  environmentTags?: string[]
 ): TerrainSuggestion[] {
   if (terrainOptions.length === 0 || count <= 0) return [];
 
   const encounterTags = new Set(entries.flatMap((e) => e.tags));
   const encounterThemes = new Set(entries.flatMap((e) => e.themes ?? []));
+  const envTagSet = new Set(environmentTags ?? []);
 
-  // Score all terrains by tag + theme overlap
+  // Score all terrains by tag + theme overlap + environment boost
   const scored = terrainOptions.map((terrain) => {
     const tagOverlap = terrain.tags.filter((t) => encounterTags.has(t)).length;
     const themeOverlap = terrain.tags.filter((t) => encounterThemes.has(t)).length;
-    const score = tagOverlap * 2 + themeOverlap + Math.random() * 0.5;
+    const envOverlap = terrain.tags.filter((t) => envTagSet.has(t)).length;
+    const score = tagOverlap * 2 + themeOverlap + envOverlap * 2 + Math.random() * 0.5;
     return { terrain, score };
   });
 
@@ -339,6 +346,8 @@ export function generateEncounter(
       (settings.targetDifficultyOffset ?? DEFAULT_TARGET_OFFSET) + countAdjustment,
   };
 
+  const environmentTags = getEnvironmentTags(settings.environment);
+
   let bestEncounter: GeneratedEncounter | null = null;
   let bestScore = -Infinity;
   let bestIsValid = false;
@@ -348,7 +357,8 @@ export function generateEncounter(
     const entries = buildCandidateEncounter(
       template,
       monsters,
-      effectiveSettings
+      effectiveSettings,
+      environmentTags.length > 0 ? environmentTags : undefined
     );
 
     if (!entries) continue;
@@ -370,7 +380,8 @@ export function generateEncounter(
       const terrainSuggestions = selectTerrains(
         terrain,
         entries,
-        effectiveSettings.terrainCount ?? 0
+        effectiveSettings.terrainCount ?? 0,
+        environmentTags.length > 0 ? environmentTags : undefined
       );
       const name = generateEncounterName(template.name, entries);
 
@@ -414,9 +425,11 @@ export function rerollSlot(
       (settings.targetDifficultyOffset ?? DEFAULT_TARGET_OFFSET) + countAdjustment,
   };
 
+  const environmentTags = getEnvironmentTags(settings.environment);
+
   // Other entries stay fixed — pass them as context for scoring
   const otherEntries = encounter.entries.filter((e) => e.slotId !== slotId);
-  const newEntry = resolveSlot(slot, monsters, otherEntries, effectiveSettings);
+  const newEntry = resolveSlot(slot, monsters, otherEntries, effectiveSettings, environmentTags.length > 0 ? environmentTags : undefined);
   if (!newEntry) return encounter;
 
   const entries = encounter.entries.map((e) =>
