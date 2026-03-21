@@ -1,6 +1,6 @@
 # D&D 4e Encounter Generator
 
-A Progressive Web App that generates tactically interesting D&D 4th Edition encounters for optimized parties. Instead of XP budgets, it uses encounter templates, monster role composition, weighted random selection, and multi-candidate scoring.
+A locally hosted Typescript App that generates tactically interesting D&D 4th Edition encounters for optimized parties. Instead of XP budgets, it uses encounter templates, monster role composition, weighted random selection, and multi-candidate scoring.
 
 ## Features
 
