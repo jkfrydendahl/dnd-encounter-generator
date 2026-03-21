@@ -770,7 +770,6 @@
 /* ===== Pinned Cards Section ===== */
 
 .pinned-cards-section {
-  grid-column: 2;
   margin-top: 1rem;
 }
 
@@ -869,10 +868,6 @@
 }
 
 @media (max-width: 900px) {
-  .pinned-cards-section {
-    grid-column: 1;
-  }
-
   .pinned-cards-grid {
     grid-template-columns: 1fr;
   }

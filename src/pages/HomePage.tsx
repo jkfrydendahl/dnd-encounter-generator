@@ -138,14 +138,15 @@ export function HomePage() {
           onMonsterClick={openCard}
           onPinMonster={togglePin}
           isPinned={isPinned}
-        />
-
-        <PinnedCardsSection
-          pinnedCards={pinnedCards}
-          isOpen={isSectionOpen}
-          onToggleSection={toggleSection}
-          onUnpin={unpinCard}
-          onClear={clearPinned}
+          pinnedCardsSlot={
+            <PinnedCardsSection
+              pinnedCards={pinnedCards}
+              isOpen={isSectionOpen}
+              onToggleSection={toggleSection}
+              onUnpin={unpinCard}
+              onClear={clearPinned}
+            />
+          }
         />
 
         {isOpen && selectedMonster && (

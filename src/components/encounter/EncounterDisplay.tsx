@@ -56,6 +56,7 @@ interface EncounterDisplayProps {
   onMonsterClick?: (entry: GeneratedEncounter["entries"][number]) => void;
   onPinMonster?: (entry: GeneratedEncounter["entries"][number]) => void;
   isPinned?: (monsterName: string) => boolean;
+  pinnedCardsSlot?: React.ReactNode;
 }
 
 export function EncounterDisplay({
@@ -69,6 +70,7 @@ export function EncounterDisplay({
   onMonsterClick,
   onPinMonster,
   isPinned,
+  pinnedCardsSlot,
 }: EncounterDisplayProps) {
   const [copied, setCopied] = useState(false);
 
@@ -117,19 +119,6 @@ export function EncounterDisplay({
                   onClick={onMonsterClick ? () => onMonsterClick(entry) : undefined}
                 >
                   {entry.monsterName}
-                  {onPinMonster && (
-                    <button
-                      className={`pin-btn${isPinned?.(entry.monsterName) ? ' pinned' : ''}`}
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        onPinMonster(entry);
-                      }}
-                      title={isPinned?.(entry.monsterName) ? 'Unpin stat block' : 'Pin stat block'}
-                      aria-label={isPinned?.(entry.monsterName) ? 'Unpin' : 'Pin'}
-                    >
-                      📌
-                    </button>
-                  )}
                 </td>
                 <td>{entry.role}</td>
                 <td>{entry.rank}</td>
@@ -138,6 +127,16 @@ export function EncounterDisplay({
                 <td>{entry.source} p.{entry.page}</td>
                 {onRerollSlot && (
                   <td className="slot-actions">
+                    {onPinMonster && (
+                      <button
+                        className={`pin-btn${isPinned?.(entry.monsterName) ? ' pinned' : ''}`}
+                        onClick={() => onPinMonster(entry)}
+                        title={isPinned?.(entry.monsterName) ? 'Unpin stat block' : 'Pin stat block'}
+                        aria-label={isPinned?.(entry.monsterName) ? 'Unpin' : 'Pin'}
+                      >
+                        📌
+                      </button>
+                    )}
                     <button
                       className={"slot-lock-btn" + (isLocked ? " locked" : "")}
                       onClick={() => onToggleLock?.(entry.slotId)}
@@ -160,6 +159,8 @@ export function EncounterDisplay({
           })}
         </tbody>
       </table>
+
+      {pinnedCardsSlot}
 
       {encounter.terrainSuggestions.length > 0 && encounter.terrainSuggestions.map((terrain) => {
         const isTerrainLocked = lockedTerrains?.has(terrain.id) ?? false;
