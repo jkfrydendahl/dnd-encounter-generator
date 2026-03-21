@@ -16,6 +16,7 @@ function makeMonster(overrides: Partial<Monster> = {}): Monster {
     source: 'test',
     page: 0,
     tags: ['Beast'],
+    alignment: 'Unaligned',
     themes: [],
     ...overrides,
   };

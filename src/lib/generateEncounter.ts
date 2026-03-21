@@ -11,7 +11,7 @@ import type {
 } from "../types";
 import { scoreMonsterCandidate } from "./scoreMonsterCandidate";
 import { evaluateEncounter, buildThreatSummaryFromEntries } from "./evaluateEncounter";
-import { getEnvironmentTags } from "./environmentLookup";
+import { getEnvironmentTags, getEnvironmentAlignments } from "./environmentLookup";
 import {
   MAX_GENERATION_ATTEMPTS,
   DEFAULT_LEVEL_MIN_OFFSET,
@@ -112,7 +112,8 @@ function resolveSlot(
   monsters: Monster[],
   currentEntries: GeneratedEncounterEntry[],
   settings: GeneratorSettings,
-  environmentTags?: string[]
+  environmentTags?: string[],
+  environmentAlignments?: string[]
 ): GeneratedEncounterEntry | null {
   const candidates = filterCandidates(monsters, slot, settings);
   if (candidates.length === 0) return null;
@@ -126,6 +127,7 @@ function resolveSlot(
       targetLevel,
       themeTag: settings.themeTag,
       environmentTags,
+      environmentAlignments,
       duplicatePolicy: settings.duplicatePolicy,
     })
   );
@@ -144,6 +146,7 @@ function resolveSlot(
     source: selected.source,
     page: selected.page,
     tags: selected.tags,
+    alignment: selected.alignment,
     themes: selected.themes,
   };
 }
@@ -190,13 +193,14 @@ function buildCandidateEncounter(
   template: EncounterTemplate,
   monsters: Monster[],
   settings: GeneratorSettings,
-  environmentTags?: string[]
+  environmentTags?: string[],
+  environmentAlignments?: string[]
 ): GeneratedEncounterEntry[] | null {
   const adapted = adaptTemplateSlots(template, settings.monsterCount ?? DEFAULT_MONSTER_COUNT);
   const entries: GeneratedEncounterEntry[] = [];
 
   for (const slot of adapted.slots) {
-    const entry = resolveSlot(slot, monsters, entries, settings, environmentTags);
+    const entry = resolveSlot(slot, monsters, entries, settings, environmentTags, environmentAlignments);
     if (!entry) return null; // Unfilled slot — reject candidate
     entries.push(entry);
   }
@@ -347,6 +351,7 @@ export function generateEncounter(
   };
 
   const environmentTags = getEnvironmentTags(settings.environment);
+  const environmentAlignments = getEnvironmentAlignments(settings.environment);
 
   let bestEncounter: GeneratedEncounter | null = null;
   let bestScore = -Infinity;
@@ -358,7 +363,8 @@ export function generateEncounter(
       template,
       monsters,
       effectiveSettings,
-      environmentTags.length > 0 ? environmentTags : undefined
+      environmentTags.length > 0 ? environmentTags : undefined,
+      environmentAlignments.length > 0 ? environmentAlignments : undefined
     );
 
     if (!entries) continue;
@@ -426,10 +432,11 @@ export function rerollSlot(
   };
 
   const environmentTags = getEnvironmentTags(settings.environment);
+  const environmentAlignments = getEnvironmentAlignments(settings.environment);
 
   // Other entries stay fixed — pass them as context for scoring
   const otherEntries = encounter.entries.filter((e) => e.slotId !== slotId);
-  const newEntry = resolveSlot(slot, monsters, otherEntries, effectiveSettings, environmentTags.length > 0 ? environmentTags : undefined);
+  const newEntry = resolveSlot(slot, monsters, otherEntries, effectiveSettings, environmentTags.length > 0 ? environmentTags : undefined, environmentAlignments.length > 0 ? environmentAlignments : undefined);
   if (!newEntry) return encounter;
 
   const entries = encounter.entries.map((e) =>

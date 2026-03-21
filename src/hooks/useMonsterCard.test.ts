@@ -14,6 +14,7 @@ const mockMonster: GeneratedEncounterEntry = {
   source: 'Monster Manual 1',
   page: 219,
   tags: ['Beast'],
+  alignment: 'Unaligned',
 };
 
 describe('useMonsterCard', () => {

@@ -1,6 +1,6 @@
 // convert-monsters.mjs
 // One-time script to convert full-monster-list.txt into monsters.json
-import { readFileSync, writeFileSync } from "fs";
+import { readFileSync, writeFileSync, existsSync } from "fs";
 
 const raw = readFileSync("full-monster-list.txt", "utf-8");
 const lines = raw.split(/\r?\n/).filter((l) => l.trim());
@@ -309,6 +309,34 @@ function deriveTagsFromName(name) {
   return [...tags];
 }
 
+// Load stat blocks for alignment extraction
+let statblockMap = new Map();
+if (existsSync("src/data/statblocks.json")) {
+  const statblocks = JSON.parse(readFileSync("src/data/statblocks.json", "utf-8"));
+  for (const [name, html] of Object.entries(statblocks)) {
+    statblockMap.set(name.toLowerCase(), html);
+  }
+  console.log(`Loaded ${statblockMap.size} stat blocks for alignment extraction`);
+}
+
+const ALIGNMENT_NORMALIZE = {
+  "unaligned": "Unaligned",
+  "evil": "Evil",
+  "chaotic evil": "Chaotic Evil",
+  "any": "Any",
+  "good": "Good",
+  "lawful good": "Lawful Good",
+};
+
+function extractAlignment(monsterName) {
+  const html = statblockMap.get(monsterName.toLowerCase());
+  if (!html) return "Unaligned";
+  const match = html.match(/<b>Alignment<\/b>\s*([^<]+)/i);
+  if (!match) return "Unaligned";
+  const raw = match[1].trim().toLowerCase();
+  return ALIGNMENT_NORMALIZE[raw] || "Unaligned";
+}
+
 const seen = new Set();
 const monsters = [];
 
@@ -357,6 +385,7 @@ for (const line of dataLines) {
   seen.add(uniqueId);
 
   const tags = deriveTagsFromName(name);
+  const alignment = extractAlignment(name);
 
   monsters.push({
     id: uniqueId,
@@ -367,6 +396,7 @@ for (const line of dataLines) {
     source: source.trim(),
     page: isNaN(page) ? 0 : page,
     tags,
+    alignment,
   });
 }
 
@@ -397,3 +427,9 @@ console.log("\nRoles:", roleCount);
 console.log("Ranks:", rankCount);
 console.log("Level range:", levelRange);
 console.log("\nTop tags:", Object.entries(tagCount).sort((a, b) => b[1] - a[1]).slice(0, 15));
+
+const alignCount = {};
+for (const m of monsters) {
+  alignCount[m.alignment] = (alignCount[m.alignment] || 0) + 1;
+}
+console.log("Alignments:", alignCount);

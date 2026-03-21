@@ -3,43 +3,50 @@
     "id": "plains",
     "label": "Plains",
     "description": "Wide open grassland dotted with standing stones and ancient cairns.",
-    "tags": ["Humanoid", "Beast", "Giant"]
+    "tags": ["Humanoid", "Beast", "Giant"],
+    "preferredAlignments": ["Unaligned"]
   },
   {
     "id": "forest",
     "label": "Forest",
     "description": "Dense woodland where sunlight filters through a thick canopy.",
-    "tags": ["Fey", "Beast", "Plant"]
+    "tags": ["Fey", "Beast", "Plant"],
+    "preferredAlignments": ["Unaligned"]
   },
   {
     "id": "swamp",
     "label": "Swamp",
     "description": "Murky water, twisted mangroves, and half-submerged ruins.",
-    "tags": ["Plant", "Poison", "Ooze", "Beast"]
+    "tags": ["Plant", "Poison", "Ooze", "Beast"],
+    "preferredAlignments": ["Evil", "Unaligned"]
   },
   {
     "id": "desert",
     "label": "Desert",
     "description": "Endless dunes interrupted by half-buried pillars and sun-bleached altars.",
-    "tags": ["Fire", "Elemental", "Beast"]
+    "tags": ["Fire", "Elemental", "Beast"],
+    "preferredAlignments": ["Evil", "Unaligned"]
   },
   {
     "id": "arctic",
     "label": "Arctic",
     "description": "A frozen expanse of ice sheets and howling wind.",
-    "tags": ["Cold", "Giant", "Beast", "Elemental"]
+    "tags": ["Cold", "Giant", "Beast", "Elemental"],
+    "preferredAlignments": ["Unaligned"]
   },
   {
     "id": "mountain",
     "label": "Mountain",
     "description": "Sheer cliff faces and narrow trails between jagged peaks.",
-    "tags": ["Giant", "Dragon", "Beast", "Elemental"]
+    "tags": ["Giant", "Dragon", "Beast", "Elemental"],
+    "preferredAlignments": ["Unaligned"]
   },
   {
     "id": "underground",
     "label": "Underground",
     "description": "Cold stone corridors, natural caverns, and the endless dark below.",
-    "tags": ["Aberration", "Ooze", "Shadow", "Goblinoid"]
+    "tags": ["Aberration", "Ooze", "Shadow", "Goblinoid"],
+    "preferredAlignments": ["Evil", "Chaotic Evil"]
   },
   {
     "id": "urban",
@@ -51,24 +58,28 @@
     "id": "aquatic",
     "label": "Aquatic",
     "description": "Open seas, submerged ruins, and river crossings.",
-    "tags": ["Beast", "Elemental", "Cold"]
+    "tags": ["Beast", "Elemental", "Cold"],
+    "preferredAlignments": ["Unaligned"]
   },
   {
     "id": "shadowfell",
     "label": "Shadowfell",
     "description": "A gloomy mirror of reality drained of colour and warmth.",
-    "tags": ["Shadow", "Undead"]
+    "tags": ["Shadow", "Undead"],
+    "preferredAlignments": ["Evil", "Chaotic Evil"]
   },
   {
     "id": "feywild",
     "label": "Feywild",
     "description": "A place where colours are too vivid and logic bends.",
-    "tags": ["Fey", "Plant", "Beast"]
+    "tags": ["Fey", "Plant", "Beast"],
+    "preferredAlignments": ["Unaligned", "Good"]
   },
   {
     "id": "elemental-chaos",
     "label": "Elemental Chaos",
     "description": "A roiling maelstrom where elemental forces and demonic powers collide.",
-    "tags": ["Demon", "Fiend", "Elemental", "Fire", "Lightning"]
+    "tags": ["Demon", "Fiend", "Elemental", "Fire", "Lightning"],
+    "preferredAlignments": ["Chaotic Evil", "Evil"]
   }
 ]

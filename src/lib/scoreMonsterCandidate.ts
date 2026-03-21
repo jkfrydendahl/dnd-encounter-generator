@@ -20,6 +20,8 @@ import {
   OVERREPRESENTED_CATEGORY_PENALTY,
   BRUTE_LIMIT,
   ENVIRONMENT_BONUS,
+  ALIGNMENT_COHERENCE_BONUS,
+  ENVIRONMENT_ALIGNMENT_BONUS,
 } from "./constants";
 
 export interface CandidateContext {
@@ -27,6 +29,7 @@ export interface CandidateContext {
   targetLevel: number;
   themeTag?: string;
   environmentTags?: string[];
+  environmentAlignments?: string[];
   duplicatePolicy: DuplicatePolicy;
 }
 
@@ -56,6 +59,25 @@ export function scoreMonsterCandidate(
       context.environmentTags!.includes(t)
     ).length;
     score += matchCount * ENVIRONMENT_BONUS;
+  }
+
+  // Alignment coherence: bonus when candidate shares alignment with majority of selected monsters
+  if (context.currentEntries.length > 0) {
+    const isAny = monster.alignment === "Any";
+    const alignments = context.currentEntries.map((e) => e.alignment);
+    const majority = alignments.sort(
+      (a, b) => alignments.filter((x) => x === b).length - alignments.filter((x) => x === a).length
+    )[0];
+    if (isAny || monster.alignment === majority) {
+      score += ALIGNMENT_COHERENCE_BONUS;
+    }
+  }
+
+  // Environment alignment bonus
+  if (context.environmentAlignments && context.environmentAlignments.length > 0) {
+    if (monster.alignment === "Any" || context.environmentAlignments.includes(monster.alignment)) {
+      score += ENVIRONMENT_ALIGNMENT_BONUS;
+    }
   }
 
   // Threat category analysis
