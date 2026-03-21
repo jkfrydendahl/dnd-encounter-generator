@@ -54,6 +54,8 @@ interface EncounterDisplayProps {
   onToggleTerrainLock?: (terrainId: string) => void;
   onClearAllLocks?: () => void;
   onMonsterClick?: (entry: GeneratedEncounter["entries"][number]) => void;
+  onPinMonster?: (entry: GeneratedEncounter["entries"][number]) => void;
+  isPinned?: (monsterName: string) => boolean;
 }
 
 export function EncounterDisplay({
@@ -65,6 +67,8 @@ export function EncounterDisplay({
   onToggleTerrainLock,
   onClearAllLocks,
   onMonsterClick,
+  onPinMonster,
+  isPinned,
 }: EncounterDisplayProps) {
   const [copied, setCopied] = useState(false);
 
@@ -113,6 +117,19 @@ export function EncounterDisplay({
                   onClick={onMonsterClick ? () => onMonsterClick(entry) : undefined}
                 >
                   {entry.monsterName}
+                  {onPinMonster && (
+                    <button
+                      className={`pin-btn${isPinned?.(entry.monsterName) ? ' pinned' : ''}`}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        onPinMonster(entry);
+                      }}
+                      title={isPinned?.(entry.monsterName) ? 'Unpin stat block' : 'Pin stat block'}
+                      aria-label={isPinned?.(entry.monsterName) ? 'Unpin' : 'Pin'}
+                    >
+                      📌
+                    </button>
+                  )}
                 </td>
                 <td>{entry.role}</td>
                 <td>{entry.rank}</td>
