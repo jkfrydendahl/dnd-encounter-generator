@@ -57,6 +57,7 @@ interface EncounterDisplayProps {
   onPinMonster?: (entry: GeneratedEncounter["entries"][number]) => void;
   isPinned?: (monsterName: string) => boolean;
   pinnedCardsSlot?: React.ReactNode;
+  onImportEncounter?: (text: string) => void;
 }
 
 export function EncounterDisplay({
@@ -71,8 +72,10 @@ export function EncounterDisplay({
   onPinMonster,
   isPinned,
   pinnedCardsSlot,
+  onImportEncounter,
 }: EncounterDisplayProps) {
   const [copied, setCopied] = useState(false);
+  const [importError, setImportError] = useState<string | null>(null);
 
   function handleCopy() {
     if (!encounter) return;
@@ -82,10 +85,29 @@ export function EncounterDisplay({
     });
   }
 
+  function handleImport() {
+    if (!onImportEncounter) return;
+    navigator.clipboard.readText().then((text) => {
+      setImportError(null);
+      onImportEncounter(text);
+    }).catch(() => {
+      setImportError("Could not read clipboard. Try pasting manually.");
+      setTimeout(() => setImportError(null), 3000);
+    });
+  }
+
   if (!encounter) {
     return (
       <div className="encounter-panel empty">
         <p>No encounter generated yet. Adjust settings and click Generate.</p>
+        {onImportEncounter && (
+          <div className="encounter-actions">
+            <button className="import-button" onClick={handleImport}>
+              Import from Clipboard
+            </button>
+            {importError && <span className="import-error">{importError}</span>}
+          </div>
+        )}
       </div>
     );
   }
@@ -207,6 +229,12 @@ export function EncounterDisplay({
         <button className="copy-button" onClick={handleCopy}>
           {copied ? "Copied!" : "Copy to Clipboard"}
         </button>
+        {onImportEncounter && (
+          <button className="import-button" onClick={handleImport}>
+            Import from Clipboard
+          </button>
+        )}
+        {importError && <span className="import-error">{importError}</span>}
       </div>
     </div>
   );

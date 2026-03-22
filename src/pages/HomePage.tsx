@@ -10,6 +10,7 @@ import { PinnedCardsSection } from "../components/encounter/PinnedCardsSection";
 import { DiagnosticsPanel } from "../components/encounter/DiagnosticsPanel";
 import { generateEncounter, rerollSlot, selectTerrains } from "../lib/generateEncounter";
 import { getEnvironmentTags } from "../lib/environmentLookup";
+import { parseEncounterText } from "../lib/parseEncounterText";
 import type { GeneratedEncounter, Monster, EncounterTemplate, TerrainSuggestion, Environment } from "../types";
 
 import monstersData from "../data/monsters.json";
@@ -114,6 +115,15 @@ export function HomePage() {
     setLockedTerrains(new Set());
   }, []);
 
+  const handleImportEncounter = useCallback((text: string) => {
+    const imported = parseEncounterText(text, monsters, terrain);
+    if (imported) {
+      setEncounter(imported);
+      setLockedSlots(new Set());
+      setLockedTerrains(new Set());
+    }
+  }, []);
+
 
   return (
     <div className="home-page">
@@ -140,6 +150,7 @@ export function HomePage() {
           lockedTerrains={lockedTerrains}
           onToggleTerrainLock={handleToggleTerrainLock}
           onClearAllLocks={handleClearAllLocks}
+          onImportEncounter={handleImportEncounter}
           onMonsterClick={openCard}
           onPinMonster={togglePin}
           isPinned={isPinned}

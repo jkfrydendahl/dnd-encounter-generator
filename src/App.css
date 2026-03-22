@@ -363,7 +363,8 @@
 
 .clear-locks-button,
 .reroll-button,
-.copy-button {
+.copy-button,
+.import-button {
   padding: 0.5rem 1rem;
   background: transparent;
   color: var(--text-secondary);
@@ -378,7 +379,8 @@
 
 .clear-locks-button:hover,
 .reroll-button:hover,
-.copy-button:hover {
+.copy-button:hover,
+.import-button:hover {
   color: var(--text-primary);
   border-color: var(--border-accent);
   background: var(--accent-subtle);
@@ -387,6 +389,11 @@
 .clear-locks-button:disabled {
   opacity: 0.35;
   cursor: not-allowed;
+}
+
+.import-error {
+  color: var(--error);
+  font-size: 0.8rem;
 }
 
 /* ─── Diagnostics Panel ──────────────────────────────── */
@@ -831,7 +838,7 @@
 
 .pinned-cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1rem;
   margin-top: 0.75rem;
   margin-bottom: 1rem;
@@ -841,12 +848,46 @@
   background: var(--bg-surface);
   border: 1px solid var(--border-default);
   border-radius: var(--radius-md);
-  padding: 1rem;
+  padding: 0.75rem;
   position: relative;
   max-height: 70vh;
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: var(--border-default) transparent;
+  font-size: 0.82rem;
+}
+
+.pinned-card .monster-card-statblock {
+  line-height: 1.35;
+}
+
+.pinned-card .monster-card-statblock h1.monster {
+  font-size: 1.05rem;
+  margin: 0 0 0.5rem 0;
+  padding-bottom: 0.35rem;
+}
+
+.pinned-card .monster-card-statblock h2 {
+  font-size: 0.82rem;
+  margin: 0.6rem 0 0.25rem 0;
+  padding-top: 0.35rem;
+}
+
+.pinned-card .monster-card-statblock .bodytable td {
+  font-size: 0.82rem;
+  padding: 0.1rem 0;
+}
+
+.pinned-card .monster-card-statblock .flavor,
+.pinned-card .monster-card-statblock p.flavor {
+  font-size: 0.82rem;
+  margin: 0.2rem 0;
+}
+
+.pinned-card .monster-card-statblock .flavorIndent,
+.pinned-card .monster-card-statblock p.flavorIndent {
+  font-size: 0.78rem;
+  margin: 0.1rem 0 0.1rem 0.75rem;
 }
 
 .pinned-card::-webkit-scrollbar {
