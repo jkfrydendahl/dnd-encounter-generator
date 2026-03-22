@@ -117,12 +117,32 @@ export function HomePage() {
 
   const handleImportEncounter = useCallback((text: string) => {
     const imported = parseEncounterText(text, monsters, terrain);
-    if (imported) {
+    if (!imported) return;
+
+    const hasLocks = encounter && (lockedSlots.size > 0 || lockedTerrains.size > 0);
+    if (!hasLocks) {
       setEncounter(imported);
       setLockedSlots(new Set());
       setLockedTerrains(new Set());
+      return;
     }
-  }, []);
+
+    // Merge: keep locked entries, replace unlocked with imported ones
+    const keptEntries = encounter.entries.filter((e) => lockedSlots.has(e.slotId));
+    const unlockedCount = encounter.entries.length - keptEntries.length;
+    const fillerEntries = imported.entries.slice(0, unlockedCount);
+
+    const keptTerrains = encounter.terrainSuggestions.filter((t) => lockedTerrains.has(t.id));
+    const unlockedTerrainCount = encounter.terrainSuggestions.length - keptTerrains.length;
+    const fillerTerrains = imported.terrainSuggestions.slice(0, unlockedTerrainCount);
+
+    const merged: GeneratedEncounter = {
+      ...imported,
+      entries: [...keptEntries, ...fillerEntries],
+      terrainSuggestions: [...keptTerrains, ...fillerTerrains],
+    };
+    setEncounter(merged);
+  }, [encounter, lockedSlots, lockedTerrains]);
 
 
   return (
@@ -140,6 +160,7 @@ export function HomePage() {
           templates={templates}
           availableTags={availableTags}
           environments={environments}
+          onImportEncounter={handleImportEncounter}
         />
 
         <EncounterDisplay
@@ -150,7 +171,6 @@ export function HomePage() {
           lockedTerrains={lockedTerrains}
           onToggleTerrainLock={handleToggleTerrainLock}
           onClearAllLocks={handleClearAllLocks}
-          onImportEncounter={handleImportEncounter}
           onMonsterClick={openCard}
           onPinMonster={togglePin}
           isPinned={isPinned}

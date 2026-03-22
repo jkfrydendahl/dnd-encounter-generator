@@ -396,6 +396,84 @@
   font-size: 0.8rem;
 }
 
+.import-modal {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.import-textarea {
+  width: 100%;
+  min-height: 200px;
+  padding: 0.75rem;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-primary);
+  border-radius: 6px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.82rem;
+  line-height: 1.4;
+  resize: vertical;
+}
+
+.import-textarea:focus {
+  outline: none;
+  border-color: var(--border-accent);
+}
+
+.import-textarea::placeholder {
+  color: var(--text-muted);
+}
+
+.import-modal-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.import-modal-actions .import-button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.import-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.import-card {
+  background: #1a1a2e;
+  border: 1px solid var(--border-primary);
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: min(90vw, 600px);
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+}
+
+.import-card h3 {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+}
+
+.import-hint {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
 /* ─── Diagnostics Panel ──────────────────────────────── */
 .diagnostics-panel {
   background: var(--bg-surface);

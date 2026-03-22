@@ -1,3 +1,4 @@
+import { useState, useRef, useEffect } from "react";
 import type { GeneratorSettings, DuplicatePolicy, EncounterTemplate, Environment } from "../../types";
 
 interface ControlsPanelProps {
@@ -11,6 +12,7 @@ interface ControlsPanelProps {
   templates: EncounterTemplate[];
   availableTags: string[];
   environments: Environment[];
+  onImportEncounter?: (text: string) => void;
 }
 
 export function ControlsPanel({
@@ -21,7 +23,25 @@ export function ControlsPanel({
   templates,
   availableTags,
   environments,
+  onImportEncounter,
 }: ControlsPanelProps) {
+  const [importOpen, setImportOpen] = useState(false);
+  const [importText, setImportText] = useState("");
+  const textareaRef = useRef<HTMLTextAreaElement>(null);
+
+  useEffect(() => {
+    if (importOpen) {
+      setTimeout(() => textareaRef.current?.focus(), 50);
+    }
+  }, [importOpen]);
+
+  function handleImportSubmit() {
+    if (!onImportEncounter || !importText.trim()) return;
+    onImportEncounter(importText.trim());
+    setImportText("");
+    setImportOpen(false);
+  }
+
   return (
     <div className="controls-panel">
       <h2>Settings</h2>
@@ -188,6 +208,41 @@ export function ControlsPanel({
       >
         {isGenerating ? "Generating…" : "Generate Encounter"}
       </button>
+
+      {onImportEncounter && (
+        <button
+          className="import-button"
+          onClick={() => setImportOpen(true)}
+          style={{ marginTop: '0.5rem', width: '100%' }}
+        >
+          Import Encounter
+        </button>
+      )}
+
+      {importOpen && (
+        <div className="import-overlay" onClick={() => { setImportOpen(false); setImportText(""); }}>
+          <div className="import-card" onClick={(e) => e.stopPropagation()}>
+            <h3>Import Encounter</h3>
+            <p className="import-hint">Paste encounter text (from "Copy to Clipboard" or a saved file):</p>
+            <textarea
+              ref={textareaRef}
+              className="import-textarea"
+              value={importText}
+              onChange={(e) => setImportText(e.target.value)}
+              placeholder="Paste encounter text here..."
+              rows={14}
+            />
+            <div className="import-modal-actions">
+              <button className="import-button" onClick={handleImportSubmit} disabled={!importText.trim()}>
+                Import
+              </button>
+              <button className="import-button" onClick={() => { setImportOpen(false); setImportText(""); }}>
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
