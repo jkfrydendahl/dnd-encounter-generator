@@ -916,7 +916,7 @@
 
 .pinned-cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   margin-top: 0.75rem;
   margin-bottom: 1rem;
@@ -926,45 +926,24 @@
   background: var(--bg-surface);
   border: 1px solid var(--border-default);
   border-radius: var(--radius-md);
-  padding: 0.75rem;
+  padding: 1rem;
   position: relative;
   max-height: 70vh;
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: var(--border-default) transparent;
-  font-size: 0.82rem;
 }
 
 .pinned-card .monster-card-statblock {
-  line-height: 1.35;
-}
-
-.pinned-card .monster-card-statblock h1.monster {
-  font-size: 1.05rem;
-  margin: 0 0 0.5rem 0;
-  padding-bottom: 0.35rem;
-}
-
-.pinned-card .monster-card-statblock h2 {
-  font-size: 0.82rem;
-  margin: 0.6rem 0 0.25rem 0;
-  padding-top: 0.35rem;
+  line-height: 1.4;
 }
 
 .pinned-card .monster-card-statblock .bodytable td {
-  font-size: 0.82rem;
-  padding: 0.1rem 0;
-}
-
-.pinned-card .monster-card-statblock .flavor,
-.pinned-card .monster-card-statblock p.flavor {
-  font-size: 0.82rem;
-  margin: 0.2rem 0;
+  padding: 0.15rem 0;
 }
 
 .pinned-card .monster-card-statblock .flavorIndent,
 .pinned-card .monster-card-statblock p.flavorIndent {
-  font-size: 0.78rem;
   margin: 0.1rem 0 0.1rem 0.75rem;
 }
 
@@ -1009,8 +988,48 @@
   border-color: var(--error);
 }
 
+@media (max-width: 1400px) {
+  .pinned-card {
+    padding: 0.75rem;
+    font-size: 0.82rem;
+  }
+
+  .pinned-card .monster-card-statblock {
+    line-height: 1.35;
+  }
+
+  .pinned-card .monster-card-statblock h1.monster {
+    font-size: 1.05rem;
+    margin: 0 0 0.5rem 0;
+    padding-bottom: 0.35rem;
+  }
+
+  .pinned-card .monster-card-statblock h2 {
+    font-size: 0.82rem;
+    margin: 0.6rem 0 0.25rem 0;
+    padding-top: 0.35rem;
+  }
+
+  .pinned-card .monster-card-statblock .bodytable td {
+    font-size: 0.82rem;
+    padding: 0.1rem 0;
+  }
+
+  .pinned-card .monster-card-statblock .flavor,
+  .pinned-card .monster-card-statblock p.flavor {
+    font-size: 0.82rem;
+    margin: 0.2rem 0;
+  }
+
+  .pinned-card .monster-card-statblock .flavorIndent,
+  .pinned-card .monster-card-statblock p.flavorIndent {
+    font-size: 0.78rem;
+    margin: 0.1rem 0 0.1rem 0.75rem;
+  }
+}
+
 @media (max-width: 900px) {
   .pinned-cards-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
