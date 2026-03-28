@@ -163,6 +163,8 @@ const MANUAL_WIKI_MAPPINGS = {
   "warthorn battlebriar": "Treant",
   "earthrage battlebriar": "Treant",
   "oblivion moss mindmaster": "Oblivion moss",
+  "stormrage shambler": "Shambling mound",
+  "shambler": "Shambling mound",
 
   // Abishai
   "wrack abishai": "Abishai",
@@ -341,12 +343,16 @@ function extractBaseCandidates(name, tags) {
 
 // --- Wiki API ---
 
+// Edition preference order: 5e first, then 3e, then anything else
+const EDITION_PREFERENCE = ["5e", "3e", "4e", "2e", "1e"];
+
 async function queryWikiImages(titles) {
   const url = new URL(WIKI_API);
   url.searchParams.set("action", "query");
   url.searchParams.set("titles", titles.join("|"));
-  url.searchParams.set("prop", "pageimages");
+  url.searchParams.set("prop", "pageimages|images");
   url.searchParams.set("piprop", "original");
+  url.searchParams.set("imlimit", "50");
   url.searchParams.set("format", "json");
 
   const res = await fetch(url.toString());
@@ -355,10 +361,82 @@ async function queryWikiImages(titles) {
 
   const results = {};
   for (const page of Object.values(data.query.pages)) {
+    const key = page.title.toLowerCase();
     if (page.original?.source) {
-      results[page.title.toLowerCase()] = page.original.source;
+      results[key] = {
+        defaultUrl: page.original.source,
+        imageFiles: (page.images || []).map((img) => img.title),
+      };
     }
   }
+  return results;
+}
+
+/**
+ * Detect edition from a filename. Returns edition string or null.
+ */
+function detectEdition(filename) {
+  const lower = filename.toLowerCase();
+  for (const edition of EDITION_PREFERENCE) {
+    if (
+      new RegExp(`[-_ ]${edition}[-_.]`, "i").test(lower) ||
+      new RegExp(`[-_ ]${edition}$`, "i").test(lower) ||
+      lower.endsWith(`${edition}.jpg`) ||
+      lower.endsWith(`${edition}.png`) ||
+      lower.endsWith(`${edition}.jpeg`)
+    ) {
+      return edition;
+    }
+  }
+  return null;
+}
+
+/**
+ * Given a list of File: titles from a wiki page, find the best edition-tagged image.
+ * Returns the File: title for the preferred edition, or null.
+ */
+function pickEditionFile(imageFiles) {
+  const contentImages = imageFiles.filter((f) =>
+    /\.(jpg|jpeg|png|gif|webp)$/i.test(f)
+  );
+
+  for (const edition of EDITION_PREFERENCE) {
+    const match = contentImages.find((f) => detectEdition(f) === edition);
+    if (match) return match;
+  }
+  return null;
+}
+
+/**
+ * Batch-query image URLs from File: titles.
+ */
+async function queryImageUrls(fileTitles) {
+  const results = {};
+
+  for (let i = 0; i < fileTitles.length; i += BATCH_SIZE) {
+    const batch = fileTitles.slice(i, i + BATCH_SIZE);
+    const url = new URL(WIKI_API);
+    url.searchParams.set("action", "query");
+    url.searchParams.set("titles", batch.join("|"));
+    url.searchParams.set("prop", "imageinfo");
+    url.searchParams.set("iiprop", "url");
+    url.searchParams.set("format", "json");
+
+    const res = await fetch(url.toString());
+    if (!res.ok) throw new Error(`Wiki API error: ${res.status}`);
+    const data = await res.json();
+
+    for (const page of Object.values(data.query.pages)) {
+      if (page.imageinfo?.[0]?.url) {
+        results[page.title] = page.imageinfo[0].url;
+      }
+    }
+
+    if (i + BATCH_SIZE < fileTitles.length) {
+      await sleep(DELAY_MS);
+    }
+  }
+
   return results;
 }
 
@@ -393,10 +471,10 @@ async function main() {
 
   console.log(`  ${monsters.length} monsters → ${allCandidates.size} unique candidate titles`);
 
-  // Step 2: Batch-query wiki for all candidates
+  // Step 2: Batch-query wiki for all candidates (pages + image lists)
   console.log("Querying Forgotten Realms Wiki...");
   const candidateArray = [...allCandidates];
-  const wikiImages = {}; // lowercased title → image URL
+  const wikiPages = {}; // lowercased title → { defaultUrl, imageFiles }
 
   for (let i = 0; i < candidateArray.length; i += BATCH_SIZE) {
     const batch = candidateArray.slice(i, i + BATCH_SIZE);
@@ -406,8 +484,8 @@ async function main() {
 
     try {
       const results = await queryWikiImages(batch);
-      Object.assign(wikiImages, results);
-      console.log(` ${Object.keys(results).length} images found`);
+      Object.assign(wikiPages, results);
+      console.log(` ${Object.keys(results).length} pages found`);
     } catch (err) {
       console.log(` ERROR: ${err.message}`);
     }
@@ -417,7 +495,62 @@ async function main() {
     }
   }
 
-  console.log(`  Total wiki images found: ${Object.keys(wikiImages).length}`);
+  console.log(`  Total wiki pages with images: ${Object.keys(wikiPages).length}`);
+
+  // Step 2b: Find edition-preferred images for matched pages
+  console.log("Resolving edition-preferred images...");
+  const editionFileToFetch = new Map(); // File:title → Set of page keys that want it
+  const pageEditionFile = {}; // page key → preferred File: title
+
+  for (const [pageKey, pageData] of Object.entries(wikiPages)) {
+    const editionFile = pickEditionFile(pageData.imageFiles);
+    if (editionFile) {
+      pageEditionFile[pageKey] = editionFile;
+      if (!editionFileToFetch.has(editionFile)) {
+        editionFileToFetch.set(editionFile, new Set());
+      }
+      editionFileToFetch.get(editionFile).add(pageKey);
+    }
+  }
+
+  // Batch-fetch URLs for all edition-preferred files
+  const editionFileUrls = {};
+  const filesToFetch = [...editionFileToFetch.keys()];
+  if (filesToFetch.length > 0) {
+    console.log(`  Fetching ${filesToFetch.length} edition-specific image URLs...`);
+    const urls = await queryImageUrls(filesToFetch);
+    Object.assign(editionFileUrls, urls);
+    console.log(`  Got ${Object.keys(urls).length} URLs`);
+  }
+
+  // Build final image map: page key → best URL
+  // Only upgrade from default if the edition file is better-ranked
+  const wikiImages = {}; // lowercased title → best image URL
+  let editionUpgrades = 0;
+  for (const [pageKey, pageData] of Object.entries(wikiPages)) {
+    const edFile = pageEditionFile[pageKey];
+    const edFileUrl = edFile ? editionFileUrls[edFile] : null;
+
+    if (edFileUrl) {
+      // Check if default image already has an edition tag that's better or equal
+      const defaultMatch = pageData.defaultUrl.match(/images\/[a-f0-9]\/[a-f0-9]{2}\/([^/]+)\//);
+      const defaultFilename = defaultMatch ? decodeURIComponent(defaultMatch[1]) : "";
+      const defaultEdition = detectEdition(defaultFilename);
+      const upgradeEdition = detectEdition(edFile);
+
+      const defaultRank = defaultEdition ? EDITION_PREFERENCE.indexOf(defaultEdition) : 999;
+      const upgradeRank = upgradeEdition ? EDITION_PREFERENCE.indexOf(upgradeEdition) : 999;
+
+      if (upgradeRank < defaultRank) {
+        wikiImages[pageKey] = edFileUrl;
+        editionUpgrades++;
+      } else {
+        wikiImages[pageKey] = pageData.defaultUrl;
+      }
+    } else {
+      wikiImages[pageKey] = pageData.defaultUrl;
+    }
+  }
 
   // Step 3: Resolve best image for each monster
   console.log("Resolving images...");
@@ -476,6 +609,7 @@ async function main() {
   console.log(`====================`);
   console.log(`Total monsters:     ${monsters.length}`);
   console.log(`With wiki images:   ${matched}`);
+  console.log(`Edition-preferred:  ${editionUpgrades} pages upgraded`);
   console.log(`Without images:     ${unmatched}`);
   console.log(`Coverage:           ${((matched / monsters.length) * 100).toFixed(1)}%`);
   console.log(`\nOutput: src/data/monsterImageIndex.json`);

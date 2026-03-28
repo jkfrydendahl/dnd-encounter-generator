@@ -102,7 +102,7 @@
     "monsterId": "adult-black-dragon",
     "name": "Adult Black Dragon",
     "normalizedName": "adult-black-dragon",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/1/16/Ancient_Black_Dragon_5eR.png/revision/latest?cb=20251028211325",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/6/66/Young_black_dragon-5e.jpg/revision/latest?cb=20190408023657",
     "sourceType": "scraped",
     "tags": [
       "Dragon",
@@ -126,7 +126,7 @@
     "monsterId": "adult-blue-dragon",
     "name": "Adult Blue Dragon",
     "normalizedName": "adult-blue-dragon",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/8/80/Ancient_Blue_Dragon_5eR.png/revision/latest?cb=20251020033422",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/c/c4/Blue_dragon_3e.jpg/revision/latest?cb=20190823131614",
     "sourceType": "scraped",
     "tags": [
       "Dragon",
@@ -150,7 +150,7 @@
     "monsterId": "adult-gold-dragon",
     "name": "Adult Gold Dragon",
     "normalizedName": "adult-gold-dragon",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/0/08/Ancient_Gold_Dragon_5eR.jpeg/revision/latest?cb=20250519041640",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/3/34/Metallic-dragons-5e.jpg/revision/latest?cb=20180623043445",
     "sourceType": "scraped",
     "tags": [
       "Dragon"
@@ -195,7 +195,7 @@
     "monsterId": "adult-red-dragon",
     "name": "Adult Red Dragon",
     "normalizedName": "adult-red-dragon",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/7/7e/Red_Dragon_5eR.png/revision/latest?cb=20250926032125",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/8/8c/Gith-5e.png/revision/latest?cb=20180816011608",
     "sourceType": "scraped",
     "tags": [
       "Dragon",
@@ -264,7 +264,7 @@
     "monsterId": "ambush-spider",
     "name": "Ambush Spider",
     "normalizedName": "ambush-spider",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/8/84/Luca-bancone-giant-tarantula.jpg/revision/latest?cb=20260206140857",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/4/43/Spider-5e.jpg/revision/latest?cb=20200907172351",
     "sourceType": "scraped",
     "tags": [
       "Beast"
@@ -321,7 +321,7 @@
     "monsterId": "ancient-black-dragon",
     "name": "Ancient Black Dragon",
     "normalizedName": "ancient-black-dragon",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/1/16/Ancient_Black_Dragon_5eR.png/revision/latest?cb=20251028211325",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/6/66/Young_black_dragon-5e.jpg/revision/latest?cb=20190408023657",
     "sourceType": "scraped",
     "tags": [
       "Dragon",
@@ -333,7 +333,7 @@
     "monsterId": "ancient-blue-dragon",
     "name": "Ancient Blue Dragon",
     "normalizedName": "ancient-blue-dragon",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/8/80/Ancient_Blue_Dragon_5eR.png/revision/latest?cb=20251020033422",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/c/c4/Blue_dragon_3e.jpg/revision/latest?cb=20190823131614",
     "sourceType": "scraped",
     "tags": [
       "Dragon",
@@ -380,7 +380,7 @@
     "monsterId": "ancient-red-dragon",
     "name": "Ancient Red Dragon",
     "normalizedName": "ancient-red-dragon",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/7/7e/Red_Dragon_5eR.png/revision/latest?cb=20250926032125",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/8/8c/Gith-5e.png/revision/latest?cb=20180816011608",
     "sourceType": "scraped",
     "tags": [
       "Dragon",
@@ -455,7 +455,7 @@
     "monsterId": "armanite-lancer",
     "name": "Armanite Lancer",
     "normalizedName": "armanite-lancer",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/9/91/Armanite.png/revision/latest?cb=20190204173250",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/e/e7/Armanite-3e.png/revision/latest?cb=20190908022641",
     "sourceType": "scraped",
     "tags": [],
     "_matchedVia": "Armanite"
@@ -485,7 +485,7 @@
     "monsterId": "aspect-of-demogorgon",
     "name": "Aspect of Demogorgon",
     "normalizedName": "aspect-of-demogorgon",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/0/04/Rage_of_demons_-_Demogorgon_-_D%26D_5.png/revision/latest?cb=20190704040237",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/0/01/Demogorgon_in_darklake-5e.jpg/revision/latest?cb=20190827184647",
     "sourceType": "scraped",
     "tags": [
       "Demon",
@@ -522,7 +522,7 @@
     "monsterId": "autumn-nymph",
     "name": "Autumn Nymph",
     "normalizedName": "autumn-nymph",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/b/bc/Nymph_4e.jpg/revision/latest?cb=20220218111250",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/b/be/Nymph_3e.jpg/revision/latest?cb=20100929024257",
     "sourceType": "scraped",
     "tags": [
       "Fey"
@@ -601,7 +601,7 @@
     "monsterId": "balhannoth",
     "name": "Balhannoth",
     "normalizedName": "balhannoth",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/c/cd/Balhannoth.jpg/revision/latest?cb=20201012171510",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/8/88/Balhannoth3e.jpg/revision/latest?cb=20200907172715",
     "sourceType": "scraped",
     "tags": [],
     "_matchedVia": "Balhannoth"
@@ -809,7 +809,7 @@
     "monsterId": "black-dragon-wyrmling",
     "name": "Black Dragon Wyrmling",
     "normalizedName": "black-dragon-wyrmling",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/1/16/Ancient_Black_Dragon_5eR.png/revision/latest?cb=20251028211325",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/6/66/Young_black_dragon-5e.jpg/revision/latest?cb=20190408023657",
     "sourceType": "scraped",
     "tags": [
       "Dragon",
@@ -821,7 +821,7 @@
     "monsterId": "black-slaad",
     "name": "Black Slaad (Void Slaad)",
     "normalizedName": "black-slaad-void-slaad",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/7/7d/Black_slaad_4e.jpg/revision/latest?cb=20200612033718",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/2/21/Blackslaad_3e.png/revision/latest?cb=20200612033012",
     "sourceType": "scraped",
     "tags": [
       "Elemental",
@@ -833,7 +833,7 @@
     "monsterId": "blackfire-dracolich",
     "name": "Blackfire Dracolich",
     "normalizedName": "blackfire-dracolich",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/1/16/Ancient_Black_Dragon_5eR.png/revision/latest?cb=20251028211325",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/6/66/Young_black_dragon-5e.jpg/revision/latest?cb=20190408023657",
     "sourceType": "scraped",
     "tags": [
       "Undead",
@@ -926,7 +926,7 @@
     "monsterId": "blood-fiend",
     "name": "Blood Fiend (Abomination)",
     "normalizedName": "blood-fiend-abomination",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/f/f4/Blood_fiend.jpg/revision/latest?cb=20190809104140",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/0/06/Blood_fiend_3e.jpg/revision/latest?cb=20220912212503",
     "sourceType": "scraped",
     "tags": [
       "Fiend"
@@ -992,7 +992,7 @@
     "monsterId": "blue-dragon-wyrmling",
     "name": "Blue Dragon Wyrmling",
     "normalizedName": "blue-dragon-wyrmling",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/8/80/Ancient_Blue_Dragon_5eR.png/revision/latest?cb=20251020033422",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/c/c4/Blue_dragon_3e.jpg/revision/latest?cb=20190823131614",
     "sourceType": "scraped",
     "tags": [
       "Dragon",
@@ -1084,7 +1084,7 @@
     "monsterId": "bone-golem",
     "name": "Bone Golem",
     "normalizedName": "bone-golem",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/e/ee/Bone_golem_4e.png/revision/latest?cb=20230306080053",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/8/8f/Bone_golem_3e.jpg/revision/latest?cb=20230306080030",
     "sourceType": "scraped",
     "tags": [
       "Undead",
@@ -1158,7 +1158,7 @@
     "monsterId": "brass-dragon-wyrmling",
     "name": "Brass Dragon Wyrmling",
     "normalizedName": "brass-dragon-wyrmling",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/4/42/Brass_Dragon_5ER.png/revision/latest?cb=20251007120723",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/5/5d/Brass_Dragon_3e.jpg/revision/latest?cb=20200327163714",
     "sourceType": "scraped",
     "tags": [
       "Dragon",
@@ -1170,7 +1170,7 @@
     "monsterId": "brass-dragon-young",
     "name": "Brass Dragon, Young",
     "normalizedName": "brass-dragon-young",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/4/42/Brass_Dragon_5ER.png/revision/latest?cb=20251007120723",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/5/5d/Brass_Dragon_3e.jpg/revision/latest?cb=20200327163714",
     "sourceType": "scraped",
     "tags": [
       "Dragon",
@@ -1204,7 +1204,7 @@
     "monsterId": "bronze-dragon-adult",
     "name": "Bronze Dragon, Adult",
     "normalizedName": "bronze-dragon-adult",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/7/77/Ancient_Bronze_Dragon_5eR.jpg/revision/latest?cb=20251028212102",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/f/f8/Bronze_dragon_wyrmling-5e.jpeg/revision/latest?cb=20171221202214",
     "sourceType": "scraped",
     "tags": [
       "Dragon",
@@ -1216,7 +1216,7 @@
     "monsterId": "bronze-dragon-ancient",
     "name": "Bronze Dragon, Ancient",
     "normalizedName": "bronze-dragon-ancient",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/7/77/Ancient_Bronze_Dragon_5eR.jpg/revision/latest?cb=20251028212102",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/f/f8/Bronze_dragon_wyrmling-5e.jpeg/revision/latest?cb=20171221202214",
     "sourceType": "scraped",
     "tags": [
       "Dragon",
@@ -1228,7 +1228,7 @@
     "monsterId": "bronze-dragon-elder",
     "name": "Bronze Dragon, Elder",
     "normalizedName": "bronze-dragon-elder",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/7/77/Ancient_Bronze_Dragon_5eR.jpg/revision/latest?cb=20251028212102",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/f/f8/Bronze_dragon_wyrmling-5e.jpeg/revision/latest?cb=20171221202214",
     "sourceType": "scraped",
     "tags": [
       "Dragon",
@@ -1240,7 +1240,7 @@
     "monsterId": "bronze-dragon-young",
     "name": "Bronze Dragon, Young",
     "normalizedName": "bronze-dragon-young",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/7/77/Ancient_Bronze_Dragon_5eR.jpg/revision/latest?cb=20251028212102",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/f/f8/Bronze_dragon_wyrmling-5e.jpeg/revision/latest?cb=20171221202214",
     "sourceType": "scraped",
     "tags": [
       "Dragon",
@@ -1252,7 +1252,7 @@
     "monsterId": "brown-dragon-adult",
     "name": "Brown Dragon, Adult",
     "normalizedName": "brown-dragon-adult",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/f/ff/BrownDragon4e.jpg/revision/latest?cb=20220302194419",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/1/18/Brown-dragon-3e.png/revision/latest?cb=20190921230811",
     "sourceType": "scraped",
     "tags": [
       "Dragon"
@@ -1263,7 +1263,7 @@
     "monsterId": "brown-dragon-ancient",
     "name": "Brown Dragon, Ancient",
     "normalizedName": "brown-dragon-ancient",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/f/ff/BrownDragon4e.jpg/revision/latest?cb=20220302194419",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/1/18/Brown-dragon-3e.png/revision/latest?cb=20190921230811",
     "sourceType": "scraped",
     "tags": [
       "Dragon"
@@ -1274,7 +1274,7 @@
     "monsterId": "brown-dragon-elder",
     "name": "Brown Dragon, Elder",
     "normalizedName": "brown-dragon-elder",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/f/ff/BrownDragon4e.jpg/revision/latest?cb=20220302194419",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/1/18/Brown-dragon-3e.png/revision/latest?cb=20190921230811",
     "sourceType": "scraped",
     "tags": [
       "Dragon"
@@ -1285,7 +1285,7 @@
     "monsterId": "brown-dragon-wyrmling",
     "name": "Brown Dragon Wyrmling",
     "normalizedName": "brown-dragon-wyrmling",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/f/ff/BrownDragon4e.jpg/revision/latest?cb=20220302194419",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/1/18/Brown-dragon-3e.png/revision/latest?cb=20190921230811",
     "sourceType": "scraped",
     "tags": [
       "Dragon"
@@ -1296,7 +1296,7 @@
     "monsterId": "brown-dragon-young",
     "name": "Brown Dragon, Young",
     "normalizedName": "brown-dragon-young",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/f/ff/BrownDragon4e.jpg/revision/latest?cb=20220302194419",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/1/18/Brown-dragon-3e.png/revision/latest?cb=20190921230811",
     "sourceType": "scraped",
     "tags": [
       "Dragon"
@@ -1451,7 +1451,7 @@
     "monsterId": "cave-bear",
     "name": "Cave Bear",
     "normalizedName": "cave-bear",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/d/d6/Bears_-_Jim_Nelson.jpg/revision/latest?cb=20200310154858",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/1/1b/Stone_Giant-1e.png/revision/latest?cb=20141112174427",
     "sourceType": "scraped",
     "tags": [
       "Beast"
@@ -1582,7 +1582,7 @@
     "monsterId": "chain-golem",
     "name": "Chain Golem",
     "normalizedName": "chain-golem",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/3/3c/Bone_and_chain_golem_4e.jpg/revision/latest?cb=20220512192508",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/9/9f/Chain_golem-3e.jpg/revision/latest?cb=20211123063059",
     "sourceType": "scraped",
     "tags": [
       "Construct"
@@ -1754,7 +1754,7 @@
     "monsterId": "cobalt-dragon-bred-drakkensteed",
     "name": "Cobalt Dragon-Bred Drakkensteed",
     "normalizedName": "cobalt-dragon-bred-drakkensteed",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/7/7e/Red_Dragon_5eR.png/revision/latest?cb=20250926032125",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/8/8c/Gith-5e.png/revision/latest?cb=20180816011608",
     "sourceType": "scraped",
     "tags": [
       "Dragon"
@@ -1959,7 +1959,7 @@
     "monsterId": "dark-creeper",
     "name": "Dark Creeper (Dark One)",
     "normalizedName": "dark-creeper-dark-one",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/e/e7/Dark_ones.jpeg/revision/latest?cb=20160925120909",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/c/c9/DarkCreeper-2e.png/revision/latest?cb=20210217134151",
     "sourceType": "scraped",
     "tags": [
       "Shadow"
@@ -1970,7 +1970,7 @@
     "monsterId": "dark-creeper-necromancer",
     "name": "Dark Creeper Necromancer",
     "normalizedName": "dark-creeper-necromancer",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/1/1d/Tiefling_necromancer_4e.jpg/revision/latest?cb=20240711152232",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/6/6f/Danse_macabre5e.png/revision/latest?cb=20210809203017",
     "sourceType": "scraped",
     "tags": [
       "Undead"
@@ -1990,7 +1990,7 @@
     "monsterId": "dark-stalker",
     "name": "Dark Stalker (Dark One)",
     "normalizedName": "dark-stalker-dark-one",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/e/e7/Dark_ones.jpeg/revision/latest?cb=20160925120909",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/4/43/Dark_stalker2e.png/revision/latest?cb=20230406202320",
     "sourceType": "scraped",
     "tags": [
       "Shadow"
@@ -2001,7 +2001,7 @@
     "monsterId": "death-giant",
     "name": "Death Giant",
     "normalizedName": "death-giant",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/d/d5/Death_giant_shrouded_one.png/revision/latest?cb=20230818073242",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/2/20/Death_giants_4e.jpg/revision/latest?cb=20230811083030",
     "sourceType": "scraped",
     "tags": [
       "Giant"
@@ -2134,7 +2134,7 @@
     "monsterId": "demogorgon",
     "name": "Demogorgon",
     "normalizedName": "demogorgon",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/0/04/Rage_of_demons_-_Demogorgon_-_D%26D_5.png/revision/latest?cb=20190704040237",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/0/01/Demogorgon_in_darklake-5e.jpg/revision/latest?cb=20190827184647",
     "sourceType": "scraped",
     "tags": [
       "Demon",
@@ -2146,7 +2146,7 @@
     "monsterId": "demogorgon-fury-cultist",
     "name": "Demogorgon Fury Cultist",
     "normalizedName": "demogorgon-fury-cultist",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/0/04/Rage_of_demons_-_Demogorgon_-_D%26D_5.png/revision/latest?cb=20190704040237",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/0/01/Demogorgon_in_darklake-5e.jpg/revision/latest?cb=20190827184647",
     "sourceType": "scraped",
     "tags": [
       "Demon",
@@ -2170,7 +2170,7 @@
     "monsterId": "demonweb-terror",
     "name": "Demonweb Terror (Spider)",
     "normalizedName": "demonweb-terror-spider",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/8/84/Luca-bancone-giant-tarantula.jpg/revision/latest?cb=20260206140857",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/4/43/Spider-5e.jpg/revision/latest?cb=20200907172351",
     "sourceType": "scraped",
     "tags": [
       "Beast"
@@ -2559,7 +2559,7 @@
     "monsterId": "dragonkin-defender",
     "name": "Dragonkin Defender",
     "normalizedName": "dragonkin-defender",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/8/8d/Dragonkin.jpg/revision/latest?cb=20210915004614",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/2/2c/Dragon-kin_2e.png/revision/latest?cb=20201127202040",
     "sourceType": "scraped",
     "tags": [],
     "_matchedVia": "Dragonkin"
@@ -2568,7 +2568,7 @@
     "monsterId": "dragonkin-sentry",
     "name": "Dragonkin Sentry",
     "normalizedName": "dragonkin-sentry",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/8/8d/Dragonkin.jpg/revision/latest?cb=20210915004614",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/2/2c/Dragon-kin_2e.png/revision/latest?cb=20201127202040",
     "sourceType": "scraped",
     "tags": [],
     "_matchedVia": "Dragonkin"
@@ -2577,7 +2577,7 @@
     "monsterId": "dragonkin-zealot",
     "name": "Dragonkin Zealot",
     "normalizedName": "dragonkin-zealot",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/8/8d/Dragonkin.jpg/revision/latest?cb=20210915004614",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/2/2c/Dragon-kin_2e.png/revision/latest?cb=20201127202040",
     "sourceType": "scraped",
     "tags": [],
     "_matchedVia": "Dragonkin"
@@ -2852,7 +2852,7 @@
     "monsterId": "earth-archon-ground-rager",
     "name": "Earth Archon Ground Rager",
     "normalizedName": "earth-archon-ground-rager",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/e/ee/Earthling_Players.png/revision/latest?cb=20210707092717",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/a/a7/Arctic_fox5e.jpeg/revision/latest?cb=20200915210739",
     "sourceType": "scraped",
     "tags": [
       "Elemental"
@@ -2863,7 +2863,7 @@
     "monsterId": "earth-archon-rumbler",
     "name": "Earth Archon Rumbler",
     "normalizedName": "earth-archon-rumbler",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/e/ee/Earthling_Players.png/revision/latest?cb=20210707092717",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/a/a7/Arctic_fox5e.jpeg/revision/latest?cb=20200915210739",
     "sourceType": "scraped",
     "tags": [
       "Elemental"
@@ -2874,7 +2874,7 @@
     "monsterId": "earth-archon-seismic-striker",
     "name": "Earth Archon Seismic Striker",
     "normalizedName": "earth-archon-seismic-striker",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/e/ee/Earthling_Players.png/revision/latest?cb=20210707092717",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/a/a7/Arctic_fox5e.jpeg/revision/latest?cb=20200915210739",
     "sourceType": "scraped",
     "tags": [
       "Elemental"
@@ -2885,7 +2885,7 @@
     "monsterId": "earth-cultist",
     "name": "Earth Cultist",
     "normalizedName": "earth-cultist",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/e/ee/Earthling_Players.png/revision/latest?cb=20210707092717",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/a/a7/Arctic_fox5e.jpeg/revision/latest?cb=20200915210739",
     "sourceType": "scraped",
     "tags": [
       "Elemental"
@@ -3017,7 +3017,7 @@
     "monsterId": "eladrin-bladesinger",
     "name": "Eladrin Bladesinger",
     "normalizedName": "eladrin-bladesinger",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/2/2b/Bladesinger_5eR.png/revision/latest?cb=20251225230011",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/1/12/Bladesinger_5e.png/revision/latest?cb=20250131181605",
     "sourceType": "scraped",
     "tags": [
       "Fey"
@@ -3061,7 +3061,7 @@
     "monsterId": "elder-black-dragon",
     "name": "Elder Black Dragon",
     "normalizedName": "elder-black-dragon",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/1/16/Ancient_Black_Dragon_5eR.png/revision/latest?cb=20251028211325",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/6/66/Young_black_dragon-5e.jpg/revision/latest?cb=20190408023657",
     "sourceType": "scraped",
     "tags": [
       "Dragon",
@@ -3073,7 +3073,7 @@
     "monsterId": "elder-blue-dragon",
     "name": "Elder Blue Dragon",
     "normalizedName": "elder-blue-dragon",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/8/80/Ancient_Blue_Dragon_5eR.png/revision/latest?cb=20251020033422",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/c/c4/Blue_dragon_3e.jpg/revision/latest?cb=20190823131614",
     "sourceType": "scraped",
     "tags": [
       "Dragon",
@@ -3097,7 +3097,7 @@
     "monsterId": "elder-gold-dragon",
     "name": "Elder Gold Dragon",
     "normalizedName": "elder-gold-dragon",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/0/08/Ancient_Gold_Dragon_5eR.jpeg/revision/latest?cb=20250519041640",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/3/34/Metallic-dragons-5e.jpg/revision/latest?cb=20180623043445",
     "sourceType": "scraped",
     "tags": [
       "Dragon"
@@ -3140,7 +3140,7 @@
     "monsterId": "elder-red-dragon",
     "name": "Elder Red Dragon",
     "normalizedName": "elder-red-dragon",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/7/7e/Red_Dragon_5eR.png/revision/latest?cb=20250926032125",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/8/8c/Gith-5e.png/revision/latest?cb=20180816011608",
     "sourceType": "scraped",
     "tags": [
       "Dragon",
@@ -3868,7 +3868,7 @@
     "monsterId": "galeb-duhr-earthbreaker",
     "name": "Galeb Duhr Earthbreaker",
     "normalizedName": "galeb-duhr-earthbreaker",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/3/31/Galeb_Duhr_5R.png/revision/latest?cb=20260106164659",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/e/e3/Galeb_duhr_1e.JPG/revision/latest?cb=20200402113139",
     "sourceType": "scraped",
     "tags": [],
     "_matchedVia": "Galeb duhr"
@@ -3877,7 +3877,7 @@
     "monsterId": "galeb-duhr-rockcaller",
     "name": "Galeb Duhr Rockcaller",
     "normalizedName": "galeb-duhr-rockcaller",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/3/31/Galeb_Duhr_5R.png/revision/latest?cb=20260106164659",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/e/e3/Galeb_duhr_1e.JPG/revision/latest?cb=20200402113139",
     "sourceType": "scraped",
     "tags": [],
     "_matchedVia": "Galeb duhr"
@@ -3996,7 +3996,7 @@
     "monsterId": "gibbering-orb",
     "name": "Gibbering Orb",
     "normalizedName": "gibbering-orb",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/4/49/Gibbering_orb_4e.jpg/revision/latest?cb=20240418050758",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/1/16/Gibbering_orb_3e.jpg/revision/latest?cb=20240418050706",
     "sourceType": "scraped",
     "tags": [
       "Aberration"
@@ -4085,7 +4085,7 @@
     "monsterId": "gnome-arcanist",
     "name": "Gnome Arcanist",
     "normalizedName": "gnome-arcanist",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/c/cb/5eR_Gnomes.png/revision/latest?cb=20251028031317",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/8/85/Gnome_2e.jpg/revision/latest?cb=20210401204049",
     "sourceType": "scraped",
     "tags": [
       "Humanoid"
@@ -4096,7 +4096,7 @@
     "monsterId": "gnome-caravan-guard",
     "name": "Gnome Caravan Guard",
     "normalizedName": "gnome-caravan-guard",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/c/cb/5eR_Gnomes.png/revision/latest?cb=20251028031317",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/8/85/Gnome_2e.jpg/revision/latest?cb=20210401204049",
     "sourceType": "scraped",
     "tags": [
       "Humanoid"
@@ -4107,7 +4107,7 @@
     "monsterId": "gnome-skulk",
     "name": "Gnome Skulk",
     "normalizedName": "gnome-skulk",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/c/cb/5eR_Gnomes.png/revision/latest?cb=20251028031317",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/8/85/Gnome_2e.jpg/revision/latest?cb=20210401204049",
     "sourceType": "scraped",
     "tags": [
       "Humanoid"
@@ -4118,7 +4118,7 @@
     "monsterId": "gnome-wolverine",
     "name": "Gnome Wolverine",
     "normalizedName": "gnome-wolverine",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/c/cb/5eR_Gnomes.png/revision/latest?cb=20251028031317",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/8/85/Gnome_2e.jpg/revision/latest?cb=20210401204049",
     "sourceType": "scraped",
     "tags": [
       "Humanoid"
@@ -4237,7 +4237,7 @@
     "monsterId": "gold-dragon-wyrmling",
     "name": "Gold Dragon Wyrmling",
     "normalizedName": "gold-dragon-wyrmling",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/0/08/Ancient_Gold_Dragon_5eR.jpeg/revision/latest?cb=20250519041640",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/3/34/Metallic-dragons-5e.jpg/revision/latest?cb=20180623043445",
     "sourceType": "scraped",
     "tags": [
       "Dragon"
@@ -4248,7 +4248,7 @@
     "monsterId": "gold-hollow-dragon",
     "name": "Gold Hollow Dragon",
     "normalizedName": "gold-hollow-dragon",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/0/08/Ancient_Gold_Dragon_5eR.jpeg/revision/latest?cb=20250519041640",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/3/34/Metallic-dragons-5e.jpg/revision/latest?cb=20180623043445",
     "sourceType": "scraped",
     "tags": [
       "Dragon"
@@ -4644,7 +4644,7 @@
     "monsterId": "halfling-prowler",
     "name": "Halfling Prowler",
     "normalizedName": "halfling-prowler",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/3/38/Halflings_5eR.png/revision/latest?cb=20251028032610",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/e/e6/Halfling-5e.png/revision/latest?cb=20180814153632",
     "sourceType": "scraped",
     "tags": [
       "Humanoid"
@@ -4655,7 +4655,7 @@
     "monsterId": "halfling-slinger",
     "name": "Halfling Slinger",
     "normalizedName": "halfling-slinger",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/3/38/Halflings_5eR.png/revision/latest?cb=20251028032610",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/e/e6/Halfling-5e.png/revision/latest?cb=20180814153632",
     "sourceType": "scraped",
     "tags": [
       "Humanoid"
@@ -4666,7 +4666,7 @@
     "monsterId": "halfling-thief",
     "name": "Halfling Thief",
     "normalizedName": "halfling-thief",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/3/38/Halflings_5eR.png/revision/latest?cb=20251028032610",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/e/e6/Halfling-5e.png/revision/latest?cb=20180814153632",
     "sourceType": "scraped",
     "tags": [
       "Humanoid"
@@ -4789,7 +4789,7 @@
     "monsterId": "hobbler-trap-savant",
     "name": "Hobbler Trap Savant",
     "normalizedName": "hobbler-trap-savant",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/b/b3/Catapult_Trap_Dungeonscape.jpg/revision/latest?cb=20240614120359",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/a/ab/Caltrops2e.png/revision/latest?cb=20200520012503",
     "sourceType": "scraped",
     "tags": [],
     "_matchedVia": "Trap"
@@ -4884,7 +4884,7 @@
     "monsterId": "human-bandit",
     "name": "Human Bandit",
     "normalizedName": "human-bandit",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/b/bd/5eR_Humans.jpg/revision/latest?cb=20250529030721",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/9/98/Human-5e.png/revision/latest?cb=20171222050434",
     "sourceType": "scraped",
     "tags": [
       "Humanoid"
@@ -4895,7 +4895,7 @@
     "monsterId": "human-berserker",
     "name": "Human Berserker",
     "normalizedName": "human-berserker",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/b/bd/5eR_Humans.jpg/revision/latest?cb=20250529030721",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/9/98/Human-5e.png/revision/latest?cb=20171222050434",
     "sourceType": "scraped",
     "tags": [
       "Humanoid"
@@ -4906,7 +4906,7 @@
     "monsterId": "human-diabolist",
     "name": "Human Diabolist",
     "normalizedName": "human-diabolist",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/b/bd/5eR_Humans.jpg/revision/latest?cb=20250529030721",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/9/98/Human-5e.png/revision/latest?cb=20171222050434",
     "sourceType": "scraped",
     "tags": [
       "Humanoid"
@@ -4917,7 +4917,7 @@
     "monsterId": "human-dire-beast-hunter",
     "name": "Human Dire Beast Hunter",
     "normalizedName": "human-dire-beast-hunter",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/b/bd/5eR_Humans.jpg/revision/latest?cb=20250529030721",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/9/98/Human-5e.png/revision/latest?cb=20171222050434",
     "sourceType": "scraped",
     "tags": [
       "Humanoid"
@@ -4928,7 +4928,7 @@
     "monsterId": "human-dread-assassin",
     "name": "Human Dread Assassin",
     "normalizedName": "human-dread-assassin",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/b/bd/5eR_Humans.jpg/revision/latest?cb=20250529030721",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/9/98/Human-5e.png/revision/latest?cb=20171222050434",
     "sourceType": "scraped",
     "tags": [
       "Humanoid"
@@ -4939,7 +4939,7 @@
     "monsterId": "human-gladiator",
     "name": "Human Gladiator",
     "normalizedName": "human-gladiator",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/b/bd/5eR_Humans.jpg/revision/latest?cb=20250529030721",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/9/98/Human-5e.png/revision/latest?cb=20171222050434",
     "sourceType": "scraped",
     "tags": [
       "Humanoid"
@@ -4950,7 +4950,7 @@
     "monsterId": "human-guard",
     "name": "Human Guard",
     "normalizedName": "human-guard",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/b/bd/5eR_Humans.jpg/revision/latest?cb=20250529030721",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/9/98/Human-5e.png/revision/latest?cb=20171222050434",
     "sourceType": "scraped",
     "tags": [
       "Humanoid"
@@ -4961,7 +4961,7 @@
     "monsterId": "human-insane-noble",
     "name": "Human Insane Noble",
     "normalizedName": "human-insane-noble",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/b/bd/5eR_Humans.jpg/revision/latest?cb=20250529030721",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/9/98/Human-5e.png/revision/latest?cb=20171222050434",
     "sourceType": "scraped",
     "tags": [
       "Humanoid"
@@ -4972,7 +4972,7 @@
     "monsterId": "human-mage",
     "name": "Human Mage",
     "normalizedName": "human-mage",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/b/bd/5eR_Humans.jpg/revision/latest?cb=20250529030721",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/9/98/Human-5e.png/revision/latest?cb=20171222050434",
     "sourceType": "scraped",
     "tags": [
       "Humanoid"
@@ -4983,7 +4983,7 @@
     "monsterId": "human-mystagogue",
     "name": "Human Mystagogue",
     "normalizedName": "human-mystagogue",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/b/bd/5eR_Humans.jpg/revision/latest?cb=20250529030721",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/9/98/Human-5e.png/revision/latest?cb=20171222050434",
     "sourceType": "scraped",
     "tags": [
       "Humanoid"
@@ -4994,7 +4994,7 @@
     "monsterId": "human-pirate",
     "name": "Human Pirate",
     "normalizedName": "human-pirate",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/b/bd/5eR_Humans.jpg/revision/latest?cb=20250529030721",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/9/98/Human-5e.png/revision/latest?cb=20171222050434",
     "sourceType": "scraped",
     "tags": [
       "Humanoid"
@@ -5005,7 +5005,7 @@
     "monsterId": "human-pirate-captain",
     "name": "Human Pirate Captain",
     "normalizedName": "human-pirate-captain",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/b/bd/5eR_Humans.jpg/revision/latest?cb=20250529030721",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/9/98/Human-5e.png/revision/latest?cb=20171222050434",
     "sourceType": "scraped",
     "tags": [
       "Humanoid"
@@ -5183,7 +5183,7 @@
     "monsterId": "iron-golem",
     "name": "Iron Golem",
     "normalizedName": "iron-golem",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/6/62/Iron_Golem_5.5.png/revision/latest?cb=20260218153007",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/6/6d/Iron_golem-5e.jpg/revision/latest?cb=20161121014222",
     "sourceType": "scraped",
     "tags": [
       "Construct"
@@ -5264,7 +5264,7 @@
     "monsterId": "jovoc",
     "name": "Jovoc",
     "normalizedName": "jovoc",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/8/8e/Jovoc.png/revision/latest?cb=20201023030833",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/b/b4/Jovoc%2C_Palrethee%2C_Zovvut3e.jpg/revision/latest?cb=20200430234523",
     "sourceType": "scraped",
     "tags": [],
     "_matchedVia": "Jovoc"
@@ -5395,7 +5395,7 @@
     "monsterId": "kostchtchie",
     "name": "Kostchtchie",
     "normalizedName": "kostchtchie",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/a/a5/Kostchtchie2.jpeg/revision/latest?cb=20190918130031",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/5/52/Kostchtchie_smash_1e.png/revision/latest?cb=20210411051747",
     "sourceType": "scraped",
     "tags": [
       "Demon",
@@ -5648,7 +5648,7 @@
     "monsterId": "longtooth-hunter",
     "name": "Longtooth Hunter (Shifter)",
     "normalizedName": "longtooth-hunter-shifter",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/1/12/Shifter-5eR.jpg/revision/latest?cb=20251212001940",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/e/e7/Shifter_5e.png/revision/latest?cb=20250721031035",
     "sourceType": "scraped",
     "tags": [],
     "_matchedVia": "Shifter"
@@ -5657,7 +5657,7 @@
     "monsterId": "mad-wraith",
     "name": "Mad Wraith",
     "normalizedName": "mad-wraith",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/1/13/5eR_wraith_-_Alex_Brock.webp/revision/latest?cb=20250316022800",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/8/81/Wraith-5e.jpg/revision/latest?cb=20171010235614",
     "sourceType": "scraped",
     "tags": [
       "Undead",
@@ -6045,7 +6045,7 @@
     "monsterId": "mummy-guardian",
     "name": "Mummy Guardian",
     "normalizedName": "mummy-guardian",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/9/9a/Moist_mummy.jpg/revision/latest?cb=20251030144044",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/2/20/Mummy-5e.png/revision/latest?cb=20171011160653",
     "sourceType": "scraped",
     "tags": [
       "Undead"
@@ -6151,7 +6151,7 @@
     "monsterId": "needle-demon",
     "name": "Needle Demon",
     "normalizedName": "needle-demon",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/3/3c/Needles-ME.png/revision/latest?cb=20240421104309",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/a/a3/Carrionette_5e.png/revision/latest?cb=20240707210952",
     "sourceType": "scraped",
     "tags": [
       "Demon",
@@ -6406,7 +6406,7 @@
     "monsterId": "orc-berserker",
     "name": "Orc Berserker",
     "normalizedName": "orc-berserker",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/6/60/5eR_Orcs.jpg/revision/latest?cb=20250529030935",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/4/43/Orc-5e.jpg/revision/latest?cb=20171010153900",
     "sourceType": "scraped",
     "tags": [
       "Humanoid"
@@ -6417,7 +6417,7 @@
     "monsterId": "orc-bloodrager",
     "name": "Orc Bloodrager",
     "normalizedName": "orc-bloodrager",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/6/60/5eR_Orcs.jpg/revision/latest?cb=20250529030935",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/4/43/Orc-5e.jpg/revision/latest?cb=20171010153900",
     "sourceType": "scraped",
     "tags": [
       "Humanoid"
@@ -6428,7 +6428,7 @@
     "monsterId": "orc-chieftain",
     "name": "Orc Chieftain",
     "normalizedName": "orc-chieftain",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/6/60/5eR_Orcs.jpg/revision/latest?cb=20250529030935",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/4/43/Orc-5e.jpg/revision/latest?cb=20171010153900",
     "sourceType": "scraped",
     "tags": [
       "Humanoid"
@@ -6439,7 +6439,7 @@
     "monsterId": "orc-eye-of-gruumsh",
     "name": "Orc Eye of Gruumsh",
     "normalizedName": "orc-eye-of-gruumsh",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/6/60/5eR_Orcs.jpg/revision/latest?cb=20250529030935",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/4/43/Orc-5e.jpg/revision/latest?cb=20171010153900",
     "sourceType": "scraped",
     "tags": [
       "Humanoid"
@@ -6450,7 +6450,7 @@
     "monsterId": "orc-raider",
     "name": "Orc Raider",
     "normalizedName": "orc-raider",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/6/60/5eR_Orcs.jpg/revision/latest?cb=20250529030935",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/4/43/Orc-5e.jpg/revision/latest?cb=20171010153900",
     "sourceType": "scraped",
     "tags": [
       "Humanoid"
@@ -6556,7 +6556,7 @@
     "monsterId": "pazuzu",
     "name": "Pazuzu",
     "normalizedName": "pazuzu",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/1/14/Pazuzu.jpg/revision/latest?cb=20190920082925",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/a/a2/Pazuzu1e.png/revision/latest?cb=20200402164212",
     "sourceType": "scraped",
     "tags": [
       "Demon",
@@ -6568,7 +6568,7 @@
     "monsterId": "phane",
     "name": "Phane (Abomination)",
     "normalizedName": "phane-abomination",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/b/b0/Phane_-_Kevin_Yan_%26_Izzy_Medrano.jpg/revision/latest?cb=20190809110218",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/1/1a/Phane3e.png/revision/latest?cb=20220207203346",
     "sourceType": "scraped",
     "tags": [],
     "_matchedVia": "Phane"
@@ -6589,7 +6589,7 @@
     "monsterId": "phoelarch-mage",
     "name": "Phoelarch Mage",
     "normalizedName": "phoelarch-mage",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/a/ab/Phoera-4e.png/revision/latest?cb=20201227182135",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/7/7b/Phoera-3e.jpg/revision/latest?cb=20201227181635",
     "sourceType": "scraped",
     "tags": [],
     "_matchedVia": "Phoelarch"
@@ -6598,7 +6598,7 @@
     "monsterId": "phoelarch-warrior",
     "name": "Phoelarch Warrior",
     "normalizedName": "phoelarch-warrior",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/a/ab/Phoera-4e.png/revision/latest?cb=20201227182135",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/7/7b/Phoera-3e.jpg/revision/latest?cb=20201227181635",
     "sourceType": "scraped",
     "tags": [],
     "_matchedVia": "Phoelarch"
@@ -6616,7 +6616,7 @@
     "monsterId": "phoera",
     "name": "Phoera (Phoelarch)",
     "normalizedName": "phoera-phoelarch",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/a/ab/Phoera-4e.png/revision/latest?cb=20201227182135",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/7/7b/Phoera-3e.jpg/revision/latest?cb=20201227181635",
     "sourceType": "scraped",
     "tags": [],
     "_matchedVia": "Phoelarch"
@@ -6946,7 +6946,7 @@
     "monsterId": "razorclaw-stalker",
     "name": "Razorclaw Stalker (Shifter)",
     "normalizedName": "razorclaw-stalker-shifter",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/1/12/Shifter-5eR.jpg/revision/latest?cb=20251212001940",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/e/e7/Shifter_5e.png/revision/latest?cb=20250721031035",
     "sourceType": "scraped",
     "tags": [],
     "_matchedVia": "Shifter"
@@ -6955,7 +6955,7 @@
     "monsterId": "red-dragon-wyrmling",
     "name": "Red Dragon Wyrmling",
     "normalizedName": "red-dragon-wyrmling",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/7/7e/Red_Dragon_5eR.png/revision/latest?cb=20250926032125",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/8/8c/Gith-5e.png/revision/latest?cb=20180816011608",
     "sourceType": "scraped",
     "tags": [
       "Dragon",
@@ -7292,10 +7292,10 @@
     "monsterId": "scarecrow-shambler",
     "name": "Scarecrow Shambler",
     "normalizedName": "scarecrow-shambler",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/9/9d/Scarecrow-5e.jpg/revision/latest?cb=20181011023258",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/b/b5/Shambling_mound-1e.jpg/revision/latest?cb=20180624201320",
     "sourceType": "scraped",
     "tags": [],
-    "_matchedVia": "Scarecrow"
+    "_matchedVia": "Shambling mound"
   },
   {
     "monsterId": "scion-of-zuggtmoy-infector",
@@ -7460,7 +7460,7 @@
     "monsterId": "shambling-mound",
     "name": "Shambling Mound",
     "normalizedName": "shambling-mound",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/b/b2/Shambling_mound_-_Lars_Grant-West.jpg/revision/latest?cb=20200311074722",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/b/b5/Shambling_mound-1e.jpg/revision/latest?cb=20180624201320",
     "sourceType": "scraped",
     "tags": [
       "Plant"
@@ -7716,7 +7716,7 @@
     "monsterId": "spawn-of-juiblex-plague-hurler",
     "name": "Spawn of Juiblex Plague Hurler",
     "normalizedName": "spawn-of-juiblex-plague-hurler",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/c/cb/Juiblex.jpg/revision/latest?cb=20190921174555",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/a/a9/Pudding_king-5e.jpg/revision/latest?cb=20171231204228",
     "sourceType": "scraped",
     "tags": [
       "Demon",
@@ -7728,7 +7728,7 @@
     "monsterId": "spawn-of-juiblex-sludge-dredge",
     "name": "Spawn of Juiblex Sludge Dredge",
     "normalizedName": "spawn-of-juiblex-sludge-dredge",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/c/cb/Juiblex.jpg/revision/latest?cb=20190921174555",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/a/a9/Pudding_king-5e.jpg/revision/latest?cb=20171231204228",
     "sourceType": "scraped",
     "tags": [
       "Demon",
@@ -7770,7 +7770,7 @@
     "monsterId": "spiderling",
     "name": "Spiderling",
     "normalizedName": "spiderling",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/8/84/Luca-bancone-giant-tarantula.jpg/revision/latest?cb=20260206140857",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/4/43/Spider-5e.jpg/revision/latest?cb=20200907172351",
     "sourceType": "scraped",
     "tags": [],
     "_matchedVia": "Spider"
@@ -7821,7 +7821,7 @@
     "monsterId": "spring-nymph",
     "name": "Spring Nymph",
     "normalizedName": "spring-nymph",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/b/bc/Nymph_4e.jpg/revision/latest?cb=20220218111250",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/b/be/Nymph_3e.jpg/revision/latest?cb=20100929024257",
     "sourceType": "scraped",
     "tags": [
       "Fey"
@@ -8080,10 +8080,10 @@
     "monsterId": "stormrage-shambler",
     "name": "Stormrage Shambler",
     "normalizedName": "stormrage-shambler",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/1/15/Stormrage.png/revision/latest?cb=20220930010421",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/b/b5/Shambling_mound-1e.jpg/revision/latest?cb=20180624201320",
     "sourceType": "scraped",
     "tags": [],
-    "_matchedVia": "Stormrage"
+    "_matchedVia": "Shambling mound"
   },
   {
     "monsterId": "swarmtongue-hydra",
@@ -8123,7 +8123,7 @@
     "monsterId": "tarrasque",
     "name": "Tarrasque (Abomination)",
     "normalizedName": "tarrasque-abomination",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/d/d0/Tarrasque_5eR.webp/revision/latest?cb=20251208145159",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/2/21/Tarrrasque_3e.png/revision/latest?cb=20210210150006",
     "sourceType": "scraped",
     "tags": [],
     "_matchedVia": "Tarrasque"
@@ -8192,7 +8192,7 @@
     "monsterId": "thunderfury-boar",
     "name": "Thunderfury Boar",
     "normalizedName": "thunderfury-boar",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/2/20/Boar_bg3.png/revision/latest?cb=20220222221259",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/d/d1/Boars_1e.png/revision/latest?cb=20210321031014",
     "sourceType": "scraped",
     "tags": [
       "Beast"
@@ -8272,7 +8272,7 @@
     "monsterId": "tomb-spider",
     "name": "Tomb Spider",
     "normalizedName": "tomb-spider",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/9/9e/Tomb_spider_4e.jpg/revision/latest?cb=20240717185712",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/0/0c/TombSpider-3e.jpg/revision/latest?cb=20201128233115",
     "sourceType": "scraped",
     "tags": [
       "Beast"
@@ -8494,7 +8494,7 @@
     "monsterId": "visejaw-crocodile",
     "name": "Visejaw Crocodile",
     "normalizedName": "visejaw-crocodile",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/9/97/Crocodile_php5e_revised.png/revision/latest?cb=20240918021617",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/0/02/Crocodiles_4e.jpg/revision/latest?cb=20190812104805",
     "sourceType": "scraped",
     "tags": [
       "Beast"
@@ -8809,7 +8809,7 @@
     "monsterId": "wood-nymph",
     "name": "Wood Nymph",
     "normalizedName": "wood-nymph",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/b/bc/Nymph_4e.jpg/revision/latest?cb=20220218111250",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/b/be/Nymph_3e.jpg/revision/latest?cb=20100929024257",
     "sourceType": "scraped",
     "tags": [
       "Fey"
@@ -8838,7 +8838,7 @@
     "monsterId": "wraith",
     "name": "Wraith",
     "normalizedName": "wraith",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/1/13/5eR_wraith_-_Alex_Brock.webp/revision/latest?cb=20250316022800",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/8/81/Wraith-5e.jpg/revision/latest?cb=20171010235614",
     "sourceType": "scraped",
     "tags": [
       "Undead",
@@ -8967,7 +8967,7 @@
     "monsterId": "young-black-dragon",
     "name": "Young Black Dragon",
     "normalizedName": "young-black-dragon",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/1/16/Ancient_Black_Dragon_5eR.png/revision/latest?cb=20251028211325",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/6/66/Young_black_dragon-5e.jpg/revision/latest?cb=20190408023657",
     "sourceType": "scraped",
     "tags": [
       "Dragon",
@@ -8991,7 +8991,7 @@
     "monsterId": "young-blue-dragon",
     "name": "Young Blue Dragon",
     "normalizedName": "young-blue-dragon",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/8/80/Ancient_Blue_Dragon_5eR.png/revision/latest?cb=20251020033422",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/c/c4/Blue_dragon_3e.jpg/revision/latest?cb=20190823131614",
     "sourceType": "scraped",
     "tags": [
       "Dragon",
@@ -9014,7 +9014,7 @@
     "monsterId": "young-gold-dragon",
     "name": "Young Gold Dragon",
     "normalizedName": "young-gold-dragon",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/0/08/Ancient_Gold_Dragon_5eR.jpeg/revision/latest?cb=20250519041640",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/3/34/Metallic-dragons-5e.jpg/revision/latest?cb=20180623043445",
     "sourceType": "scraped",
     "tags": [
       "Dragon"
@@ -9037,7 +9037,7 @@
     "monsterId": "young-red-dragon",
     "name": "Young Red Dragon",
     "normalizedName": "young-red-dragon",
-    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/7/7e/Red_Dragon_5eR.png/revision/latest?cb=20250926032125",
+    "primary": "https://static.wikia.nocookie.net/forgottenrealms/images/8/8c/Gith-5e.png/revision/latest?cb=20180816011608",
     "sourceType": "scraped",
     "tags": [
       "Dragon",
