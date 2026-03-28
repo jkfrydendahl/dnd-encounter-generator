@@ -34,7 +34,7 @@ export function HomePage() {
   const [lockedSlots, setLockedSlots] = useState<LockedSlots>(new Set());
   const [lockedTerrains, setLockedTerrains] = useState<Set<string>>(new Set());
 
-  const { isOpen, selectedMonster, statBlockHtml, openCard, closeCard } = useMonsterCard();
+  const { isOpen, selectedMonster, statBlockHtml, imageResolution, openCard, closeCard } = useMonsterCard();
   const { pinnedCards, isSectionOpen, isPinned, togglePin, unpinCard, clearPinned, toggleSection } = usePinnedCards();
 
   const generatorInput = { monsters, templates, terrain, settings };
@@ -190,6 +190,7 @@ export function HomePage() {
             isOpen={isOpen}
             statBlockHtml={statBlockHtml}
             monster={selectedMonster}
+            imageResolution={imageResolution}
             onClose={closeCard}
           />
         )}

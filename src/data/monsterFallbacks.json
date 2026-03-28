@@ -1,0 +1,25 @@
+{
+  "byTag": {
+    "Dragon": "https://placehold.co/400x300/2a1a3a/e8d5b7?text=Dragon",
+    "Undead": "https://placehold.co/400x300/1a1a2e/c4c4c4?text=Undead",
+    "Beast": "https://placehold.co/400x300/2a3a1a/d5e8b7?text=Beast",
+    "Humanoid": "https://placehold.co/400x300/3a2a1a/e8d5b7?text=Humanoid",
+    "Elemental": "https://placehold.co/400x300/1a2a3a/b7d5e8?text=Elemental",
+    "Aberrant": "https://placehold.co/400x300/2e1a2e/d5b7e8?text=Aberrant",
+    "Construct": "https://placehold.co/400x300/2a2a2a/c4c4c4?text=Construct",
+    "Demon": "https://placehold.co/400x300/3a1a1a/e8b7b7?text=Demon",
+    "Devil": "https://placehold.co/400x300/3a1a1a/e8b7b7?text=Devil",
+    "Fey": "https://placehold.co/400x300/1a3a2a/b7e8d5?text=Fey",
+    "Giant": "https://placehold.co/400x300/2a2a1a/d5d5b7?text=Giant",
+    "Insect": "https://placehold.co/400x300/1a2a1a/b7d5b7?text=Insect"
+  },
+  "byRole": {
+    "Brute": "https://placehold.co/400x300/2a1a1a/e8c4c4?text=Brute",
+    "Soldier": "https://placehold.co/400x300/1a1a2a/c4c4e8?text=Soldier",
+    "Skirmisher": "https://placehold.co/400x300/1a2a1a/c4e8c4?text=Skirmisher",
+    "Artillery": "https://placehold.co/400x300/2a2a1a/e8e8c4?text=Artillery",
+    "Controller": "https://placehold.co/400x300/2a1a2a/e8c4e8?text=Controller",
+    "Lurker": "https://placehold.co/400x300/1a1a1a/c4c4c4?text=Lurker"
+  },
+  "default": "https://placehold.co/400x300/1a1a2e/888888?text=Monster"
+}

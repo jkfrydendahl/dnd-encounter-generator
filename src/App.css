@@ -727,6 +727,48 @@
   border-color: var(--error);
 }
 
+/* Monster card image */
+.monster-card-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--border-default);
+  padding-bottom: 1rem;
+}
+
+.monster-card-image {
+  max-width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: var(--radius-md);
+}
+
+.monster-card-image-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.monster-card-image-nav button {
+  background: transparent;
+  border: 1px solid var(--border-subtle);
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  transition: all var(--transition);
+}
+
+.monster-card-image-nav button:hover {
+  color: var(--text-primary);
+  border-color: var(--border-accent);
+}
+
 /* Stat block dark theme overrides */
 .monster-card-statblock {
   color: var(--text-primary);
