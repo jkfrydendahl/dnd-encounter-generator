@@ -165,6 +165,12 @@ const MANUAL_WIKI_MAPPINGS = {
   "oblivion moss mindmaster": "Oblivion moss",
   "stormrage shambler": "Shambling mound",
   "shambler": "Shambling mound",
+  "squamous maw": "Squamous spewer",
+
+  // Creatures where last word is the type
+  "spirit devourer": "Devourer",
+  "devourer": "Devourer",
+  "anthraxin the devourer": "Devourer",
 
   // Abishai
   "wrack abishai": "Abishai",
@@ -343,8 +349,17 @@ function extractBaseCandidates(name, tags) {
 
 // --- Wiki API ---
 
-// Edition preference order: 5e first, then 3e, then anything else
-const EDITION_PREFERENCE = ["5e", "3e", "4e", "2e", "1e"];
+// Edition preference: only upgrade to 5e or 3e; keep default otherwise
+const EDITION_PREFERENCE = ["5e", "3e"];
+
+// All edition patterns we can detect (including variants like 5eR)
+const EDITION_PATTERNS = [
+  { edition: "5e", regex: /[-_ ]5e[rR]?[-_.]/i, suffixes: ["5e", "5er"] },
+  { edition: "3e", regex: /[-_ ]3e[-_.]/i, suffixes: ["3e"] },
+  { edition: "4e", regex: /[-_ ]4e[-_.]/i, suffixes: ["4e"] },
+  { edition: "2e", regex: /[-_ ]2e[-_.]/i, suffixes: ["2e"] },
+  { edition: "1e", regex: /[-_ ]1e[-_.]/i, suffixes: ["1e"] },
+];
 
 async function queryWikiImages(titles) {
   const url = new URL(WIKI_API);
@@ -373,19 +388,20 @@ async function queryWikiImages(titles) {
 }
 
 /**
- * Detect edition from a filename. Returns edition string or null.
+ * Detect edition from a filename. Returns normalized edition string or null.
  */
 function detectEdition(filename) {
   const lower = filename.toLowerCase();
-  for (const edition of EDITION_PREFERENCE) {
-    if (
-      new RegExp(`[-_ ]${edition}[-_.]`, "i").test(lower) ||
-      new RegExp(`[-_ ]${edition}$`, "i").test(lower) ||
-      lower.endsWith(`${edition}.jpg`) ||
-      lower.endsWith(`${edition}.png`) ||
-      lower.endsWith(`${edition}.jpeg`)
-    ) {
-      return edition;
+  for (const pat of EDITION_PATTERNS) {
+    if (pat.regex.test(lower)) return pat.edition;
+    for (const suffix of pat.suffixes) {
+      if (
+        lower.endsWith(`${suffix}.jpg`) ||
+        lower.endsWith(`${suffix}.png`) ||
+        lower.endsWith(`${suffix}.jpeg`)
+      ) {
+        return pat.edition;
+      }
     }
   }
   return null;
@@ -393,7 +409,7 @@ function detectEdition(filename) {
 
 /**
  * Given a list of File: titles from a wiki page, find the best edition-tagged image.
- * Returns the File: title for the preferred edition, or null.
+ * Only looks for 5e and 3e — other editions are not worth overriding the default for.
  */
 function pickEditionFile(imageFiles) {
   const contentImages = imageFiles.filter((f) =>
@@ -524,22 +540,26 @@ async function main() {
   }
 
   // Build final image map: page key → best URL
-  // Only upgrade from default if the edition file is better-ranked
+  // Ranking: no edition tag (default) = 0, 5e = 1, 3e = 2, other = 3
   const wikiImages = {}; // lowercased title → best image URL
   let editionUpgrades = 0;
+
+  function editionRank(edition) {
+    if (!edition) return 0; // no tag = best (wiki editors' choice)
+    if (edition === "5e") return 1;
+    if (edition === "3e") return 2;
+    return 3; // 4e, 2e, 1e
+  }
+
   for (const [pageKey, pageData] of Object.entries(wikiPages)) {
     const edFile = pageEditionFile[pageKey];
     const edFileUrl = edFile ? editionFileUrls[edFile] : null;
 
     if (edFileUrl) {
-      // Check if default image already has an edition tag that's better or equal
       const defaultMatch = pageData.defaultUrl.match(/images\/[a-f0-9]\/[a-f0-9]{2}\/([^/]+)\//);
       const defaultFilename = defaultMatch ? decodeURIComponent(defaultMatch[1]) : "";
-      const defaultEdition = detectEdition(defaultFilename);
-      const upgradeEdition = detectEdition(edFile);
-
-      const defaultRank = defaultEdition ? EDITION_PREFERENCE.indexOf(defaultEdition) : 999;
-      const upgradeRank = upgradeEdition ? EDITION_PREFERENCE.indexOf(upgradeEdition) : 999;
+      const defaultRank = editionRank(detectEdition(defaultFilename));
+      const upgradeRank = editionRank(detectEdition(edFile));
 
       if (upgradeRank < defaultRank) {
         wikiImages[pageKey] = edFileUrl;
