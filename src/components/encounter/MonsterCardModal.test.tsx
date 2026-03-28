@@ -27,6 +27,7 @@ describe('MonsterCardModal', () => {
         isOpen={true}
         statBlockHtml={sampleHtml}
         monster={mockMonster}
+        imageResolution={null}
         onClose={vi.fn()}
       />
     );
@@ -40,6 +41,7 @@ describe('MonsterCardModal', () => {
         isOpen={true}
         statBlockHtml={null}
         monster={mockMonster}
+        imageResolution={null}
         onClose={vi.fn()}
       />
     );
@@ -55,6 +57,7 @@ describe('MonsterCardModal', () => {
         isOpen={false}
         statBlockHtml={sampleHtml}
         monster={mockMonster}
+        imageResolution={null}
         onClose={vi.fn()}
       />
     );
@@ -69,6 +72,7 @@ describe('MonsterCardModal', () => {
         isOpen={true}
         statBlockHtml={sampleHtml}
         monster={mockMonster}
+        imageResolution={null}
         onClose={onClose}
       />
     );
@@ -85,6 +89,7 @@ describe('MonsterCardModal', () => {
         isOpen={true}
         statBlockHtml={sampleHtml}
         monster={mockMonster}
+        imageResolution={null}
         onClose={onClose}
       />
     );
@@ -92,5 +97,46 @@ describe('MonsterCardModal', () => {
     const content = screen.getByTestId('modal-content');
     await userEvent.click(content);
     expect(onClose).not.toHaveBeenCalled();
+  });
+
+  it('renders image when imageResolution is provided', () => {
+    render(
+      <MonsterCardModal
+        isOpen={true}
+        statBlockHtml={sampleHtml}
+        monster={mockMonster}
+        imageResolution={{
+          found: true,
+          path: 'https://example.com/dire-rat.jpg',
+          matchedBy: 'monster-id',
+        }}
+        onClose={vi.fn()}
+      />
+    );
+
+    const img = screen.getByAltText('Dire Rat');
+    expect(img).toBeInTheDocument();
+    expect(img).toHaveAttribute('src', 'https://example.com/dire-rat.jpg');
+  });
+
+  it('shows variant navigation when multiple images exist', () => {
+    render(
+      <MonsterCardModal
+        isOpen={true}
+        statBlockHtml={sampleHtml}
+        monster={mockMonster}
+        imageResolution={{
+          found: true,
+          path: 'https://example.com/img1.jpg',
+          variants: ['https://example.com/img2.jpg'],
+          matchedBy: 'monster-id',
+        }}
+        onClose={vi.fn()}
+      />
+    );
+
+    expect(screen.getByText('1 / 2')).toBeInTheDocument();
+    expect(screen.getByLabelText('Next image')).toBeInTheDocument();
+    expect(screen.getByLabelText('Previous image')).toBeInTheDocument();
   });
 });
