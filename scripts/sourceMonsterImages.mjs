@@ -212,6 +212,7 @@ const MANUAL_WIKI_MAPPINGS = {
   "feygrove choker": "Choker",
   "bloodfire harpy": "Harpy",
   "storm gorgon": "Gorgon",
+  "iron gorgon": "Gorgon",
   "savage minotaur": "Minotaur",
   "rime hound (winter wolf)": "Winter wolf",
   "rimefire griffon": "Griffon",
