@@ -9,6 +9,8 @@ A locally hosted Typescript App that generates tactically interesting D&D 4th Ed
 - **978 monsters.** From official 4e sources (Monster Manual, DMG, Draconomicon, etc.) with role, rank, level, alignment, and tag data
 - **178 terrain suggestions.** With tactical terrain powers sourced from DMG, DMG2, Manual of the Planes, Underdark, and more
 - **Monster stat card popup.** Click any monster name to view its full compendium stat block (975 matched). Pin multiple cards side-by-side in a collapsible section
+- **Monster artwork.** Automatically resolved artwork from the Forgotten Realms wiki for most monsters, with fallback images by creature tag and role. Manual overrides for 48 monsters with missing or incorrect images
+- **Monster search.** Search all 978 monsters by name from the encounter panel. Click a result to view its full stat block — works independently of encounter generation
 - **12 environment biomes.** Select an environment (Forest, Underground, Shadowfell, etc.) to bias monster and terrain selection toward thematically appropriate creatures
 - **Alignment-aware scoring.** Encounters prefer monsters that share alignment with each other (coherence) and match the chosen environment's preferred alignments
 - **Theme-aware filtering.** Select a creature tag (Undead, Fire, Fey, etc.) to generate thematically coherent encounters
@@ -22,7 +24,7 @@ A locally hosted Typescript App that generates tactically interesting D&D 4th Ed
 
 - React 19 + TypeScript 5.9
 - Vite 6.4 + vite-plugin-pwa
-- Vitest (34 tests)
+- Vitest (67 tests)
 
 ## Getting Started
 
@@ -52,22 +54,34 @@ src/
     threatCategories.ts     # Role → threat category mapping
     monsterStatBlocks.ts    # Stat block lookup service
     environmentLookup.ts    # Environment → tags/alignments resolver
+    filterMonsters.ts       # Monster name search/filter utility
+    resolveMonsterImage.ts  # Image resolution pipeline (override → index → alias → fallback)
+    resolveMonsterFallback.ts # Fallback image mapping by tag/role
+    normalizeMonsterName.ts # Name normalization for image matching
+    imageTypes.ts           # Image-related type definitions
+    parseEncounterText.ts   # Clipboard encounter text parser
   data/
     monsters.json           # 978 monster entries with alignment
     templates.json          # 20 encounter templates
     terrain.json            # 178 terrain suggestions with powers
     statblocks.json         # 975 HTML stat blocks from 4e compendium
     environments.json       # 12 environment biomes with tags & alignments
+    monsterImageIndex.json  # Auto-resolved image URLs from wiki
+    monsterImageOverrides.json # Manual image corrections (48 entries)
   components/
-    controls/ControlsPanel.tsx
-    encounter/EncounterDisplay.tsx
-    encounter/DiagnosticsPanel.tsx
-    encounter/MonsterCardModal.tsx   # Stat block popup modal
-    encounter/PinnedCardsSection.tsx # Collapsible pinned stat blocks
+    controls/
+      ControlsPanel.tsx     # Generator settings UI
+      MonsterSearch.tsx      # Monster name search input + dropdown
+    encounter/
+      EncounterDisplay.tsx   # Main encounter output panel
+      DiagnosticsPanel.tsx   # Scoring/validation details
+      MonsterCardModal.tsx   # Stat block popup modal
+      PinnedCardsSection.tsx # Collapsible pinned stat blocks
   hooks/
     useGeneratorSettings.ts # Settings state + localStorage persistence
     useMonsterCard.ts       # Modal state for stat block viewing
     usePinnedCards.ts       # Pinned cards state management
+    useMonsterSearch.ts     # Search query, results, open/close state
   pages/
     HomePage.tsx            # Main app page
   App.tsx
