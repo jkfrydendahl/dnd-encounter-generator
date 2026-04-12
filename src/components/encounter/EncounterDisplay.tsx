@@ -87,7 +87,11 @@ export function EncounterDisplay({
   if (!encounter) {
     return (
       <div className="encounter-panel empty">
-        {searchSlot && <div className="encounter-header">{searchSlot}</div>}
+        {searchSlot && (
+          <div className="encounter-header" style={{ justifyContent: 'flex-end' }}>
+            {searchSlot}
+          </div>
+        )}
         <p>No encounter generated yet. Adjust settings and click Generate.</p>
       </div>
     );
