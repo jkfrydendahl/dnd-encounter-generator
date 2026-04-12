@@ -1,8 +1,10 @@
 import { useState, useCallback } from "react";
 import { useGeneratorSettings } from "../hooks/useGeneratorSettings";
 import { useMonsterCard } from "../hooks/useMonsterCard";
+import { useMonsterSearch } from "../hooks/useMonsterSearch";
 import { usePinnedCards } from "../hooks/usePinnedCards";
 import { ControlsPanel } from "../components/controls/ControlsPanel";
+import { MonsterSearch } from "../components/controls/MonsterSearch";
 import { EncounterDisplay } from "../components/encounter/EncounterDisplay";
 import type { LockedSlots } from "../components/encounter/EncounterDisplay";
 import { MonsterCardModal } from "../components/encounter/MonsterCardModal";
@@ -11,7 +13,7 @@ import { DiagnosticsPanel } from "../components/encounter/DiagnosticsPanel";
 import { generateEncounter, rerollSlot, selectTerrains } from "../lib/generateEncounter";
 import { getEnvironmentTags } from "../lib/environmentLookup";
 import { parseEncounterText } from "../lib/parseEncounterText";
-import type { GeneratedEncounter, Monster, EncounterTemplate, TerrainSuggestion, Environment } from "../types";
+import type { GeneratedEncounter, Monster, EncounterTemplate, TerrainSuggestion, Environment, GeneratedEncounterEntry } from "../types";
 
 import monstersData from "../data/monsters.json";
 import templatesData from "../data/templates.json";
@@ -36,6 +38,25 @@ export function HomePage() {
 
   const { isOpen, selectedMonster, statBlockHtml, imageResolution, openCard, closeCard } = useMonsterCard();
   const { pinnedCards, isSectionOpen, isPinned, togglePin, unpinCard, clearPinned, toggleSection } = usePinnedCards();
+  const search = useMonsterSearch(monsters);
+
+  const handleSearchSelect = useCallback((monster: Monster) => {
+    const entry: GeneratedEncounterEntry = {
+      slotId: `search-${monster.id}`,
+      monsterId: monster.id,
+      monsterName: monster.name,
+      role: monster.role,
+      rank: monster.rank,
+      level: monster.level,
+      count: 1,
+      source: monster.source,
+      page: monster.page,
+      tags: monster.tags,
+      alignment: monster.alignment,
+    };
+    openCard(entry);
+    search.close();
+  }, [openCard, search]);
 
   const generatorInput = { monsters, templates, terrain, settings };
 
@@ -149,6 +170,14 @@ export function HomePage() {
     <div className="home-page">
       <header className="app-header">
         <h1>D&D 4e Encounter Generator</h1>
+        <MonsterSearch
+          query={search.query}
+          results={search.results}
+          isOpen={search.isOpen}
+          onQueryChange={search.setQuery}
+          onSelect={handleSearchSelect}
+          containerRef={search.containerRef}
+        />
       </header>
 
       <main className="app-layout">

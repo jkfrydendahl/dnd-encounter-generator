@@ -10,6 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1.5rem;
   border-bottom: 1px solid var(--border-subtle);
   background: var(--bg-surface);
 }
@@ -20,6 +21,97 @@
   font-weight: 600;
   letter-spacing: -0.01em;
   color: var(--text-primary);
+  white-space: nowrap;
+}
+
+/* ─── Monster Search ───────────────────────────────────── */
+.monster-search {
+  position: relative;
+  width: 280px;
+}
+
+.monster-search-input {
+  width: 100%;
+  padding: 0.45rem 0.75rem;
+  font-size: 0.85rem;
+  background: var(--bg-input);
+  color: var(--text-primary);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-sm);
+  outline: none;
+  transition: border-color var(--transition);
+}
+
+.monster-search-input::placeholder {
+  color: var(--text-muted);
+}
+
+.monster-search-input:focus {
+  border-color: var(--accent);
+}
+
+.monster-search-dropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  max-height: 360px;
+  overflow-y: auto;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-elevated);
+  z-index: 500;
+}
+
+.monster-search-dropdown::-webkit-scrollbar {
+  width: 6px;
+}
+
+.monster-search-dropdown::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+.monster-search-empty {
+  padding: 0.75rem 1rem;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.monster-search-results {
+  list-style: none;
+  margin: 0;
+  padding: 0.25rem 0;
+}
+
+.monster-search-result {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: none;
+  background: none;
+  color: var(--text-primary);
+  font-size: 0.85rem;
+  text-align: left;
+  cursor: pointer;
+  transition: background var(--transition);
+}
+
+.monster-search-result:hover {
+  background: var(--accent-subtle);
+}
+
+.result-name {
+  font-weight: 500;
+}
+
+.result-meta {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
 }
 
 .app-layout {
@@ -600,6 +692,15 @@
 @media (max-width: 960px) {
   .app-layout {
     grid-template-columns: 1fr;
+  }
+
+  .app-header {
+    flex-wrap: wrap;
+  }
+
+  .monster-search {
+    width: 100%;
+    max-width: 320px;
   }
 
   .controls-panel {
