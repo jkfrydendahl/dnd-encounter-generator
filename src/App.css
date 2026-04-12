@@ -10,7 +10,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem;
   border-bottom: 1px solid var(--border-subtle);
   background: var(--bg-surface);
 }
@@ -21,13 +20,13 @@
   font-weight: 600;
   letter-spacing: -0.01em;
   color: var(--text-primary);
-  white-space: nowrap;
 }
 
 /* ─── Monster Search ───────────────────────────────────── */
 .monster-search {
   position: relative;
-  width: 280px;
+  width: 240px;
+  flex-shrink: 0;
 }
 
 .monster-search-input {
@@ -53,8 +52,9 @@
 .monster-search-dropdown {
   position: absolute;
   top: calc(100% + 4px);
-  left: 0;
   right: 0;
+  min-width: 100%;
+  width: 340px;
   max-height: 360px;
   overflow-y: auto;
   background: var(--bg-elevated);
@@ -227,8 +227,16 @@
 .encounter-header {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
   gap: 0.75rem;
   margin-bottom: 1.5rem;
+}
+
+.encounter-title-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  min-width: 0;
 }
 
 .encounter-header h2 {
@@ -694,15 +702,6 @@
     grid-template-columns: 1fr;
   }
 
-  .app-header {
-    flex-wrap: wrap;
-  }
-
-  .monster-search {
-    width: 100%;
-    max-width: 320px;
-  }
-
   .controls-panel {
     border-right: none;
     border-bottom: 1px solid var(--border-subtle);
@@ -721,7 +720,17 @@
 
   .encounter-header {
     flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+
+  .encounter-title-row {
+    flex-direction: column;
     gap: 0.35rem;
+  }
+
+  .monster-search {
+    width: 100%;
   }
 
   .encounter-actions {

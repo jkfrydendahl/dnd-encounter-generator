@@ -170,14 +170,6 @@ export function HomePage() {
     <div className="home-page">
       <header className="app-header">
         <h1>D&D 4e Encounter Generator</h1>
-        <MonsterSearch
-          query={search.query}
-          results={search.results}
-          isOpen={search.isOpen}
-          onQueryChange={search.setQuery}
-          onSelect={handleSearchSelect}
-          containerRef={search.containerRef}
-        />
       </header>
 
       <main className="app-layout">
@@ -210,6 +202,16 @@ export function HomePage() {
               onToggleSection={toggleSection}
               onUnpin={unpinCard}
               onClear={clearPinned}
+            />
+          }
+          searchSlot={
+            <MonsterSearch
+              query={search.query}
+              results={search.results}
+              isOpen={search.isOpen}
+              onQueryChange={search.setQuery}
+              onSelect={handleSearchSelect}
+              containerRef={search.containerRef}
             />
           }
         />

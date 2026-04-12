@@ -57,6 +57,7 @@ interface EncounterDisplayProps {
   onPinMonster?: (entry: GeneratedEncounter["entries"][number]) => void;
   isPinned?: (monsterName: string) => boolean;
   pinnedCardsSlot?: React.ReactNode;
+  searchSlot?: React.ReactNode;
 }
 
 export function EncounterDisplay({
@@ -71,6 +72,7 @@ export function EncounterDisplay({
   onPinMonster,
   isPinned,
   pinnedCardsSlot,
+  searchSlot,
 }: EncounterDisplayProps) {
   const [copied, setCopied] = useState(false);
 
@@ -85,6 +87,7 @@ export function EncounterDisplay({
   if (!encounter) {
     return (
       <div className="encounter-panel empty">
+        {searchSlot && <div className="encounter-header">{searchSlot}</div>}
         <p>No encounter generated yet. Adjust settings and click Generate.</p>
       </div>
     );
@@ -93,8 +96,11 @@ export function EncounterDisplay({
   return (
     <div className="encounter-panel">
       <div className="encounter-header">
-        <h2>{encounter.name}</h2>
-        <span className="template-label">{encounter.templateName}</span>
+        <div className="encounter-title-row">
+          <h2>{encounter.name}</h2>
+          <span className="template-label">{encounter.templateName}</span>
+        </div>
+        {searchSlot}
       </div>
 
       <table className="monster-table">
