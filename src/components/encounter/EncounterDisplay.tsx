@@ -88,7 +88,7 @@ export function EncounterDisplay({
     return (
       <div className="encounter-panel empty">
         {searchSlot && (
-          <div className="encounter-header" style={{ justifyContent: 'flex-end' }}>
+          <div className="encounter-header" style={{ justifyContent: 'center' }}>
             {searchSlot}
           </div>
         )}
