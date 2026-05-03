@@ -10,7 +10,7 @@
     "powers": [
       {
         "name": "Erupting Fissure",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "A 2×2 square section of the bridge cracks. Each creature in the area takes 2d6 fire damage and is pushed 1 square toward the nearest edge. The squares become difficult terrain.",
         "recharge": "Recharges when no creature is in the area"
       },
@@ -32,7 +32,7 @@
     "powers": [
       {
         "name": "Collapsing Pillar",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "One pillar (GM's choice) collapses. Each creature adjacent to it must succeed on a DC 15 Reflex save or take 1d10 damage and be knocked prone. The pillar's square becomes difficult terrain providing superior cover."
       },
       {
@@ -53,7 +53,7 @@
     "powers": [
       {
         "name": "Grasping Mist",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "The fog thickens in a burst 2 centered on a random square. Creatures in the area are slowed until the end of their next turn. Undead in the area gain +2 to attack rolls instead."
       },
       {
@@ -73,7 +73,7 @@
     "powers": [
       {
         "name": "Treasure Avalanche",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "A hoard pile shifts. Each creature in a burst 1 (GM places) takes 1d8 damage and is knocked prone (DC 15 Reflex negates the prone condition). The squares become difficult terrain."
       },
       {
@@ -94,7 +94,7 @@
     "powers": [
       {
         "name": "Cracking Ice",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "A 3×3 square section cracks. Creatures in the area must succeed on a DC 14 Acrobatics check or fall prone. On the next round, the section breaks — creatures still there fall into freezing water (2d6 cold damage, restrained until escape DC 15).",
         "recharge": "Each section can only crack once"
       },
@@ -116,7 +116,7 @@
     "powers": [
       {
         "name": "Reality Warp",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "Two random creatures swap positions (teleportation). Each is dazed until the end of its next turn as reality reorients."
       },
       {
@@ -137,7 +137,7 @@
     "powers": [
       {
         "name": "Brimstone Eruption",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "The rift spews energy. Each creature within 3 squares of the rift takes 1d8 fire and poison damage (DC 15 Fortitude for half)."
       },
       {
@@ -163,7 +163,7 @@
       },
       {
         "name": "Tunnel Ambush",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "A narrow tunnel (GM's choice) collapses to 1 square wide until cleared (DC 15 Athletics, standard action). Creatures inside take 1d6 damage."
       }
     ]
@@ -179,7 +179,7 @@
     "powers": [
       {
         "name": "Creeping Darkness",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "Darkness spreads. One random square and all squares within burst 1 become heavily obscured until the end of the next round."
       },
       {
@@ -200,7 +200,7 @@
     "powers": [
       {
         "name": "Lightning Strike",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "Lightning strikes a random creature wearing metal armor or holding a metal weapon. The creature takes 2d8 lightning damage (DC 15 Reflex for half). Each creature adjacent to the target takes 1d6 lightning damage."
       },
       {
@@ -221,7 +221,7 @@
     "powers": [
       {
         "name": "Acid Geyser",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "An acid pool erupts in a burst 1 (GM places). Creatures in the area take 2d6 acid damage (DC 14 Reflex for half). The area becomes an acid zone until end of next round (entering or starting turn: 1d6 acid)."
       },
       {
@@ -262,7 +262,7 @@
     "powers": [
       {
         "name": "Hurled Furniture",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "An oversized piece of furniture shifts. One random Medium or smaller creature in the room must succeed on DC 14 Reflex or take 2d6 damage and be pushed 2 squares."
       },
       {
@@ -284,7 +284,7 @@
     "powers": [
       {
         "name": "Toxic Gas Pocket",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "A gas pocket erupts in burst 2 (GM places). Creatures in the area take 1d8 poison damage and are weakened until end of next turn (DC 15 Fortitude negates the weakened condition)."
       },
       {
@@ -304,7 +304,7 @@
     "powers": [
       {
         "name": "Divine Radiance Flare",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "Fading divine energy pulses from a ruin fragment. Each undead or fiend creature within burst 3 takes 1d10 radiant damage. Each other creature in the area gains 5 temporary hit points."
       },
       {
@@ -325,7 +325,7 @@
     "powers": [
       {
         "name": "Walls Rearrange",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "The maze shifts. Each creature must succeed on DC 14 Perception or lose line of sight to all other creatures until the end of its next turn. The GM may move one wall section up to 3 squares."
       },
       {
@@ -347,7 +347,7 @@
     "powers": [
       {
         "name": "Flame Geyser",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "A vent erupts in burst 1 (GM places). Creatures in the area take 2d6 fire damage (DC 15 Reflex for half). The area becomes a fire zone for 1 round (entering or starting turn: 1d6 fire)."
       },
       {
@@ -369,7 +369,7 @@
     "powers": [
       {
         "name": "Dark Energy Pulse",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "Necrotic energy surges from the desecrated altar. Each living creature within burst 3 of the altar takes 1d8 necrotic damage. Each undead creature in the area gains +1 to attack rolls until end of next round."
       },
       {
@@ -390,7 +390,7 @@
     "powers": [
       {
         "name": "Prismatic Flash",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "Crystals refract ambient energy. Each creature in the cavern must succeed on DC 14 Fortitude or be blinded until end of its next turn."
       },
       {
@@ -416,7 +416,7 @@
       },
       {
         "name": "Crimson Surge",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "Blood rock pulses. Each bloodied creature on the rock takes 1d6 necrotic damage. Each non-bloodied creature on the rock gains 5 temporary hit points."
       }
     ]
@@ -452,7 +452,7 @@
     "powers": [
       {
         "name": "Frost Snap",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "Choke frost congeals. Each creature in a frost square is slowed (save ends). A creature already slowed is immobilized instead (save ends)."
       },
       {
@@ -598,7 +598,7 @@
     "powers": [
       {
         "name": "Life Pulse",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "Each creature within burst 2 of the pillar regains 5 hit points. Undead take 5 radiant damage instead."
       },
       {
@@ -661,7 +661,7 @@
     "powers": [
       {
         "name": "Gust Blast",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "The whirlwind slides each creature within burst 2 of its center 1d4 squares in a random direction. Ranged attacks through the whirlwind take a −2 penalty until end of next round."
       },
       {
@@ -750,7 +750,7 @@
       },
       {
         "name": "Flash Freeze",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "The ice expands by 1 square in each direction. Any creature in a newly frozen square is immobilized (save ends). The DC to escape the ice increases by 2 each round.",
         "recharge": "Recharges when a creature breaks free of the ice"
       }
@@ -894,7 +894,7 @@
     "powers": [
       {
         "name": "Death's Grasp",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "Each living creature on necrotic ground takes 1d6 necrotic damage. Each undead creature on it gains +2 to damage rolls until end of next round."
       },
       {
@@ -1000,7 +1000,7 @@
     "powers": [
       {
         "name": "Haunting Dread",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "Each living creature in the area takes a −2 penalty to Will defense and cannot willingly move closer to the center of the haunted zone until end of next round (DC 15 Will negates)."
       },
       {
@@ -1039,7 +1039,7 @@
     "powers": [
       {
         "name": "Ceiling Collapse",
-        "trigger": "Initiative count 10 (once per encounter)",
+        "trigger": "Initiative count 5 (once per encounter)",
         "effect": "A 2×2 section of ceiling collapses (GM places in the corridor). Each creature beneath takes 2d6 damage (DC 14 Reflex for half). The squares become blocking terrain."
       },
       {
@@ -1075,7 +1075,7 @@
     "powers": [
       {
         "name": "Falling Branch",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "A heavy branch falls in a random 2×1 area. Each creature underneath takes 1d10 damage and is knocked prone (DC 14 Reflex negates). The branch creates difficult terrain."
       },
       {
@@ -1093,7 +1093,7 @@
     "powers": [
       {
         "name": "River Surge",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "The river's current intensifies. Any creature in the water is pushed 3 squares downstream. Creatures on stepping stones must succeed on DC 14 Acrobatics or fall in."
       },
       {
@@ -1152,7 +1152,7 @@
       },
       {
         "name": "Crowd Chaos",
-        "trigger": "Initiative count 10 (first round only)",
+        "trigger": "Initiative count 5 (first round only)",
         "effect": "Panicked civilians flee. Each creature not adjacent to a wall is pushed 1 square in a random direction and grants combat advantage until end of next turn."
       }
     ]
@@ -1188,7 +1188,7 @@
       },
       {
         "name": "Water Surge",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "Water sloshes. Each creature in the cellar is slid 1 square toward the room's lowest point."
       }
     ]
@@ -1201,7 +1201,7 @@
     "powers": [
       {
         "name": "Rockfall",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "Rocks tumble from the canyon walls. Each creature in a random 3×1 area takes 2d6 damage (DC 14 Reflex for half) and the area becomes difficult terrain."
       },
       {
@@ -1328,7 +1328,7 @@
     "powers": [
       {
         "name": "Rolling Deck",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "The ship rolls. Each creature on deck is slid 2 squares toward the lower rail. DC 12 Acrobatics negates. Creatures hitting the rail take 1d6 damage."
       },
       {
@@ -1346,7 +1346,7 @@
     "powers": [
       {
         "name": "Arrow Slit Volleys",
-        "trigger": "Initiative count 10 (if archers are positioned)",
+        "trigger": "Initiative count 5 (if archers are positioned)",
         "effect": "Arrows rain into the courtyard: burst 2 (centered on the courtyard), +12 vs. AC, 1d8+4 damage. Cover from the fountain provides +2 to defenses against this attack."
       },
       {
@@ -1385,12 +1385,12 @@
     "powers": [
       {
         "name": "Illusory Terrain Shift",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "One 3×3 area of illusory terrain shifts location (GM places). Creatures who enter it believing it is real terrain: DC 15 Insight to disbelieve. Failing creatures treat it as difficult terrain and grant combat advantage."
       },
       {
         "name": "Illusory Double",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "One creature chosen by the GM gains an illusory duplicate in an adjacent square. Enemies attacking the creature must roll 1d6; on 1-3, they target the illusion instead and automatically miss. The illusion vanishes when targeted or at the start of the next round."
       }
     ]
@@ -1522,7 +1522,7 @@
     "powers": [
       {
         "name": "Gale Force",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "Each flying creature in the area is pushed 2d4 squares in a random direction. Non-flying creatures in the area are pushed 1 square. Ranged attacks passing through take a −4 penalty."
       },
       {
@@ -1624,7 +1624,7 @@
     "powers": [
       {
         "name": "Madness Pulse",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "Each creature within burst 3 of the wellspring makes a DC 15 Will save or makes a basic melee attack against the nearest creature as a free action."
       },
       {
@@ -1666,7 +1666,7 @@
     "powers": [
       {
         "name": "Astral Burn",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "The flame erupts in burst 1. Each creature in the area takes 2d6 fire and radiant damage (DC 15 Reflex for half)."
       },
       {
@@ -1707,7 +1707,7 @@
     "powers": [
       {
         "name": "Random Energy Burst",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "The seepage discharges in burst 2. Roll 1d4 for damage type (fire/cold/lightning/thunder). Each creature takes 2d6 damage of that type (DC 14 Reflex for half)."
       },
       {
@@ -1752,7 +1752,7 @@
       },
       {
         "name": "Planar Bleed",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "The portal flickers and deposits a hazard from another plane in a random square within 3 squares: fire (1d8 fire damage, ongoing 5), ice (difficult terrain), or shadow (concealment). The effect lasts 1 round."
       }
     ]
@@ -1768,7 +1768,7 @@
     "powers": [
       {
         "name": "Hellfire Eruption",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "Hellfire surges in burst 2 (GM places). Each creature takes 2d8 fire damage (DC 15 Reflex for half). Fire resistance is reduced by 5 against this damage."
       },
       {
@@ -1873,7 +1873,7 @@
       },
       {
         "name": "Emotional Surge",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "DC 15 Will save for each creature within 3 squares or the creature gains either +2 to attack (rage) or −2 to attack (despair), GM's choice, until end of next turn."
       }
     ]
@@ -1929,7 +1929,7 @@
     "powers": [
       {
         "name": "Arcane Beam",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "The eye fires a beam: ranged 10, +15 vs. Reflex, 2d6+4 force damage. On hit, the target is also dazed until end of its next turn."
       },
       {
@@ -1965,7 +1965,7 @@
     "powers": [
       {
         "name": "Agony Pulse",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "Each creature within burst 2 of the godrock takes 1d6 psychic damage and is slowed until end of its next turn (DC 15 Will negates the slowed condition)."
       },
       {
@@ -2086,7 +2086,7 @@
       },
       {
         "name": "Cloud Migration",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "The cloud moves 1d4 squares toward the nearest bloodied creature. If it enters a creature's space, that creature takes 5 damage and is blinded until the end of its next turn."
       }
     ]
@@ -2205,7 +2205,7 @@
     "powers": [
       {
         "name": "Decomposition Cloud",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "Spores burst in burst 2 (GM places). Creatures take 1d6 poison damage and are dazed until end of next turn (DC 14 Fortitude negates dazed). Organic equipment degrades: −1 to next damage roll."
       },
       {
@@ -2226,7 +2226,7 @@
     "powers": [
       {
         "name": "Sorrowful Wail",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "Each creature in the area must succeed on DC 15 Will or be immobilized until end of its next turn as grief overwhelms it. Creatures that save are slowed instead."
       },
       {
@@ -2265,7 +2265,7 @@
     "powers": [
       {
         "name": "Acid Geyser",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "A geyser erupts in burst 1 (GM places). Each creature takes 2d6 acid damage (DC 14 Reflex for half). The area becomes an acid zone for 1 round."
       },
       {
@@ -2305,7 +2305,7 @@
     "powers": [
       {
         "name": "Wind Blast",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "Each creature in the area is pushed 1d6 squares in a random direction. Flying creatures are pushed double distance."
       },
       {
@@ -2390,7 +2390,7 @@
       },
       {
         "name": "Rock Wave",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "The earth flow surges. Each creature in the flow must succeed on an Athletics check (moderate DC) or be knocked prone and carried 2 squares in the direction of the flow."
       }
     ]
@@ -2405,7 +2405,7 @@
     "powers": [
       {
         "name": "Elemental Blast",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "The spout erupts: burst 2, 2d6 damage of the spout's element (GM determines fire/cold/lightning/acid). DC 14 Reflex for half."
       },
       {
@@ -2551,7 +2551,7 @@
     "powers": [
       {
         "name": "Phase Pulse",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "Each creature within burst 2 of a phase crystal is phased until end of its next turn (insubstantial, can pass through walls, cannot be opportunity attacked)."
       },
       {
@@ -2653,7 +2653,7 @@
     "powers": [
       {
         "name": "Psychic Squall",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "Each creature in the area takes 1d8 psychic damage and is dazed until end of its next turn (DC 15 Will negates daze)."
       },
       {
@@ -2694,7 +2694,7 @@
     "powers": [
       {
         "name": "Phantom Chain Lash",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "Each creature in the area: +12 vs. Reflex, 1d10 damage and the creature is immobilized until end of its next turn."
       },
       {
@@ -2714,7 +2714,7 @@
     "powers": [
       {
         "name": "Reality Hiccup",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "GM rolls 1d6: 1-2=gravity reverses for 1 round, 3-4=all creatures shift 1 square clockwise, 5-6=terrain type in a burst 3 changes (water, fire, ice)."
       },
       {
@@ -2755,7 +2755,7 @@
     "powers": [
       {
         "name": "Curse Pulse",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "Each creature within burst 3 of the obelisk takes a −2 penalty to saving throws until end of its next turn (DC 15 Will negates)."
       },
       {
@@ -2958,7 +2958,7 @@
     "powers": [
       {
         "name": "Tentacle Lash",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "Tentacles reach out — each creature within burst 3: +13 vs. Reflex, 1d10 damage and pulled 2 squares toward the shroud's center."
       },
       {
@@ -2998,7 +2998,7 @@
     "powers": [
       {
         "name": "Mind Blast",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "Each creature in the area takes 2d6 psychic damage and is stunned until end of its next turn (DC 16 Will: half damage and dazed instead of stunned)."
       },
       {
@@ -3156,7 +3156,7 @@
     "powers": [
       {
         "name": "Desperate Plea",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "The prisoner cries for help. Each PC within 5 squares must succeed on DC 14 Will or grant combat advantage until end of next turn as attention splits."
       },
       {
@@ -3241,7 +3241,7 @@
       },
       {
         "name": "Ash Storm",
-        "trigger": "Initiative count 10 when wind is present",
+        "trigger": "Initiative count 5 when wind is present",
         "effect": "A swirl of choking ash fills a burst 2 area. Each creature in the burst is blinded until the end of its next turn and takes 5 damage. The cloud persists until the start of the next round, providing concealment."
       }
     ]
@@ -3376,7 +3376,7 @@
     "powers": [
       {
         "name": "Pillar Arc",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "The pillar discharges: burst 3, 2d8 lightning damage (DC 15 Reflex for half). Creatures in metal armor take +1d8 extra damage."
       },
       {
@@ -3468,12 +3468,12 @@
     "powers": [
       {
         "name": "Sand Vortex",
-        "trigger": "Initiative count 10",
+        "trigger": "Initiative count 5",
         "effect": "A dust devil forms: burst 2 (GM places), each creature is pushed 1d4 squares and blinded until end of next turn (DC 14 Fortitude negates blindness)."
       },
       {
         "name": "Sandstorm Surge",
-        "trigger": "Initiative count 10 when wind is present",
+        "trigger": "Initiative count 5 when wind is present",
         "effect": "Blinding sand sweeps the battlefield. Each creature without cover must succeed on a Fortitude save or be blinded and slowed until the end of its next turn. Creatures with a head covering gain +5 to the save."
       }
     ]
