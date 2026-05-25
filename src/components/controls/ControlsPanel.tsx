@@ -209,7 +209,7 @@ export function ControlsPanel({
             onUpdateSetting("halfLevelDamage", e.target.checked)
           }
         />
-        Half-Level to Damage
+        Half-Level Bonus
       </label>
 
       <button
