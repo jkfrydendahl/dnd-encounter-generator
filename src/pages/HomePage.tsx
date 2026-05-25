@@ -199,6 +199,7 @@ export function HomePage() {
             <PinnedCardsSection
               pinnedCards={pinnedCards}
               isOpen={isSectionOpen}
+              halfLevelDamage={settings.halfLevelDamage}
               onToggleSection={toggleSection}
               onUnpin={unpinCard}
               onClear={clearPinned}
@@ -222,6 +223,7 @@ export function HomePage() {
             statBlockHtml={statBlockHtml}
             monster={selectedMonster}
             imageResolution={imageResolution}
+            halfLevelDamage={settings.halfLevelDamage}
             onClose={closeCard}
           />
         )}

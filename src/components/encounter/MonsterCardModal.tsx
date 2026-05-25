@@ -2,20 +2,26 @@ import { useState } from 'react';
 import DOMPurify from 'dompurify';
 import type { GeneratedEncounterEntry } from '../../types';
 import type { MonsterImageResolution } from '../../lib/imageTypes';
+import { adjustStatBlock } from '../../lib/adjustStatBlock';
 
 interface MonsterCardModalProps {
   isOpen: boolean;
   statBlockHtml: string | null;
   monster: GeneratedEncounterEntry;
   imageResolution: MonsterImageResolution | null;
+  halfLevelDamage: boolean;
   onClose: () => void;
 }
 
-export function MonsterCardModal({ isOpen, statBlockHtml, monster, imageResolution, onClose }: MonsterCardModalProps) {
+export function MonsterCardModal({ isOpen, statBlockHtml, monster, imageResolution, halfLevelDamage, onClose }: MonsterCardModalProps) {
   const [variantIndex, setVariantIndex] = useState(-1); // -1 = primary
   const [imageError, setImageError] = useState(false);
 
   if (!isOpen) return null;
+
+  const displayHtml = statBlockHtml && halfLevelDamage
+    ? adjustStatBlock(statBlockHtml, monster.level, monster.rank, monster.role)
+    : statBlockHtml;
 
   const allImages = imageResolution
     ? [imageResolution.path, ...(imageResolution.variants ?? [])]
@@ -73,10 +79,10 @@ export function MonsterCardModal({ isOpen, statBlockHtml, monster, imageResoluti
           </div>
         )}
 
-        {statBlockHtml ? (
+        {displayHtml ? (
           <div
             className="monster-card-statblock"
-            dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(statBlockHtml) }}
+            dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(displayHtml) }}
           />
         ) : (
           <div className="monster-card-fallback">

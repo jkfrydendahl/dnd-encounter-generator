@@ -1,9 +1,11 @@
 import DOMPurify from 'dompurify';
 import type { PinnedCard } from '../../hooks/usePinnedCards';
+import { adjustStatBlock } from '../../lib/adjustStatBlock';
 
 interface PinnedCardsSectionProps {
   pinnedCards: PinnedCard[];
   isOpen: boolean;
+  halfLevelDamage: boolean;
   onToggleSection: () => void;
   onUnpin: (monsterName: string) => void;
   onClear: () => void;
@@ -12,6 +14,7 @@ interface PinnedCardsSectionProps {
 export function PinnedCardsSection({
   pinnedCards,
   isOpen,
+  halfLevelDamage,
   onToggleSection,
   onUnpin,
   onClear,
@@ -54,7 +57,11 @@ export function PinnedCardsSection({
               {card.statBlockHtml ? (
                 <div
                   className="monster-card-statblock"
-                  dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(card.statBlockHtml) }}
+                  dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(
+                    halfLevelDamage
+                      ? adjustStatBlock(card.statBlockHtml, card.monster.level, card.monster.rank, card.monster.role)
+                      : card.statBlockHtml
+                  ) }}
                 />
               ) : (
                 <div className="monster-card-fallback">
