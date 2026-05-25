@@ -20,6 +20,7 @@ const defaultSettings: GeneratorSettings = {
   templateMode: "any",
   duplicatePolicy: "soft-avoid",
   terrainCount: 1,
+  halfLevelDamage: false,
 };
 
 function loadSettings(): GeneratorSettings {

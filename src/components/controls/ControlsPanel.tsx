@@ -201,6 +201,17 @@ export function ControlsPanel({
         </select>
       </label>
 
+      <label className="checkbox-label half-level-toggle">
+        <input
+          type="checkbox"
+          checked={settings.halfLevelDamage}
+          onChange={(e) =>
+            onUpdateSetting("halfLevelDamage", e.target.checked)
+          }
+        />
+        Half-Level to Damage
+      </label>
+
       <button
         className="generate-button"
         onClick={onGenerate}

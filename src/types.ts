@@ -76,6 +76,7 @@ export interface GeneratorSettings {
   templateMode: string;
   duplicatePolicy: DuplicatePolicy;
   terrainCount: number;
+  halfLevelDamage: boolean;
 }
 
 export interface GeneratedEncounterEntry {
